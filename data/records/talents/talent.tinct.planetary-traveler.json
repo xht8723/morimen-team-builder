@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.tinct.planetary-traveler",
+  "name": "Planetary Traveler",
+  "route": {
+    "slug": "planetary-traveler",
+    "canonicalPath": "/database/awakeners/tinct/talents/planetary-traveler"
+  },
+  "ownerAwakenerId": "awakener-0049",
+  "family": "passive",
+  "descriptionTemplate": "For every 1% Sigil Yield provided by Tinct and her equipped Wheel of Destiny & Covenant, {Starlight Aurora} gains an additional 0.15% Temporary Crit. Rate.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tinct"
+}

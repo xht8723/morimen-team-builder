@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.nautila.ace-mechanist",
+  "name": "Ace Mechanist",
+  "route": {
+    "slug": "ace-mechanist",
+    "canonicalPath": "/database/awakeners/nautila/enlightens/ace-mechanist"
+  },
+  "ownerAwakenerId": "awakener-0036",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Maintenance Expert} is enhanced: All Awakeners' Fixed {Counter} +30%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Nautila"
+}

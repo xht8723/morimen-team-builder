@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0035",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "不灭的雷光",
+      "sourceHash": "sha256:05104a8569fce64a9db9bfe971634b308ad77f6520527a9d0c0a1ec9fd815f83",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点护盾，抽 2 张牌。若「克珀珊特」在队伍中，还会将 1 张「领航」置入手中。",
+      "sourceHash": "sha256:b31ce9a36af3efbe1118c9d4e939477744cf250679ed354588ee3c99c58ccf0e",
+      "status": "reference"
+    }
+  }
+}

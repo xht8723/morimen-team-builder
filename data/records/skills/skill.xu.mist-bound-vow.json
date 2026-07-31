@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.xu.mist-bound-vow",
+  "name": "Mist-Bound Vow",
+  "route": {
+    "slug": "mist-bound-vow",
+    "canonicalPath": "/database/awakeners/xu/skills/mist-bound-vow"
+  },
+  "ownerAwakenerId": "awakener-0054",
+  "slot": "Exalt",
+  "descriptionTemplate": "[{Devour}: Temporarily reduce all enemies' {STR▼} by [Exhaustion:Arg1].] Gain [Arg2] Arithmetica and inflict [{Poison}:Arg3] {plural:[{Poison}:Arg3]|stack|stacks} of {Poison} on all enemies. Choose: {Betroth} or {Enthrall}.\n{overlay:Spellbound}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "3"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["80", "96", "112", "128", "144", "160"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.xu.nirvanas-kiss.skill.xu.mist-bound-vow",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.xu.nirvanas-kiss",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0054",
+      "ownerAwakenerName": "Xu",
+      "patch": {
+        "descriptionTemplate": "[{Devour}: Temporarily reduce all enemies' {STR▼} by [Exhaustion:Arg1].] Gain [Arg2] Arithmetica and inflict [{Poison}:Arg3] {plural:[{Poison}:Arg3]|stack|stacks} of {Poison} on all enemies. The next {Resonance} effect triggered is doubled. Choose: {Betroth} or {Enthrall}."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Xu"
+}

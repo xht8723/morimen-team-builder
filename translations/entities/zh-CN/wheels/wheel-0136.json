@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0136",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "贪婪",
+      "sourceHash": "sha256:ba9a6aa90b043b417fd600bfd5e1dc52e97ba902e6ebd17651acc38e4acf2c0e",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：关卡开始后，获得 30 点黑印。造物上限+2。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:123f8fd2e7d7122a05d823e839c00184fdfc4b065389729bb9bd8167755d7739",
+      "status": "reference"
+    }
+  }
+}

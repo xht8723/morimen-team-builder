@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.jenkins.obsidian-dissolution",
+  "name": "Obsidian Dissolution",
+  "route": {
+    "slug": "obsidian-dissolution",
+    "canonicalPath": "/database/awakeners/jenkin/enlightens/obsidian-dissolution"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "slot": "E3",
+  "descriptionTemplate": "{Mistborn Street Urchin} grants 1 extra {Get 'em! Brown!}",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Jenkin"
+}

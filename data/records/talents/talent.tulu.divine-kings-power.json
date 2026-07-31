@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.tulu.divine-kings-power",
+  "name": "Divine King's Power",
+  "route": {
+    "slug": "divine-kings-power",
+    "canonicalPath": "/database/awakeners/tulu/talents/divine-kings-power"
+  },
+  "ownerAwakenerId": "awakener-0050",
+  "family": "passive",
+  "descriptionTemplate": "For every point of Aliemus Regen Level Tulu and his equipped WoD & Covenant have, \"Strike\" enjoys +5% {Tentacle DMG} and {STR} bonus. {Abyss Order} receives 15% {Tentacle DMG} and {STR} DMG boost.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tulu"
+}

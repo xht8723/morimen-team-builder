@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0004",
+  "name": "Crimson Pulse",
+  "route": {
+    "slug": "crimson-pulse",
+    "canonicalPath": "/database/covenants/crimson-pulse"
+  },
+  "assets": {
+    "icon": "asset-covenant-0004-icon"
+  },
+  "acquisitionSource": "Purchase from Mythag Shop - Investigation Exchange",
+  "lineupToken": "h",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Crit. DMG +[Arg1]%",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "7.2",
+          "suffix": "%"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "After releasing Posse, the wielder gains 30% Temporary Crit. Rate.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "The fabled architect of the automatons, who nourished his creations with his own blood."
+}

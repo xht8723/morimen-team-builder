@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.ancient-embers",
+  "name": "Ancient Embers",
+  "route": {
+    "slug": "ancient-embers",
+    "canonicalPath": "/database/overlays/ancient-embers"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.ancient-embers-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Old Embers"],
+  "iconId": "IconS_Buff_025",
+  "textColor": "affliction",
+  "descriptionTemplate": "When taking Active DMG or {Tentacle DMG}, remove an equivalent amount of {Ancient Embers} and lose 300% that much HP. Other types of DMG only removes 50% as much {Ancient Embers}. {Ancient Embers} stacks reset each turn.",
+  "descriptionArgs": {}
+}

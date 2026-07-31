@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0098",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "深海的呼唤",
+      "sourceHash": "sha256:323e840100cd7892ff0f8dfd797da73fc4166e1e48c1e14b17698726ea37479a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始后，获得装备者攻击力 8% 的力量，若当前界域为「深海」，还会提高装备者攻击力 8% 的触腕伤害。",
+      "sourceHash": "sha256:faf808387ddadc744af68ca83c72991d69d2c962b5bd26caf7b6ab619cbef0db",
+      "status": "reference"
+    }
+  }
+}

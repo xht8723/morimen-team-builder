@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.horla.blossoms-and-verses-reunited",
+  "name": "Blossoms and Verses Reunited",
+  "route": {
+    "slug": "blossoms-and-verses-reunited",
+    "canonicalPath": "/database/awakeners/horla/enlightens/blossoms-and-verses-reunited"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "slot": "E3",
+  "descriptionTemplate": "Each time the first \"Psalm\" is played in a turn, Horla gains 10 Aliemus.\nEnhance the bonus effect corresponding to the current {Emotion} state when using {Resplendent Chapters} from 150% to 250%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Horla"
+}

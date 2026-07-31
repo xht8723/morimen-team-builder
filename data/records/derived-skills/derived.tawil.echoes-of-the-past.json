@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.tawil.echoes-of-the-past",
+  "name": "Echoes of the Past",
+  "route": {
+    "slug": "echoes-of-the-past",
+    "canonicalPath": "/database/awakeners/tawil/derived-skills/echoes-of-the-past"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "derivedFromId": "skill.tawil.the-silver-key-gate",
+  "rootSkillId": "skill.tawil.the-silver-key-gate",
+  "descriptionTemplate": "Restore Current HP and Shield to the state at the end of the previous Turn.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Tawil"
+}

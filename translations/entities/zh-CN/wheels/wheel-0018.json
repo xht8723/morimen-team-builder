@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0018",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "星天之兽",
+      "sourceHash": "sha256:6af3adb21a090be955d66f772634f279c03a8bf12bbbc9df483a467aa08a51c4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者「打击」和「狂气爆发」基础伤害提高 50%。装备者打出「打击」后，装备者获得 5% 临时暴击率，每回合最多 3 次，达到 3 次时获得 15% 临时暴击伤害。",
+      "sourceHash": "sha256:d710879802f7ba42820e170d9ff8321066533b8785a67da458f02f3840622111",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.casiah.minds-whisper",
+  "name": "Mind's Whisper",
+  "route": {
+    "slug": "minds-whisper",
+    "canonicalPath": "/database/awakeners/casiah/enlightens/minds-whisper"
+  },
+  "ownerAwakenerId": "awakener-0007",
+  "slot": "E1",
+  "descriptionTemplate": "For every card {Poof!} shuffled in, the Sorcerer gains 3 Aliemus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Casiah"
+}

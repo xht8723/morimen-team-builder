@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0022",
+  "name": "Hameln Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/hameln/builds/standard"
+  },
+  "awakenerId": "awakener-0022",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0013", "covenant-0002"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0001"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0014"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0104"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"], ["ALIEMUS_REGEN", "DMG_AMP"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN", "ALIEMUS_REGEN", "DMG_AMP"]
+    }
+  ],
+  "ownerAwakenerName": "Hameln"
+}

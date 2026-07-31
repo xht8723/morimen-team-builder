@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0131",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "子宫之梦",
+      "sourceHash": "sha256:a5237be3cd79656b5eb626f19143590c5282e10648a6f0c706290e85d9383aa7",
+      "status": "machine"
+    },
+    "description": {
+      "value": "手牌上限 +2，且不与其他命轮叠加。装备者的钥令最终伤害、获得的护盾与银钥充能均提高 20%。切换至静海姿态时获得 30 点狂气；切换至怒涛姿态时使所有敌人获得 10 层诞生仪式，两种效果冷却均为 3 回合。",
+      "sourceHash": "sha256:2cf730b0435d8140e79e41bd1352d6b67b9b8e6ba95a01f30c0850f8a12d2b60",
+      "status": "machine"
+    }
+  }
+}

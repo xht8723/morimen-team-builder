@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.vortice.roaring-abyss",
+  "name": "Roaring Abyss",
+  "route": {
+    "slug": "roaring-abyss",
+    "canonicalPath": "/database/awakeners/vortice/enlightens/roaring-abyss"
+  },
+  "ownerAwakenerId": "awakener-0055",
+  "slot": "E2",
+  "descriptionTemplate": "Vortice's \"Strike\" and \"Defense\" increase the next Vortice Exalt's Crit. Rate by +10%, and reduce the next {Reload!} Base Arithmetica Cost by 1.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Vortice"
+}

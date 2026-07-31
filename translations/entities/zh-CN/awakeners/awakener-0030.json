@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0030",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "莉兹",
+      "sourceHash": "sha256:181506dabe0a2db3927cc29822b94e8c8f907d549d032a11f22f135b2765e722",
+      "status": "reference"
+    },
+    "description": {
+      "value": "莉兹在幽绿火焰中起舞，虔诚的年轻面孔被微光照亮。每一次旋转都点燃罪人的灵魂，让舞台上的污秽在翡翠色烈焰中烧尽。",
+      "sourceHash": "sha256:1f597eccfd36cc8eb033d3e07755db02ee66f69db7a180d10438ecc0a2b6843a",
+      "status": "machine"
+    }
+  }
+}

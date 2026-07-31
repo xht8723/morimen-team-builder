@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0100",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "往昔的花与诗",
+      "sourceHash": "sha256:099e7399e0e7c298a76901960ff6933e946c4b12ff424a386bf14ca31061b49b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时抽 1 张装备者的指令卡，并有 100% 的几率使其算力消耗降低 1。每当触发死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。，都会重复触发 1 次该效果。",
+      "sourceHash": "sha256:d7ec8d6036c3ed635b9a0428a2918ff645cde8acf4d513fdc1eb65b7d6cfa122",
+      "status": "reference"
+    }
+  }
+}

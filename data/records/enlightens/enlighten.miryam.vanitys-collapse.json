@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.miryam.vanitys-collapse",
+  "name": "Vanity's Collapse",
+  "route": {
+    "slug": "vanitys-collapse",
+    "canonicalPath": "/database/awakeners/miryam/enlightens/vanitys-collapse"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "slot": "E3",
+  "descriptionTemplate": "{Ritual} effect +30%. For each {Sacrament} converted into {Obsession}, increase Miryam's Base DMG and the Base {Poison} of {Pray to the Abyss} by 15% in this battle.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Miryam"
+}

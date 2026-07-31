@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0020",
+  "name": "Miracle's Dawn",
+  "route": {
+    "slug": "miracles-dawn",
+    "canonicalPath": "/database/posses/miracles-dawn"
+  },
+  "assets": {
+    "icon": "asset-posse-0020-icon",
+    "crystal": "asset-posse-0020-crystal",
+    "badge": "asset-posse-0020-badge"
+  },
+  "ownerAwakenerId": "awakener-0044",
+  "ownerAwakenerName": "Salvador",
+  "acquisitionSource": "Clear Special Ops: The Color of Blood",
+  "realm": "CARO",
+  "lineupToken": "r",
+  "descriptionTemplate": "Gain [Arg1] {STR}. Until your next turn, whenever you take Active DMG, gain Delayed Shield equal to [Arg2]% of that DMG. If the Realms includes {Caro}, instead accumulate {Crimson Furnace} equal to 10% of that DMG.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "esotericResearchDepth",
+      "rounding": "ceil",
+      "multiplier": 0.02,
+      "inputs": ["accountLevel", "ownedPosseCount", "realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "offensive"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "10",
+      "suffix": "%"
+    }
+  },
+  "lore": "Miracle's Dawn descends upon the Church tainted by Madness, at the cost of the blood of the willing sacrifice and the immaculate lover."
+}

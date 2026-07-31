@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0172",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "鲸落",
+      "sourceHash": "sha256:0c51e984bcac06e37c84c8f0410ceb4179cdb6746f0e7af69715eed71370721d",
+      "status": "machine"
+    },
+    "description": {
+      "value": "队伍唯一：装备者「打击」的暴击伤害提高 75%。回合结束时，使装备者下一次钥令的暴击伤害提高，数值等于其基础狂气的 20%，最多叠加 5 次。",
+      "sourceHash": "sha256:f238616e6bbc81dba9228043ca5b148de4579c0c16a4e10b9b4b0165210306f5",
+      "status": "machine"
+    }
+  }
+}

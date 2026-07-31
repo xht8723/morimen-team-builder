@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.ultra-round",
+  "name": "Ultra Round",
+  "route": {
+    "slug": "ultra-round",
+    "canonicalPath": "/database/overlays/ultra-round"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Ultra Rounds"],
+  "descriptionTemplate": "Upon entering an {Ultra Round}, place all cards in {Ultra Space} into hand instead of drawing. DMG, Shield, HP Recovery, Keyflare, Aliemus, {STR} changes, {Poison}, {Counter}, and {Bleed} caused during {Ultra Rounds} -25%.",
+  "descriptionArgs": {}
+}

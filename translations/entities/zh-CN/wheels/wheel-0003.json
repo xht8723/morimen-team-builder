@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0003",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "冬夜追忆",
+      "sourceHash": "sha256:87b13c62a13dce8a1afca314cd6216da727d5575ea0ef115823a50b0ddbd5e05",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时对前排敌人施加 2 层 易伤。回合开始时，处于 易伤状态的敌人失去等同于装备者攻击力 12% 的临时力量。若当前界域为「血肉」，装备者释放「狂气爆发」后，胚胎融合 +15%。",
+      "sourceHash": "sha256:7d99c892f1f3338b7ce04b5ab4d25f071fa864a843890f9d1edaf722aa64d19b",
+      "status": "reference"
+    }
+  }
+}

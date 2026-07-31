@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.doll-inferno.elation",
+  "name": "Elation",
+  "route": {
+    "slug": "elation",
+    "canonicalPath": "/database/awakeners/doll-inferno/derived-skills/elation"
+  },
+  "ownerAwakenerId": "awakener-0018",
+  "derivedFromId": "skill.doll-inferno.self-destruct",
+  "rootSkillId": "skill.doll-inferno.self-destruct",
+  "descriptionTemplate": "Gain 1 turn of {Elation} state: Team DMG Amplification +[Arg2]%.",
+  "descriptionArgs": {
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["35", "38", "41", "44", "47", "50"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.doll-inferno.borealis-visitor.derived.doll-inferno.elation",
+      "operation": "mixed",
+      "upgraderId": "enlighten.doll-inferno.borealis-visitor",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0018",
+      "ownerAwakenerName": "Doll: Inferno",
+      "patch": {
+        "descriptionTemplate": "Gain 1 turn of {Elation} state: Team DMG Amplification +[Arg2]%. Inflict [Arg1] {plural:[Arg1]|turn|turns} of {Vulnerable} on all enemies.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "fixed",
+            "value": "1"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["35", "38", "41", "44", "47", "50"],
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Doll: Inferno"
+}

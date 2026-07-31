@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.global.silver-key-gleam",
+  "name": "Silver Key Gleam",
+  "route": {
+    "slug": "silver-key-gleam",
+    "canonicalPath": "/database/derived-skills/silver-key-gleam"
+  },
+  "descriptionTemplate": "Choose one of the 3 unlocked random Posse to release immediately.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0"
+}

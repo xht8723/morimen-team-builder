@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0052",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "空壳之人",
+      "sourceHash": "sha256:7883d1be6aa48af155acff6aab2e70c510e89b4c7c2b4fe8b658f6aa66266357",
+      "status": "machine"
+    },
+    "description": {
+      "value": "临时暴击伤害 +Arg1，并使所有敌人的力量降低效果临时减少 Arg2。若蓬托斯在队伍中，获得 1 层群猎。数值随原初精通成长。",
+      "sourceHash": "sha256:d5f564d2d135eb0523b73ad80a351eeb38f9c3efa0d23b263d675782369af7d6",
+      "status": "machine"
+    }
+  }
+}

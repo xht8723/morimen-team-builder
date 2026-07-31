@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0029",
+  "name": "Answer of the Gate",
+  "route": {
+    "slug": "answer-of-the-gate",
+    "canonicalPath": "/database/posses/answer-of-the-gate"
+  },
+  "assets": {
+    "icon": "asset-posse-0029-icon",
+    "crystal": "asset-posse-0029-crystal",
+    "badge": "asset-posse-0029-badge"
+  },
+  "acquisitionSource": "Clear Operation: Faded Legacy - Ch. 9 - A Long Dream's End",
+  "realm": "CHAOS",
+  "lineupToken": "H",
+  "descriptionTemplate": "{Discover} 1 out of 3 random Posses and gain [Arg1] Keyflare.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 200.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "utility"
+    }
+  },
+  "lore": "The Truth of all things lies beyond the Gate.\nShe remains silent here, bearing all the inquiries, responding with silence.\nThe one she awaits will eventually write their own answer."
+}

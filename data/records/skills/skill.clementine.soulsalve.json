@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.clementine.soulsalve",
+  "name": "Soulsalve",
+  "route": {
+    "slug": "soulsalve",
+    "canonicalPath": "/database/awakeners/clementine/skills/soulsalve"
+  },
+  "ownerAwakenerId": "awakener-0010",
+  "slot": "Skill2",
+  "descriptionTemplate": "Restore [Heal:Arg1] HP, temporarily remove {Madness} from all enemies and temporarily reduce their {STR▼} by [Exhaustion:Arg3]. {Quasar}: Gain [Power:Arg4] {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["22.5", "27", "31.5", "36", "40.5", "45"],
+      "stat": "CON",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["7.5", "9", "10.5", "12", "13.5", "15"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "ownerAwakenerName": "Clementine"
+}

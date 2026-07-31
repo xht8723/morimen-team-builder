@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0033",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "女王的戒律",
+      "sourceHash": "sha256:ca4b0372a89bb201d81687b393d9572443d4dbe26d097e24ec01ddcd373f62ee",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的反击提高 25%。装备者打出卡牌后获得等同于装备者防御力 8% 的反击，每回合最多触发 2 次。若其进入超维空间，装备者还会获得 12 点狂气。释放狂气爆发后，所有敌人失去等同于装备者防御力 15% 的临时力量。",
+      "sourceHash": "sha256:34efc900cafc2eb9380a501e654958b34887c5aa9d0b7d647dabdca07fb124c7",
+      "status": "reference"
+    }
+  }
+}

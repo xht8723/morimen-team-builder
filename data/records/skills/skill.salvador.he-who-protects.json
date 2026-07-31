@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.salvador.he-who-protects",
+  "name": "He Who Protects",
+  "route": {
+    "slug": "he-who-protects",
+    "canonicalPath": "/database/awakeners/salvador/skills/he-who-protects"
+  },
+  "ownerAwakenerId": "awakener-0044",
+  "slot": "Exalt",
+  "descriptionTemplate": "[{Devour}: Gain [Power:Arg1] Temporary {STR}, +[Arg4]% Temporary Crit. Rate.] Gain [Block:Arg2] Shield. Apply {Vulnerable} to all enemies for 1 turn. Until the start of the next turn, [Arg3]% of the DMG taken will be converted to {Crimson Furnace}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "25",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.salvador.salvations-hand.skill.salvador.he-who-protects",
+      "operation": "mixed",
+      "upgraderId": "enlighten.salvador.salvations-hand",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0044",
+      "ownerAwakenerName": "Salvador",
+      "patch": {
+        "descriptionTemplate": "[{Devour}: Obtain [Power:Arg1] Temporary {STR}, Temporary Crit. Rate +[Arg4]%.] Gain [Block:Arg2] Shield. Apply {Vulnerable} to all enemies for 1 turn. Until the start of next turn, when attacked, [Arg3]% of the DMG taken will be converted to {Crimson Furnace}. Salvador obtains [Arg5]% Temporary Crit. DMG.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["15", "18", "21", "24", "27", "30"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"],
+            "suffix": "%"
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "25",
+            "suffix": "%"
+          },
+          "Arg5": {
+            "kind": "fixed",
+            "value": "35",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Salvador"
+}

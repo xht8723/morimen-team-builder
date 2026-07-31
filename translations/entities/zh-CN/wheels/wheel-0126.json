@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0126",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "你我终将重逢",
+      "sourceHash": "sha256:dbfb429114ac2f2cef6ec97f71567ac9cd60e2e39621174dff174b646fd036b3",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：主动切换触腕姿态、使用猩红熔炉、释放「湮灭」后，抽 1 张装备者的指令卡，每个效果各 3 回合冷却。完成探索后所有唤醒体获得的同调率提高 10%。",
+      "sourceHash": "sha256:88cd5ca65f5486c9c683599a03cf6294615faf170fbc5b69bb1571efaa69b816",
+      "status": "reference"
+    }
+  }
+}

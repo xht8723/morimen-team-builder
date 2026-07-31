@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.miryam.solitary-pilgrimage",
+  "name": "Solitary Pilgrimage",
+  "route": {
+    "slug": "solitary-pilgrimage",
+    "canonicalPath": "/database/awakeners/miryam/enlightens/solitary-pilgrimage"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "slot": "E1",
+  "descriptionTemplate": "{Exalted Pyre} temporarily increases Temporary Crit. DMG by 15% of Miryam's Base Crit. DMG.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Miryam"
+}

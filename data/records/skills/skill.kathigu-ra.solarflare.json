@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.kathigu-ra.solarflare",
+  "name": "Solarflare",
+  "route": {
+    "slug": "solarflare",
+    "canonicalPath": "/database/awakeners/kathigu-ra/skills/solarflare"
+  },
+  "ownerAwakenerId": "awakener-0027",
+  "slot": "Skill2",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies, which enjoys [Arg2]% {STR} bonus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["50", "60", "70", "80", "90", "100"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "300",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.kathigu-ra.astral-meltdown.skill.kathigu-ra.solarflare",
+      "operation": "mixed",
+      "upgraderId": "enlighten.kathigu-ra.astral-meltdown",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0027",
+      "ownerAwakenerName": "Kathigu-Ra",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies, which enjoys [Arg2]% {STR} bonus. Base DMG +50% when possessing 3 stacks of {Fiamma}.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["50", "60", "70", "80", "90", "100"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "300",
+            "suffix": "%"
+          }
+        }
+      }
+    },
+    {
+      "id": "upgrade.enlighten.kathigu-ra.endless-purgatory.skill.kathigu-ra.solarflare",
+      "operation": "mixed",
+      "upgraderId": "enlighten.kathigu-ra.endless-purgatory",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0027",
+      "ownerAwakenerName": "Kathigu-Ra",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies, which enjoys [Arg2]% {STR} bonus. Base DMG +50% when possessing 3 stacks of {Fiamma}.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["50", "60", "70", "80", "90", "100"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "300",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Kathigu-Ra"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.helot.sacred-half",
+  "name": "Sacred Half",
+  "route": {
+    "slug": "sacred-half",
+    "canonicalPath": "/database/awakeners/helot/enlightens/sacred-half"
+  },
+  "ownerAwakenerId": "awakener-0023",
+  "slot": "E2",
+  "descriptionTemplate": "\"Basic Defense\" grants Helot 25% Temporary Crit. Rate.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Helot"
+}

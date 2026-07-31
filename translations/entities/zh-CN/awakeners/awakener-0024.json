@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0024",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "奥尔拉",
+      "sourceHash": "sha256:ddc4048363ae5194fb2ac0d74b6eea722c7f5024ca44e493524e4e11ecc78076",
+      "status": "reference"
+    },
+    "description": {
+      "value": "玫瑰尖刺穿透诗页，留下透明血迹；酒香弥漫，无色火焰四处蔓延。奥尔拉在烈焰中握着最后一首诗，为那位被埋没的天才诗人写下终章。",
+      "sourceHash": "sha256:8ea309a5812ec5da9d435258db317d48ad10797f011ab52ab911e7560b465166",
+      "status": "machine"
+    }
+  }
+}

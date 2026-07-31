@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ogier.mercy-for-the-meek",
+  "name": "Mercy for the Meek",
+  "route": {
+    "slug": "mercy-for-the-meek",
+    "canonicalPath": "/database/awakeners/ogier/enlightens/mercy-for-the-meek"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "slot": "E2",
+  "descriptionTemplate": "{Seven Arts and Virtues} increases Shield and Temp. {STR} by 20%. If the character is in a {Fragile} state, {Seven Arts and Virtues} grants an additional 33% shield.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ogier"
+}

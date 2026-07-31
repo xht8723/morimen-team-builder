@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0005",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "奥瑞塔",
+      "sourceHash": "sha256:a7882f9dd0700f0a9b1e3bce906cca586f8ca0dbf9431e9234c94ed43fb91b38",
+      "status": "reference"
+    },
+    "description": {
+      "value": "曾在孤独中迎来死亡的海洋精灵，于陆地获得了奇迹般的新生。奥瑞塔天真乐观的魅力让人无法抗拒，也许那正是她从苦难中选择遗忘后的礼物。",
+      "sourceHash": "sha256:73cc4ee99e3e35f0ac7896537109e4945a973eabd0da113af5f5b8823772d8f1",
+      "status": "machine"
+    }
+  }
+}

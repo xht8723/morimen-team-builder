@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.hameln.oneiric-waltz",
+  "name": "Oneiric Waltz",
+  "route": {
+    "slug": "oneiric-waltz",
+    "canonicalPath": "/database/awakeners/hameln/enlightens/oneiric-waltz"
+  },
+  "ownerAwakenerId": "awakener-0022",
+  "slot": "E2",
+  "descriptionTemplate": "{Rondino} reduces the Arithmetica Cost of granted cards by 2.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Hameln"
+}

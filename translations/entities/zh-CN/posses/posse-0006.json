@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0006",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "永世执念",
+      "sourceHash": "sha256:4e4d565b66e52d94d7c89be9469991002b249cdc9d621c76e8da8b5f759b10a8",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x点力量，额外获得等同于永久力量 25% 的临时力量。",
+      "sourceHash": "sha256:f493739e3691f7b921e00689e93888a3bf614cf70cc3d79a37f8c49ba3982d71",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0038",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "快乐魔法秀",
+      "sourceHash": "sha256:14a48a3dbdb28dab103d7ca50484b1742b2905df1787479ff27ea3eb9a274d23",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后，获得 6 点狂气与 50 点银钥能量，每有 4 张手牌就重复 1 次。若当前界域为「超维」时，装备者的卡牌进入超维空间后，获得等同于装备者攻击力 12% 的临时力量，每回合最多触发 2 次。",
+      "sourceHash": "sha256:b07a45e25c5e2aea270a9ae79fb6faa777ffeb9ae76a026ed19079cac067057e",
+      "status": "reference"
+    }
+  }
+}

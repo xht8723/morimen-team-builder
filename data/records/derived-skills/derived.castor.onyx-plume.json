@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.castor.onyx-plume",
+  "name": "Onyx Plume",
+  "route": {
+    "slug": "onyx-plume",
+    "canonicalPath": "/database/awakeners/castor/derived-skills/onyx-plume"
+  },
+  "ownerAwakenerId": "awakener-0008",
+  "derivedFromId": "skill.castor.skybound-oath",
+  "rootSkillId": "skill.castor.skybound-oath",
+  "descriptionTemplate": "Deal [Damage:Arg2] DMG and draw [Arg1] {plural:[Arg1]|card|cards}. {Retain}: Gain [Block:Arg3] Shield. {Exhaust}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "70",
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "10",
+      "stat": "DEF",
+      "suffix": "%",
+      "conditionalBranches": {
+        "whenTrue": "15",
+        "whenFalse": "10"
+      }
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    },
+    {
+      "id": "mechanic.exhaust"
+    }
+  ],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.castor.sky-eclipsing-wings.derived.castor.onyx-plume",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.castor.sky-eclipsing-wings",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0008",
+      "ownerAwakenerName": "Castor",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg2] DMG and draw [Arg1] {plural:[Arg1]|card|cards}. For every 3 {Onyx Plume} played, obtain 1 Arithmetica and increase Castor's Final DMG by 10% in this battle. {Retain}: Gain [Block:Arg3] Shield. {Exhaust}."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Castor"
+}

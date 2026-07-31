@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0010",
+  "name": "Aurita's Treasure",
+  "route": {
+    "slug": "auritas-treasure",
+    "canonicalPath": "/database/posses/auritas-treasure"
+  },
+  "assets": {
+    "icon": "asset-posse-0010-icon",
+    "crystal": "asset-posse-0010-crystal",
+    "badge": "asset-posse-0010-badge"
+  },
+  "ownerAwakenerId": "awakener-0005",
+  "ownerAwakenerName": "Aurita",
+  "acquisitionSource": "Clear Psyche Deepdive: Eadem Omnia",
+  "realm": "AEQUOR",
+  "lineupToken": "j",
+  "descriptionTemplate": "Draw [Arg1] {plural:[Arg1]|card|cards} with the lowest Arithmetica Cost from the Draw Pile. Gain [Arg2] {Tentacle DMG}.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "3"
+    },
+    "Arg2": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "esotericResearchDepth",
+      "rounding": "ceil",
+      "multiplier": 0.01,
+      "inputs": ["accountLevel", "ownedPosseCount", "realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "offensive"
+    }
+  },
+  "lore": "Glass tank. Fish tank. Palace.\n\nCall it whatever you like. It is a small paradise where Aurita's friends reside, free from Dissolution and suffering."
+}

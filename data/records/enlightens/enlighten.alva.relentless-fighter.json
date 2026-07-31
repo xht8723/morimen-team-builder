@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.alva.relentless-fighter",
+  "name": "Relentless Fighter",
+  "route": {
+    "slug": "relentless-fighter",
+    "canonicalPath": "/database/awakeners/alva/enlightens/relentless-fighter"
+  },
+  "ownerAwakenerId": "awakener-0004",
+  "slot": "E2",
+  "descriptionTemplate": "{Endless Justice} Draw quantity +1.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Alva"
+}

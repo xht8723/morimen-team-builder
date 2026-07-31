@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.wanda.echoes-of-whispers",
+  "name": "Echoes of Whispers",
+  "route": {
+    "slug": "echoes-of-whispers",
+    "canonicalPath": "/database/awakeners/wanda/derived-skills/echoes-of-whispers"
+  },
+  "ownerAwakenerId": "awakener-0052",
+  "derivedFromId": "skill.wanda.necropolis-of-dreams",
+  "rootSkillId": "skill.wanda.necropolis-of-dreams",
+  "descriptionTemplate": "{Exhaust} 10 stacks of {Dreamlure}, causing all enemies to enter the {Murmur} state for 1 turn: DMG reduced by [StateArg3]%, but the number of attacks is doubled.",
+  "descriptionArgs": {
+    "StateArg3": {
+      "kind": "fixed",
+      "value": "60",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.wanda.lakeborne-dweller.derived.wanda.echoes-of-whispers",
+      "operation": "override_args",
+      "upgraderId": "enlighten.wanda.lakeborne-dweller",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0052",
+      "ownerAwakenerName": "Wanda",
+      "patch": {
+        "descriptionArgs": {
+          "StateArg3": {
+            "kind": "fixed",
+            "value": "65",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Wanda"
+}

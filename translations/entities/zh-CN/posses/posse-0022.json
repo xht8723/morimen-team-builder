@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0022",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "全部的她",
+      "sourceHash": "sha256:e363f49afb5b252b11ab820dc97a679351d03d9100021a2cabc3fb92ed1d38f7",
+      "status": "reference"
+    },
+    "description": {
+      "value": "界域精通提高 24。选择 1 名唤醒体使其获得 24 点狂气。",
+      "sourceHash": "sha256:7e14e0b53807ae5bfb63065a2df8b786bc5de96fef4241fa32fd43b1d99c961a",
+      "status": "reference"
+    }
+  }
+}

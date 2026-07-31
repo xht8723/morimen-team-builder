@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.goliath.death-is-rebirth",
+  "name": "Death is Rebirth",
+  "route": {
+    "slug": "death-is-rebirth",
+    "canonicalPath": "/database/awakeners/goliath/enlightens/death-is-rebirth"
+  },
+  "ownerAwakenerId": "awakener-0021",
+  "slot": "E1",
+  "descriptionTemplate": "{Decapitation Damage} gains a {STR} bonus that doubles for each Tentacle.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Goliath"
+}

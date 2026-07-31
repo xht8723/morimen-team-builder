@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pickman.art-is-madness",
+  "name": "Art is Madness",
+  "route": {
+    "slug": "art-is-madness",
+    "canonicalPath": "/database/awakeners/pickman/enlightens/art-is-madness"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Gain 1 stack of {Fantasia} and additionally {Discover} 1 time.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pickman"
+}

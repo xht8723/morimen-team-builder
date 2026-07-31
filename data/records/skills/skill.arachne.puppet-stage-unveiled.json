@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.arachne.puppet-stage-unveiled",
+  "name": "Puppet Stage Unveiled",
+  "route": {
+    "slug": "puppet-stage-unveiled",
+    "canonicalPath": "/database/awakeners/arachne/skills/puppet-stage-unveiled"
+  },
+  "ownerAwakenerId": "awakener-0056",
+  "slot": "Rouse",
+  "descriptionTemplate": "Arachne gains Aliemus equal to [Arg2]% of her Base Aliemus. {Rouse}: {Annihilation} changes to: \"Pull a chosen Command Card out from {Ultra Space} and into hand; it triggers +1 time when played. The next Command Card played triggers {Dimension Shuttle}.\"",
+  "descriptionArgs": {
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.arachne.moiraes-finale.skill.arachne.puppet-stage-unveiled",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.arachne.moiraes-finale",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "patch": {
+        "descriptionTemplate": "Arachne gains Aliemus equal to [Arg2]% of her Base Aliemus. {Rouse}: {Annihilation} changes to: \"Pull a chosen Command Card out from {Ultra Space} and into hand; it triggers +1 time when played. For each enemy, deal {Fixed DMG} to them equal to 50% of their {Final Verdict}. Shield and DMG Amplification gained from Arachne's next Exalt +50%. The next Command Card played triggers {Dimension Shuttle}.\""
+      }
+    }
+  ],
+  "ownerAwakenerName": "Arachne"
+}

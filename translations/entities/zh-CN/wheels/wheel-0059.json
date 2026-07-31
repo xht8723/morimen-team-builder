@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0059",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "圣火中的指引",
+      "sourceHash": "sha256:dd4d4417fab1a39d6f8270f61bb81bc648685ce11d339bcecd9213c3d6068e4a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者狂气爆发造成的护盾提高 30% ，释放狂气爆发后所有唤醒体临时暴击伤害提高 20% ，每有 1 条触腕额外提高 1%。每次探索首次触发死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。后，下回合开始回复最大生命的 24% 。",
+      "sourceHash": "sha256:ee619ce8d169d5f163fb690f0f3240e732c02f75780e7fa9c87e985b04d8c87a",
+      "status": "reference"
+    }
+  }
+}

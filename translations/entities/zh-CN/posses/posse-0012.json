@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0012",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "短暂的永恒",
+      "sourceHash": "sha256:cc1ed2c6222a0f690a561c99c57bf748f8f22d9234ac462d3efa64e7ce5fb181",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 1 点算力。选择 1 名唤醒体，将其 1 张「打击」与 1 张「防御」的原始复制置入手中，并使他们获得消耗，虚无。若当前界域为「超维」，则额外获得 x 点临时力量与 x 点临时戒备。",
+      "sourceHash": "sha256:545a92173ab2e04dd38b36e7a8279e66eb6d4002959c73add7232274dc2e3360",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.celeste.everlasting-phantasm",
+  "name": "Everlasting Phantasm",
+  "route": {
+    "slug": "everlasting-phantasm",
+    "canonicalPath": "/database/awakeners/celeste/skills/everlasting-phantasm"
+  },
+  "ownerAwakenerId": "awakener-0009",
+  "slot": "Skill2",
+  "descriptionTemplate": "Heal [Heal:Arg1] HP. Temporary {Tentacle DMG} +[TentaclePower:Arg2]. Apply {Weakness} to all enemies for 1 turn. Trigger 1 Tentacle to attack enemies, dealing [Arg3]% {Tentacle DMG}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["32", "38.4", "44.8", "51.2", "57.6", "64"],
+      "stat": "CON",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["30", "36", "42", "48", "54", "60"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "0",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "RealmMastery",
+        "multiplier": "0.5"
+      }
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.celeste.solitary-mast.skill.celeste.everlasting-phantasm",
+      "operation": "mixed",
+      "upgraderId": "enlighten.celeste.solitary-mast",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0009",
+      "ownerAwakenerName": "Celeste",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["40", "48", "56", "64", "72", "80"],
+            "stat": "CON",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["30", "36", "42", "48", "54", "60"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "0",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "RealmMastery",
+              "multiplier": "0.5"
+            }
+          }
+        },
+        "cardKeywords": [
+          {
+            "id": "mechanic.retain"
+          }
+        ]
+      }
+    },
+    {
+      "id": "upgrade.talent.celeste.voyage-horn.skill.celeste.everlasting-phantasm",
+      "operation": "link_only",
+      "upgraderId": "talent.celeste.voyage-horn",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Celeste"
+}

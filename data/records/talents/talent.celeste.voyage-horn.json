@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.celeste.voyage-horn",
+  "name": "Voyage Horn",
+  "route": {
+    "slug": "voyage-horn",
+    "canonicalPath": "/database/awakeners/celeste/talents/voyage-horn"
+  },
+  "ownerAwakenerId": "awakener-0009",
+  "family": "passive",
+  "descriptionTemplate": "After Celeste plays a Command Card, trigger 1 Tentacle to attack the enemy. For each point of Realm Mastery that Celeste, her WoDs, and Covenant have, this activation deals an additional 0.5% {Tentacle DMG}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Celeste"
+}

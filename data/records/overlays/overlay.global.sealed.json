@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.sealed",
+  "name": "Sealed",
+  "route": {
+    "slug": "sealed",
+    "canonicalPath": "/database/overlays/sealed"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.sealed-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_027",
+  "textColor": "misc",
+  "descriptionTemplate": "Unable to Exalt. Remove 1 stack at the end of each turn.",
+  "descriptionArgs": {}
+}

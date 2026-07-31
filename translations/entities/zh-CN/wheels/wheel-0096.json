@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0096",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "银鳕鱼的决心",
+      "sourceHash": "sha256:7c21966bc17225c184a5a3210b35fc2be07bc384728a6fa3be836a212e0f05ce",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始后，装备者进入银鳕鱼人格状态。装备者释放狂气爆发后将在银鳕鱼人格和猫咪人格之间切换。银鳕鱼人格：装备者造成伤害后获得 40 银钥能量。猫咪人格：装备者造成伤害后，装备者的临时暴击伤害 +4%。这两个效果共享每回合最多触发 5 次的机会。",
+      "sourceHash": "sha256:291eda2c1b3f0921ac36ee604471392bed6e7bde0b80933b55918541803adc1d",
+      "status": "reference"
+    }
+  }
+}

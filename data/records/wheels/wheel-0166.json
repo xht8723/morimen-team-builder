@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0166",
+  "name": "To the Stars",
+  "route": {
+    "slug": "to-the-stars",
+    "canonicalPath": "/database/wheels/to-the-stars"
+  },
+  "assets": {
+    "icon": "asset-wheel-0166-icon"
+  },
+  "rarity": "SSR",
+  "realm": "NEUTRAL",
+  "mainstatKey": "SIGIL_YIELD",
+  "lineupToken": "y7",
+  "descriptionTemplate": "Team Unique: For every 1% of Sigil Yield the wielder, their WoDs, and Covenants have, recover [StateArg1]% Max HP at the end of battle. This effect diminishes by 30% at the end of every turn, and is calculated individually for each battle.\nAfter choosing {Perception} at {Ashen Ruins}, refreshes will be free at this {Ashen Ruins} before you leave.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["0.15", "0.2", "0.25", "0.3"],
+      "suffix": "%"
+    }
+  },
+  "lore": "You wander among the nebulae, witnessing the stars fall, one by one.\n\nBurning stars. Shining stars. Freezing stars. Dimming stars. Before you can bid them farewell, they drag their long tails across the vault of heaven and fade away.\nYou cup what remains in your hands. You want to etch every trace of their existence somewhere deep enough to keep.\n\n\nBut it sifts through your fingers, every image and afterimage, through the gaps of thinning memories, out into the boundless darkness of time and space, between one moment and the next.\n\nIt turns out you, too, are merely one falling star among ten thousand.\n\n\nBut you do not stop.\n\nYou will press on, through the long silence after ending, toward the dawn of a new age.\n\nUntil the stars fill the sky once more.",
+  "searchTags": ["Arithmetica", "Heal", "Sigil Yield"]
+}

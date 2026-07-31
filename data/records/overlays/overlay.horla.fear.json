@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.horla.fear",
+  "name": "Fear",
+  "route": {
+    "slug": "fear",
+    "canonicalPath": "/database/awakeners/horla/overlays/fear"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0024",
+  "aliases": [],
+  "descriptionTemplate": "All Awakeners' {STR} gained, {Counter} gained, and {Poison} inflicted +[StateArg1]%. Increase the {STR} Generation of {Resplendent Chapters}.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "fixed",
+      "value": "20",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "DeathResistance",
+        "multiplier": "0.1",
+        "mode": "scale_base"
+      }
+    }
+  },
+  "ownerAwakenerName": "Horla"
+}

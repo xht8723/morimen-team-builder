@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.helot-catena.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/helot-catena/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Helot: Catena obtains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.helot-catena.endless-slaughter.skill.helot-catena.strike",
+      "operation": "mixed",
+      "upgraderId": "enlighten.helot-catena.endless-slaughter",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0019",
+      "ownerAwakenerName": "Helot: Catena",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Helot: Catena obtains [Energy:Arg2] Aliemus. Helot: Catena gains [Arg3]% Temporary Crit. Rate and Crit. DMG.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "15",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Helot: Catena"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.tulu.nocturnal-murmurs",
+  "name": "Nocturnal Murmurs",
+  "route": {
+    "slug": "nocturnal-murmurs",
+    "canonicalPath": "/database/awakeners/tulu/enlightens/nocturnal-murmurs"
+  },
+  "ownerAwakenerId": "awakener-0050",
+  "slot": "E1",
+  "descriptionTemplate": "{Abyss Order} commands Tentacles to attack all enemies. If the current Stance is {Tranquil Sea}, Arithmetica Cost -2.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tulu"
+}

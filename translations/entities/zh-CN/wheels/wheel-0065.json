@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0065",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "谵妄",
+      "sourceHash": "sha256:1e7e21a57e2b65ccca9c16dd83911758ef02bb351aa7032e072c2d66b79aa557",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：融痕中觉醒唤醒体的价格降低 15 点黑印。装备者的灵知觉醒重复打出灵知觉醒无法叠加生效。获得固有。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:c76eae54fc68fcef8caa14b3138650f2e60e127f73bad6d7fedc793279228555",
+      "status": "reference"
+    }
+  }
+}

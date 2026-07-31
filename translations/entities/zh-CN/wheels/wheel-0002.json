@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0002",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "神言石板",
+      "sourceHash": "sha256:70228f89ca5ed570a5bdfc1b037590561a2b867013d8154cd35aab2633c49236",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾提高 15%，生命回复提高 15%。奇数回合结束时装备者暴击率 +6% ，获得 8 点狂气；偶数回合结束时装备者暴击伤害 +6%，获得 120 银钥能量。若当前界域为「血肉」，使猩红熔炉累积上限提高 40%。",
+      "sourceHash": "sha256:59ad38b88dced64791cba612c8c7a36702ca1965e6d9998b422da6329ba18c1e",
+      "status": "reference"
+    }
+  }
+}

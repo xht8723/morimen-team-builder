@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.alva.justice-and-truth",
+  "name": "Justice and Truth",
+  "route": {
+    "slug": "justice-and-truth",
+    "canonicalPath": "/database/awakeners/alva/skills/justice-and-truth"
+  },
+  "ownerAwakenerId": "awakener-0004",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Add 1 {Combat Stance} and {Precision Slash} with {Exhaust} to your hand. Alva's Crit. DMG in this battle +25%.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Alva"
+}

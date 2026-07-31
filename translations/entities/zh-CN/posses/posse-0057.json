@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0057",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·毒素",
+      "sourceHash": "sha256:1b3da25362bae303a0860f05ed6ed2baaa8c4cfeba73878b8c3dd3d4dc8cd0d6",
+      "status": "machine"
+    },
+    "description": {
+      "value": "使所有敌人获得 Arg1 层中毒。数值随原初精通成长。",
+      "sourceHash": "sha256:cc2dad8eab1eab9428dd58902a8edb7c86f1b5c3ba1133d0de008b0b97155858",
+      "status": "machine"
+    }
+  }
+}

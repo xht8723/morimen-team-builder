@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.temporary-counter",
+  "name": "Temporary Counter",
+  "route": {
+    "slug": "temporary-counter",
+    "canonicalPath": "/database/overlays/temporary-counter"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.temporary-counter-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_019",
+  "textColor": "shield",
+  "descriptionTemplate": "This turn, each time you are attacked, deal [Layer] DMG to the attacker.",
+  "descriptionArgs": {
+    "Layer": {
+      "kind": "fixed",
+      "value": "X"
+    }
+  }
+}

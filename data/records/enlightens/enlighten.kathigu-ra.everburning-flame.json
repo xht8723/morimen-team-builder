@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.kathigu-ra.everburning-flame",
+  "name": "Everburning Flame",
+  "route": {
+    "slug": "everburning-flame",
+    "canonicalPath": "/database/awakeners/kathigu-ra/enlightens/everburning-flame"
+  },
+  "ownerAwakenerId": "awakener-0027",
+  "slot": "E1",
+  "descriptionTemplate": "\"Strike\" and \"Defense\" cards' Basic DMG, Shield, and Aliemus generated +50%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Kathigu-Ra"
+}

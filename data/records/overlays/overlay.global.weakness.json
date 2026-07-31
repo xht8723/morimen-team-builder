@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.weakness",
+  "name": "Weakness",
+  "route": {
+    "slug": "weakness",
+    "canonicalPath": "/database/overlays/weakness"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.weakness-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_005",
+  "textColor": "affliction",
+  "descriptionTemplate": "All DMG dealt is reduced by 25%. Remove 1 stack at the end of each turn.",
+  "descriptionArgs": {}
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0006",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "埋骨地絮语",
+      "sourceHash": "sha256:0c04dc2d2ebb539b33f4570324afc7489b2303e87d9669460eb68be9419eff74",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 死亡抵抗 +16.8% 6件套： 关卡开始时死亡抵抗提高 25%。触发死亡抵抗后，装备者获得 50 点狂气。",
+      "sourceHash": "sha256:1a962e12097ec25af3b18da7ae453ba0cda00edcc7cdc1b506f7d70c19f4ee28",
+      "status": "reference"
+    }
+  }
+}

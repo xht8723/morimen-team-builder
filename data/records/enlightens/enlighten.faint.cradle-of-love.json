@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.faint.cradle-of-love",
+  "name": "Cradle of Love",
+  "route": {
+    "slug": "cradle-of-love",
+    "canonicalPath": "/database/awakeners/faint/enlightens/cradle-of-love"
+  },
+  "ownerAwakenerId": "awakener-0016",
+  "slot": "E3",
+  "descriptionTemplate": "Each time {Death Resistance} is triggered, deal 100% {Counter} {Fixed DMG} to front row enemies. Each time {Death Resistance} is triggered in this battle, increase {Fixed DMG} by 25%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faint"
+}

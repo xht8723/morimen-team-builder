@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.caecus.bloodline-awaken",
+  "name": "Bloodline Awaken",
+  "route": {
+    "slug": "bloodline-awaken",
+    "canonicalPath": "/database/awakeners/caecus/enlightens/bloodline-awaken"
+  },
+  "ownerAwakenerId": "awakener-0006",
+  "slot": "E1",
+  "descriptionTemplate": "{Shattered Halberd} grants [Arg1] Aliemus. (effect scales with {Shattered Halberd} skill level)",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["15", "16", "17", "18", "19", "20"]
+    }
+  },
+  "ownerAwakenerName": "Caecus"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.sorel.lustrous-pearl",
+  "name": "Lustrous Pearl",
+  "route": {
+    "slug": "lustrous-pearl",
+    "canonicalPath": "/database/awakeners/sorel/enlightens/lustrous-pearl"
+  },
+  "ownerAwakenerId": "awakener-0046",
+  "slot": "E3",
+  "descriptionTemplate": "At the start of battle, {Embryo Fusion} +25. Each time {Death Resistance} is triggered, {Embryo Fusion} +25. For each instance of DMG Sorel deals this turn, her DMG dealt this turn +4% of her ATK.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Sorel"
+}

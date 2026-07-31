@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.barrier",
+  "name": "Barrier",
+  "route": {
+    "slug": "barrier",
+    "canonicalPath": "/database/overlays/barrier"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.barrier-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_013",
+  "textColor": "shield",
+  "descriptionTemplate": "When being dealt DMG, consume 1 stack of {Barrier} and prevent 1 instance of that DMG.",
+  "descriptionArgs": {}
+}

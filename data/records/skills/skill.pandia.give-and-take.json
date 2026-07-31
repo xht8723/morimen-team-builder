@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.pandia.give-and-take",
+  "name": "Give and Take",
+  "route": {
+    "slug": "give-and-take",
+    "canonicalPath": "/database/awakeners/pandia/skills/give-and-take"
+  },
+  "ownerAwakenerId": "awakener-0039",
+  "slot": "Rouse",
+  "descriptionTemplate": "Pandia gains [Energy:Arg1] Aliemus. {Rouse}: Gain [Counterattack:Arg3] {plural:[Counterattack:Arg3]|stack|stacks} of {Counter}. Each time Pandia deals DMG, gain [Counterattack:Arg2] {Counter}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "CritRate",
+        "multiplier": "0.2",
+        "mode": "scale_base"
+      }
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["40", "48", "56", "64", "72", "80"],
+      "stat": "ATK",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "CritRate",
+        "multiplier": "0.2",
+        "mode": "scale_base"
+      }
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.pandia.manifesto-of-loving-discipline.skill.pandia.give-and-take",
+      "operation": "mixed",
+      "upgraderId": "enlighten.pandia.manifesto-of-loving-discipline",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0039",
+      "ownerAwakenerName": "Pandia",
+      "patch": {
+        "descriptionTemplate": "Pandia gains [Energy:Arg1] Aliemus. {Rouse}: Gain [Counterattack:Arg3] {plural:[Counterattack:Arg3]|stack|stacks} of {Counter}. Each time Pandia deals DMG, gain [Counterattack:Arg2] {Counter}. When Pandia gains Permanent {Counter}, gain {STR} equal to [Arg4]% of that value.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "CritRate",
+              "multiplier": "0.2",
+              "mode": "scale_base"
+            }
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["40", "48", "56", "64", "72", "80"],
+            "stat": "ATK",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "CritRate",
+              "multiplier": "0.2",
+              "mode": "scale_base"
+            }
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "3",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Pandia"
+}

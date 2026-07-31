@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.infinite-devour",
+  "name": "Infinite Devour",
+  "route": {
+    "slug": "infinite-devour",
+    "canonicalPath": "/database/overlays/infinite-devour"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "{Infinite Devour} Exalts will consume all {Embryo} cards in hand and trigger the {Devour} effect once for each {Embryo} consumed.",
+  "descriptionArgs": {}
+}

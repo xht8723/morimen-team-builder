@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0019",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "玫瑰的胜利",
+      "sourceHash": "sha256:30be8acd4c0cb893d18a979b80ba696065c505f3766f82d65851f410f3658550",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点临时力量，抽 2 张牌。若当前界域为「血肉」，损失 10% 当前生命，额外获得 x 点临时力量，手中每有 1 张胚胎打出后选择一名唤醒体获得 30 点狂气，本回合暴击率提高 10%。保留。消耗。额外获得 x 点临时力量。",
+      "sourceHash": "sha256:c4de7963c4e145c88272685062bfea97a7937b8962c989da12242254db240d4e",
+      "status": "reference"
+    }
+  }
+}

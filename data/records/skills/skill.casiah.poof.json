@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.casiah.poof",
+  "name": "Poof!",
+  "route": {
+    "slug": "poof",
+    "canonicalPath": "/database/awakeners/casiah/skills/poof"
+  },
+  "ownerAwakenerId": "awakener-0007",
+  "slot": "Skill2",
+  "descriptionTemplate": "Gain [Energy:Arg1] Aliemus. Discard Symptom Cards and State Cards from hand, shuffle the other cards in hand into the Draw Pile, then draw the same number of cards. {Leap}: Refund the Arithmetica Cost of {Poof!}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "11", "12", "13", "14", "15"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.casiah.minds-whisper.skill.casiah.poof",
+      "operation": "mixed",
+      "upgraderId": "enlighten.casiah.minds-whisper",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0007",
+      "ownerAwakenerName": "Casiah",
+      "patch": {
+        "descriptionTemplate": "Gain [Energy:Arg1] Aliemus. Discard Symptom Cards and State Cards from hand, shuffle the remaining cards in hand into the Draw Pile, then draw a number of cards equal to the quantity discarded and shuffled, gaining [Energy:Arg2] Aliemus per card drawn. {Leap}: Refund the Arithmetica Cost of '{Poof!}'.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "11", "12", "13", "14", "15"]
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "3"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Casiah"
+}

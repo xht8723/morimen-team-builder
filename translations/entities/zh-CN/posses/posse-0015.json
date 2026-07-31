@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0015",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "湖畔回眸",
+      "sourceHash": "sha256:df0ce4bb953220551d98457eb898bf38ad357e496f13b009e15689e7bbd9da59",
+      "status": "reference"
+    },
+    "description": {
+      "value": "对生命最高敌人造成 x 点中毒，获得 x 点护盾。若本回合触发过吞噬，不再获得护盾，触发该敌人一半的中毒。",
+      "sourceHash": "sha256:640fcdd3e54a8dba1d3b9a98b505ea4260b9b1b8233e3bf1691a4c6f609d0b6b",
+      "status": "reference"
+    }
+  }
+}

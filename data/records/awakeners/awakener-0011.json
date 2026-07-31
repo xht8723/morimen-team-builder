@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakener",
+  "id": "awakener-0011",
+  "name": "Corposant",
+  "route": {
+    "slug": "corposant",
+    "canonicalPath": "/database/awakeners/corposant"
+  },
+  "assets": {
+    "icon": "asset-awakener-0011-icon"
+  },
+  "numericId": 11,
+  "ingameId": "O10",
+  "lineupToken": "6",
+  "realm": "AEQUOR",
+  "rarity": "SSR",
+  "type": "WARDEN",
+  "availabilityType": "LIMITED_ASTRAL_REIGN",
+  "releaseDate": "2025-05-05",
+  "faction": "The Fools",
+  "aliases": ["corposant"],
+  "searchTags": [
+    "Weakness",
+    "STR Up",
+    "Tentacle DMG",
+    "Aftershock",
+    "Death Resistance",
+    "Discard",
+    "Draw",
+    "Tentacle Generation"
+  ],
+  "primaryScalingBase": 20,
+  "baseStatsLv1": {
+    "CON": 34,
+    "ATK": 30,
+    "DEF": 35
+  },
+  "substatsLv1": {
+    "CritRate": 5.8,
+    "CritDamage": 50,
+    "AliemusRegen": 0,
+    "KeyflareRegen": 15,
+    "RealmMastery": 0,
+    "SigilYield": 0,
+    "DamageAmplification": 0,
+    "DeathResistance": 5.6
+  },
+  "statScaling": {
+    "CON": 1.6,
+    "ATK": 1.4,
+    "DEF": 1.65
+  },
+  "substatScaling": {
+    "CritRate": 0.8,
+    "CritDamage": 0,
+    "AliemusRegen": 0,
+    "KeyflareRegen": 0,
+    "RealmMastery": 0,
+    "SigilYield": 0,
+    "DamageAmplification": 0,
+    "DeathResistance": 5.6
+  },
+  "profile": {
+    "title": "Corposant",
+    "birthday": "3-Oct",
+    "gender": "Female",
+    "height": "5'9''",
+    "weight": "145lbs",
+    "gnosticIndex": "23",
+    "storySections": [
+      {
+        "kind": "introduction",
+        "title": "Basic Information",
+        "unlockCondition": "Awakener Level 1",
+        "content": "She is the flag that flutters high as the ship sails, guiding its course; she is also the dirge that holds to its duty until the very last moment, when the ship sinks beneath the waves.\n\nHer responsibility, her duty, her life—all are bound to the ship; nothing else remains.\n\nFor guiding the course is the very meaning of her existence."
+      },
+      {
+        "kind": "story",
+        "title": "Story: I",
+        "unlockCondition": "Awakener Level 3",
+        "content": "No one knows where that ghost ship lies, nor can anyone confirm whether \"it\" truly exists. The only clue I have is that ivory head sculpture, which seems to possess some sort of strange magic.\n\nEver since I came into possession of it, I have had the same dream every night—yes, the dream of that ghost ship, drifting somewhere unknown. Its hull burns with a glimmer that writhes like a living thing, as though opening a gateway to dimensions beyond mortal reach. Upon waking, I can still recall those blasphemous, pathological whispers.\n\nHow I wish I were mad, or that I could forget those bizarre sounds—sounds that no human throat could ever produce. But I cannot.\n\nThat cursed dream, that cursed flicker of intellect, torment me without rest. And so I must find \"it,\" led by the ivory sculpture. Frtunately, the professors from Miskatonic will walk this road with me, and together we shall seek out the ghost ship and the St. Elmo's Fire—that is what they call the writhing glimmer.\n\nWish me luck. May the Lord watch over us.\n\n—Excerpt from <Italic:Miskatonic Supernatural Phenomena Investigation Archives>"
+      },
+      {
+        "kind": "story",
+        "title": "Story: II",
+        "unlockCondition": "Affinity Level 5",
+        "content": "Corposant's daily schedule is very fixed; you just need to be at a specific place at a specific time to find her.\n\nGenerally speaking, Corposant gets up at 6:00, takes a cold bath, and does exercises. 7:00 is breakfast time, and besides oatmeal and pickled fish, a large amount of caffeine supplements is also required.\n\nFrom 9:00 to 12:00, it is Corposant's study time; she will revise nautical charts or calibrate equipment during this period. When the class bell rings, Corposant will come outdoors, waving a flag as a traffic officer, which greatly alleviates the road congestion during lunch.\n\nCorposant's lunch time depends on the \"traffic conditions, \" but no later than 12: 30. After a short break, at 14:00, Corposant will appear at the seaside on time, observing wind direction and weather. At this point, attention should be paid to the movements of Corposant, Faros, and Celeste, to avoid them \"commandeering\" the museum model ships or luring passersby out to sea.\n\nDinner time is at 19:00. To numb her sleep cycle, completely destroyed by long-term sailing, Corposant needs to consume a large amount of alcohol and sleep-inducing tinctures. Only in this way can she successfully fall asleep at 22:00; otherwise, she will force herself to stay awake to deal with possible \"accidents\" during the voyage.\n\nConsequently, situations resulting from this include, but are not limited to, the phenomenon of St. Elmo's fire going out of control, leading to the entire area shining like daylight, or abnormal, uncontrolled area voltage, machinery running erratically, fires, etc.\n\n<Red:Note, during this time absolutely do not let Erica and Corposant come into contact with each other!>\n\nFinally, a criticism notification:\n\nAfter Corposant's arrival, Winkle made several attempts to extract and study @2 at Corposant's chest as a light source. A verbal criticism has been issued; if any abnormalities are found, be sure to inform the Keeper in time.\n\n—Keeper %player%"
+      },
+      {
+        "kind": "story",
+        "title": "Story: III",
+        "unlockCondition": "Affinity Level 7",
+        "content": "Before learning to speak, having grown up on a cruise ship, Corposant could already mimic the rhythm of waves crashing against the ship.\n\nSometimes the rhythm was \"splash, \" sometimes it was \"boom, \" like a lullaby sung by nature, making her feel secure, making her feel familiar, making her yearn.\n\nShe always understood the \"mood\" of the sea quicker than others, always read the \"language\" of the clouds quicker than others, and everyone said she was a natural \"navigator.\"\n\nIn reality, when she first heard the term, young Corposant couldn't understand. She only instinctively wanted to help the captain and sailors who took her in, wanting them to return home safely, not to be lost to storms or disasters from other ships.\n\nThe navigator who understood her wish said, \"Become a navigator, Corposant, become a navigator, fulfill your duty, and then your wish will come true.\"\n\nThe naive Corposant nodded, and thus, that navigator became her mentor. He taught her how to observe the stars, how to calibrate the sextant, and told her the ballads passed down through generations of navigators, those ominous ballads.\n\n\"I don't want to be embraced by saltwater, that's too cold, nor do I want to become phosphorescence.\" Young Corposant objected.\n\nHer mentor didn't teach her anything further, just touched her head and smiled.\n\nBecause time will teach her the meaning of the \"navigator's\" duty—\n\nShe is the sole guide on the vast ocean, the only hope."
+      },
+      {
+        "kind": "story",
+        "title": "Story: IV",
+        "unlockCondition": "Affinity Level 9",
+        "content": "Until the last moment, Corposant was diligently fulfilling her duties, yet the ship she piloted still sank.\n\nEvery night, she dreams of those lost passengers: water flooding into the cabins, sea monsters' Tentacles rampaging, people drowning, jumping overboard, kneeling for one last guidance, but hope was lost.\n\nThis brutal reality reproaches her, tortures her—she has desecrated her profession.\n\nFor this, she must be punished, and the lightning that eternally entwines and torments her is the retribution. But it's not enough; she must atone for her negligence.\n\nFortunately, the great entity provided the answer: when the Divine Realm descends, the world will become paradise.\n\n\"So, to quell the eternal roaring of the sea, for the innocent buried at sea, for guiding the direction of all beings, I request the Divine Realm's arrival.\"\n\nThis is her last, final navigation."
+      }
+    ]
+  }
+}

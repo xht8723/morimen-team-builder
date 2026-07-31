@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.ryker.shining-octahedron-dice",
+  "name": "Shining Octahedron Dice",
+  "route": {
+    "slug": "shining-octahedron-dice",
+    "canonicalPath": "/database/awakeners/ryker/derived-skills/shining-octahedron-dice"
+  },
+  "ownerAwakenerId": "awakener-0043",
+  "descriptionTemplate": "Roll a [Arg2]-sided die, gain Temporary {STR} equal to the die roll*[Arg1]. If the roll is 4 or higher, Inflict {Weakness} and {Vulnerable} on all enemies for 1 turn. If the roll is 6 or higher, double the gained Temporary {STR} and obtain 1 Arithmetica.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.0104,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "6"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Ryker"
+}

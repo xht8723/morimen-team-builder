@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.saya.cognitive-alteration",
+  "name": "Cognitive Alteration",
+  "route": {
+    "slug": "cognitive-alteration",
+    "canonicalPath": "/database/awakeners/saya/skills/cognitive-alteration"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "Rouse",
+  "descriptionTemplate": "Saya gains Aliemus equal to [Arg3]% of her Base Aliemus. {Rouse}: Upon using {Crimson Furnace}, grant {Perception Warp} to Command Cards of other Awakeners in hand, Draw Pile, and Discard Pile that do not have {Destroy}. The first 3 times per turn a Command Card with {Perception Warp} is played, Saya and the Awakener who owns that card each gain [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"]
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.saya.here-my-one-last-gift.skill.saya.cognitive-alteration",
+      "operation": "mixed",
+      "upgraderId": "enlighten.saya.here-my-one-last-gift",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0057",
+      "ownerAwakenerName": "Saya",
+      "patch": {
+        "descriptionTemplate": "Saya gains Aliemus equal to [Arg1]% of her Base Aliemus. {Rouse}: Upon using {Crimson Furnace}, gain [Energy:Arg3] Aliemus and 1 stack of {Gynoecium}, grant {Perception Warp} to Command Cards of other Awakeners in hand, Draw Pile, and Discard Pile that do not have {Destroy}. The first 3 times per turn a Command Card with {Perception Warp} is played, Saya and the Awakener who owns that card each gain [Energy:Arg2] Aliemus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"],
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"]
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "50"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Saya"
+}

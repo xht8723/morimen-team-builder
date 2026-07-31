@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0087",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "临界点",
+      "sourceHash": "sha256:47bc8bad62fdff3fe7b8735b68b5cfb5e6286e8bbf2944992c690dc238d692bd",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成伤害后使其暴击率提高 10%，造成暴击后清空该效果获得的暴击率。",
+      "sourceHash": "sha256:1f95d3426f2029056b64540489a1cba45e71f8f3f134913e1b5effd9bf5ca16d",
+      "status": "reference"
+    }
+  }
+}

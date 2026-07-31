@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0062",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "狂乱",
+      "sourceHash": "sha256:f53aa172d1cdd07478ac459cef6e1fa5e478822029eb20f51ac2ebe890885406",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：融痕造物栏变为 3 个，其中一个为诅咒造物，购买诅咒造物后获得 15 点黑印。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:9dc72a80e452d07a0f548ae9a260d41b85d927c7ffd05719f977c2bb7a78778d",
+      "status": "reference"
+    }
+  }
+}

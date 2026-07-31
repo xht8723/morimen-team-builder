@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0014",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "杜勒赛因",
+      "sourceHash": "sha256:4e3c53a81f62bdb42fae42b3368f206e67b6c515ce4d8ff80d7a6ff6c7ad7f9f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "杜勒赛因是亡灵之都的缔造者，也是食尸鬼永恒的王。他的宴会盛大、优雅而令人期待，只是那些以尸骸精心烹制的菜肴，足以让来客终生难忘。",
+      "sourceHash": "sha256:9cc7fce7356889f43149351a4df154eac17d17f2fb81ec9f81002354f6b4e181",
+      "status": "machine"
+    }
+  }
+}

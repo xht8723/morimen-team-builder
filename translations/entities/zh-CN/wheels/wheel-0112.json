@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0112",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "孤羽",
+      "sourceHash": "sha256:4ee1c84f0d8f46a4ad61d713636b6f44dbf61e07de1c845bb7895b11465e67f6",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾提高 12%，回合结束时获得装备者防御力 10% 的护盾，每回合提高防御力的 2%。",
+      "sourceHash": "sha256:d3ac35ed421180f88e6b1e8b84d2cc6b6d09992e853e71ea888f2c925c8e0c34",
+      "status": "reference"
+    }
+  }
+}

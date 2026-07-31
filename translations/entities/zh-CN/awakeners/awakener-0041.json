@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0041",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "波吕克斯",
+      "sourceHash": "sha256:63333d9878fd8f556162f9e98232fa777bd961291a51586bb0208e443aea0038",
+      "status": "reference"
+    },
+    "description": {
+      "value": "波吕克斯是由割裂皮肤、空洞胸腔、污浊心脏与无形锁链缝合出的扭曲血肉。他被供上神坛、被称作纯洁灵魂，却始终在无数梦境中追问：自己究竟是什么？",
+      "sourceHash": "sha256:0931b67adae9e528da3a634b361550d21b26aec7183cb2412c3f7a47ce339961",
+      "status": "machine"
+    }
+  }
+}

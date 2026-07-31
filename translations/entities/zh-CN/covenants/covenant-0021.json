@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0021",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "少女之蛹",
+      "sourceHash": "sha256:baf89809be8f4b2cd735f5e6a9ec4d5fdcbf1b91ff721eefd368502ec2f9f052",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 暴击率 +7.2% 6件套： 队伍唯一。装备者每回合首次消耗胚胎后，每拥有 1 条触腕获得 8% 临时暴击伤害，最大 80%。",
+      "sourceHash": "sha256:bf59e38affbca368f8e81edf42f87458fc8225c99536d3b12f8f11722b331ca2",
+      "status": "reference"
+    }
+  }
+}

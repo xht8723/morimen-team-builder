@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0005",
+  "name": "Tiny Wish",
+  "route": {
+    "slug": "tiny-wish",
+    "canonicalPath": "/database/posses/tiny-wish"
+  },
+  "assets": {
+    "icon": "asset-posse-0005-icon",
+    "crystal": "asset-posse-0005-crystal",
+    "badge": "asset-posse-0005-badge"
+  },
+  "acquisitionSource": "Clear Operation: Faded Legacy - Ch. 1 - East District's Enigma",
+  "realm": "FADED_LEGACY",
+  "lineupToken": "i",
+  "descriptionTemplate": "Grant a chosen Awakener [Arg1] Aliemus.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 35.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "utility"
+    }
+  },
+  "lore": "On the day of her sixth birthday, the girl made a wish:\nTo have a toy bear named \"Bobo,\" and for love—not too much, just a little.\nThe girl has never been good at fantasizing, nor is she a greedy person."
+}

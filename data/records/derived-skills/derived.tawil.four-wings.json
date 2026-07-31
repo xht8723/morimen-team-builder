@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.tawil.four-wings",
+  "name": "Four Wings",
+  "route": {
+    "slug": "four-wings",
+    "canonicalPath": "/database/awakeners/tawil/derived-skills/four-wings"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "derivedFromId": "derived.tawil.twin-wings",
+  "rootSkillId": "skill.tawil.pinions-of-time",
+  "childDerivedSkillIds": ["derived.tawil.six-wings"],
+  "descriptionTemplate": "When Arithmetica is insufficient, it consumes 500 Keyflare to play. Deal 4 instances of [Damage:Arg1] DMG, draw 1 card. For each hit, {Steal} [Arg2] Temporary {STR} from the target. Shuffle {Six Wings} into the Draw Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    }
+  ],
+  "cost": "2",
+  "ownerAwakenerName": "Tawil"
+}

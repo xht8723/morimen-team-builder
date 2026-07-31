@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.corposant.pilot",
+  "name": "Pilot",
+  "route": {
+    "slug": "pilot",
+    "canonicalPath": "/database/awakeners/corposant/derived-skills/pilot"
+  },
+  "ownerAwakenerId": "awakener-0011",
+  "derivedFromId": "skill.corposant.sunken-in-the-profound",
+  "rootSkillId": "skill.corposant.sunken-in-the-profound",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. {Aftershock}: Gain [Power:Arg2] {STR} and [TentaclePower:Arg2] {Tentacle DMG}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "20",
+      "stat": "DEF",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "DeathResistance",
+        "multiplier": "0.05",
+        "mode": "scale_base"
+      }
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "4",
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    }
+  ],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.corposant.sextants-calculation.derived.corposant.pilot",
+      "operation": "override_args",
+      "upgraderId": "enlighten.corposant.sextants-calculation",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0011",
+      "ownerAwakenerName": "Corposant",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "fixed",
+            "value": "20",
+            "stat": "DEF",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "DeathResistance",
+              "multiplier": "0.05",
+              "mode": "scale_base"
+            }
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "4",
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    },
+    {
+      "id": "upgrade.talent.corposant.cinders.derived.corposant.pilot",
+      "operation": "link_only",
+      "upgraderId": "talent.corposant.cinders",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Corposant"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0042",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "拉蒙娜",
+      "sourceHash": "sha256:cdcb0a2bd560b96196d063f689825a3707af49ada46448cc3393598193e17ce1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "拉蒙娜的档案多次被移交学生管理部门，又总被她亲手送回并埋进文件山。「先放在这里，迟早还会送来。」她平静地说，仿佛早已算见一切循环。",
+      "sourceHash": "sha256:0597c77beef3873c51a164052afd67bf396bf727e675fbd4f6bd42fcebdb2559",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.karen.bounteous-feast",
+  "name": "Bounteous Feast",
+  "route": {
+    "slug": "bounteous-feast",
+    "canonicalPath": "/database/awakeners/karen/enlightens/bounteous-feast"
+  },
+  "ownerAwakenerId": "awakener-0026",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Shuffle 1 {Marvelous Cuisine} into the Draw Pile and Discard Pile respectively.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Karen"
+}

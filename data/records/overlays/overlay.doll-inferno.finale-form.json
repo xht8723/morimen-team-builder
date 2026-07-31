@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.doll-inferno.finale-form",
+  "name": "Finale Form",
+  "route": {
+    "slug": "finale-form",
+    "canonicalPath": "/database/awakeners/doll-inferno/overlays/finale-form"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0018",
+  "aliases": [],
+  "descriptionTemplate": "Changes \"Doll: Inferno\"'s specific skills to their {Finale Form} effects.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doll: Inferno"
+}

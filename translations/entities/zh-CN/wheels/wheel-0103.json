@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0103",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "命运轮盘赌",
+      "sourceHash": "sha256:341a9b40208afef2d9e15519d713416f75248bc900039aecb1fd50cb1bbfbbb6",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者暴击率提高 8%.装备者击杀敌人后获得 6 点黑印，在探索中最多触发 3 次。触发 3 次后本次探索装备者永久提高 6% 暴击率。",
+      "sourceHash": "sha256:58868a86a5d2242c381a03027f06dfe808c1fe5d3c017fc612ff4f74a743d64a",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pandia.youre-being-naughty",
+  "name": "You're Being Naughty...",
+  "route": {
+    "slug": "youre-being-naughty",
+    "canonicalPath": "/database/awakeners/pandia/enlightens/youre-being-naughty"
+  },
+  "ownerAwakenerId": "awakener-0039",
+  "slot": "E3",
+  "descriptionTemplate": "{Honey-Colored Tragedy} doubles Base DMG and grants a {Counter} equal to [Arg1]% of ATK.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "ATK",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "CritRate",
+        "multiplier": "0.2",
+        "mode": "scale_base"
+      }
+    }
+  },
+  "ownerAwakenerName": "Pandia"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0006",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "沉入殷红",
+      "sourceHash": "sha256:fdb4e34c7e608a285ae662cfb88cd6440cbbd9b4f4566c6426d35438aebc9ebd",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害提高 40%。装备者释放狂气爆发前抽 1 张装备者的指令卡，临时手牌上限 +1。若当前界域为「血肉」，装备者触发吞噬时临时暴击伤害提高 40%，每回合最多生效 1 次。",
+      "sourceHash": "sha256:003ea0a4787b6f54c38fbe1082cd27144d0e182e57e3378e7633dc8d3418c8ab",
+      "status": "reference"
+    }
+  }
+}

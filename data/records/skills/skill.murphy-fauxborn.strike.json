@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.murphy-fauxborn.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/murphy-fauxborn/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0035",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Murphy: Fauxborn obtains [Energy:Arg2] Aliemus",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.murphy-fauxborn.profane-apocalypse.skill.murphy-fauxborn.strike",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.murphy-fauxborn.profane-apocalypse",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0035",
+      "ownerAwakenerName": "Murphy: Fauxborn",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Murphy: Fauxborn obtains [Energy:Arg2] Aliemus. Draw 1 {Abyss Hymns}, takes effect once per turn."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Murphy: Fauxborn"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.innate",
+  "name": "Innate",
+  "route": {
+    "slug": "innate",
+    "canonicalPath": "/database/overlays/innate"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "Always appears in the starting hand.",
+  "descriptionArgs": {}
+}

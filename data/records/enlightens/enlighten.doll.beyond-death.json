@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.doll.beyond-death",
+  "name": "Beyond Death",
+  "route": {
+    "slug": "beyond-death",
+    "canonicalPath": "/database/awakeners/doll/enlightens/beyond-death"
+  },
+  "ownerAwakenerId": "awakener-0013",
+  "slot": "E2",
+  "descriptionTemplate": "{Equivalent Exchange} increases Base HP recovery and discard HP recovery effects by 20%. For each card discarded, an additional amount of HP is recovered and an equal amount of shield is obtained.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doll"
+}

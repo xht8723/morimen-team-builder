@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0020",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "神迹降临",
+      "sourceHash": "sha256:e600cd0deb23cf8c42301ecad3eb584925591a69fb7fd8ffa58e5962793708e2",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点力量。受到攻击伤害时，下回合开始时获得 10% 伤害的护盾。若当前界域为「血肉」，不再获得延迟护盾，而是积攒 10% 伤害的回复量到猩红熔炉。",
+      "sourceHash": "sha256:3ccf3f534af4a0229f55957650e8c7621b84265ff0a74a3d3cfa960e232a9327",
+      "status": "reference"
+    }
+  }
+}

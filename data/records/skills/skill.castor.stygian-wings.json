@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.castor.stygian-wings",
+  "name": "Stygian Wings",
+  "route": {
+    "slug": "stygian-wings",
+    "canonicalPath": "/database/awakeners/castor/skills/stygian-wings"
+  },
+  "ownerAwakenerId": "awakener-0008",
+  "slot": "Skill2",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield, inflict {Weakness} on all enemies for 1 turn. {Quasar}: Shuffle 1 {Onyx Plume} into the Draw Pile, Gain [Block:Arg3] Shield.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.castor.unyielding-will.skill.castor.stygian-wings",
+      "operation": "mixed",
+      "upgraderId": "enlighten.castor.unyielding-will",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0008",
+      "ownerAwakenerName": "Castor",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield, inflict {Weakness} on all enemies for 1 turn. For every {Onyx Plume} in hand, Gain [Energy:Arg2] Aliemus. {Quasar}: Shuffle 1 {Onyx Plume} into the Draw Pile, Gain [Block:Arg3] Shield.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "5"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["15", "18", "21", "24", "27", "30"],
+            "stat": "DEF",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Castor"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0020",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "荒原狼",
+      "sourceHash": "sha256:1cc4f2e6a407483212a2d59024aae24d377dc96ef6ec7bc10a5788ce47c7200d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 伤害强效 +4.8% 6件套： 装备者造成的基础伤害提高 20%，造成的中毒和反击提高 10%。",
+      "sourceHash": "sha256:24827fac01c85d2888a4e497d381803846d3d787dfa0658f59814d13b1975ea4",
+      "status": "reference"
+    }
+  }
+}

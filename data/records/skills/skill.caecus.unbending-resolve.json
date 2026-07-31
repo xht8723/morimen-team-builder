@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.caecus.unbending-resolve",
+  "name": "Unbending Resolve",
+  "route": {
+    "slug": "unbending-resolve",
+    "canonicalPath": "/database/awakeners/caecus/skills/unbending-resolve"
+  },
+  "ownerAwakenerId": "awakener-0006",
+  "slot": "OverExalt",
+  "descriptionTemplate": "One Tentacle attacks 5 times, obtaining a 25% {Counter} to DMG dealt.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Caecus"
+}

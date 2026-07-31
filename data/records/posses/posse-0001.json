@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0001",
+  "name": "Encounter in Pure White",
+  "route": {
+    "slug": "encounter-in-pure-white",
+    "canonicalPath": "/database/posses/encounter-in-pure-white"
+  },
+  "assets": {
+    "icon": "asset-posse-0001-icon",
+    "crystal": "asset-posse-0001-crystal",
+    "badge": "asset-posse-0001-badge"
+  },
+  "acquisitionSource": "Clear Operation: Faded Legacy - Ch. 3 - Beware of Hounds",
+  "realm": "FADED_LEGACY",
+  "lineupToken": "d",
+  "descriptionTemplate": "Discard your hand, then draw that many cards plus 2.",
+  "descriptionArgs": {},
+  "lore": "I hope Lily's medical record is blank, just like the snowy field where we first met."
+}

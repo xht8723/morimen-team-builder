@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0013",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "生机榨取",
+      "sourceHash": "sha256:f31f81decf5833c5e5dfeb223d12a97c5194ef1b089d3c228443eb0f92ee99f6",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 银钥充能等级 +7.2 6件套： 队伍唯一。回合结束时获得等同于装备者银钥充能 200% 的银钥能量。若当前界域为「血肉」，效果变为每有 5 点银钥充能，就使胚胎融合 +1%。",
+      "sourceHash": "sha256:e94a83cd0b30df8ee842763454d60b57e9a81a24cfe46afb410085b8d226b3bc",
+      "status": "reference"
+    }
+  }
+}

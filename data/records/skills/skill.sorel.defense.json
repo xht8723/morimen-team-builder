@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.sorel.defense",
+  "name": "Defense",
+  "route": {
+    "slug": "defense",
+    "canonicalPath": "/database/awakeners/sorel/skills/defense"
+  },
+  "ownerAwakenerId": "awakener-0046",
+  "slot": "Defense",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Sorel obtains [Energy:Arg3] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "substatBonus": {
+        "substat": "CritRate",
+        "multiplier": "0.2",
+        "mode": "additive"
+      }
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.sorel.flowing-rill.skill.sorel.defense",
+      "operation": "mixed",
+      "upgraderId": "enlighten.sorel.flowing-rill",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0046",
+      "ownerAwakenerName": "Sorel",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield. If current HP is below 50%, additionally gain 1 Shield, {Embryo Fusion} +[Blood:Arg4]. Sorel gains [Energy:Arg3] Aliemus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"],
+            "substatBonus": {
+              "substat": "CritRate",
+              "multiplier": "0.2",
+              "mode": "additive"
+            }
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "10"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Sorel"
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.helot-catena.soulforge-aptitude",
+  "name": "Soulforge Aptitude",
+  "route": {
+    "slug": "soulforge-aptitude",
+    "canonicalPath": "/database/awakeners/helot-catena/talents/soulforge-aptitude"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "family": "soulforge_aptitude",
+  "maxLevel": 10,
+  "descriptionTemplate": "This talent is only effective in the {Astral Reign} stages.\nThis Awakener's CON, ATK, and DEF +[Arg1]%, and they gain [Arg2] Keyflare upon their first {Rouse}.\n{Sanguine Fetters} deals +[Arg4]% Base DMG and enjoys an additional [Arg3]% {STR} bonus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "3",
+      "gainPerLevel": "3"
+    },
+    "Arg2": {
+      "kind": "linear",
+      "base": "50",
+      "gainPerLevel": "50"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["100", "130", "160", "190", "220", "250", "280", "310", "340", "400"]
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["20", "28", "36", "44", "52", "60", "68", "76", "84", "100"]
+    }
+  },
+  "ownerAwakenerName": "Helot: Catena"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.ogier.knights-zeal",
+  "name": "Knight's Zeal",
+  "route": {
+    "slug": "knights-zeal",
+    "canonicalPath": "/database/awakeners/ogier/skills/knights-zeal"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "slot": "Rouse",
+  "descriptionTemplate": "Ogier gains [Energy:Arg1] Aliemus. {Rouse}: Gain [Power:Arg3] {STR}. After Ogier plays a card, gain [Power:Arg2] {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["1.5", "1.8", "2.1", "2.4", "2.7", "3"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["3.75", "4.5", "5.25", "6", "6.75", "7.5"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.ogier.deathless-loyalty.skill.ogier.knights-zeal",
+      "operation": "mixed",
+      "upgraderId": "enlighten.ogier.deathless-loyalty",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0038",
+      "ownerAwakenerName": "Ogier",
+      "patch": {
+        "descriptionTemplate": "Ogier gains [Energy:Arg1] Aliemus. {Rouse}: Gain [Power:Arg3] {STR}; every time Ogier plays a card, gain [Power:Arg2] {STR}. If {Death Resistance} has been triggered this battle, Ogier's Exalt generates 3× the Temporary {STR}.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["2.25", "2.7", "3.15", "3.6", "4.05", "4.5"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["5.625", "6.75", "7.875", "9", "10.125", "11.25"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Ogier"
+}

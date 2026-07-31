@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.24.pavlovian-conditioning-study",
+  "name": "Pavlovian Conditioning Study",
+  "route": {
+    "slug": "pavlovian-conditioning-study",
+    "canonicalPath": "/database/awakeners/24/enlightens/pavlovian-conditioning-study"
+  },
+  "ownerAwakenerId": "awakener-0001",
+  "slot": "E3",
+  "descriptionTemplate": "At turn end, \"24\" obtains 10 Aliemus. Each time \"24\" releases Exalt, the Aliemus obtained from this effect in battle +1.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "24"
+}

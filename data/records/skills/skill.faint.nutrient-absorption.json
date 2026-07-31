@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.faint.nutrient-absorption",
+  "name": "Nutrient Absorption",
+  "route": {
+    "slug": "nutrient-absorption",
+    "canonicalPath": "/database/awakeners/faint/skills/nutrient-absorption"
+  },
+  "ownerAwakenerId": "awakener-0016",
+  "slot": "Skill1",
+  "descriptionTemplate": "Gain [Power:Arg1] {STR}. Temporarily reduce all enemies' {STR▼} by [Exhaustion:Arg2].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["12", "14.4", "16.8", "19.2", "21.6", "24"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["8", "9.6", "11.2", "12.8", "14.4", "16"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "ownerAwakenerName": "Faint"
+}

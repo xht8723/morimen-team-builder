@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0019",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "血链·希洛",
+      "sourceHash": "sha256:bb8ce1a40e46bc73d0e365e03f6e00922aa785ef07cd79959b68e949bbed5f53",
+      "status": "reference"
+    },
+    "description": {
+      "value": "自踏入监狱起，血链·希洛的记忆便被鲜血浸透。温暖的往昔碎裂成扎入血肉的尖片，她已记不起温柔，只记得锁链、背叛，以及绝不能熄灭的复仇。",
+      "sourceHash": "sha256:5af7a3415cb6617d7944ae0a7a7c5ea280ce94fff1687bc364ba55905c9a557c",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.daffodil.heterogeneous-tides",
+  "name": "Heterogeneous Tides",
+  "route": {
+    "slug": "heterogeneous-tides",
+    "canonicalPath": "/database/awakeners/daffodil/skills/heterogeneous-tides"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "slot": "Skill2",
+  "descriptionTemplate": "Obtain [Power:Arg1] {STR} and {Vulnerable} all enemies. {Leap}: Change to: Obtain [Power:Arg2] {Temporary STR} and {Vulnerable} all enemies.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["2", "2.4", "2.8", "3.2", "3.6", "4"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "ownerAwakenerName": "Daffodil"
+}

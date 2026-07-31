@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0046",
+  "name": "Dimensional Image: Sorel",
+  "route": {
+    "slug": "dimensional-image-sorel",
+    "canonicalPath": "/database/relics/dimensional-image-sorel"
+  },
+  "assets": {
+    "icon": "asset-relic-0046-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0046",
+  "ownerAwakenerId": "awakener-0046",
+  "ownerAwakenerName": "Sorel",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Sorel gains [Arg1] Aliemus. For each instance of DMG dealt by Sorel, {Embryo Fusion} +[Arg2], up to [Arg3] {plural:[Arg3]|time|times} per turn. After triggering 10 times, Sorel's Final DMG in this battle +[Arg4]%.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "10"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "10"
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "5",
+      "suffix": "%"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0046",
+      "name": "Dimensional Image: Sorel",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0046",
+      "ownerAwakenerName": "Sorel",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Sorel gains [Arg1] Aliemus. For each instance of DMG dealt by Sorel, {Embryo Fusion} +[Arg2], up to [Arg3] {plural:[Arg3]|time|times} per turn. After triggering 10 times, Sorel's Final DMG in this battle +[Arg4]%.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        },
+        "Arg2": {
+          "kind": "fixed",
+          "value": "10"
+        },
+        "Arg3": {
+          "kind": "fixed",
+          "value": "10"
+        },
+        "Arg4": {
+          "kind": "fixed",
+          "value": "5",
+          "suffix": "%"
+        }
+      }
+    }
+  ]
+}

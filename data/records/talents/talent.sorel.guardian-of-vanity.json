@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.sorel.guardian-of-vanity",
+  "name": "Guardian of Vanity",
+  "route": {
+    "slug": "guardian-of-vanity",
+    "canonicalPath": "/database/awakeners/sorel/talents/guardian-of-vanity"
+  },
+  "ownerAwakenerId": "awakener-0046",
+  "family": "passive",
+  "descriptionTemplate": "For every 1% Crit. Rate Sorel and her equipped WoD & Covenant have, increase the Aliemus obtained from \"Basic Defense\" by 0.2.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Sorel"
+}

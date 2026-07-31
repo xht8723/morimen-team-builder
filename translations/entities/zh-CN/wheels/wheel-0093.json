@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0093",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "35mm的魔法",
+      "sourceHash": "sha256:566925cd5864606b4c3c20938736c74b9d5bff8011dfcd0282515c7223a0e3f1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾和中毒提高 10%。每当触发死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。，所有唤醒体获得 15% 临时暴击率和暴击伤害。",
+      "sourceHash": "sha256:825aafed0d77e3998c4929652e75d6d61aba3335aaac472ed7b5fa34d735c237",
+      "status": "reference"
+    }
+  }
+}

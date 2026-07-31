@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0030",
+  "name": "Liz Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/liz/builds/standard"
+  },
+  "awakenerId": "awakener-0030",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0020", "covenant-0014"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0121"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0030"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0083"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0110", "wheel-0039", "wheel-0005", "wheel-0022", "wheel-0087"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["CRIT_RATE"], ["CRIT_DMG"], ["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["CRIT_RATE", "CRIT_DMG"]
+    }
+  ],
+  "ownerAwakenerName": "Liz"
+}

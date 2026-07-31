@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.delayed-sacrifice",
+  "name": "Delayed Sacrifice",
+  "route": {
+    "slug": "delayed-sacrifice",
+    "canonicalPath": "/database/overlays/delayed-sacrifice"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.delayed-sacrifice-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_042",
+  "textColor": "shield",
+  "descriptionTemplate": "This status also counts as {Sacrifice}, gaining [Layer] {plural:[Layer]|stack|stacks} of the {Sacrifice} state at the start of next turn.",
+  "descriptionArgs": {
+    "Layer": {
+      "kind": "fixed",
+      "value": "X"
+    }
+  }
+}

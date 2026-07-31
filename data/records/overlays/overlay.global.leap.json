@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.leap",
+  "name": "Leap",
+  "route": {
+    "slug": "leap",
+    "canonicalPath": "/database/overlays/leap"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "A card's {Leap} effects will trigger when played during an {Ultra Round} or if it triggers {Dimension Shuttle}.",
+  "descriptionArgs": {}
+}

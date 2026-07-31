@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.tawil.omniscient-and-omnipotent",
+  "name": "Omniscient and Omnipotent",
+  "route": {
+    "slug": "omniscient-and-omnipotent",
+    "canonicalPath": "/database/awakeners/tawil/enlightens/omniscient-and-omnipotent"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "slot": "E2",
+  "descriptionTemplate": "{Omnifex Convergence} cards obtained via {Discover} gain {Prepare 1}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tawil"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.faint.binary-stars",
+  "name": "Binary Stars",
+  "route": {
+    "slug": "binary-stars",
+    "canonicalPath": "/database/awakeners/faint/enlightens/binary-stars"
+  },
+  "ownerAwakenerId": "awakener-0016",
+  "slot": "E1",
+  "descriptionTemplate": "\"Basic Strike\" deals DMG twice and grants Temporary {Counter} equal to 50% of DMG dealt.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faint"
+}

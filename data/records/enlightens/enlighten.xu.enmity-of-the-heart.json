@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.xu.enmity-of-the-heart",
+  "name": "Enmity of the Heart",
+  "route": {
+    "slug": "enmity-of-the-heart",
+    "canonicalPath": "/database/awakeners/xu/enlightens/enmity-of-the-heart"
+  },
+  "ownerAwakenerId": "awakener-0054",
+  "slot": "E1",
+  "descriptionTemplate": "{Bonesick Longing}: {Embryo Fusion} +15. For every 1% of DMG Amplification that Xu, her Wheels of Destiny, and Covenants have, the {Embryo Fusion} gained from this effect +0.2.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Xu"
+}

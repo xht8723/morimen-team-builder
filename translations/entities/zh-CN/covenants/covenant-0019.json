@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0019",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "无垢启示录",
+      "sourceHash": "sha256:168526f0e19a953bfae60212427c072fe328ad249456f0ab8ae3cfc1b1621fd8",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 银钥充能等级 +7.2 6件套： 队伍唯一。释放钥令后，回复等同于装备者体质 12% 的生命，效果随损失生命比例提高，至多提高为装备者体质 24% 的生命。",
+      "sourceHash": "sha256:9187897fa638c3c36004d4d745f5f44b6ba8fa04ab8794965bc33a9f2ef115c3",
+      "status": "reference"
+    }
+  }
+}

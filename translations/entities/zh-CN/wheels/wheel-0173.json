@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0173",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "不灭饥骨",
+      "sourceHash": "sha256:58a193683e0cc382c0253fd67a39e57a077cbd0683ab47ca743dda19b679674e",
+      "status": "machine"
+    },
+    "description": {
+      "value": "队伍唯一：装备者「打击」的暴击伤害提高 50%。",
+      "sourceHash": "sha256:4f39999f8b96fbd6e6a6a016f63df799a29b62c3dca8388bcc279081a724be05",
+      "status": "machine"
+    }
+  }
+}

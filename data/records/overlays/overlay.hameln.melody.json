@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.hameln.melody",
+  "name": "Melody",
+  "route": {
+    "slug": "melody",
+    "canonicalPath": "/database/awakeners/hameln/overlays/melody"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0022",
+  "aliases": [],
+  "descriptionTemplate": "Collective term for Hameln's {Melody} effects: {Rondino} and {Crescendo}.",
+  "descriptionArgs": {},
+  "nodeKind": "group",
+  "childOverlayIds": ["overlay.hameln.rondino", "overlay.hameln.crescendo"],
+  "ownerAwakenerName": "Hameln"
+}

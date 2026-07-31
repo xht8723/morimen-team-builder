@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.perception",
+  "name": "Perception",
+  "route": {
+    "slug": "perception",
+    "canonicalPath": "/database/overlays/perception"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "descriptionTemplate": "An exploration store option that trades HP for Black Sigils.",
+  "descriptionArgs": {}
+}

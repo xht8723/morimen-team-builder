@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0060",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "渺远的伊甸园",
+      "sourceHash": "sha256:d2b95d2f06533830e771e4e2f589e4af71f0a25c88261894794b86a1512a2655",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时获得等同于 25% 基础狂气的狂气。装备者狂气爆发最终伤害提高，其百分比为基础狂气的 20%。切换至「怒涛」姿态时，获得等同于当前界域精通 35% 的临时界域精通，3 回合冷却。",
+      "sourceHash": "sha256:d8e56303b387f5d6b8e309a534d22aed5cfc0dfe87d5b7c5e7b864145de56e65",
+      "status": "reference"
+    }
+  }
+}

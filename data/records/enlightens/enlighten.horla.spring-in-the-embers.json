@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.horla.spring-in-the-embers",
+  "name": "Spring in the Embers",
+  "route": {
+    "slug": "spring-in-the-embers",
+    "canonicalPath": "/database/awakeners/horla/enlightens/spring-in-the-embers"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Prelude Verse} is enhanced: After triggering {Annihilation}, Horla's next Command Card played this turn will {Leap}. Whenever Horla consumes ≥ 3 stacks of {Metaphor}, current {Emotion}'s effect +35% temporarily (cannot stack).",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Horla"
+}

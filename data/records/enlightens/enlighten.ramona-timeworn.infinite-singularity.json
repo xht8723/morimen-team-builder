@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ramona-timeworn.infinite-singularity",
+  "name": "Infinite Singularity",
+  "route": {
+    "slug": "infinite-singularity",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/enlightens/infinite-singularity"
+  },
+  "ownerAwakenerId": "awakener-0020",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Entropy Undone} is enhanced: The limit on activations per turn is removed. After Ramona: Timeworn plays a card that triggers {Loop}, gain 50 Keyflare.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

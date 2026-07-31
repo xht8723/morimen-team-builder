@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.global.hanafubuki",
+  "name": "Hanafubuki",
+  "route": {
+    "slug": "hanafubuki",
+    "canonicalPath": "/database/derived-skills/hanafubuki"
+  },
+  "descriptionTemplate": "Gain [Arg1] Keyflare and put {Ichigo Ichie} into the Discard Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "wheelRefinementLinear",
+      "baseValue": 300.0,
+      "perLevel": 150.0,
+      "inputs": ["wheelRefinementLevel"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1"
+}

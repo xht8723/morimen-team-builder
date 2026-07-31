@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0056",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·治愈",
+      "sourceHash": "sha256:30d7cd2ab608f432f80f522ae4589f2002b4ef944a6ffd768a95df0dcdc009b4",
+      "status": "machine"
+    },
+    "description": {
+      "value": "回复 Arg1 点生命。数值随原初精通成长。",
+      "sourceHash": "sha256:cab247998d74c0425fc0ab3b638d9d21656c165631128bd541631ab6a1764471",
+      "status": "machine"
+    }
+  }
+}

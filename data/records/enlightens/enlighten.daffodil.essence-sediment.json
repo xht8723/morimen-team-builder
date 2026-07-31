@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.daffodil.essence-sediment",
+  "name": "Essence Sediment",
+  "route": {
+    "slug": "essence-sediment",
+    "canonicalPath": "/database/awakeners/daffodil/enlightens/essence-sediment"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "slot": "E3",
+  "descriptionTemplate": "Each time an {derived:Insight} card is played, Daffodil gains 2 Aliemus and {STR} equal to 1% of ATK, with a maximum of 5 triggers per turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Daffodil"
+}

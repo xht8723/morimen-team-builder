@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0039",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "潘狄娅",
+      "sourceHash": "sha256:a70fc959c38f8774f4ef9cf7856caaf4a83c4e4e50f65e9731d3bc4d60838b88",
+      "status": "reference"
+    },
+    "description": {
+      "value": "清脆甜美的笑声在烛影中回荡，潘狄娅娇小的身影随之出现。她既是罪人的恐惧也是欲望，为濒死者带来甜蜜痛楚与浪漫疯狂，长鞭的脆响便是她的邀请。",
+      "sourceHash": "sha256:498b21ab32ad7110897dcf7c19d88b1a582c75208335dcd4856b533af5db359e",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0080",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "切割与伤害",
+      "sourceHash": "sha256:fa63e043f60ec7677a5b9c65e9124505036c862d4cf412b7e17b3935feaac828",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的「打击」使目标敌人失去等同于装备者攻击力 12% 的临时力量}。该效果个回合内最多触发3次。",
+      "sourceHash": "sha256:9d0d72656837df0cb86197ec6940131162c2f2f5157861167850e66cd1fab515",
+      "status": "reference"
+    }
+  }
+}

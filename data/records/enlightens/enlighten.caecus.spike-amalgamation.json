@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.caecus.spike-amalgamation",
+  "name": "Spike Amalgamation",
+  "route": {
+    "slug": "spike-amalgamation",
+    "canonicalPath": "/database/awakeners/caecus/enlightens/spike-amalgamation"
+  },
+  "ownerAwakenerId": "awakener-0006",
+  "slot": "E2",
+  "descriptionTemplate": "{Protective Scales} Shield Generation 20% and gains {Retain}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Caecus"
+}

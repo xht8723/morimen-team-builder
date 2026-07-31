@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0125",
+  "name": "Annihilated Rebirth",
+  "route": {
+    "slug": "annihilated-rebirth",
+    "canonicalPath": "/database/wheels/annihilated-rebirth"
+  },
+  "assets": {
+    "icon": "asset-wheel-0125-icon"
+  },
+  "rarity": "SSR",
+  "realm": "NEUTRAL",
+  "mainstatKey": "ALIEMUS_REGEN",
+  "lineupToken": "yH",
+  "descriptionTemplate": "Team Unique: After the wielder releases Exalt, Exalt Base DMG +[StateArg1]%, Shield and HP Recovery +[StateArg2]%, stacking up to 5 times. After completing exploration, the Affinity gained by the wielder +[StateArg3]%.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["7", "8", "9", "10"],
+      "suffix": "%"
+    },
+    "StateArg2": {
+      "kind": "scaling",
+      "values": ["2", "3", "4", "5"],
+      "suffix": "%"
+    },
+    "StateArg3": {
+      "kind": "scaling",
+      "values": ["10", "15", "20", "25"],
+      "suffix": "%"
+    }
+  },
+  "lore": "You step onto a barren, lifeless wasteland.\n\nAll traces of humanity have long vanished. Withered souls trudge through ash and smog, barely clinging to breath.\n\nSurvival here is no triumph. \nNo one knows where the journey ends. They wander, and wander, and wander still, trapped in an eternal loop of desolation.\n\nUntil their steps falter, and they collapse onto the scorched earth, eyes turned skyward, hands reaching out to plead:\n\nMay my journey's end become a new beginning.\n\nLet these bones be soil, be sustenance, be spring, so that fragile shoots may rise again through dust.",
+  "searchTags": ["Shield", "Heal"]
+}

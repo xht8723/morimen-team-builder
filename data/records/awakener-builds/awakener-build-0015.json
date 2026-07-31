@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0015",
+  "name": "Erica Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/erica/builds/standard"
+  },
+  "awakenerId": "awakener-0015",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0013", "covenant-0008"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0124"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0037"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0104"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN"]
+    }
+  ],
+  "ownerAwakenerName": "Erica"
+}

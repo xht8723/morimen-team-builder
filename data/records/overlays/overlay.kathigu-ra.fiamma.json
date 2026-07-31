@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.kathigu-ra.fiamma",
+  "name": "Fiamma",
+  "route": {
+    "slug": "fiamma",
+    "canonicalPath": "/database/awakeners/kathigu-ra/overlays/fiamma"
+  },
+  "assets": {
+    "icon": "asset-overlay.kathigu-ra.fiamma-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0027",
+  "aliases": [],
+  "iconId": "IconS_Buff_057",
+  "textColor": "damage",
+  "descriptionTemplate": "The Final DMG, Shield, Aliemus, and {STR} granted by This card +30%. Gains {Retain}. After playing, consume all {Fiamma} stacks, and transfer 1 stack of {Fiamma} to another Kathigu-Ra's Command Card in hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Kathigu-Ra"
+}

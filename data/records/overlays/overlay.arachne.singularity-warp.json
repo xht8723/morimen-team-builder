@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.arachne.singularity-warp",
+  "name": "Singularity Warp",
+  "route": {
+    "slug": "singularity-warp",
+    "canonicalPath": "/database/awakeners/arachne/overlays/singularity-warp"
+  },
+  "assets": {
+    "icon": "asset-overlay.arachne.singularity-warp-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0056",
+  "aliases": [],
+  "iconId": "IconS_Buff_067",
+  "textColor": "affliction",
+  "descriptionTemplate": "Annihilate a card from {Ultra Space} to enable the next {Singularity Warp} trigger this turn, modifying the effects of this Exalt when released. {Singularity Warp} effects will always trigger if released during an {Ultra Round}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Arachne"
+}

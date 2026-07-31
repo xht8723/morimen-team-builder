@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.helot-catena.vengeance-unchained",
+  "name": "Vengeance Unchained",
+  "route": {
+    "slug": "vengeance-unchained",
+    "canonicalPath": "/database/awakeners/helot-catena/enlightens/vengeance-unchained"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "slot": "E2",
+  "descriptionTemplate": "{Hatred Unleashed}: If HP is below 50%, the {STR} obtained is doubled. The {Prepare} Effect of {Bloodthirsty Flail} is changed to {Prepare 2}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Helot: Catena"
+}

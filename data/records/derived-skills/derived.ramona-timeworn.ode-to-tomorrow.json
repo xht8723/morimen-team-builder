@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.ramona-timeworn.ode-to-tomorrow",
+  "name": "Ode to Tomorrow",
+  "route": {
+    "slug": "ode-to-tomorrow",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/derived-skills/ode-to-tomorrow"
+  },
+  "ownerAwakenerId": "awakener-0020",
+  "derivedFromId": "skill.ramona-timeworn.predetermined-strike",
+  "rootSkillId": "skill.ramona-timeworn.predetermined-strike",
+  "descriptionTemplate": "Deal double DMG and additionally gain 600% Keyflare Regen equal to Ramona's Silver Key Keyflare, but {Exhaust} after play.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

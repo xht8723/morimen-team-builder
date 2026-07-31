@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.corrosion",
+  "name": "Corrosion",
+  "route": {
+    "slug": "corrosion",
+    "canonicalPath": "/database/overlays/corrosion"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.corrosion-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_070",
+  "textColor": "affliction",
+  "descriptionTemplate": "When taking Active DMG or {Tentacle DMG}, remove an equivalent amount of {Corrosion} and lose [DescArg1]% that much HP. Other types of DMG only removes 50% as much {Corrosion}. {Corrosion} stacks clear at end of turn.",
+  "descriptionArgs": {
+    "DescArg1": {
+      "kind": "fixed",
+      "value": "300",
+      "suffix": "%"
+    }
+  }
+}

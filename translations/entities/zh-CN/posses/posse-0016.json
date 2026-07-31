@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0016",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "跨越回溯之扉",
+      "sourceHash": "sha256:4dc7322e32dcbc1b455a38910bb853d90362b02c78478a622c17dee1f676c10f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "从抽牌堆中选择 1 张牌加入手中，并使其算力消耗降低 1。",
+      "sourceHash": "sha256:911277056cd984a0895212c3ed8fddc1def926b976f791df6d004cd1d9a92ebb",
+      "status": "reference"
+    }
+  }
+}

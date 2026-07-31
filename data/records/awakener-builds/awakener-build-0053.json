@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0053",
+  "name": "Winkle Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/winkle/builds/standard"
+  },
+  "awakenerId": "awakener-0053",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0002", "covenant-0013"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0041"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0034"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0095", "wheel-0015", "wheel-0016", "wheel-0050", "wheel-0038"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"], ["ALIEMUS_REGEN"], ["DMG_AMP"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN", "ALIEMUS_REGEN"]
+    }
+  ],
+  "ownerAwakenerName": "Winkle"
+}

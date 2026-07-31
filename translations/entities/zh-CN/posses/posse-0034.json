@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0034",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "特殊治疗",
+      "sourceHash": "sha256:0496e0747f174b35b05878beed2040db91191706f7c7156c60d22ea69d78a5ea",
+      "status": "reference"
+    },
+    "description": {
+      "value": "回复 x 点生命，获得 x 点力量。若克莱门汀在队伍中，使她本回合下次打出的指令卡伤害、护盾、生命回复、获得狂气、获得银钥能量的效果次数提高 1。",
+      "sourceHash": "sha256:b70fd720a486a71b62170c912442ecf2b4cd9cf34c3f65c3bc5a26bbdbd81eab",
+      "status": "reference"
+    }
+  }
+}

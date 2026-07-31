@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.aigis.a-small-wish",
+  "name": "A Small Wish",
+  "route": {
+    "slug": "a-small-wish",
+    "canonicalPath": "/database/awakeners/aigis/skills/a-small-wish"
+  },
+  "ownerAwakenerId": "awakener-0003",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG and apply {Vulnerable} for [Arg2] {plural:[Arg2]|turn|turns}. {Embryo Fusion} +[Arg3].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["10", "11", "12", "13", "14", "15"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.aigis.nightborne-wings.skill.aigis.a-small-wish",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.aigis.nightborne-wings",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0003",
+      "ownerAwakenerName": "Aigis",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG and apply {Vulnerable} for [Arg2] {plural:[Arg2]|turn|turns}. {Embryo Fusion} +[Arg3]. When {Devour} is triggered, place {A Small Wish} from the Discard Pile into hand and set its Arithmetica Cost to 0."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Aigis"
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.jenkins.mistborn-street-urchin",
+  "name": "Mistborn Street Urchin",
+  "route": {
+    "slug": "mistborn-street-urchin",
+    "canonicalPath": "/database/awakeners/jenkin/skills/mistborn-street-urchin"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "slot": "Exalt",
+  "descriptionTemplate": "Place [Arg1] additional {Exhaust} {Get 'em! Brown!} into hand with an Arithmetica Cost of 0. Temporary Crit. DMG +[Arg2]%.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "3"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["50", "55", "60", "65", "70", "75"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.jenkins.obsidian-dissolution.skill.jenkins.mistborn-street-urchin",
+      "operation": "override_args",
+      "upgraderId": "enlighten.jenkins.obsidian-dissolution",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0025",
+      "ownerAwakenerName": "Jenkin",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "fixed",
+            "value": "4"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["50", "55", "60", "65", "70", "75"],
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Jenkin"
+}

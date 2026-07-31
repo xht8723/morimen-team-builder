@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.jenkins.swarm-impact",
+  "name": "Swarm Impact",
+  "route": {
+    "slug": "swarm-impact",
+    "canonicalPath": "/database/awakeners/jenkin/derived-skills/swarm-impact"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "derivedFromId": "skill.jenkins.mice-assemble",
+  "rootSkillId": "skill.jenkins.mice-assemble",
+  "descriptionTemplate": "Deal [Damage:Arg2] DMG to a random enemy [Arg1] {plural:[Arg1]|time|times}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "0"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["30", "36", "42", "48", "54", "60"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1",
+  "ownerAwakenerName": "Jenkin"
+}

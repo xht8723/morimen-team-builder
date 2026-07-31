@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0037",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "残忍的致意",
+      "sourceHash": "sha256:d3910631772d81b2eb707cc1475deab1ebbc4cde52d62ceebe52e31fa16160bf",
+      "status": "reference"
+    },
+    "description": {
+      "value": "偷取所有敌人 x 点临时力量。若「杜勒赛因」在队伍中，获得 1 个残骸残骸会继承至下场战斗。。",
+      "sourceHash": "sha256:c5dcbe271d9ba6b0da3822396f9928a26442dd3059beb7b641d7190c45a13e74",
+      "status": "reference"
+    }
+  }
+}

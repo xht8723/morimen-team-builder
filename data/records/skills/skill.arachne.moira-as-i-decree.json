@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.arachne.moira-as-i-decree",
+  "name": "Moira, As I Decree",
+  "route": {
+    "slug": "moira-as-i-decree",
+    "canonicalPath": "/database/awakeners/arachne/skills/moira-as-i-decree"
+  },
+  "ownerAwakenerId": "awakener-0056",
+  "slot": "Exalt",
+  "descriptionTemplate": "Gain +[Arg2]% Temporary DMG Amplification and [Block:Arg1] Shield, and cleanse {Stagnation} from cards in hand.\n{Singularity Warp}: For the rest of this turn, whenever another Awakener plays a Command Card, consume 1 {Weaver} to unleash {Pursuit}: {Infinite Threads}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["100", "120", "140", "160", "180", "200"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["75", "80", "85", "90", "95", "100"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "150",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.arachne.future-as-i-foresee.skill.arachne.moira-as-i-decree",
+      "operation": "override_args",
+      "upgraderId": "enlighten.arachne.future-as-i-foresee",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["100", "120", "140", "160", "180", "200"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["75", "80", "85", "90", "95", "100"],
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "RealmMastery",
+              "multiplier": "0.25",
+              "mode": "additive_factor",
+              "baseMultiplier": "1.25"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "upgrade.enlighten.arachne.destiny-as-i-arrange.skill.arachne.moira-as-i-decree",
+      "operation": "override_args",
+      "upgraderId": "enlighten.arachne.destiny-as-i-arrange",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["100", "120", "140", "160", "180", "200"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["75", "80", "85", "90", "95", "100"],
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "RealmMastery",
+              "multiplier": "0.25",
+              "mode": "additive_factor",
+              "baseMultiplier": "1.25"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Arachne"
+}

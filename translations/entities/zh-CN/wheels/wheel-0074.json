@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0074",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "熟成",
+      "sourceHash": "sha256:0f7998fc7907e3fd4011016bc065e91b27f40ae64d9ac33f408ab8855484945a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗结束后，获得 1000 点银钥能量。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:a2d96d6ad0889be7abdae6fcc7780849d078f5d29f5b509619a3fed4e490032a",
+      "status": "reference"
+    }
+  }
+}

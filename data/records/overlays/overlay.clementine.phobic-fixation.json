@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.clementine.phobic-fixation",
+  "name": "Phobic Fixation",
+  "route": {
+    "slug": "phobic-fixation",
+    "canonicalPath": "/database/awakeners/clementine/overlays/phobic-fixation"
+  },
+  "assets": {
+    "icon": "asset-overlay.clementine.phobic-fixation-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0010",
+  "aliases": [],
+  "iconId": "IconS_Buff_053",
+  "textColor": "affliction",
+  "descriptionTemplate": "Under the erosion of the Hive, your fears are laid bare. For each stack, DMG dealt this turn -3%, stacking up to 10 stacks.",
+  "descriptionArgs": {},
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.clementine.you-will-recover.overlay.clementine.phobic-fixation",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.clementine.you-will-recover",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0010",
+      "ownerAwakenerName": "Clementine",
+      "patch": {
+        "descriptionTemplate": "Under the erosion of the Hive, your fears are laid bare. For each stack, DMG dealt this turn -3%, stacking up to 15 stacks."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Clementine"
+}

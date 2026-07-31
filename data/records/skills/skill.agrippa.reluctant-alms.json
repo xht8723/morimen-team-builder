@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.agrippa.reluctant-alms",
+  "name": "Reluctant Alms",
+  "route": {
+    "slug": "reluctant-alms",
+    "canonicalPath": "/database/awakeners/agrippa/skills/reluctant-alms"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "slot": "Skill1",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Current {Embryo Fusion} is doubled.\n{overlay:Embryo Fusion Double}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["12.5", "15", "17.5", "20", "22.5", "25"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.agrippa.the-usurper.skill.agrippa.reluctant-alms",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.agrippa.the-usurper",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0002",
+      "ownerAwakenerName": "Agrippa",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield. Current {Embryo Fusion} is doubled. The card with the highest Arithmetica Cost in your hand has its Arithmetica Cost -1 this turn."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Agrippa"
+}

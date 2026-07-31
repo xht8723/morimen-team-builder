@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.prepare",
+  "name": "Prepare",
+  "route": {
+    "slug": "prepare",
+    "canonicalPath": "/database/overlays/prepare"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Prepare 1", "Prepare 2", "Prepare 3", "Prepare 4", "Prepare 5"],
+  "textColor": "misc",
+  "descriptionTemplate": "Whenever this card is {Retained} or discarded, its Arithmetica Cost reduces by [Layer] until played.",
+  "descriptionArgs": {
+    "Layer": {
+      "kind": "fixed",
+      "value": "X"
+    }
+  }
+}

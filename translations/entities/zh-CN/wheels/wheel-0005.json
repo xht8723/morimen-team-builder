@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0005",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "挣脱锁链之日",
+      "sourceHash": "sha256:64910a4db1f8de15b85e68bee8515a1ad0ede83960c7ddcc6652e16e9085f46c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者卡牌造成的基础伤害提高 40%。回合开始时，有 30% 的几率生成一张装备者的随机卡牌到手牌中，附加消耗。若当前界域为「血肉」，对装备者使用「胚胎」时，使装备者本回合下次打击卡造成伤害的暴击率 ＋35%。",
+      "sourceHash": "sha256:4231fefbf65ed025c638b1fcb4163325d18144c86f8822c4c15903fa43f3a445",
+      "status": "reference"
+    }
+  }
+}

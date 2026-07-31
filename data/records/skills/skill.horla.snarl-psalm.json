@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.horla.snarl-psalm",
+  "name": "Snarl Psalm",
+  "route": {
+    "slug": "snarl-psalm",
+    "canonicalPath": "/database/awakeners/horla/skills/snarl-psalm"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Horla obtains [Energy:Arg3] Aliemus. Counts as a \"Strike\". {Leap}: Switch {Emotion} state to {Anger}. For each stack of {Anger} {Metaphor} consumed, deal an additional 2 instances of DMG.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.horla.emberbound.skill.horla.snarl-psalm",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.horla.emberbound",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0024",
+      "ownerAwakenerName": "Horla",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Horla obtains [Energy:Arg3] Aliemus. Inflict 1 stack of {Vulnerable} on all enemies. Counts as a \"Strike\". {Leap}: Switch {Emotion} state to {Anger}. For each stack of {Anger} {Metaphor} consumed, deal an additional 2 instances of DMG."
+      }
+    },
+    {
+      "id": "upgrade.enlighten.horla.chamber-of-shadows.skill.horla.snarl-psalm",
+      "operation": "mixed",
+      "upgraderId": "enlighten.horla.chamber-of-shadows",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0024",
+      "ownerAwakenerName": "Horla",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Horla obtains [Energy:Arg3] Aliemus. Inflict 1 stack of {Vulnerable} on all enemies. Counts as a \"Strike\". {Leap}: Switch {Emotion} state to {Anger}. For each stack of {Anger} {Metaphor} consumed, deal an additional 2 instances of DMG.",
+        "cardKeywords": [
+          {
+            "id": "mechanic.retain"
+          }
+        ]
+      }
+    },
+    {
+      "id": "upgrade.enlighten.horla.blossoms-and-verses-reunited.skill.horla.snarl-psalm",
+      "operation": "mixed",
+      "upgraderId": "enlighten.horla.blossoms-and-verses-reunited",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0024",
+      "ownerAwakenerName": "Horla",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Horla obtains [Energy:Arg3] Aliemus. Inflict 1 stack of {Vulnerable} on all enemies. Counts as a \"Strike\". {Leap}: Switch {Emotion} state to {Anger}. For each stack of {Anger} {Metaphor} consumed, deal an additional 2 instances of DMG.",
+        "cardKeywords": [
+          {
+            "id": "mechanic.retain"
+          }
+        ]
+      }
+    }
+  ],
+  "ownerAwakenerName": "Horla"
+}

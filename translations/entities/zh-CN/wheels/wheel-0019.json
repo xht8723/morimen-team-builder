@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0019",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "好运时间",
+      "sourceHash": "sha256:7ca3453aac446b3f73d5f474222f5c626d50fcdb664d2b1c7b717ca2c9fbe8b4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时，每拥有一个造物就使装备者指令卡暴击率提高 3%。装备者释放狂气爆发后投一颗 4 面骰子，装备者获得 6 倍骰子点数的狂气和临时暴击伤害，若其投出 4 或以上，其他唤醒体也获得一半。",
+      "sourceHash": "sha256:fa1d0f11242f381c79bd969cf9388807147ea2a9e7bac1700d19364175efec6d",
+      "status": "reference"
+    }
+  }
+}

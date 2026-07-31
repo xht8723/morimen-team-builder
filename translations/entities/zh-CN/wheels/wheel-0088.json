@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0088",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "勋爵手杖",
+      "sourceHash": "sha256:af880d57409b3b237336bb394b5423bbe7003c84934f0a7b62802e65d1936982",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者狂气爆发基础伤害提高 30%，护盾和生命回复提高 15%。",
+      "sourceHash": "sha256:679b1880b1da28bccbd4b6d97b784194db305d7dc990a82a5ac5f7a5035823cc",
+      "status": "reference"
+    }
+  }
+}

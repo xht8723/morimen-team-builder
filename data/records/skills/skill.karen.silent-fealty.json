@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.karen.silent-fealty",
+  "name": "Silent Fealty",
+  "route": {
+    "slug": "silent-fealty",
+    "canonicalPath": "/database/awakeners/karen/skills/silent-fealty"
+  },
+  "ownerAwakenerId": "awakener-0026",
+  "slot": "Skill2",
+  "descriptionTemplate": "Restore [Heal:Arg1] HP and gain [Block:Arg2] Shield. If held at turn end, Arithmetica Cost +1, and both HP restoration and Shield are doubled. Stacks up to [Arg3] {plural:[Arg3]|time|times}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "stat": "CON",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "2"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.karen.maids-decree.skill.karen.silent-fealty",
+      "operation": "override_args",
+      "upgraderId": "enlighten.karen.maids-decree",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0026",
+      "ownerAwakenerName": "Karen",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"],
+            "stat": "CON",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "3"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Karen"
+}

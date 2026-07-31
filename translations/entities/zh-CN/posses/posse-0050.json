@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0050",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "罗网轮转",
+      "sourceHash": "sha256:79ae53724c6220427f4e5057cf3e593084dacea9a80c856a5d0619352e37c4e2",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点护盾和 50% 临时伤害强效。若「阿拉克涅」在队伍中，抽 1 张「永恒织造」并使其算力消耗 -1。",
+      "sourceHash": "sha256:c39c38497bc22264bd0a987afea216c67900d96a07082fa80fab92bbd092bb69",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.pickman.painters-eye",
+  "name": "Painter's Eye",
+  "route": {
+    "slug": "painters-eye",
+    "canonicalPath": "/database/awakeners/pickman/talents/painters-eye"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "family": "passive",
+  "descriptionTemplate": "After Pickman triggers the {Discover} effect or uses {Chromaphage}, he gains 1 stack of {Creativity}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pickman"
+}

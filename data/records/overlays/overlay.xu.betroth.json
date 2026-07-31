@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.xu.betroth",
+  "name": "Betroth",
+  "route": {
+    "slug": "betroth",
+    "canonicalPath": "/database/awakeners/xu/overlays/betroth"
+  },
+  "assets": {
+    "icon": "asset-overlay.xu.betroth-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0054",
+  "aliases": [],
+  "iconId": "IconS_Buff_080",
+  "textColor": "damage",
+  "descriptionTemplate": "Inflict 2 stacks of {Spellbound} on all enemies.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Xu"
+}

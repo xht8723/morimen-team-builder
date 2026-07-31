@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0018",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "仲夏之梦",
+      "sourceHash": "sha256:dce95535701252ca51a4ad4eda725b00b07ed74348d7ff9b82ebbe31f14c72cd",
+      "status": "reference"
+    },
+    "description": {
+      "value": "抽 1 张牌，如果抽到「指令卡」或「灵知觉醒」，将其算力消耗变为 0，并使其拥有者获得 20 点狂气。否则将这张牌弃掉并重复此条效果。",
+      "sourceHash": "sha256:8c9a49a1438c2fd5ccaf1278740f0b95244361f0a228f277af60e33eb3d31a0a",
+      "status": "reference"
+    }
+  }
+}

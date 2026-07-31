@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.arachne.infinite-threads",
+  "name": "Infinite Threads",
+  "route": {
+    "slug": "infinite-threads",
+    "canonicalPath": "/database/awakeners/arachne/derived-skills/infinite-threads"
+  },
+  "ownerAwakenerId": "awakener-0056",
+  "derivedFromId": "skill.arachne.moira-as-i-decree",
+  "rootSkillId": "skill.arachne.moira-as-i-decree",
+  "descriptionTemplate": "Gain 5 Temporary stacks of {Singularity Prism}, and inflict [FateCut:Arg2] {Final Verdict} on the enemy with lowest HP.",
+  "descriptionArgs": {
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["1200", "1440", "1680", "1920", "2160", "2400"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.arachne.destiny-as-i-arrange.derived.arachne.infinite-threads",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.arachne.destiny-as-i-arrange",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "patch": {
+        "descriptionTemplate": "Gain 10 Temporary stacks of {Singularity Prism}, and inflict [FateCut:Arg2] {Final Verdict} on the enemy with lowest HP."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Arachne"
+}

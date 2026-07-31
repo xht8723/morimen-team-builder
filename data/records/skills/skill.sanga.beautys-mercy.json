@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.sanga.beautys-mercy",
+  "name": "Beauty's Mercy",
+  "route": {
+    "slug": "beautys-mercy",
+    "canonicalPath": "/database/awakeners/sanga/skills/beautys-mercy"
+  },
+  "ownerAwakenerId": "awakener-0045",
+  "slot": "Skill1",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Gain [Arg2] Tentacle. {Aftershock}: Gain an amount of Aliemus equal to the current Tentacle Count.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["24", "28.8", "33.6", "38.4", "43.2", "48"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "4",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.sanga.kneel-before-beauty.skill.sanga.beautys-mercy",
+      "operation": "mixed",
+      "upgraderId": "enlighten.sanga.kneel-before-beauty",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0045",
+      "ownerAwakenerName": "Sanga",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield, for each Tentacle, gain an additional [Arg3] Shield. Gain [Arg2] Tentacles. {Aftershock}: Gain Aliemus equal to the current Tentacle Count.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["24", "28.8", "33.6", "38.4", "43.2", "48"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "1"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["3", "3.6", "4.2", "4.8", "5.4", "6"],
+            "stat": "DEF",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Sanga"
+}

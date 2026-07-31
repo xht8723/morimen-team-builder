@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.miryam.exalted-pyre",
+  "name": "Exalted Pyre",
+  "route": {
+    "slug": "exalted-pyre",
+    "canonicalPath": "/database/awakeners/miryam/skills/exalted-pyre"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] {Pierce DMG} and inflict an equal amount of {Poison}. {Ritual}: Gain [Power:Arg3]/[Power:Arg4]/[Power:Arg5] {STR} and [TentaclePower:Arg3]/[TentaclePower:Arg4]/[TentaclePower:Arg5] {Tentacle DMG}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["60", "72", "84", "96", "108", "120"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["1.5", "1.8", "2.1", "2.4", "2.7", "3"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["3.75", "4.5", "5.25", "6", "6.75", "7.5"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg5": {
+      "kind": "scaling",
+      "values": ["7.5", "9", "10.5", "12", "13.5", "15"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.miryam.solitary-pilgrimage.skill.miryam.exalted-pyre",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.miryam.solitary-pilgrimage",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0032",
+      "ownerAwakenerName": "Miryam",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] {Pierce DMG} and inflict an equal amount of {Poison}. Temporary Crit. DMG +15% of Miryam's base Crit. DMG. {Ritual}: Gain [Power:Arg3]/[Power:Arg4]/[Power:Arg5] {STR} and [TentaclePower:Arg3]/[TentaclePower:Arg4]/[TentaclePower:Arg5] {Tentacle DMG}."
+      }
+    },
+    {
+      "id": "upgrade.enlighten.miryam.vanitys-collapse.skill.miryam.exalted-pyre",
+      "operation": "mixed",
+      "upgraderId": "enlighten.miryam.vanitys-collapse",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0032",
+      "ownerAwakenerName": "Miryam",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] {Pierce DMG} and inflict an equal amount of {Poison}. Temporary Crit. DMG +15% of Miryam's base Crit. DMG. {Ritual}: Gain [Power:Arg3]/[Power:Arg4]/[Power:Arg5] {STR} and [TentaclePower:Arg3]/[TentaclePower:Arg4]/[TentaclePower:Arg5] {Tentacle DMG}.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["60", "72", "84", "96", "108", "120"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["1.95", "2.34", "2.73", "3.12", "3.51", "3.9"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg4": {
+            "kind": "scaling",
+            "values": ["4.875", "5.85", "6.825", "7.8", "8.775", "9.75"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg5": {
+            "kind": "scaling",
+            "values": ["9.75", "11.7", "13.65", "15.6", "17.55", "19.5"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Miryam"
+}

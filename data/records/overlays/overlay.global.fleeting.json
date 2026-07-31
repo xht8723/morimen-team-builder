@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.fleeting",
+  "name": "Fleeting",
+  "route": {
+    "slug": "fleeting",
+    "canonicalPath": "/database/overlays/fleeting"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "If kept in hand during discard phase, {Exhaust}. Won't reappear.",
+  "descriptionArgs": {}
+}

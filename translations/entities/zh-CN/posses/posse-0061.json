@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0061",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·狂怒",
+      "sourceHash": "sha256:4d7f49dc9d52f03dd93d17900437583835c5fb94ef9989788943432787f2845b",
+      "status": "machine"
+    },
+    "description": {
+      "value": "获得 Arg1 点临时伤害强效。数值随原初精通成长。",
+      "sourceHash": "sha256:b6ae8aca52c2054c8a76bbc1f0bd1ecf4f6474f13a2b175b22468d7f76ad448e",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.global.leahs-coin",
+  "name": "Leah's Coin",
+  "route": {
+    "slug": "leahs-coin",
+    "canonicalPath": "/database/derived-skills/leahs-coin"
+  },
+  "descriptionTemplate": "Gain 2 Arithmetica, draw 2 cards.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0"
+}

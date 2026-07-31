@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0041",
+  "name": "Beachside Memento",
+  "route": {
+    "slug": "beachside-memento",
+    "canonicalPath": "/database/posses/beachside-memento"
+  },
+  "assets": {
+    "icon": "asset-posse-0041-icon",
+    "crystal": "asset-posse-0041-crystal",
+    "badge": "asset-posse-0041-badge"
+  },
+  "acquisitionSource": "Clear Dreamscape: See You in Neverland",
+  "realm": "OTHER",
+  "lineupToken": "T",
+  "descriptionTemplate": "Choose an Awakener; create 1 of their basic Strike Commands. It has {Exhaust}. Every {ordinal:3rd} time this is unleashed, instead create 1 {derived:Fleeting Beauty} and gain +[Arg1] Temp. Crit. Rate.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 20.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "suffix": "%",
+      "scalingBucket": "utility"
+    }
+  },
+  "lore": "Every party has its end, but the memories etched in the soul never cease. No matter how many times, when recalling this frozen moment, longing will surge like a tide."
+}

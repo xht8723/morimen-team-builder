@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.tinct.falling-skyward",
+  "name": "Falling Skyward",
+  "route": {
+    "slug": "falling-skyward",
+    "canonicalPath": "/database/awakeners/tinct/enlightens/falling-skyward"
+  },
+  "ownerAwakenerId": "awakener-0049",
+  "slot": "E3",
+  "descriptionTemplate": "{Distant Melody} and {Starlight Aurora} gain an equivalent amount of Crit. Rate along with Crit. DMG.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tinct"
+}

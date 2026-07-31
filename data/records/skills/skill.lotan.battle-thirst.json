@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.lotan.battle-thirst",
+  "name": "Battle Thirst",
+  "route": {
+    "slug": "battle-thirst",
+    "canonicalPath": "/database/awakeners/lotan/skills/battle-thirst"
+  },
+  "ownerAwakenerId": "awakener-0031",
+  "slot": "Rouse",
+  "descriptionTemplate": "Lotan gains [Energy:Arg1] Aliemus. {Rouse}: Lotan's hits count +[Arg2] {plural:[Arg2]|time|times}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.lotan.primal-leviathan.skill.lotan.battle-thirst",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.lotan.primal-leviathan",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0031",
+      "ownerAwakenerName": "Lotan",
+      "patch": {
+        "descriptionTemplate": "Lotan gains [Energy:Arg1] Aliemus. {Rouse}: Lotan's hits count +[Arg2] {plural:[Arg2]|time|times}. Lotan's \"Defense\" makes the next {Blade of Defiance} this turn take effect 2 times."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Lotan"
+}

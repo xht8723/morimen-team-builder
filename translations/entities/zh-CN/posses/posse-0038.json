@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0038",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "不落的太阳",
+      "sourceHash": "sha256:74d7d2452be2fe79a8eec75478582ff0c5145d3c2bf43f91346d3cb04419261c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 1 点算力和 30% 临时强效。若「凯蒂古拉」在队伍中，抽 1 张其「指令卡」并赋予 1 层「活焰拥有「活焰」的卡牌获得「保留」，打出后消耗所有「活焰」并将 1 层「活焰」传导到手中其它 1 张凯蒂古拉的指令卡上。」。",
+      "sourceHash": "sha256:5393cdd6366ca2931e83233586184aef4dc581bb4f09817966ca269d86f1404f",
+      "status": "reference"
+    }
+  }
+}

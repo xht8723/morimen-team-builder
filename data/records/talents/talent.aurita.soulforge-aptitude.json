@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.aurita.soulforge-aptitude",
+  "name": "Soulforge Aptitude",
+  "route": {
+    "slug": "soulforge-aptitude",
+    "canonicalPath": "/database/awakeners/aurita/talents/soulforge-aptitude"
+  },
+  "ownerAwakenerId": "awakener-0005",
+  "family": "soulforge_aptitude",
+  "maxLevel": 10,
+  "descriptionTemplate": "This talent is only effective in the {Astral Reign} stages.\nThis Awakener's CON, ATK, and DEF +[Arg1]%, and they gain [Arg2] Keyflare upon their first {Rouse}.\nFor every {Gland Division} consumed by {Clamorous Ocean}, Aurita's DMG output for the rest of the battle +[Arg3]% ATK. When at least 20 {Gland Division} cards are consumed in a Boss Battle, {Gland Division} deals +1 instance of DMG when played or consumed. The first [Arg4] {Gland Division} played each turn does not add {Arithmetica Harmony} stacks.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "3",
+      "gainPerLevel": "3"
+    },
+    "Arg2": {
+      "kind": "linear",
+      "base": "50",
+      "gainPerLevel": "50"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["3", "3.5", "4", "4.5", "5", "5.5", "6", "6.5", "7", "8"]
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "10"
+    }
+  },
+  "ownerAwakenerName": "Aurita"
+}

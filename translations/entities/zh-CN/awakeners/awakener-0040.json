@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0040",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "皮克曼",
+      "sourceHash": "sha256:6a8ebebc85eb9b8773dcbb397651a2edf1979bd62906da59912e84e7dc57347d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "皮克曼是半人半食尸鬼的艺术家，拥有凡人无法企及的异质天赋。他的画作会溶解画中世界与现实的边界，把观众拖入完整、逼真而往往恐怖的景象。",
+      "sourceHash": "sha256:33acc9b55605e4b94d385607d2cc24b6ee3b2ec981bfe5c1d62752bacb33e826",
+      "status": "machine"
+    }
+  }
+}

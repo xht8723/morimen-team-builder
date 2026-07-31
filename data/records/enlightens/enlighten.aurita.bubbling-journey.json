@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.aurita.bubbling-journey",
+  "name": "Bubbling Journey",
+  "route": {
+    "slug": "bubbling-journey",
+    "canonicalPath": "/database/awakeners/aurita/enlightens/bubbling-journey"
+  },
+  "ownerAwakenerId": "awakener-0005",
+  "slot": "E1",
+  "descriptionTemplate": "{Power of Friendship} allows you to draw 1 additional card.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Aurita"
+}

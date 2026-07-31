@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0063",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "宠爱",
+      "sourceHash": "sha256:288df57e3e5fc928e82fc1f6e29b286ee2a0806726b6d4f3c5db8b5c34babf66",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：关卡开始后，所有唤醒体获得 20 点狂气。首领战开始后，抽 2 张牌。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:84e463d7b0265da70d3e7153ecef558fef2b07a68681c51964b9462ba57485ba",
+      "status": "reference"
+    }
+  }
+}

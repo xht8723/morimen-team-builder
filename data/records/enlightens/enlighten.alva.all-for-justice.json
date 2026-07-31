@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.alva.all-for-justice",
+  "name": "All for Justice",
+  "route": {
+    "slug": "all-for-justice",
+    "canonicalPath": "/database/awakeners/alva/enlightens/all-for-justice"
+  },
+  "ownerAwakenerId": "awakener-0004",
+  "slot": "E3",
+  "descriptionTemplate": "{Endless Justice} grants Alva a 50% Temporary Crit. Rate and Crit. DMG.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Alva"
+}

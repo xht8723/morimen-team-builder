@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0008",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "卡斯托尔",
+      "sourceHash": "sha256:09a76067e23aa5bbfe07b4b373cd4d51670a3516c38a992d5f38897bdede759f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "若生在普通家庭，卡斯托尔本可成长为温厚可靠的青年。如今双子中只有他保有完整的身体与灵魂，他像石头般沉默，把两人共有的余烬深埋心中，等待牢笼开启的一刻。",
+      "sourceHash": "sha256:abb7715707e43dff5fd2dc2a343bf7d534c3503c7020b9d28d79e9729208f0ff",
+      "status": "machine"
+    }
+  }
+}

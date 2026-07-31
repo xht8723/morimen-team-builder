@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.agrippa.pale-blessing",
+  "name": "Pale Blessing",
+  "route": {
+    "slug": "pale-blessing",
+    "canonicalPath": "/database/awakeners/agrippa/skills/pale-blessing"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "slot": "Exalt",
+  "descriptionTemplate": "[{Devour}: Obtain [Power:Arg1] {STR} and [Arg4] {Alert}.] Gain [Block:Arg2] Shield. Inflict [{Poison}:Arg3] {plural:[{Poison}:Arg3]|stack|stacks} of {Poison} on all enemies.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["40", "48", "56", "64", "72", "80"],
+      "stat": "DEF",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "SigilYield",
+        "multiplier": "0.5",
+        "mode": "scale_base"
+      }
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["75", "90", "105", "120", "135", "150"],
+      "stat": "ATK",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "SigilYield",
+        "multiplier": "1",
+        "mode": "scale_base"
+      }
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["2", "2.4", "2.8", "3.2", "3.6", "4"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.talent.agrippa.seal-of-the-pact.skill.agrippa.pale-blessing",
+      "operation": "link_only",
+      "upgraderId": "talent.agrippa.seal-of-the-pact",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Agrippa"
+}

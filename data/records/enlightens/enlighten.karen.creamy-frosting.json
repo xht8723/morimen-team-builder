@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.karen.creamy-frosting",
+  "name": "Creamy Frosting",
+  "route": {
+    "slug": "creamy-frosting",
+    "canonicalPath": "/database/awakeners/karen/enlightens/creamy-frosting"
+  },
+  "ownerAwakenerId": "awakener-0026",
+  "slot": "E2",
+  "descriptionTemplate": "\"The {Toad Stew}\"'s {Poison} and HP Recovery effects +50%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Karen"
+}

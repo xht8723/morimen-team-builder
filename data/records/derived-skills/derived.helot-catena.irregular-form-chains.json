@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.helot-catena.irregular-form-chains",
+  "name": "Irregular Form: Chains",
+  "route": {
+    "slug": "irregular-form-chains",
+    "canonicalPath": "/database/awakeners/helot-catena/derived-skills/irregular-form-chains"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "derivedFromId": "skill.helot-catena.fettered-malice",
+  "rootSkillId": "skill.helot-catena.fettered-malice",
+  "descriptionTemplate": "Choose a Base Command Card of Helot: Catena and place it into hand.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Helot: Catena"
+}

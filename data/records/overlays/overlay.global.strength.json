@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.strength",
+  "name": "STR▼",
+  "route": {
+    "slug": "str-down",
+    "canonicalPath": "/database/overlays/str-down"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.strength-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["STR⯆"],
+  "iconId": "IconS_Buff_037",
+  "textColor": "affliction",
+  "descriptionTemplate": "Active DMG is reduced by 1 for each stack of {STR▼}.\n({Tentacle DMG} is reduced by half this amount.)",
+  "descriptionArgs": {}
+}

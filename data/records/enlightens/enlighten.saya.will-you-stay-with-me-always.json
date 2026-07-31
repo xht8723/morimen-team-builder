@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.saya.will-you-stay-with-me-always",
+  "name": "Will You Stay with Me, Always?",
+  "route": {
+    "slug": "will-you-stay-with-me-always",
+    "canonicalPath": "/database/awakeners/saya/enlightens/will-you-stay-with-me-always"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "E2",
+  "descriptionTemplate": "Saya's \"Basic Strike\" and \"Base Defense\" additionally grant {Embryo Fusion} +15. The lower the current HP, the higher the effect, up to 100% more.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Saya"
+}

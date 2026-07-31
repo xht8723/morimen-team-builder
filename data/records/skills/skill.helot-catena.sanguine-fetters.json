@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.helot-catena.sanguine-fetters",
+  "name": "Sanguine Fetters",
+  "route": {
+    "slug": "sanguine-fetters",
+    "canonicalPath": "/database/awakeners/helot-catena/skills/sanguine-fetters"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "slot": "Exalt",
+  "descriptionTemplate": "[{Devour}: Draw 1 Helot: Catena Command Card, reducing the Arithmetica Cost of Helot: Catena Command Cards in hand by 1.] This turn, when Helot: Catena deals Active DMG, add [Arg2]% {Bleed}. Deal [Damage:Arg1] DMG.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["100", "120", "140", "160", "180", "200"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["75", "80", "85", "90", "95", "100"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.helot-catena.remnants-requiem.skill.helot-catena.sanguine-fetters",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.helot-catena.remnants-requiem",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0019",
+      "ownerAwakenerName": "Helot: Catena",
+      "patch": {
+        "descriptionTemplate": "[{Devour}: Draw 1 Helot: Catena Command Card, reducing the Arithmetica Cost of Helot: Catena Command Cards in hand by 1.] This turn, when Helot: Catena deals Active DMG, add [Arg2]% {Bleed}. Remove the Target's Shield, deal [Damage:Arg1] DMG and prevent the target from gaining Shield for 1 turn."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Helot: Catena"
+}

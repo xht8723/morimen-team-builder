@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.aftershock",
+  "name": "Aftershock",
+  "route": {
+    "slug": "aftershock",
+    "canonicalPath": "/database/overlays/aftershock"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "A card's {Aftershock} effects will trigger whenever it's discarded.",
+  "descriptionArgs": {}
+}

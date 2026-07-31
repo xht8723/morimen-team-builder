@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.global.sakura-blossoms",
+  "name": "Sakura Blossoms",
+  "route": {
+    "slug": "sakura-blossoms",
+    "canonicalPath": "/database/derived-skills/sakura-blossoms"
+  },
+  "descriptionTemplate": "Gain [Arg1] Keyflare and put {Hanafubuki} into the Discard Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "wheelRefinementLinear",
+      "baseValue": 200.0,
+      "perLevel": 100.0,
+      "inputs": ["wheelRefinementLevel"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1"
+}

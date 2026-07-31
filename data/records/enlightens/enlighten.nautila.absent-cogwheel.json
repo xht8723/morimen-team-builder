@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.nautila.absent-cogwheel",
+  "name": "Absent Cogwheel",
+  "route": {
+    "slug": "absent-cogwheel",
+    "canonicalPath": "/database/awakeners/nautila/enlightens/absent-cogwheel"
+  },
+  "ownerAwakenerId": "awakener-0036",
+  "slot": "E2",
+  "descriptionTemplate": "{No Trespassing} Obtain {Prepare 1}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Nautila"
+}

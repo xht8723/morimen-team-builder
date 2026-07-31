@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0057",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "沙耶",
+      "sourceHash": "sha256:1c2e946139cdabc277f5d725a7fd5aca8b2b74949b75ff4e498a074456d6d48a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "当扭曲血肉侵蚀万物、日常彻底颠覆，一朵蒲公英伴着哀鸣落在荒原。伸出手握住沙耶吧；爱会穿透表象，把你牢牢系在所爱之人身旁。",
+      "sourceHash": "sha256:4fa2c83a8ac8973483863c795df6f755d4c9e9d01396d1147c1419955df56557",
+      "status": "machine"
+    }
+  }
+}

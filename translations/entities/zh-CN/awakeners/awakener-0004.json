@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0004",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "艾尔瓦",
+      "sourceHash": "sha256:ce0ce38a88b7767ed7f60cbdbe66b193da7c95e9de869ed6177b5357a7baccc4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "艾尔瓦十分满意自己的义肢，它让她得以再次为正义而战。至于深夜宿舍里传来的低吟，以及那条手臂真正隐藏的秘密，最好假装从未听见。",
+      "sourceHash": "sha256:af66682d0ce1df90ddbf70650cf855c67a87ef68d69f8bfa3ea778cd66bf4548",
+      "status": "machine"
+    }
+  }
+}

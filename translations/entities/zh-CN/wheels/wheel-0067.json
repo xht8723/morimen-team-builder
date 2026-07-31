@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0067",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "希冀",
+      "sourceHash": "sha256:67984032044efb02a2a42bbc192253b90b384ec7bd628d881c5612d081491618",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：每走过一个新的格子，回复 5% 已损失血量。使用应急灵知体后，所有唤醒体的暴击率和暴击伤害提高 100%。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:ab937c99f6a9af3fd0ea6f75684f3b59b2e5b2c191e5657b7b72dcd7163cfc46",
+      "status": "reference"
+    }
+  }
+}

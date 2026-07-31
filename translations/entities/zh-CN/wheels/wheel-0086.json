@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0086",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "心之壁垒",
+      "sourceHash": "sha256:83852f58fdd773ea2ecf83fb9ee1d17b39ed13251897acb51f9b7d56ed8ebc98",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后，获得等同于装备者防御力 25% 的护盾。",
+      "sourceHash": "sha256:a52b0415d6fef8d4ee419d7d7d7d3b78339804751841b05a24c7a1976f0bda52",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0038",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "奥吉尔",
+      "sourceHash": "sha256:9ed15d2776a261a29ba1f108584a3a0507c96bc67885a35830c0cb9add01fcf1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "奥吉尔的一言一行都体现忠诚与美德，克己守礼仿佛刻进灵魂。只是这位完美骑士仍保留着孩子的外貌，也请不要因此轻视她挥枪守护信念的决心。",
+      "sourceHash": "sha256:14ea44793f4a1b84094de58ac8e141319be2824fb5ad708c88e1db1c8d5c33c6",
+      "status": "machine"
+    }
+  }
+}

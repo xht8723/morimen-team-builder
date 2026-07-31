@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.daffodil.dead-souls",
+  "name": "Dead Souls",
+  "route": {
+    "slug": "dead-souls",
+    "canonicalPath": "/database/awakeners/daffodil/enlightens/dead-souls"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Dimensional Projection} is enhanced: When played, immediately generate 1 Temporary {Skull Reaver} with 0 Arithmetica Cost and place it into {Ultra Space}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Daffodil"
+}

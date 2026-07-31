@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.tulu.when-the-stars-are-right",
+  "name": "When the Stars Are Right",
+  "route": {
+    "slug": "when-the-stars-are-right",
+    "canonicalPath": "/database/awakeners/tulu/skills/when-the-stars-are-right"
+  },
+  "ownerAwakenerId": "awakener-0050",
+  "slot": "Exalt",
+  "descriptionTemplate": "Gain [Arg1] Tentacles. Gain [TentaclePower:Arg2] Temporary {Tentacle DMG} and [Power:Arg2] Temporary {STR}. Gain [Arg3]% Temporary Crit. Rate.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["26", "31.2", "36.4", "41.6", "46.8", "52"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["15", "17", "19", "21", "23", "25"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.tulu.the-stars-are-right.skill.tulu.when-the-stars-are-right",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.tulu.the-stars-are-right",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0050",
+      "ownerAwakenerName": "Tulu",
+      "patch": {
+        "descriptionTemplate": "Gain [Arg1] Tentacles. Gain [TentaclePower:Arg2] Temporary {Tentacle DMG} and [Power:Arg2] Temporary {STR}. Gain [Arg3]% Temporary Crit. Rate.\n{overlay:The Stars Are Right}"
+      }
+    }
+  ],
+  "ownerAwakenerName": "Tulu"
+}

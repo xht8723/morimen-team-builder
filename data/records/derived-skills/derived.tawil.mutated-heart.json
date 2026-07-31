@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.tawil.mutated-heart",
+  "name": "Mutated Heart",
+  "route": {
+    "slug": "mutated-heart",
+    "canonicalPath": "/database/awakeners/tawil/derived-skills/mutated-heart"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "derivedFromId": "derived.tawil.memories",
+  "rootSkillId": "skill.tawil.pinions-of-time",
+  "descriptionTemplate": "Discard all cards in your hand and draw a number of cards equal to that quantity +3.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Tawil"
+}

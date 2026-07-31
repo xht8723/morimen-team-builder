@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0104",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "真理之门",
+      "sourceHash": "sha256:65d252f6c7c3d042079d8886a3acc577ca312d5ec10714ff855f715d851d2117",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始后，获得等同于装备者 500% 银钥充能的银钥能量。每场战斗首次释放钥令后，重复一次该效果。",
+      "sourceHash": "sha256:ab54ff050a7db44d981b1a59c0ddc54a9d54355cb8b4ff3e6d7746c265a445e0",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0057",
+  "name": "Death of Ms. Coral",
+  "route": {
+    "slug": "death-of-ms-coral",
+    "canonicalPath": "/database/wheels/death-of-ms-coral"
+  },
+  "assets": {
+    "icon": "asset-wheel-0057-icon"
+  },
+  "rarity": "SSR",
+  "realm": "AEQUOR",
+  "mainstatKey": "DEATH_RESISTANCE",
+  "ownerAwakenerId": "awakener-0045",
+  "ownerAwakenerName": "Sanga",
+  "lineupToken": "A",
+  "descriptionTemplate": "Whenever one of the wielder's cards is played, gain Shield equal to [StateArg1]% of the wielder's DEF, plus another [StateArg2]% of their DEF for each Tentacle.\nThis effect triggers only once each turn.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["6", "8", "10", "12"],
+      "suffix": "%"
+    },
+    "StateArg2": {
+      "kind": "scaling",
+      "values": ["1.5", "2", "2.5", "3"],
+      "suffix": "%"
+    }
+  },
+  "lore": "She never dreams.\n\nThe young apprentice sculptor firmly believes in absolute rationality and order, just like her cold, lifeless works.\nFrom the moment she first laid eyes on it, she was captivated.\nSoft, pure—it was the perfect coloring material.\nUnder the moonlight, she worked tirelessly, bringing the black goo from the graveyard back to her studio.\n\nA week later, a sculpture titled \"@2\" was exhibited at the fair.\nThat night, she heard waves from afar.\nFor the first time, she dreamed.\nUnder the tranquil morning light, the dust-covered underwater palace lay peacefully asleep.\nShe wandered through the white coral clusters, breathing in an atmosphere thick with loneliness and forgetfulness.\n\nWhen she awoke, her fingers were curling, turning black, and eventually sprouted white coral.\nShe inhaled repeatedly, sensing the murmurs of ancient times, the countless whispers of long-departed creatures.\nIt was a truly soft fossil.\nNervously, she began to laugh—so this is what dreaming feels like.\nShe locked herself in the studio, starting to create obsessively.\nMolding, sculpting, coloring...\nChaotic yet orderly. Inorganic yet organic.\n\nShe will forever dream.",
+  "searchTags": ["Shield"]
+}

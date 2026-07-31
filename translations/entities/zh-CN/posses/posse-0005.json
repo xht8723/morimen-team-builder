@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0005",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "小小心愿",
+      "sourceHash": "sha256:1c98ccb5dab94130bc38a2e2f0a0aace2fd9a82fed122e1be80c1ba4ed770810",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择 1 名唤醒体使其获得 35 点狂气。",
+      "sourceHash": "sha256:9652135aeee2400a726184452b3c02b08f53a40af93a37bb8fd1faad03c4f6d2",
+      "status": "reference"
+    }
+  }
+}

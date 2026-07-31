@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0050",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "神王的颂歌",
+      "sourceHash": "sha256:422eeacea756ab6674a21fa8cac785979b872aedf73bc366fad79b917955b74e",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时，装备者获得 40 狂气。每当其他唤醒体释放狂气爆发时，装备者获得 6 狂气。若当前界域为「深海」，装备者释放狂气爆发后，获得等同于攻击力 5% 的触腕伤害。",
+      "sourceHash": "sha256:d60f32de8f24d5d83633e062b77522aa1537efa8a7a5e53819aaaf9b64919572",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0008",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "血肉狂宴",
+      "sourceHash": "sha256:c515347713f7d74fd5eea475afc7ac568e57019141a7ce7f3fb7fe6eeddf399c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的「狂气爆发」暴击率和暴击伤害提高 15%。装备者释放「狂气爆发」后，获得等同于装备者体质 6% 的力量。若本次狂气爆发触发了吞噬效果，额外获得 1 次力量。",
+      "sourceHash": "sha256:231b22f3d16f5049902e75c554ab674cb05126df064569b1313d2f4c5e156049",
+      "status": "reference"
+    }
+  }
+}

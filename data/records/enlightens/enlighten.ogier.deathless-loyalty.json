@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ogier.deathless-loyalty",
+  "name": "Deathless Loyalty",
+  "route": {
+    "slug": "deathless-loyalty",
+    "canonicalPath": "/database/awakeners/ogier/enlightens/deathless-loyalty"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Knight's Zeal} is enhanced: The {STR} gained through {Knight's Zeal} +50%. If {Death Resistance} has been triggered this battle, Ogier's Exalt generates 3 times the Temporary {STR} instead.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ogier"
+}

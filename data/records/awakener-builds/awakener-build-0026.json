@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0026",
+  "name": "Karen Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/karen/builds/standard"
+  },
+  "awakenerId": "awakener-0026",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0002", "covenant-0001"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0050"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0034"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0095"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["ALIEMUS_REGEN"], ["KEYFLARE_REGEN", "DMG_AMP"]],
+      "recommendedWheelMainstats": ["ALIEMUS_REGEN", "KEYFLARE_REGEN", "DMG_AMP"]
+    }
+  ],
+  "ownerAwakenerName": "Karen"
+}

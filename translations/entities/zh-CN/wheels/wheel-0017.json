@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0017",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "骑士之心",
+      "sourceHash": "sha256:b10e60d0e2bf0684e4112a5d2ebe5b7caf79b8b5879f218286d5f12ab6c61a65",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的「狂气爆发」造成的护盾提高 25%。装备者释放「狂气爆发」后，获得等同于装备者防御力 25% 层数的临时 力量。若我方队伍处于 脆弱状态，效果翻倍。",
+      "sourceHash": "sha256:be3e3c1c811f1c584cc20f64a04fa6480bc91b266786037818f9549728ff3171",
+      "status": "reference"
+    }
+  }
+}

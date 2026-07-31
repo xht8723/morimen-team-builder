@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.leigh.pallid-bloodied-kiss",
+  "name": "Pallid Bloodied Kiss",
+  "route": {
+    "slug": "pallid-bloodied-kiss",
+    "canonicalPath": "/database/awakeners/leigh/skills/pallid-bloodied-kiss"
+  },
+  "ownerAwakenerId": "awakener-0028",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Obtain 100% more {STR}, and all Awakener gain a 10% increase in Crit. Rate and Crit. DMG.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Leigh"
+}

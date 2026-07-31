@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0029",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "莉莉",
+      "sourceHash": "sha256:2f37d4417403482e933589590980fe26450e368e3e158dd00adacda5a0be31d7",
+      "status": "reference"
+    },
+    "description": {
+      "value": "莉莉渴望着她称作「妈妈」的存在，并顺从「主人」的一切命令。真实姓名早已遗失，她如今只以这具躯体的形态为名——一朵在腐败中心绽放的白色百合。",
+      "sourceHash": "sha256:a0f35fff79f1f514018f1a927ad488d4f882f8feedeb64d6b81a5e1ac751ac5a",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.counter",
+  "name": "Counter",
+  "route": {
+    "slug": "counter",
+    "canonicalPath": "/database/overlays/counter"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.counter-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_019",
+  "textColor": "shield",
+  "descriptionTemplate": "When attacked, deal DMG equal to the number of {Counter} stacks to the attacker.",
+  "descriptionArgs": {}
+}

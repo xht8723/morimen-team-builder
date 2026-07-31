@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0014",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "四月礼赞",
+      "sourceHash": "sha256:0de36a0c88fb02e46c758d65d0bcba7ad33ad30c6bf0328d70a8dc1e4cf1ec2d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 暴击伤害 +7.2% 6件套： 队伍唯一。回合开始时，若敌人总生命大于 75%，装备者临时暴击率和暴击伤害 +35%。",
+      "sourceHash": "sha256:915d37e1f735d984b8535ec46212e53bd6da0f3d86d852afb09a2b5e7eee0142",
+      "status": "reference"
+    }
+  }
+}

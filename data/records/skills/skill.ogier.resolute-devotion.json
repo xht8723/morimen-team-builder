@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.ogier.resolute-devotion",
+  "name": "Resolute Devotion",
+  "route": {
+    "slug": "resolute-devotion",
+    "canonicalPath": "/database/awakeners/ogier/skills/resolute-devotion"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Shield gain increased by 200%, Ogier's DMG instances +1, lasting 3 turns.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Ogier"
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.propagation-frenzy",
+  "name": "Propagation Fiesta",
+  "route": {
+    "slug": "propagation-frenzy",
+    "canonicalPath": "/database/overlays/propagation-frenzy"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.propagation-frenzy-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Propagation Frenzy", "Breeding Frenzy"],
+  "iconId": "IconS_Buff_088",
+  "textColor": "damage",
+  "descriptionTemplate": "For each stack, this Awakener's next Exalt this turn deals 1% more DMG, Shield, HP Recovery, {STR}, {STR▼}, {Tentacle DMG}, Fixed {Poison}, and Fixed {Counter}.",
+  "descriptionArgs": {}
+}

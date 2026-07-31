@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.agrippa.the-usurper",
+  "name": "The Usurper",
+  "route": {
+    "slug": "the-usurper",
+    "canonicalPath": "/database/awakeners/agrippa/enlightens/the-usurper"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "slot": "E1",
+  "descriptionTemplate": "{Reluctant Alms} reduces the Arithmetica Cost of the highest-cost card in hand by 1 for this turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Agrippa"
+}

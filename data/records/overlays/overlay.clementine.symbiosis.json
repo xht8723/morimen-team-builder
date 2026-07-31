@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.clementine.symbiosis",
+  "name": "Symbiosis",
+  "route": {
+    "slug": "symbiosis",
+    "canonicalPath": "/database/awakeners/clementine/overlays/symbiosis"
+  },
+  "assets": {
+    "icon": "asset-overlay.clementine.symbiosis-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0010",
+  "aliases": [],
+  "iconId": "IconS_Buff_053",
+  "textColor": "affliction",
+  "descriptionTemplate": "Her emotions, cognition, and everything else are eternally linked to the Hive Will. {Symbiosis} can be transformed into debuff effects by Clementine's Exalt {Lifeform Reconstruction}, stacking up to 10 stacks.",
+  "descriptionArgs": {},
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.clementine.you-will-recover.overlay.clementine.symbiosis",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.clementine.you-will-recover",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0010",
+      "ownerAwakenerName": "Clementine",
+      "patch": {
+        "descriptionTemplate": "Her emotions, cognition, and everything else are eternally linked to the Hive Will. {Symbiosis} can be transformed into debuff effects by Clementine's Exalt {Lifeform Reconstruction}, stacking up to 15 stacks."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Clementine"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0043",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "搭档特训",
+      "sourceHash": "sha256:f4008759d2980816bcdb22de7bdf3404c36a08d179eb6bc8c883f058781303f3",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：释放钥令后，装备者的暴击率临时提高 35%。",
+      "sourceHash": "sha256:a327c3d272794dbc111bb792b94222fda4ddeb7722790eb78ddc4c558379bfc2",
+      "status": "reference"
+    }
+  }
+}

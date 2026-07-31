@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.daffodil.thousand-mirage-effect-retrieve",
+  "name": "Retrieve",
+  "route": {
+    "slug": "retrieve",
+    "canonicalPath": "/database/awakeners/daffodil/derived-skills/retrieve"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "derivedFromId": "derived.daffodil.thousand-mirage-extra-effects",
+  "rootSkillId": "skill.daffodil.sea-of-primordial-essence",
+  "descriptionTemplate": "Choose 1 card from the Draw Pile and add it to your hand.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Daffodil"
+}

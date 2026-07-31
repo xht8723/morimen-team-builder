@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.faros.abyssal-obsession",
+  "name": "Abyssal Obsession",
+  "route": {
+    "slug": "abyssal-obsession",
+    "canonicalPath": "/database/awakeners/faros/skills/abyssal-obsession"
+  },
+  "ownerAwakenerId": "awakener-0017",
+  "slot": "Rouse",
+  "descriptionTemplate": "Faros gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle. For each card Faros plays, draw [Arg2] {plural:[Arg2]|card|cards}, trigger [Arg3]% {Poison} on all enemies, up to 3 times per turn.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "10",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.faros.to-the-radiant-shore.skill.faros.abyssal-obsession",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.faros.to-the-radiant-shore",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0017",
+      "ownerAwakenerName": "Faros",
+      "patch": {
+        "descriptionTemplate": "Faros gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle. For each card Faros plays, draw [Arg2] {plural:[Arg2]|card|cards}, trigger [Arg3]% {Poison} on all enemies, and when Tentacles deal DMG this turn, additionally inflict {Poison} equal to 5% of DMG dealt, up to 3 times per turn."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Faros"
+}

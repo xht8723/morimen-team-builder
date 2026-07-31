@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.aurita.clamorous-ocean",
+  "name": "Clamorous Ocean",
+  "route": {
+    "slug": "clamorous-ocean",
+    "canonicalPath": "/database/awakeners/aurita/skills/clamorous-ocean"
+  },
+  "ownerAwakenerId": "awakener-0005",
+  "slot": "Exalt",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Expend up to 10 {Gland Division} from the Draw Pile and Discard Pile, each provides 1 more DMG instance. Place 2 {Gland Division} into hand. Increase Aurita's DMG output in this battle by [Arg2].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["24", "28.8", "33.6", "38.4", "43.2", "48"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["12", "14.4", "16.8", "19.2", "21.6", "24"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.aurita.slick-slide-adventure.skill.aurita.clamorous-ocean",
+      "operation": "mixed",
+      "upgraderId": "enlighten.aurita.slick-slide-adventure",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0005",
+      "ownerAwakenerName": "Aurita",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] {Pierce DMG}. Consume up to 10 {Gland Division} cards from the Draw Pile and Discard Pile, each causing an additional instance of DMG. Place 2 {Gland Division} cards into hand. Increase the DMG caused by Aurita in this battle by [Arg2].",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["48", "57.6", "67.2", "76.8", "86.4", "96"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["12", "14.4", "16.8", "19.2", "21.6", "24"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Aurita"
+}

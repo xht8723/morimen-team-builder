@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0014",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "溯洄时计",
+      "sourceHash": "sha256:517e5b342cb8eddf35e75652e624a0398f7a3c8b09f540d327a832e023ad8a6b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：打出装备者的指令卡后，有 60% 的概率将其从弃牌堆重新加入手牌，该效果单个回合只生效 1 次。",
+      "sourceHash": "sha256:d30e4c6403d990745bd0516ede83be0191c9de345493977bf36a186b8de9e494",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0048",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "岁末花火",
+      "sourceHash": "sha256:f80db1e989830b5bbbcf19169437bd9955666d08332dd799ab4aa4e1ec84f3d4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "临时暴击率 +15%，获得 1 点算力。本场战斗首次释放时对所有敌人造成 x 点旧日余烬「旧日余烬」层数每回合重置。。",
+      "sourceHash": "sha256:f46f0a786f983e35ebac0b229134089e12722ab67b29da84e2f30a408bd44542",
+      "status": "reference"
+    }
+  }
+}

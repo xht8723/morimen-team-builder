@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0026",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "春天的献诗",
+      "sourceHash": "sha256:308a96713f8cf5b5f445e3f45634b4ed971a220d9d3886f0705370193787d89a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "从四种诗页风颂歌：获得 x 点力量。花颂：所有唤醒体获得 10 点狂气。月颂：临时暴击率提高 30%。中选择一项，并将其从选项中移除。所有诗页都被选择后，重置。",
+      "sourceHash": "sha256:ac15c5e31689cf2ff23ef1918ad4f2558d22979f66f735689e6eef396d94faf8",
+      "status": "reference"
+    }
+  }
+}

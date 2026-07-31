@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.nautila.maintenance-expert",
+  "name": "Maintenance Expert",
+  "route": {
+    "slug": "maintenance-expert",
+    "canonicalPath": "/database/awakeners/nautila/skills/maintenance-expert"
+  },
+  "ownerAwakenerId": "awakener-0036",
+  "slot": "Rouse",
+  "descriptionTemplate": "Nautila gains [Energy:Arg1] Aliemus. {Rouse}: Shield and {Counter} applied by Nautila +[Arg2]%.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "50",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.nautila.ace-mechanist.skill.nautila.maintenance-expert",
+      "operation": "mixed",
+      "upgraderId": "enlighten.nautila.ace-mechanist",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0036",
+      "ownerAwakenerName": "Nautila",
+      "patch": {
+        "descriptionTemplate": "Nautila gains [Energy:Arg1] Aliemus. {Rouse}: Shield and {Counter} applied by Nautila +[Arg2]%, and the Fixed {Counter} dealt by all Awakeners +[Arg3]%.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "50",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "30",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Nautila"
+}

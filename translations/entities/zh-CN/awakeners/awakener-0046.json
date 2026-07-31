@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0046",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "索蕾尔",
+      "sourceHash": "sha256:5755bfaca1e02a6f2ac7dc796c793dd0fcced11775b93f81d2867c2d18503518",
+      "status": "reference"
+    },
+    "description": {
+      "value": "索蕾尔的巧舌如玫瑰花蜜，贵族与廷臣则是围绕花朵起舞的蜂蝶。欲望滋养的荆棘早已缠上花窗；流言越盛，她越能微笑着把每个人引向自己布置的舞台。",
+      "sourceHash": "sha256:1b6a47d7f4c4c2e19c810f88500866076980d3f7000a0956f443c1ca2f24f118",
+      "status": "machine"
+    }
+  }
+}

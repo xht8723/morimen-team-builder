@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0004",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "鼠鼠的智慧",
+      "sourceHash": "sha256:1c71e989743a75cc99b5e2ab31128cde3a22b4274e0cfdadc7367b8c48e21e66",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 3 点算力。",
+      "sourceHash": "sha256:f1bf0af6042201b691fc30d241e995c7f4f4b404005441f5e5a061d66e7caf7c",
+      "status": "reference"
+    }
+  }
+}

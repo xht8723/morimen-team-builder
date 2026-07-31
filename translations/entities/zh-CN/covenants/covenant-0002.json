@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0002",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "再衍化",
+      "sourceHash": "sha256:4b115f56e24c5e76183713bbb3ff858c9c90c8791aaec3636b270f35d61b6d4d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 狂气回充等级 +2.4 6件套： 队伍唯一。探索开始时，装备者获得 35 点狂气。装备者使用狂气爆发后，本场战斗中回合结束时获得 2 点狂气，该效果至多堆叠 3 次。",
+      "sourceHash": "sha256:a5da3a06393472cb0b0829b55bc5d996201414c7c7d64f84da551b1d52c1fb8e",
+      "status": "reference"
+    }
+  }
+}

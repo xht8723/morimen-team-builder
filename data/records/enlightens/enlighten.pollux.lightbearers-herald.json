@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pollux.lightbearers-herald",
+  "name": "Lightbearer's Herald",
+  "route": {
+    "slug": "lightbearers-herald",
+    "canonicalPath": "/database/awakeners/pollux/enlightens/lightbearers-herald"
+  },
+  "ownerAwakenerId": "awakener-0041",
+  "slot": "E1",
+  "descriptionTemplate": "At the start of the battle, put 1 {Sacred Heart} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pollux"
+}

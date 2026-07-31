@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0040",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "永恒安魂曲",
+      "sourceHash": "sha256:aa07383d18e9c1a9391c6dfbaf7c16a454839a1421cb31fdb16b9b2e44b5b05d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始时，将 1 张「银钥曦光」洗入抽牌堆并附加销毁。释放钥令后，装备者暴击伤害提高 5%。装备者造成伤害时，获得等同于装备者银钥充能 80% 的银钥能量和 8% 临时暴击率，每回合最多生效 5 次。",
+      "sourceHash": "sha256:637654a73e35c221ddda2c3c648e7c8ca2f1f5e687660dd85d4af9206d3d04b8",
+      "status": "reference"
+    }
+  }
+}

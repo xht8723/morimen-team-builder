@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0054",
+  "name": "Dimensional Image: Xu",
+  "route": {
+    "slug": "dimensional-image-xu",
+    "canonicalPath": "/database/relics/dimensional-image-xu"
+  },
+  "assets": {
+    "icon": "asset-relic-0054-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0054",
+  "ownerAwakenerId": "awakener-0054",
+  "ownerAwakenerName": "Xu",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Xu gains [Arg1] Aliemus and inflicts 1 stack of {Spellbound} on all enemies. The first Command Card Xu plays each turn will trigger the {Resonance} effect.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0054",
+      "name": "Dimensional Image: Xu",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0054",
+      "ownerAwakenerName": "Xu",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Xu gains [Arg1] Aliemus and inflicts 1 stack of {Spellbound} on all enemies. The first Command Card Xu plays each turn will trigger the {Resonance} effect.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        }
+      }
+    }
+  ]
+}

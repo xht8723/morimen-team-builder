@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0001",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "慈悲的哺育",
+      "sourceHash": "sha256:f9b93fd1620f77c780413135f14e7d22793a05ec23e1422ef2ef405a4f5e28e4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：手牌上限 +2，无法和其他命轮提供的手牌上限叠加。回合结束时获得等同于装备者 300% 银钥充能的银钥能量。每次释放钥令，所有唤醒体获得 6 点狂气，若当前界域为「血肉」，还会使胚胎融合 +25%。",
+      "sourceHash": "sha256:0cc12d86397ad5a07683cab18277d181c9d6d72443ac9b4bd624c6e511c93f90",
+      "status": "reference"
+    }
+  }
+}

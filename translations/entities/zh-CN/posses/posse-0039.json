@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0039",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "泣血的圣心",
+      "sourceHash": "sha256:8ffad71538551ba447999e8b98804d056e4bd5bc9d6f0b24606f563340bb2ccc",
+      "status": "reference"
+    },
+    "description": {
+      "value": "抽 1 张牌并使其算力消耗 -1，若抽到指令卡则使其拥有者获得 25% 临时暴击伤害。若「波吕克斯」在队伍中，获得 5 层罪印。",
+      "sourceHash": "sha256:2ccc7784125aa1cf24e9869de672516ce7158c583e31a06e4642ff273019fee6",
+      "status": "reference"
+    }
+  }
+}

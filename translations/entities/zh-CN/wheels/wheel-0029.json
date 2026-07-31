@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0029",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "狂戮至世界尽头",
+      "sourceHash": "sha256:aaacec2af9a04761c986253bcbda667ba399c6ee12ae653d57c04dc9d8560942",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者狂气爆发和追击基础伤害提高 60%。本回合打出任意唤醒体的「打击」后，装备者「打击」伤害临时提高装备者攻击力的 25%，每回合最多生效 8 次。",
+      "sourceHash": "sha256:16057e6a8ae71840e7a8a8d37de237404c716281a1c605ed8e452f7a4cf038bf",
+      "status": "reference"
+    }
+  }
+}

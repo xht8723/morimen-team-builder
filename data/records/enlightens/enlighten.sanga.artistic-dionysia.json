@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.sanga.artistic-dionysia",
+  "name": "Artistic Dionysia",
+  "route": {
+    "slug": "artistic-dionysia",
+    "canonicalPath": "/database/awakeners/sanga/enlightens/artistic-dionysia"
+  },
+  "ownerAwakenerId": "awakener-0045",
+  "slot": "E3",
+  "descriptionTemplate": "{The Lost Art} increases Base DMG and Shield Generation by 25%, with an additional 25% Crit. Rate and Crit. DMG bonus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Sanga"
+}

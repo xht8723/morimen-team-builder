@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.tawil.twin-wings",
+  "name": "Twin Wings",
+  "route": {
+    "slug": "twin-wings",
+    "canonicalPath": "/database/awakeners/tawil/derived-skills/twin-wings"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "derivedFromId": "skill.tawil.pinions-of-time",
+  "rootSkillId": "skill.tawil.pinions-of-time",
+  "childDerivedSkillIds": ["derived.tawil.four-wings"],
+  "descriptionTemplate": "Can be played by consuming 500 Keyflare when Arithmetica is insufficient. Deal [Damage:Arg1] DMG 2 times, and Tawil obtains [Energy:Arg2] Aliemus. Draw a card. Shuffle {Four Wings} into the Draw Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    }
+  ],
+  "cost": "2",
+  "ownerAwakenerName": "Tawil"
+}

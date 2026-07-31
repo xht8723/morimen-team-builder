@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.winkle.dread-of-the-darkness",
+  "name": "Dread of the Darkness",
+  "route": {
+    "slug": "dread-of-the-darkness",
+    "canonicalPath": "/database/awakeners/winkle/enlightens/dread-of-the-darkness"
+  },
+  "ownerAwakenerId": "awakener-0053",
+  "slot": "E1",
+  "descriptionTemplate": "\"Basic Strike\" and {Energy Beam} DMG enjoys a 25% {Counter} bonus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Winkle"
+}

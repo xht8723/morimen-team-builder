@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.faint.secondary-swaddle",
+  "name": "Secondary Swaddle",
+  "route": {
+    "slug": "secondary-swaddle",
+    "canonicalPath": "/database/awakeners/faint/talents/secondary-swaddle"
+  },
+  "ownerAwakenerId": "awakener-0016",
+  "family": "passive",
+  "descriptionTemplate": "For every 1% {Death Resistance} attribute Faint has, increase the {Counter} provided by {Cradle of Stars} and {Boundless Starlight} by 0.2%, {Cradle of Stars} {Death Resistance} Limit +2%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faint"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0090",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "聚首时刻",
+      "sourceHash": "sha256:f5b35bfb4f769edc0ebd686d04ff3468accdf1a8a8f8faab5a15bd23580125f7",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：每打出 1 张装备者的卡牌，就获得 50 银钥能量。该效果单个回合最多生效 3 次。",
+      "sourceHash": "sha256:849ee106b9e753032afb73ac5cdbad382463b8f76624762627be937dd8d7f557",
+      "status": "reference"
+    }
+  }
+}

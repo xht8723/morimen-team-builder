@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0049",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "汀克特",
+      "sourceHash": "sha256:6f459dd9ec7f46fd2e06cd507f1018a0867ce6fdd876efc03752ff699547ef45",
+      "status": "reference"
+    },
+    "description": {
+      "value": "汀克特是群星间的歌者、闪烁的星尘，也是困在金笼中的鸟与被遗弃的留声机。故乡坠入虚空后，她被迫拥抱生存的希望，成为无主深空中的流浪者。",
+      "sourceHash": "sha256:1284176e905d12f61d9980eed2e7dd4bce9f92d5d9eca8a564a42ca9e9cb4c35",
+      "status": "machine"
+    }
+  }
+}

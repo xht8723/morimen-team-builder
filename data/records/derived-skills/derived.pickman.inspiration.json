@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.pickman.inspiration",
+  "name": "Inspiration!",
+  "route": {
+    "slug": "inspiration",
+    "canonicalPath": "/database/awakeners/pickman/derived-skills/inspiration"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "derivedFromId": "skill.pickman.chromaphage",
+  "rootSkillId": "skill.pickman.chromaphage",
+  "descriptionTemplate": "Consume 1 stack of {Fantasia}, choose all {Discover} effects. Gain 1 stack of {Creativity}.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Pickman"
+}

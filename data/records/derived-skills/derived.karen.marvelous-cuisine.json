@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.karen.marvelous-cuisine",
+  "name": "Marvelous Cuisine",
+  "route": {
+    "slug": "marvelous-cuisine",
+    "canonicalPath": "/database/awakeners/karen/derived-skills/marvelous-cuisine"
+  },
+  "ownerAwakenerId": "awakener-0026",
+  "derivedFromId": "skill.karen.dance-of-the-gibbous-moon",
+  "rootSkillId": "skill.karen.dance-of-the-gibbous-moon",
+  "descriptionTemplate": "Obtain 1 Arithmetica, usable [Arg1] {plural:[Arg1]|time|times}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "3"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    },
+    {
+      "id": "mechanic.exhaust"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Karen"
+}

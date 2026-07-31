@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0039",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "不可承受的自由",
+      "sourceHash": "sha256:2204a0f152fe2bd8aac9c3f2340069959654e5fa426ce702ac2ab08039c588e7",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：手牌上限 +2，无法和其他命轮提供的手牌上限叠加。装备者造成的护盾和基础伤害提高 15%，进入超维回合后获得 80 点狂气。释放「湮灭」后所有唤醒体临时暴击伤害 + 25%，3 回合冷却。",
+      "sourceHash": "sha256:b2bf3fa866afe319e92c8890af546e276f8ca2468abb15069527a6018019b4bb",
+      "status": "reference"
+    }
+  }
+}

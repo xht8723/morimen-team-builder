@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.agrippa.spider-queens-kiss",
+  "name": "Spider Queen's Kiss",
+  "route": {
+    "slug": "spider-queens-kiss",
+    "canonicalPath": "/database/awakeners/agrippa/enlightens/spider-queens-kiss"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "slot": "E3",
+  "descriptionTemplate": "{Colorless Spiral} increases Base DMG by 50%, and playing it grants {Embryo Fusion} +20.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Agrippa"
+}

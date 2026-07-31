@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0010",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "吞噬摇篮曲",
+      "sourceHash": "sha256:3ac77bcdce613aa06e6273a7d8f23ce2b0415945c388be19ecf1e1883fa305ba",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始后，获得等同于装备者防御力 50% 的反击。触发死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。后，获得至多总计 2 层「摇篮」：全体友方造成的护盾和生命回复提高 30% ，回合结束时移除 1 层，若当前界域为「血肉」，触发死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。后胚胎融合 +25%。",
+      "sourceHash": "sha256:051fb32260a67858443e6764966e4aec41bf4e347e8d055b4fde642a39e8d1f0",
+      "status": "reference"
+    }
+  }
+}

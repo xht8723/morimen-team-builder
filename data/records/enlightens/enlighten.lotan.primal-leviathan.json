@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.lotan.primal-leviathan",
+  "name": "Primal Leviathan",
+  "route": {
+    "slug": "primal-leviathan",
+    "canonicalPath": "/database/awakeners/lotan/enlightens/primal-leviathan"
+  },
+  "ownerAwakenerId": "awakener-0031",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Battle Thirst} is enhanced: After Lotan plays \"Defense,\" the next {Blade of Defiance} played this turn activates 2 times.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Lotan"
+}

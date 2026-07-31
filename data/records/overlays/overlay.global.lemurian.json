@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.lemurian",
+  "name": "Lemurian",
+  "route": {
+    "slug": "lemurian",
+    "canonicalPath": "/database/overlays/lemurian"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "descriptionTemplate": "",
+  "descriptionArgs": {}
+}

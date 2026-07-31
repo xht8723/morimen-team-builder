@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.propagation-caro",
+  "name": "Propagation: Caro",
+  "route": {
+    "slug": "propagation-caro",
+    "canonicalPath": "/database/overlays/propagation-caro"
+  },
+  "overlayType": "realm",
+  "aliases": ["Propagation Caro", "Divine Caro", "Propagation: Caro Mastery"],
+  "descriptionTemplate": "When Saya is in the team, the {Caro} Realm mutates into {Propagation: Caro}. {Embryo Fusion} generates {Propagule Embryo}, and Realm Mastery improves the {Propagation Fiesta} stacks gained from this realm.",
+  "descriptionArgs": {}
+}

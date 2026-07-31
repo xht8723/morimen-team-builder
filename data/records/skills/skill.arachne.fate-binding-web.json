@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.arachne.fate-binding-web",
+  "name": "Fate-Binding Web",
+  "route": {
+    "slug": "fate-binding-web",
+    "canonicalPath": "/database/awakeners/arachne/skills/fate-binding-web"
+  },
+  "ownerAwakenerId": "awakener-0056",
+  "slot": "Skill2",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Grant all other Awakeners [Energy:Arg2] Aliemus. The next {Eternal Loom} creates 2 additional {Guiding Strings}; 1 in the Draw Pile, and 1 in the Discard Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["35", "42", "49", "56", "63", "70"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.arachne.universe-as-i-conceive.skill.arachne.fate-binding-web",
+      "operation": "override_card_keywords",
+      "upgraderId": "enlighten.arachne.universe-as-i-conceive",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "patch": {
+        "cardKeywords": [
+          {
+            "id": "mechanic.prepare",
+            "value": 1
+          },
+          {
+            "id": "mechanic.retain"
+          }
+        ]
+      }
+    }
+  ],
+  "ownerAwakenerName": "Arachne"
+}

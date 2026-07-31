@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0005",
+  "name": "Dimensional Image: Aurita",
+  "route": {
+    "slug": "dimensional-image-aurita",
+    "canonicalPath": "/database/relics/dimensional-image-aurita"
+  },
+  "assets": {
+    "icon": "asset-relic-0005-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0005",
+  "ownerAwakenerId": "awakener-0005",
+  "ownerAwakenerName": "Aurita",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Aurita gains [Arg1] Aliemus. The DMG count of {Gland Division} +[Arg2], and after playing Aurita's \"Defense,\" 1 {Gland Division} is added to hand.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0005",
+      "name": "Dimensional Image: Aurita",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0005",
+      "ownerAwakenerName": "Aurita",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Aurita gains [Arg1] Aliemus. The DMG count of {Gland Division} +[Arg2], and after playing Aurita's \"Defense,\" 1 {Gland Division} is added to hand.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        },
+        "Arg2": {
+          "kind": "fixed",
+          "value": "1"
+        }
+      }
+    }
+  ]
+}

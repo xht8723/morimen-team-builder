@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.ryker.jackpot",
+  "name": "Jackpot!",
+  "route": {
+    "slug": "jackpot",
+    "canonicalPath": "/database/awakeners/ryker/skills/jackpot"
+  },
+  "ownerAwakenerId": "awakener-0043",
+  "slot": "OverExalt",
+  "descriptionTemplate": "{All-in!} deals 3 instances DMG and reduces the Arithmetica Cost of drawn cards by 1.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Ryker"
+}

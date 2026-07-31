@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0028",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "第四乐章",
+      "sourceHash": "sha256:909dfca5e4004352ddf871ebd2d349c499269eec08825ddaa4e1f038df5d816c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "本回合下一张打出的卡牌若算力消耗大于等于 3，获得 2 点算力，否则抽 2 张牌。若为本场战斗中第 4 次生效，改为直接获得 4 张「灵感保留。消耗。」。",
+      "sourceHash": "sha256:0b9bd4e4e51a85cf53e416de0e484d37ca79f4f6a9d677df2a6814df5f1ff712",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0125",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "重生于湮土",
+      "sourceHash": "sha256:61d99c628bb1f1b15408195d63c0920df1b167d4e36a90b433570be5effcea4f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后，使狂气爆发基础伤害提高 10% ，护盾和生命回复提高 5% ，至多叠加 5 次。完成探索后，装备者获得的同调率提高 25% 。",
+      "sourceHash": "sha256:ad8c41c549ae394edf7a087dce870cab881bc20ac5376167c46af7d233d5601f",
+      "status": "reference"
+    }
+  }
+}

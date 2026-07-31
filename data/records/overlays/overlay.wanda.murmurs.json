@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.wanda.murmurs",
+  "name": "Murmurs",
+  "route": {
+    "slug": "murmurs",
+    "canonicalPath": "/database/awakeners/wanda/overlays/murmurs"
+  },
+  "assets": {
+    "icon": "asset-overlay.wanda.murmurs-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0052",
+  "aliases": ["Murmur"],
+  "iconId": "IconS_Buff_047",
+  "descriptionTemplate": "Reduce DMG dealt by [StateArg1]%, double the number of attacks, and last for [Layer] {plural:[Layer]|turn|turns}.",
+  "descriptionArgs": {
+    "Layer": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "StateArg1": {
+      "kind": "fixed",
+      "value": "60",
+      "suffix": "%"
+    }
+  },
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.wanda.lakeborne-dweller.overlay.wanda.murmurs",
+      "operation": "override_args",
+      "upgraderId": "enlighten.wanda.lakeborne-dweller",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0052",
+      "ownerAwakenerName": "Wanda",
+      "patch": {
+        "descriptionArgs": {
+          "StateArg1": {
+            "kind": "fixed",
+            "value": "65",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Wanda"
+}

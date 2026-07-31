@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.winkle.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/winkle/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0053",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Winkle obtains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.winkle.dread-of-the-darkness.skill.winkle.strike",
+      "operation": "mixed",
+      "upgraderId": "enlighten.winkle.dread-of-the-darkness",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0053",
+      "ownerAwakenerName": "Winkle",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Winkle obtains [Energy:Arg2] Aliemus. The DMG dealt enjoys a [Arg3]% {Counter} bonus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["50", "60", "70", "80", "90", "100"],
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Winkle"
+}

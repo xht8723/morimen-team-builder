@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.salvador.salvations-hand",
+  "name": "Salvation's Hand",
+  "route": {
+    "slug": "salvations-hand",
+    "canonicalPath": "/database/awakeners/salvador/enlightens/salvations-hand"
+  },
+  "ownerAwakenerId": "awakener-0044",
+  "slot": "E3",
+  "descriptionTemplate": "At turn start, accumulate {Crimson Furnace} equal to 6% of CON. Exalt {He Who Protects} grants Salvador a 35% Temporary Crit. DMG increase.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Salvador"
+}

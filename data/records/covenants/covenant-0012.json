@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0012",
+  "name": "Ring of Chamber 36",
+  "route": {
+    "slug": "ring-of-chamber-36",
+    "canonicalPath": "/database/covenants/ring-of-chamber-36"
+  },
+  "assets": {
+    "icon": "asset-covenant-0012-icon"
+  },
+  "acquisitionSource": "Purchase from Mythag Shop - Lightless Exchange",
+  "lineupToken": "r",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Aliemus Regen Level +[Arg1]",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "2.4"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique. Keyflare Limit and Posse Keyflare Cost +200. Exalt Crit. Rate, Crit. DMG, Shield, and HP Recovery +30%.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "Spin, then forget—this is all of her life."
+}

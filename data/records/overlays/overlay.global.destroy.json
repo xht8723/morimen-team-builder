@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.destroy",
+  "name": "Destroy",
+  "route": {
+    "slug": "destroy",
+    "canonicalPath": "/database/overlays/destroy"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "Remains in deck after battle, but permanently removed once played or consumed.",
+  "descriptionArgs": {}
+}

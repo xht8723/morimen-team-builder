@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0018",
+  "name": "Midsummer Vision",
+  "route": {
+    "slug": "midsummer-vision",
+    "canonicalPath": "/database/posses/midsummer-vision"
+  },
+  "assets": {
+    "icon": "asset-posse-0018-icon",
+    "crystal": "asset-posse-0018-crystal",
+    "badge": "asset-posse-0018-badge"
+  },
+  "ownerAwakenerId": "awakener-0029",
+  "ownerAwakenerName": "Lily",
+  "acquisitionSource": "Clear Special Ops: The Magic of Storytelling",
+  "realm": "CHAOS",
+  "lineupToken": "w",
+  "descriptionTemplate": "Draw 1 card; if the drawn card is a Command or {Rouse} card, reduce its Arithmetica Cost to 0 and grant its Awakener [Arg1] Aliemus. Otherwise, discard that card and repeat this process.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 20.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "utility"
+    }
+  },
+  "lore": "It was a fleeting, ethereal dream of a night, light and soft, not captured on film but flowing through the memory of every photographer."
+}

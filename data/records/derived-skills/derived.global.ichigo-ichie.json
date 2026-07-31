@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.global.ichigo-ichie",
+  "name": "Ichigo Ichie",
+  "route": {
+    "slug": "ichigo-ichie",
+    "canonicalPath": "/database/derived-skills/ichigo-ichie"
+  },
+  "descriptionTemplate": "Unleash 1 of 3 random Posses twice. After played, permanently transforms into {Vernal Message}.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1"
+}

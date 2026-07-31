@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.stun",
+  "name": "Stun",
+  "route": {
+    "slug": "stun",
+    "canonicalPath": "/database/overlays/stun"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.stun-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "Battle_Card_Buff_023",
+  "textColor": "misc",
+  "descriptionTemplate": "Stunned. Unable to act.",
+  "descriptionArgs": {}
+}

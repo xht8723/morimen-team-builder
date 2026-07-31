@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.murphy.made-into-being",
+  "name": "Made Into Being",
+  "route": {
+    "slug": "made-into-being",
+    "canonicalPath": "/database/awakeners/murphy/skills/made-into-being"
+  },
+  "ownerAwakenerId": "awakener-0034",
+  "slot": "Rouse",
+  "descriptionTemplate": "Murphy gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle. After Murphy plays a card, gain 1 Temporary Tentacle that ignores the Tentacle Limit and Keyflare Regen equal to 1 Arithmetica Cost, up to 3 times per turn.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.murphy.defiant-providence.skill.murphy.made-into-being",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.murphy.defiant-providence",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0034",
+      "ownerAwakenerName": "Murphy",
+      "patch": {
+        "descriptionTemplate": "Murphy gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle. After Murphy plays a card, gain 1 Temporary Tentacle ignoring the Tentacle Limit, plus Keyflare Regen equal to 1 Arithmetica Cost, up to 3 times per turn.The first {Vortex Reversed} and {Divine Maiden's Birth} played each turn have their DMG count and Arithmetica gain doubled respectively."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Murphy"
+}

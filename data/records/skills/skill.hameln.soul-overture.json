@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.hameln.soul-overture",
+  "name": "Soul Overture",
+  "route": {
+    "slug": "soul-overture",
+    "canonicalPath": "/database/awakeners/hameln/skills/soul-overture"
+  },
+  "ownerAwakenerId": "awakener-0022",
+  "slot": "Skill1",
+  "descriptionTemplate": "Randomly deal 3 instances of [Damage:Arg1] {Pierce DMG}. Each hit has a 50% chance to randomly apply 1 {Marvelous Debuff} to the target. If used with 0 Arithmetica Cost, it Deal an additional 2 hits.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.prepare",
+      "value": 1
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.hameln.moonlit-rhapsody.skill.hameln.soul-overture",
+      "operation": "link_only",
+      "upgraderId": "enlighten.hameln.moonlit-rhapsody",
+      "upgraderType": "enlighten",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Hameln"
+}

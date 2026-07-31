@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0006",
+  "name": "Caecus Builds",
+  "route": {
+    "slug": "defence",
+    "canonicalPath": "/database/awakeners/caecus/builds/defence"
+  },
+  "awakenerId": "awakener-0006",
+  "primaryBuildId": "defence",
+  "builds": [
+    {
+      "id": "defence",
+      "label": "Defence",
+      "recommendedCovenantIds": ["covenant-0018", "covenant-0008"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0053"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0122"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0091"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0095", "wheel-0089", "wheel-0081", "wheel-0078"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"], ["ALIEMUS_REGEN", "DMG_AMP"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN", "ALIEMUS_REGEN", "DMG_AMP"]
+    },
+    {
+      "id": "counter-carry",
+      "label": "Counter Carry",
+      "recommendedCovenantIds": ["covenant-0014", "covenant-0020"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0121"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0055"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0084"],
+          "tier": "BIS_SR"
+        }
+      ],
+      "substatPriorityGroups": [["CRIT_RATE"], ["CRIT_DMG"], ["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["CRIT_RATE", "CRIT_DMG"]
+    }
+  ],
+  "ownerAwakenerName": "Caecus"
+}

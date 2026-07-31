@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.stellar-protection",
+  "name": "Stellar Protection",
+  "route": {
+    "slug": "stellar-protection",
+    "canonicalPath": "/database/overlays/stellar-protection"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "shield",
+  "descriptionTemplate": "When using {Arouse}, gain [Layer] Arithmetica. If the current Realm is {Aequor}, an additional [Layer] Tentacles are generated temporarily.",
+  "descriptionArgs": {
+    "Layer": {
+      "kind": "fixed",
+      "value": "X"
+    }
+  }
+}

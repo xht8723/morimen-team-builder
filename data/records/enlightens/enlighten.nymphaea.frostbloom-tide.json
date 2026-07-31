@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.nymphaea.frostbloom-tide",
+  "name": "Frostbloom Tide",
+  "route": {
+    "slug": "frostbloom-tide",
+    "canonicalPath": "/database/awakeners/nymphaea/enlightens/frostbloom-tide"
+  },
+  "ownerAwakenerId": "awakener-0037",
+  "slot": "E3",
+  "descriptionTemplate": "After releasing {Passage of the Ego}, in this battle, the number of {Poison} stacks applied by {Passage of the Ego} +[Arg1]% of ATK (the effect scales with the level of {Passage of the Ego}).",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["90", "108", "126", "144", "162", "180"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Nymphaea"
+}

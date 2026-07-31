@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.miryam.defense",
+  "name": "Defense",
+  "route": {
+    "slug": "defense",
+    "canonicalPath": "/database/awakeners/miryam/skills/defense"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "slot": "Defense",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Miryam obtains [Energy:Arg2] Aliemus. {Ritual}: Temporarily reduce all enemies' {STR▼} by [Exhaustion:Arg3]/[Exhaustion:Arg4]/[Exhaustion:Arg5].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["6.25", "7.5", "8.75", "10", "11.25", "12.5"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["15.625", "18.75", "21.875", "25", "28.125", "31.25"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg5": {
+      "kind": "scaling",
+      "values": ["31.25", "37.5", "43.75", "50", "56.25", "62.5"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.miryam.vanitys-collapse.skill.miryam.defense",
+      "operation": "override_args",
+      "upgraderId": "enlighten.miryam.vanitys-collapse",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0032",
+      "ownerAwakenerName": "Miryam",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["8.125", "9.75", "11.375", "13", "14.625", "16.25"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg4": {
+            "kind": "scaling",
+            "values": ["20.3125", "24.375", "28.4375", "32.5", "36.5625", "40.625"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg5": {
+            "kind": "scaling",
+            "values": ["40.625", "48.75", "56.875", "65", "73.125", "81.25"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Miryam"
+}

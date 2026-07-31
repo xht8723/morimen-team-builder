@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.ramona-timeworn.rebirth-tribunal",
+  "name": "Rebirth Tribunal",
+  "route": {
+    "slug": "rebirth-tribunal",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/derived-skills/rebirth-tribunal"
+  },
+  "ownerAwakenerId": "awakener-0020",
+  "derivedFromId": "skill.ramona-timeworn.predetermined-strike",
+  "rootSkillId": "skill.ramona-timeworn.predetermined-strike",
+  "descriptionTemplate": "Obtain 3 Arithmetica.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

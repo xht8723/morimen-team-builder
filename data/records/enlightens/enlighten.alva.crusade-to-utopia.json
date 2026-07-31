@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.alva.crusade-to-utopia",
+  "name": "Crusade to Utopia",
+  "route": {
+    "slug": "crusade-to-utopia",
+    "canonicalPath": "/database/awakeners/alva/enlightens/crusade-to-utopia"
+  },
+  "ownerAwakenerId": "awakener-0004",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Outstanding Veteran} is enhanced: The first time Alva's Command Card deals DMG each turn, gain Shield equal to 80% DEF.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Alva"
+}

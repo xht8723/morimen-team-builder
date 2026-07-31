@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0048",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "泰旖丝",
+      "sourceHash": "sha256:83abf04cced8550327a671a8cb26ecabbdf2d131dbda0ed541ae1bd961d9e262",
+      "status": "reference"
+    },
+    "description": {
+      "value": "珠宝与轻纱掩住泰旖丝真正的模样，惊艳奢华只是她精心选择的外壳。许多人以为她虚荣轻浮，但那也许只是另一张面具，用来遮住无人能够触及的内心。",
+      "sourceHash": "sha256:079b06b93d79879d6e103be79cae1842121db3604266b8fa6c35ea948ce8d264",
+      "status": "machine"
+    }
+  }
+}

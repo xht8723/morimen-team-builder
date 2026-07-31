@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.embryo-fusion",
+  "name": "Embryo Fusion",
+  "route": {
+    "slug": "embryo-fusion",
+    "canonicalPath": "/database/overlays/embryo-fusion"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "When {Embryo Fusion} reaches its limit, place an {Embryo} into hand.",
+  "descriptionArgs": {}
+}

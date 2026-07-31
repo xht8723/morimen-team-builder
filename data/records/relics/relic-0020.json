@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0020",
+  "name": "Dimensional Image: Ramona: Timeworn",
+  "route": {
+    "slug": "dimensional-image-ramona-timeworn",
+    "canonicalPath": "/database/relics/dimensional-image-ramona-timeworn"
+  },
+  "assets": {
+    "icon": "asset-relic-0020-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0020",
+  "ownerAwakenerId": "awakener-0020",
+  "ownerAwakenerName": "Ramona: Timeworn",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Ramona: Timeworn gains [Arg1] Aliemus. The first time {Loop} is triggered each turn, gain [Arg2] Keyflare and [Arg3] {plural:[Arg3]|stack|stacks} of {Negentropy}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "500"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0020",
+      "name": "Dimensional Image: Ramona: Timeworn",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0020",
+      "ownerAwakenerName": "Ramona: Timeworn",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Ramona: Timeworn gains [Arg1] Aliemus. The first time {Loop} is triggered each turn, gain [Arg2] Keyflare and [Arg3] {plural:[Arg3]|stack|stacks} of {Negentropy}.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        },
+        "Arg2": {
+          "kind": "fixed",
+          "value": "500"
+        },
+        "Arg3": {
+          "kind": "fixed",
+          "value": "1"
+        }
+      }
+    }
+  ]
+}

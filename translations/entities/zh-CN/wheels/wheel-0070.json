@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0070",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "眷顾",
+      "sourceHash": "sha256:7fc319b77c7bef34a401718b0802caf15e112605f1be971cf40a8c91585f5494",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：普通战斗结束后可选择的刻印数量变为 4 个，装备者卡牌的刻印有 30% 概率升级为高级刻印。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:fab8551a364a311bb183457a0526df131b7c8ce641446381dc42fbdb3654a6d4",
+      "status": "reference"
+    }
+  }
+}

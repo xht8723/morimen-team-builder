@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.sacrifice",
+  "name": "Sacrifice",
+  "route": {
+    "slug": "sacrifice",
+    "canonicalPath": "/database/overlays/sacrifice"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.sacrifice-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_041",
+  "textColor": "shield",
+  "descriptionTemplate": "At turn end, take 1 DMG for each stack of {Sacrifice}, then remove 50% of {Sacrifice} stacks. {Sacrifice} persists between battles.",
+  "descriptionArgs": {}
+}

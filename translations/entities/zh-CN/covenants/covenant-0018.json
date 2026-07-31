@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0018",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "远方的欢宴",
+      "sourceHash": "sha256:905d80e96cb9b6804787dc5c858fdfe93146a31a198a4412ea302693c9aa5f03",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 黑印掉落 +3.6% 6件套： 探索开始时，获得 10 黑印。「防御」造成护盾提高 30%。若装备者黑印掉落大于 15%，效果翻倍。",
+      "sourceHash": "sha256:44f31d95548b8c2805240ccc6f12cceb5f16606b0dcc8fd5a13417c7b2b7e62e",
+      "status": "reference"
+    }
+  }
+}

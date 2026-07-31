@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.leigh.insatiable-craving",
+  "name": "Insatiable Craving",
+  "route": {
+    "slug": "insatiable-craving",
+    "canonicalPath": "/database/awakeners/leigh/enlightens/insatiable-craving"
+  },
+  "ownerAwakenerId": "awakener-0028",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Sanguivore} is enhanced: After Leigh plays a card, her next Exalt is enhanced: gain Temporary {STR} equal to 10% of Permanent {STR}. This effect stacks up to 5 times.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Leigh"
+}

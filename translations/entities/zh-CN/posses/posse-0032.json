@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0032",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "黑天鹅的舞步",
+      "sourceHash": "sha256:0f6a5bc79be57b44e982405c4fa2031238ff295139c97e6398df5edeb46f6651",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择一名唤醒体，使其指令卡暴击率和暴击伤害临时提高 15% 并获得 15 点狂气。若「莉兹」在队伍中，还会将 1 张附加消耗的「腐化绿炎」置入手中。",
+      "sourceHash": "sha256:f04bcb8b0708beffc9cc10e57fbf8b5f88e4a27e82b10c496ae217106dc216b7",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0045",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "重逢心愿",
+      "sourceHash": "sha256:61a6e443fadda867cf78a7e22960b44d49737e5baf31540ed142aba285384834",
+      "status": "reference"
+    },
+    "description": {
+      "value": "从弃牌堆中选择 1 张指令卡移回手中。若「拉蒙娜」在队伍中，使其本回合打出的下一张指令卡生效 2 次。",
+      "sourceHash": "sha256:6825898e9ea476bbb7ec01bc235329a5dbcb3d8efb55a3b0535df4190692249f",
+      "status": "reference"
+    }
+  }
+}

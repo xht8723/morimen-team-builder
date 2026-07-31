@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0034",
+  "name": "Sacred Mending",
+  "route": {
+    "slug": "sacred-mending",
+    "canonicalPath": "/database/posses/sacred-mending"
+  },
+  "assets": {
+    "icon": "asset-posse-0034-icon",
+    "crystal": "asset-posse-0034-crystal",
+    "badge": "asset-posse-0034-badge"
+  },
+  "acquisitionSource": "Clear Operation: Astral Reign - Ch. 2 - Metamorphosis",
+  "realm": "ULTRA",
+  "lineupToken": "M",
+  "descriptionTemplate": "Recover [Heal:Arg1] HP and gain [Arg2] {STR}. If Clementine is in the team, add 1 additional instance of the following effects to her next Command Card: DMG, Shield, HP Recovery, Aliemus, and Keyflare.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.07,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    },
+    "Arg2": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "esotericResearchDepth",
+      "rounding": "ceil",
+      "multiplier": 0.02,
+      "inputs": ["accountLevel", "ownedPosseCount", "realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "offensive"
+    }
+  },
+  "lore": "She has healed countless patients, guiding them toward rebirth, and everything now is just a psychological therapy.\nThe only special thing is that the patient is herself."
+}

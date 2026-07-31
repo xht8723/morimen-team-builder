@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0033",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "酒馆之门",
+      "sourceHash": "sha256:dda17fa520977736829c96132e26460c4c6bdfd1f4455a0157fc4091d599bbb4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "将 1 张「莉雅的硬币」置入弃牌堆。「莉雅的硬币」：获得 2 点算力，抽 2 张牌。消耗。保留。",
+      "sourceHash": "sha256:8c5409d59358c5e83de7cc7621a10d78e588905cbc2539209f2df45a3dea00c7",
+      "status": "reference"
+    }
+  }
+}

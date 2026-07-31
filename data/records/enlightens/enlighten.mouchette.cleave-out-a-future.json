@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.mouchette.cleave-out-a-future",
+  "name": "Cleave Out a Future",
+  "route": {
+    "slug": "cleave-out-a-future",
+    "canonicalPath": "/database/awakeners/mouchette/enlightens/cleave-out-a-future"
+  },
+  "ownerAwakenerId": "awakener-0033",
+  "slot": "E3",
+  "descriptionTemplate": "{Shining☆Tornado} grants Mouchette +1 hits count this turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Mouchette"
+}

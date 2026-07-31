@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0041",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "定格的仲夏留念",
+      "sourceHash": "sha256:7f06e3370811e3a969c7095d5967653de33a73fac505b98c3009e6c470c96f13",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择 1 名唤醒体，将 1 张算力消耗为 0 的临时「打击」置入手中。每第 3 次释放，改为将 1 张「美丽瞬间」置入手中，并使所有唤醒体临时暴击率提供 20%。",
+      "sourceHash": "sha256:eff658e3050331908946d7c2586f8f86c313e740effd3f5b95cebe768a0194ed",
+      "status": "reference"
+    }
+  }
+}

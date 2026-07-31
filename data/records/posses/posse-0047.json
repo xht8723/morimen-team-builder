@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0047",
+  "name": "Manor Echoes",
+  "route": {
+    "slug": "manor-echoes",
+    "canonicalPath": "/database/posses/manor-echoes"
+  },
+  "assets": {
+    "icon": "asset-posse-0047-icon",
+    "crystal": "asset-posse-0047-crystal",
+    "badge": "asset-posse-0047-badge"
+  },
+  "ownerAwakenerId": "awakener-0054",
+  "ownerAwakenerName": "Xu",
+  "acquisitionSource": "Clear Psyche Deepdive: Whispers Behind the Fan",
+  "realm": "CARO",
+  "lineupToken": "2",
+  "descriptionTemplate": "Gain 1 Arithmetica and inflict [Exhaustion:Arg1] Temp. {STR▼} on all enemies. If Xu is in the team, also inflict 1 stack of {Spellbound} on all enemies.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.041,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    }
+  },
+  "lore": "The secluded manor holds too many secrets—of power, of obsession, of desire.\nOf the glimpse the evil deity casts upon the mortal world, brimming with love both \"delighted\" and \"twisted.\""
+}

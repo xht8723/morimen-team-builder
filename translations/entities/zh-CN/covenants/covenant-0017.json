@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0017",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "入药之梦",
+      "sourceHash": "sha256:61c15eab87bdba586cd519d8cb2978f0ac452cf8b027fbf0c093defb84b8b56f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 伤害强效 +4.8% 6件套： 队伍唯一。战斗结束时获得的黑印 -8，战斗开始时将装备者非打击防御指令卡的原始复制洗入抽牌堆，每种至多 1 张。",
+      "sourceHash": "sha256:33e8ef55edd0b7f66c174e6a626cfd8a9343726322fbf603e338ad401da26335",
+      "status": "reference"
+    }
+  }
+}

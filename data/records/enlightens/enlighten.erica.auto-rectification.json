@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.erica.auto-rectification",
+  "name": "Auto-Rectification",
+  "route": {
+    "slug": "auto-rectification",
+    "canonicalPath": "/database/awakeners/erica/enlightens/auto-rectification"
+  },
+  "ownerAwakenerId": "awakener-0015",
+  "slot": "E1",
+  "descriptionTemplate": "{Unleash: Mecha} places 1 \"Basic Strike\" with {Exhaust} into hand, and {Retract: Mecha} places 1 \"Basic Defense\" with {Exhaust} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Erica"
+}

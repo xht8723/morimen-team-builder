@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0054",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·汲取",
+      "sourceHash": "sha256:66ac62e7d86bef7a7bbd6c035593cc78a7764a4a10ee8ce2dee9987222fe745a",
+      "status": "machine"
+    },
+    "description": {
+      "value": "使所有敌人的力量降低效果临时减少 Arg1。数值随原初精通成长。",
+      "sourceHash": "sha256:d387032111dde4934c20aaef4787b401a6f087cfc9c99e7fe85295aeadc9fe16",
+      "status": "machine"
+    }
+  }
+}

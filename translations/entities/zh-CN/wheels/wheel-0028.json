@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0028",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "琥珀色的死亡",
+      "sourceHash": "sha256:da692cf5425ae73a71ba9ffa8bd5affd48261df4662c206ed31655b6bb5594c3",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害提高 35%，造成的力量提高 12%。打出装备者指令卡后获得装备者攻击力 20% 的临时力量，每回合最多触发 5 次。",
+      "sourceHash": "sha256:eb77e2a8e1278c4dad2496342ce619a62ad3a7303f2aca7a650f8f224ace8760",
+      "status": "reference"
+    }
+  }
+}

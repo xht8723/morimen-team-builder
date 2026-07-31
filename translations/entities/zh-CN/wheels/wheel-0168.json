@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0168",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "淤泥里的童话",
+      "sourceHash": "sha256:19fbb828e384c58c716674dcc1c70a9978f2757d02fa2cbebb943ca438345608",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：使用「猩红熔炉」后装备者获得 10% 基础狂气，3 回合冷却。",
+      "sourceHash": "sha256:45abf77b6bd88856a4b89f30f1f6f168c4517e512185e059ced1644b194afd0d",
+      "status": "reference"
+    }
+  }
+}

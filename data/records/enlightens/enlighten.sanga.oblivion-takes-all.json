@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.sanga.oblivion-takes-all",
+  "name": "Oblivion Takes All",
+  "route": {
+    "slug": "oblivion-takes-all",
+    "canonicalPath": "/database/awakeners/sanga/enlightens/oblivion-takes-all"
+  },
+  "ownerAwakenerId": "awakener-0045",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Realm of Oblivion} is enhanced: Sanga's Final DMG +15%. For each Permanent Tentacle, Sanga's Shield Generation and Final DMG +3%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Sanga"
+}

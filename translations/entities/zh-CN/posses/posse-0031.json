@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0031",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "群星的庇佑",
+      "sourceHash": "sha256:b04e52c89af4e8b9ee4e2d40cb120a5ef80a6204cb21ef3ef57c08c39b11da20",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择「沉眠」或「苏醒」。沉眠：获得 x 点护盾，获得 1 层「星辰庇佑」，最大积攒 5 层，战斗结束后不清除。苏醒：所有唤醒体获得 8 点狂气，消耗所有「星辰庇佑」并获得与消耗层数相同的算力，若当前界域为「深海」，额外生成与消耗层数相同的临时触腕。",
+      "sourceHash": "sha256:a4131c72b28ebb346e8a65fbb0e9f5b85fc8740fa39d77c653d46b641799f0c2",
+      "status": "reference"
+    }
+  }
+}

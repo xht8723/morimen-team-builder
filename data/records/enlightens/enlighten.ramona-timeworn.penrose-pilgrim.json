@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ramona-timeworn.penrose-pilgrim",
+  "name": "Penrose Pilgrim",
+  "route": {
+    "slug": "penrose-pilgrim",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/enlightens/penrose-pilgrim"
+  },
+  "ownerAwakenerId": "awakener-0020",
+  "slot": "E1",
+  "descriptionTemplate": "Gain 1 stack of {Negentropy} at turn end.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

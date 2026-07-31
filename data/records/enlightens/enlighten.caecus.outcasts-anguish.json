@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.caecus.outcasts-anguish",
+  "name": "Outcast's Anguish",
+  "route": {
+    "slug": "outcasts-anguish",
+    "canonicalPath": "/database/awakeners/caecus/enlightens/outcasts-anguish"
+  },
+  "ownerAwakenerId": "awakener-0006",
+  "slot": "E3",
+  "descriptionTemplate": "Heal HP equal to 7.5% of CON at turn end.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Caecus"
+}

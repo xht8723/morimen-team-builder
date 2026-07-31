@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0030",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "虚无瘟疫",
+      "sourceHash": "sha256:e8fb8fbc6675a49093ea0ff89a7dd2e3a6cf0b96b6a5e80c19618c666b0f5314",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择一名唤醒体获得 20 点狂气，对所有敌人施加 x 层中毒，目标每损失 1% 生命额外触发 1% 中毒，至多触发 50% 中毒。",
+      "sourceHash": "sha256:6948d99f2103aa27b13225997f2c22e84f41dfbfdda4c90bd2a9d25dbc702d3e",
+      "status": "reference"
+    }
+  }
+}

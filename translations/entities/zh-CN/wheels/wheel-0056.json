@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0056",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "虔诚的伟力",
+      "sourceHash": "sha256:0e7d78ec89378cc51d8a7eb3c6a3796a05f5d8238d05edb6564c3f4775d4cea9",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的狂气提高 10%，造成的中毒提高 15%。装备者造成伤害后，所有唤醒体临时暴击伤害提高，数值等同于装备者暴击伤害的 15%，每回合最多生效 1 次。若当前界域为「深海」，战斗开始时，触腕上限和触腕数量 +1。",
+      "sourceHash": "sha256:dd8f6eb0ae2899ba30ceeca50e2b6733d126b05c2d219b316fc187e7a88b9e3b",
+      "status": "reference"
+    }
+  }
+}

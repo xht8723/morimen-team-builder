@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0101",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "百万蒙宠之眼",
+      "sourceHash": "sha256:a968f51b902f1f448e533e157398ea586dbd1e07b82cdc2653215812ab97ba67",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的伤害数值提高装备者攻击力的 12%。若当前界域为「血肉」，装备者每当触发了吞噬效果，额外使装备者造成的伤害数值提高装备者攻击力的 3%。",
+      "sourceHash": "sha256:d8f8be7358f68d8c77846da19e11451b1a278e3d92e176528ab5988d4574548e",
+      "status": "reference"
+    }
+  }
+}

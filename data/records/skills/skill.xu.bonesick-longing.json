@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.xu.bonesick-longing",
+  "name": "Bonesick Longing",
+  "route": {
+    "slug": "bonesick-longing",
+    "canonicalPath": "/database/awakeners/xu/skills/bonesick-longing"
+  },
+  "ownerAwakenerId": "awakener-0054",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] guaranteed Critical Hit DMG to all enemies and trigger [Arg2]% {Poison}. {Resonance 3}: {Embryo Fusion} +[Arg4].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["150", "180", "210", "240", "270", "300"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "80",
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "50"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.xu.enmity-of-the-heart.skill.xu.bonesick-longing",
+      "operation": "mixed",
+      "upgraderId": "enlighten.xu.enmity-of-the-heart",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0054",
+      "ownerAwakenerName": "Xu",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] guaranteed Critical Hit DMG to all enemies and trigger [Arg2]% {Poison}, {Embryo Fusion}+ [Arg6]. {Resonance 3}: {Embryo Fusion} +[Arg4].",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["150", "180", "210", "240", "270", "300"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "80",
+            "suffix": "%"
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "50"
+          },
+          "Arg6": {
+            "kind": "fixed",
+            "value": "15",
+            "substatBonus": {
+              "substat": "DamageAmplification",
+              "multiplier": "0.2",
+              "mode": "additive"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Xu"
+}

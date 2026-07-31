@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0174",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "向上坠落",
+      "sourceHash": "sha256:c17bdff67688f6e89c2828acd94535ddfd7d25549d4067e1ce83519de535565d",
+      "status": "machine"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始后，将 1 张衍生牌「尘世旅途」加入牌组。该牌消耗 0 点算力，对所有敌人造成等于装备者攻击力 3000% 与其生命上限 1% 的固定腐蚀伤害，使其他唤醒体的指令卡发生认知扭曲，并将 1 张「向上坠落」洗入抽牌堆；保留，消耗。",
+      "sourceHash": "sha256:77f81b918ad5aacd15617b951edd3462f8f514a1ac493d102dc3c63cfe48b9c3",
+      "status": "machine"
+    }
+  }
+}

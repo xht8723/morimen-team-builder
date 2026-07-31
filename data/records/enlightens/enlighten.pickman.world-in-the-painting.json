@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pickman.world-in-the-painting",
+  "name": "World in the Painting",
+  "route": {
+    "slug": "world-in-the-painting",
+    "canonicalPath": "/database/awakeners/pickman/enlightens/world-in-the-painting"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Morgue Studio} is enhanced: The duration of the Painted Golden Relic created by {Lifelike Rendition} increases from 1 turn to 2 turns.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pickman"
+}

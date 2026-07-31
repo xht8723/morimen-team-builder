@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0166",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "致群星",
+      "sourceHash": "sha256:3900093999eaa60ffcc93bab42eeb7520feb2571ad0e4164844e0a5206e2590b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者自身、命轮、密契每有 1% 黑印掉落，结束战斗后回复 0.3% 最大生命，每回合结束就使该回复效果衰减 30%，多次独立计算。在「灰烬遗迹」中释放「感应」后，本次「灰烬遗迹」刷新无需消耗黑印。",
+      "sourceHash": "sha256:62827132788b6b0b23ec10eecde869d75832975a411ddb241f92a1c0d18f5d35",
+      "status": "reference"
+    }
+  }
+}

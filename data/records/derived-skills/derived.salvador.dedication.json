@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.salvador.dedication",
+  "name": "Dedication",
+  "route": {
+    "slug": "dedication",
+    "canonicalPath": "/database/awakeners/salvador/derived-skills/dedication"
+  },
+  "ownerAwakenerId": "awakener-0044",
+  "derivedFromId": "skill.salvador.end-of-suffering",
+  "rootSkillId": "skill.salvador.end-of-suffering",
+  "descriptionTemplate": "Heal with blood. After dealing DMG, lose 10% of current HP and gain an equivalent amount of {Crimson Furnace}.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Salvador"
+}

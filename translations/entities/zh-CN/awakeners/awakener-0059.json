@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0059",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "鲸皇·萝坦",
+      "sourceHash": "sha256:abdfe96fd6029d959e837cda03d77815af73c85faa2fbb6d4f2106fc988080a9",
+      "status": "reference"
+    },
+    "description": {
+      "value": "无论身处哪个维度，萝坦都不爱言语，鲸皇·萝坦更是如此；力量就是她唯一的雄辩。王者般从容之下燃烧着对强敌的饥渴，鲸骨双刃也与她一样，永远渴望更高的巅峰。",
+      "sourceHash": "sha256:afdd42056ace251e5f67aee6c5ce7c55a2d0f702907da9285648545037d94122",
+      "status": "machine"
+    }
+  }
+}

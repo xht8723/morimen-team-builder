@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.murphy.oath-of-liberation",
+  "name": "Oath of Liberation",
+  "route": {
+    "slug": "oath-of-liberation",
+    "canonicalPath": "/database/awakeners/murphy/skills/oath-of-liberation"
+  },
+  "ownerAwakenerId": "awakener-0034",
+  "slot": "OverExalt",
+  "descriptionTemplate": "At turn start, obtain a Shield equal to 60% DEF and {Tentacle DMG} equal to 15% ATK, generating 2 temporary Tentacles that last for 3 turns.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Murphy"
+}

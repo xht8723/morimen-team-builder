@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.doresain.evernights-revel",
+  "name": "Evernight's Revel",
+  "route": {
+    "slug": "evernights-revel",
+    "canonicalPath": "/database/awakeners/doresain/derived-skills/evernights-revel"
+  },
+  "ownerAwakenerId": "awakener-0014",
+  "derivedFromId": "talent.doresain.festering-grace",
+  "rootSkillId": "talent.doresain.festering-grace",
+  "descriptionTemplate": "Deal [Damage:Arg1] {Pierce DMG} to all enemies.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "40",
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.doresain.evernights-revel.derived.doresain.evernights-revel",
+      "operation": "mixed",
+      "upgraderId": "enlighten.doresain.evernights-revel",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0014",
+      "ownerAwakenerName": "Doresain",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] {Pierce DMG} to all enemies. After playing, subsequent {Evernight's Revel} played this turn enjoys an additional 100% {STR} bonus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "fixed",
+            "value": "160",
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Doresain"
+}

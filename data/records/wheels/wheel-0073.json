@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0073",
+  "name": "Suction",
+  "route": {
+    "slug": "suction",
+    "canonicalPath": "/database/wheels/suction"
+  },
+  "assets": {
+    "icon": "asset-wheel-0073-icon"
+  },
+  "rarity": "R",
+  "realm": "NEUTRAL",
+  "mainstatKey": "CRIT_DMG",
+  "lineupToken": "g",
+  "descriptionTemplate": "Team Unique: Increases the HP Recovery at Rest Areas by [StateArg1]%. After choosing to recover HP, add 2 {derived:Insight} cards to the deck. In {Astral Reign}, this effect changes to \"Increases the chance for the wielder's Dimensional Image Relic to appear by 100%.\"",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["22", "28", "34", "40"],
+      "suffix": "%"
+    }
+  },
+  "lore": "Take a deep breath, Dominic.",
+  "searchTags": ["Heal"]
+}

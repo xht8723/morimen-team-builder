@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0094",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "伊萨拉乌的目光",
+      "sourceHash": "sha256:fe69eeac22e8abee1938efb742e0445ae0444a3f8cb5c4c8292399f8d664d185",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾和反击提高 10%。每当受到攻击时，有 100% 概率使所有唤醒体获得 1 点狂气。",
+      "sourceHash": "sha256:998e8c55141ee17a57534cd1ec93115383c9a791e3add14e4bb8d753338dfd1c",
+      "status": "reference"
+    }
+  }
+}

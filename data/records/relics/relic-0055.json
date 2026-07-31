@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0055",
+  "name": "Dimensional Image: Vortice",
+  "route": {
+    "slug": "dimensional-image-vortice",
+    "canonicalPath": "/database/relics/dimensional-image-vortice"
+  },
+  "assets": {
+    "icon": "asset-relic-0055-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0055",
+  "ownerAwakenerId": "awakener-0055",
+  "ownerAwakenerName": "Vortice",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Vortice gains [Arg1] Aliemus. The first {Charge!} or {Reload!} played each turn takes effect twice.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0055",
+      "name": "Dimensional Image: Vortice",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0055",
+      "ownerAwakenerName": "Vortice",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Vortice gains [Arg1] Aliemus. The first {Charge!} or {Reload!} played each turn takes effect twice.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        }
+      }
+    }
+  ]
+}

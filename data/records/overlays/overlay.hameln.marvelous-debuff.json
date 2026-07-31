@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.hameln.marvelous-debuff",
+  "name": "Marvelous Debuff",
+  "route": {
+    "slug": "marvelous-debuff",
+    "canonicalPath": "/database/awakeners/hameln/overlays/marvelous-debuff"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0022",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "Possible inflictions include: {Bleed} equal to 150% of DMG dealt; {Poison} equal to 75% of DMG dealt; 1 stack of {Vulnerable}; 1 stack of {Weakness}; or [DescArg1] Temp. {STR▼}.",
+  "descriptionArgs": {
+    "DescArg1": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "accountStageGrowth",
+      "multiplier": 0.025,
+      "inputs": ["accountLevel"]
+    }
+  },
+  "childOverlayIds": [
+    "overlay.global.bleed",
+    "overlay.global.poison",
+    "overlay.global.weakness",
+    "overlay.global.vulnerable",
+    "overlay.global.strength"
+  ],
+  "ownerAwakenerName": "Hameln"
+}

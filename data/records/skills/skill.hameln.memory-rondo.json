@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.hameln.memory-rondo",
+  "name": "Memory Rondo",
+  "route": {
+    "slug": "memory-rondo",
+    "canonicalPath": "/database/awakeners/hameln/skills/memory-rondo"
+  },
+  "ownerAwakenerId": "awakener-0022",
+  "slot": "Skill2",
+  "descriptionTemplate": "Obtain [Power:Arg1] {STR}. Add 2 {derived:Insight} to your hand. If you lack the required Arithmetica, you can still play This card, but its effect will be changed to shuffle 2 {derived:Insight} cards into your Draw Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["2", "2.4", "2.8", "3.2", "3.6", "4"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "ownerAwakenerName": "Hameln"
+}

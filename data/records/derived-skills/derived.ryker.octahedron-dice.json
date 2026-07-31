@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.ryker.octahedron-dice",
+  "name": "Octahedron Dice",
+  "route": {
+    "slug": "octahedron-dice",
+    "canonicalPath": "/database/awakeners/ryker/derived-skills/octahedron-dice"
+  },
+  "ownerAwakenerId": "awakener-0043",
+  "descriptionTemplate": "Roll a [Arg2]-sided die, gain Temporary {STR} equal to the die roll*[Arg1]. If the roll is 4 or higher, {Vulnerable} all enemies for 1 turn. If the roll is 6 or higher, the gained Temporary {STR} is doubled.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.0065,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "6"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Ryker"
+}

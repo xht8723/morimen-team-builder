@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.saya.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/saya/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Saya gains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.saya.will-you-stay-with-me-always.skill.saya.strike",
+      "operation": "mixed",
+      "upgraderId": "enlighten.saya.will-you-stay-with-me-always",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0057",
+      "ownerAwakenerName": "Saya",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Saya gains [Energy:Arg2] Aliemus. {Embryo Fusion} +[Blood:Arg4], which scales with the amount of {Crimson Furnace} consumed, up to +100%.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "15"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Saya"
+}

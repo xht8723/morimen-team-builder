@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0116",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "迫近的太阳",
+      "sourceHash": "sha256:eb9975c8e186899585b83c1b05bbb414b4d828a14a2b26059de18b37341313b4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害提高 15%。打出 5 张装备者的指令卡后，装备者获得 20% 临时暴击率，该效果每回合只能触发 1 次。",
+      "sourceHash": "sha256:204a8f2d389733706035e8074ec0e871161a11709b2bd046d14de4885ce11c5f",
+      "status": "reference"
+    }
+  }
+}

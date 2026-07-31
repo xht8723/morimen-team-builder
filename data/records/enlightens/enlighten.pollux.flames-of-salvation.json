@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pollux.flames-of-salvation",
+  "name": "Flames of Salvation",
+  "route": {
+    "slug": "flames-of-salvation",
+    "canonicalPath": "/database/awakeners/pollux/enlightens/flames-of-salvation"
+  },
+  "ownerAwakenerId": "awakener-0041",
+  "slot": "E2",
+  "descriptionTemplate": "For each card in hand, \"Strike\" and \"Defense\" generate +1 Aliemus.\nFor each {Sacred Heart} played, the Arithmetica Cost of the next {Cleansing Judgement} -1.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pollux"
+}

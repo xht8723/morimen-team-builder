@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.tawil.defense",
+  "name": "Defense",
+  "route": {
+    "slug": "defense",
+    "canonicalPath": "/database/awakeners/tawil/skills/defense"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "slot": "Defense",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Tawil obtains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.tawil.nonexistent-existence.skill.tawil.defense",
+      "operation": "mixed",
+      "upgraderId": "enlighten.tawil.nonexistent-existence",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0047",
+      "ownerAwakenerName": "Tawil",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield. Tawil obtains [Energy:Arg2] Aliemus, [Arg3]% Crit. Rate and Crit. DMG, stacking up to 10 times.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "3",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Tawil"
+}

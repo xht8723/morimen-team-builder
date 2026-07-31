@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.doll-inferno.fates-descent",
+  "name": "Fate's Descent",
+  "route": {
+    "slug": "fates-descent",
+    "canonicalPath": "/database/awakeners/doll-inferno/skills/fates-descent"
+  },
+  "ownerAwakenerId": "awakener-0018",
+  "slot": "Skill2",
+  "descriptionTemplate": "Obtain [Energy:Arg1] Aliemus. Recover [Heal:Arg2] HP, and recover an additional time for every 50 Aliemus currently possessed.\n{Fate's Descent: Finale}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["35", "38", "41", "44", "47", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "CON",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "ownerAwakenerName": "Doll: Inferno"
+}

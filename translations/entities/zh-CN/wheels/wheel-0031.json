@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0031",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "至为珍贵的藏品",
+      "sourceHash": "sha256:92483a0d9273d6768124758d191a3927a7df8051e747e720fac974053a986d56",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：每有一个敌人死亡时获得 2 黑印。装备者击杀敌人后，本次关卡中装备者的暴击伤害永久提高 10%，至多叠加 5 层。装备者每次触发跃迁效果，使装备者本回合造成的最终伤害提高 5%，至多叠加 3 层。",
+      "sourceHash": "sha256:278a62e7786144b115a9924d2f8ebc5e65902ade51241c10998d087e6a862131",
+      "status": "reference"
+    }
+  }
+}

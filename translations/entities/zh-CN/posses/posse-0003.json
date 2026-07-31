@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0003",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "注射守护",
+      "sourceHash": "sha256:f2f8091839bb5cf74857ae540442bd4363515ef49427ab7feb0394ef3e8b02c7",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点护盾，当前生命若低于 25%，回复 x 点生命。",
+      "sourceHash": "sha256:7a17b6c200f54600d8176b189a83e6b0615f4c52a0a688940680fff19e45dd0e",
+      "status": "reference"
+    }
+  }
+}

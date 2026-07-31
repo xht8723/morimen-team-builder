@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0034",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "墨菲",
+      "sourceHash": "sha256:62d2df9f04ef6052f4d19e367d8172ea93b0cd5b11f178ea0545d855eb078c44",
+      "status": "reference"
+    },
+    "description": {
+      "value": "骄傲、任性、自我中心——认识墨菲的人常这样评价她。她似乎一直被当作世界的中心精心照料，也因此把宠爱视为理所当然，把他人的边界视为可以随意越过的装饰。",
+      "sourceHash": "sha256:0dae666988d639d94103c2dedc8819cc0bf55a576ee0a73a74bb07689ab58970",
+      "status": "machine"
+    }
+  }
+}

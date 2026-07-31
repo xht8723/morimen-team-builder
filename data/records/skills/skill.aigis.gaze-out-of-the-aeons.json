@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.aigis.gaze-out-of-the-aeons",
+  "name": "Gaze Out of the Aeons",
+  "route": {
+    "slug": "gaze-out-of-the-aeons",
+    "canonicalPath": "/database/awakeners/aigis/skills/gaze-out-of-the-aeons"
+  },
+  "ownerAwakenerId": "awakener-0003",
+  "slot": "OverExalt",
+  "descriptionTemplate": "All Awakeners' Final DMG +25% this turn.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Aigis"
+}

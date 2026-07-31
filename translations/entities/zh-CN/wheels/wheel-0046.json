@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0046",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "倒数时刻",
+      "sourceHash": "sha256:cbd7773b7b440ea95c355ad3eb6fa27ce8e44d2cb099193fa7efa3ab36c9f1bb",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始后，将 1 张「倒数时刻：5」加入牌库：打出后抽 1 张牌，并将下一张「倒数时刻」洗入弃牌堆，消耗。「倒数时刻：0」：抽 3 张牌，获得 3 点算力，并有 100% 概率将「倒数时刻：5」洗入弃牌堆，保留，消耗。",
+      "sourceHash": "sha256:b44747ce6d9e7834064f0875c5c4e4fdc445f667177e0948a3883325c81b2e82",
+      "status": "reference"
+    }
+  }
+}

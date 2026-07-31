@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0023",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "希洛",
+      "sourceHash": "sha256:2b8ef5afb615420a004de1af597f781a084fd69ae9978ccda76bb1c9305bc154",
+      "status": "reference"
+    },
+    "description": {
+      "value": "希洛并非生来嗜血。短暂的温暖被背叛与囚禁夺走，反抗化作复仇之火烧遍故土；在无尽怨恨中，她只剩下挣脱锁链和讨回血债的意志。",
+      "sourceHash": "sha256:a91d46b89e6dc5f1375dd35b8ba2b801f7b7db463bbf8f3c4c5b155cbf64704b",
+      "status": "machine"
+    }
+  }
+}

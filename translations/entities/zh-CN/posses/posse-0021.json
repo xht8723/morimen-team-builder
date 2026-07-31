@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0021",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "巨人的霸道",
+      "sourceHash": "sha256:2abc334719e8a3a00d7f27ad33dd503d1c54f5b3b85fbb00584b489a2e0dafe2",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 1 点算力和 x 点力量，选择一名唤醒体获得 15 点狂气。若当前界域为「深海」且处于「怒涛」姿态，效果改为获得 15% 临时暴击率和临时暴击伤害。",
+      "sourceHash": "sha256:0eb328bcd401fc6068fdcbd93fc16ca9ebe0ce6283c7e67bef552aa56102361b",
+      "status": "reference"
+    }
+  }
+}

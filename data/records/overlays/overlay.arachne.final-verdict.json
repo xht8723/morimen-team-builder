@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.arachne.final-verdict",
+  "name": "Final Verdict",
+  "route": {
+    "slug": "final-verdict",
+    "canonicalPath": "/database/awakeners/arachne/overlays/final-verdict"
+  },
+  "assets": {
+    "icon": "asset-overlay.arachne.final-verdict-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0056",
+  "aliases": [],
+  "iconId": "IconS_Buff_055",
+  "textColor": "affliction",
+  "descriptionTemplate": "If the target's HP is equal to or below the number of stacks, remove all {Final Verdict} and instantly kill them.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Arachne"
+}

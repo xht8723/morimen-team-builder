@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pickman.cross-hatched-rendering",
+  "name": "Cross-Hatched Rendering",
+  "route": {
+    "slug": "cross-hatched-rendering",
+    "canonicalPath": "/database/awakeners/pickman/enlightens/cross-hatched-rendering"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "slot": "E1",
+  "descriptionTemplate": "\"Strike\" or \"Defense\" draws 1 \"Skill\" from deployed Awakeners, takes effect up to 1 time per turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pickman"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0020",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "畸体回噬",
+      "sourceHash": "sha256:d1fb78e18acf17e336bab14353f6a2d16d3673007d0aa91636e3f208e705e5e0",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的狂气爆发基础伤害提高 35%。探索开始时，装备者进入学者人格状态。装备者释放狂气爆发后在学者和小丑人格之间切换。学者人格：回合结束时，装备者获得 20 点狂气。小丑人格：回合结束时，装备者暴击率和暴击伤害 +7%。",
+      "sourceHash": "sha256:f8177bb6136a1cac1346b83ee90a9833c23dde12625c5d2c29052df3dc7d56ea",
+      "status": "reference"
+    }
+  }
+}

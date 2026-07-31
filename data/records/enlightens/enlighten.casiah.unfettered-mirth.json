@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.casiah.unfettered-mirth",
+  "name": "Unfettered Mirth",
+  "route": {
+    "slug": "unfettered-mirth",
+    "canonicalPath": "/database/awakeners/casiah/enlightens/unfettered-mirth"
+  },
+  "ownerAwakenerId": "awakener-0007",
+  "slot": "OverExalt",
+  "descriptionTemplate": "This Exalt's DMG instance ×3. The following 5 Casiah Command Cards grant {STR} equal to 10% of Casiah's ATK.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Casiah"
+}

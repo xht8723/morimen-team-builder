@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.hameln.crescendo",
+  "name": "Crescendo",
+  "route": {
+    "slug": "crescendo",
+    "canonicalPath": "/database/awakeners/hameln/overlays/crescendo"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0022",
+  "aliases": [],
+  "descriptionTemplate": "Play This card to grant Hameln 3 Aliemus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Hameln"
+}

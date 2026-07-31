@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.aurita.sparkling-friendship",
+  "name": "Sparkling Friendship",
+  "route": {
+    "slug": "sparkling-friendship",
+    "canonicalPath": "/database/awakeners/aurita/enlightens/sparkling-friendship"
+  },
+  "ownerAwakenerId": "awakener-0005",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Self-Proliferation} is enhanced: Aurita's \"Strike\" deals {Pierce DMG} and triggers 3 additional instances of DMG.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Aurita"
+}

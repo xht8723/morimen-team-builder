@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.helot-catena.bloodthirsty-flail",
+  "name": "Bloodthirsty Flail",
+  "route": {
+    "slug": "bloodthirsty-flail",
+    "canonicalPath": "/database/awakeners/helot-catena/derived-skills/bloodthirsty-flail"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "derivedFromId": "skill.helot-catena.crimson-shackles",
+  "rootSkillId": "skill.helot-catena.crimson-shackles",
+  "descriptionTemplate": "Counts as a \"Strike\". Deal [Damage:Arg1] DMG, this DMG enjoys a 5× {STR} bonus and triggers the target's 30% {Bleed}, restores 15% of lost HP. After playing, it becomes {Crimson Shackles}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["120", "144", "168", "192", "216", "240"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.prepare",
+      "value": 1
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "4",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.helot-catena.vengeance-unchained.derived.helot-catena.bloodthirsty-flail",
+      "operation": "override_card_keywords",
+      "upgraderId": "enlighten.helot-catena.vengeance-unchained",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0019",
+      "ownerAwakenerName": "Helot: Catena",
+      "patch": {
+        "cardKeywords": [
+          {
+            "id": "mechanic.prepare",
+            "value": 2
+          },
+          {
+            "id": "mechanic.retain"
+          }
+        ]
+      }
+    }
+  ],
+  "ownerAwakenerName": "Helot: Catena"
+}

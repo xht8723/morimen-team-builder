@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0124",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "纯银的初心",
+      "sourceHash": "sha256:e08d64d070745d1a72b32a0b8ae5cdac5be062497546352b74e900317ad7c918",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：释放钥令后，获得装备者攻击力 3% 的力量和防御力 15% 的护盾。使用应急灵知体后，回合结束时所有唤醒体获得 30 点狂气。",
+      "sourceHash": "sha256:9767b299d81b24d8f223516cd4ef4ece064d6d6d6ffe36b6c4ee4443c083bcda",
+      "status": "reference"
+    }
+  }
+}

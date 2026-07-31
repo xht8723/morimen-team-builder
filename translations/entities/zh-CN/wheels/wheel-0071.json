@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0071",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "活性",
+      "sourceHash": "sha256:d856c801c499f1189b8644bc7a70c204bf863d2a9124a9d56174b1376bcc0007",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：休息处额外提供一个选项：消除至多 3 张症状，获得 20 点黑印。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:aad7fc814705038e6c75317d06b40d331aaea7badfe27b07f71e3f0b1d6b2fb0",
+      "status": "reference"
+    }
+  }
+}

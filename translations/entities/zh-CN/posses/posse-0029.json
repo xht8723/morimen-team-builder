@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0029",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "门扉的答案",
+      "sourceHash": "sha256:6a581ee673ea7751f01aef2c0c7f3b8a79cb586325f866de0e8fe0ed26d56b9b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "发现 3 个随机的钥令，选择其中 1 个触发其效果并获得 200 点银钥能量。",
+      "sourceHash": "sha256:a0ead7c67a5a79b492929c3f38ed60aa3a4ca7bc7a504298316a0c36984222c8",
+      "status": "reference"
+    }
+  }
+}

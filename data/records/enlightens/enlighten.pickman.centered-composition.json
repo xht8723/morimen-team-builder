@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pickman.centered-composition",
+  "name": "Centered Composition",
+  "route": {
+    "slug": "centered-composition",
+    "canonicalPath": "/database/awakeners/pickman/enlightens/centered-composition"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "slot": "E2",
+  "descriptionTemplate": "The Painted {Orisons} are upgraded to {Advanced Orisons}, and the Painted {Silver Relics} are upgraded to {Golden Relics}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pickman"
+}

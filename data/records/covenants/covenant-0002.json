@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0002",
+  "name": "Re-evolution",
+  "route": {
+    "slug": "re-evolution",
+    "canonicalPath": "/database/covenants/re-evolution"
+  },
+  "assets": {
+    "icon": "asset-covenant-0002-icon"
+  },
+  "acquisitionSource": "Purchase from Mythag Shop - D-Jewel Exchange",
+  "lineupToken": "m",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Aliemus Regen Level +[Arg1]",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "2.4"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique: Gain 35 Aliemus at the start of exploration. After the wielder uses Exalt, gain 2 Aliemus at the end of each turn for the rest of the battle. This effect can stack up to 3 times.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "Proliferate, proliferate! Let the souls infused with the blood of the Mother Tree spread across the world."
+}

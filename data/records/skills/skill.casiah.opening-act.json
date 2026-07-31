@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.casiah.opening-act",
+  "name": "Opening Act",
+  "route": {
+    "slug": "opening-act",
+    "canonicalPath": "/database/awakeners/casiah/skills/opening-act"
+  },
+  "ownerAwakenerId": "awakener-0007",
+  "slot": "Rouse",
+  "descriptionTemplate": "Casiah gains [Energy:Arg1] Aliemus. {Rouse}: Casiah gains [Power:Arg2] Temporary {STR} for each card played.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["12", "14.4", "16.8", "19.2", "21.6", "24"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.casiah.a-thousand-and-one-miracles.skill.casiah.opening-act",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.casiah.a-thousand-and-one-miracles",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0007",
+      "ownerAwakenerName": "Casiah",
+      "patch": {
+        "descriptionTemplate": "Casiah gains [Energy:Arg1] Aliemus. {Rouse}: Each time Casiah plays 1 card, gain [Power:Arg2] Temporary {STR}. All Awakeners also trigger this effect when playing \"Strike\"."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Casiah"
+}

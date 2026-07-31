@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.pickman.defense",
+  "name": "Defense",
+  "route": {
+    "slug": "defense",
+    "canonicalPath": "/database/awakeners/pickman/skills/defense"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "slot": "Defense",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Pickman gains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.pickman.cross-hatched-rendering.skill.pickman.defense",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.pickman.cross-hatched-rendering",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0040",
+      "ownerAwakenerName": "Pickman",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield. Pickman gains [Energy:Arg2] Aliemus. Randomly draw 1 \"Skill,\" which takes effect up to 1 time per turn."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Pickman"
+}

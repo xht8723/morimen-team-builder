@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0042",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "虚世之彩",
+      "sourceHash": "sha256:b261dc103592a7627b21ae4ceac378d9a690db0dbf2278e3d328e92b634d702a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择一名唤醒体获得 20 点狂气，将 1 张「灵感保留。消耗。」洗入抽牌堆。若「皮克曼」在队伍中，使其获得 1 层创意创意上限为 10 层，能够继承至下场战斗。。",
+      "sourceHash": "sha256:600e491d4a2ee8de421cd5cf9a6a82cff95e8b685795dc2d630d8d82accd0b01",
+      "status": "reference"
+    }
+  }
+}

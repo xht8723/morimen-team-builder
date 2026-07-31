@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0082",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "冒险的行囊",
+      "sourceHash": "sha256:4bcdefe39f5b8429be4bffde1021fa8bb1356e0a5062d873794463a0f69d1f9a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：打出装备者的「防御」后，获得等同于装备者攻击力 18% 的临时力量。",
+      "sourceHash": "sha256:4560e6a0b7c58f803e6f04c9424d58e52c289823dfa5efc640a15e39390b6d30",
+      "status": "reference"
+    }
+  }
+}

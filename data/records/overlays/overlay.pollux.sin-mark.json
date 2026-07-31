@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.pollux.sin-mark",
+  "name": "Sin Mark",
+  "route": {
+    "slug": "sin-mark",
+    "canonicalPath": "/database/awakeners/pollux/overlays/sin-mark"
+  },
+  "assets": {
+    "icon": "asset-overlay.pollux.sin-mark-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0041",
+  "aliases": [],
+  "iconId": "IconS_Buff_078",
+  "textColor": "affliction",
+  "descriptionTemplate": "Each stack grants Pollux's damage a 1% {Bleed} effect.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pollux"
+}

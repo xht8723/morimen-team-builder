@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.lotan.until-the-planets-end",
+  "name": "Until the Planet's End",
+  "route": {
+    "slug": "until-the-planets-end",
+    "canonicalPath": "/database/awakeners/lotan/skills/until-the-planets-end"
+  },
+  "ownerAwakenerId": "awakener-0031",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Deal an additional {Fixed DMG} equal to 15% of the target's Max HP to all enemies. The Base DMG of {Beast of Chaos} +100% for this battle.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Lotan"
+}

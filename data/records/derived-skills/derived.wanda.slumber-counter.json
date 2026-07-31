@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.wanda.slumber-counter",
+  "name": "Slumber Counter",
+  "route": {
+    "slug": "slumber-counter",
+    "canonicalPath": "/database/awakeners/wanda/derived-skills/slumber-counter"
+  },
+  "ownerAwakenerId": "awakener-0052",
+  "derivedFromId": "skill.wanda.necropolis-of-dreams",
+  "rootSkillId": "skill.wanda.necropolis-of-dreams",
+  "descriptionTemplate": "Consume 5 stacks of {Dreamlure}, Wanda obtains [StateArg1] Aliemus, and gains Temporary {Counter} equal to [StateArg2]% of permanent {Counter}.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["10", "11", "12", "13", "14", "15"]
+    },
+    "StateArg2": {
+      "kind": "scaling",
+      "values": ["35", "38", "41", "44", "47", "50"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.wanda.lakeborne-dweller.derived.wanda.slumber-counter",
+      "operation": "override_args",
+      "upgraderId": "enlighten.wanda.lakeborne-dweller",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0052",
+      "ownerAwakenerName": "Wanda",
+      "patch": {
+        "descriptionArgs": {
+          "StateArg1": {
+            "kind": "scaling",
+            "values": ["25", "26", "27", "28", "29", "30"]
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Wanda"
+}

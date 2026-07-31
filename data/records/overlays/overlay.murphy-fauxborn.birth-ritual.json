@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.murphy-fauxborn.birth-ritual",
+  "name": "Birth Ritual",
+  "route": {
+    "slug": "birth-ritual",
+    "canonicalPath": "/database/awakeners/murphy-fauxborn/overlays/birth-ritual"
+  },
+  "assets": {
+    "icon": "asset-overlay.murphy-fauxborn.birth-ritual-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0035",
+  "aliases": [],
+  "iconId": "IconS_Buff_079",
+  "textColor": "shield",
+  "descriptionTemplate": "Each stack inflicts {Sacrifice} stacks equal to 1% of DMG received. Stacks up to 75. Removed at turn end.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Murphy: Fauxborn"
+}

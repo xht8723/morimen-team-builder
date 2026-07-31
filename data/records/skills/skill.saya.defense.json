@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.saya.defense",
+  "name": "Defense",
+  "route": {
+    "slug": "defense",
+    "canonicalPath": "/database/awakeners/saya/skills/defense"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "Defense",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Saya gains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.saya.will-you-stay-with-me-always.skill.saya.defense",
+      "operation": "mixed",
+      "upgraderId": "enlighten.saya.will-you-stay-with-me-always",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0057",
+      "ownerAwakenerName": "Saya",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield. Saya gains [Energy:Arg2] Aliemus. {Embryo Fusion} +[Blood:Arg4], which scales with the amount of {Crimson Furnace} consumed, up to +100%.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "15"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Saya"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0119",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "被囚禁的疯狂",
+      "sourceHash": "sha256:12d9fa23f470c443fb6b335fb8f372aed3cbddf45965c732a150c5f296194b84",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：切换至「怒涛」姿态时，获得等同于当前界域精通 20% 的临时界域精通，3 回合冷却。",
+      "sourceHash": "sha256:0dcf3fd2f3fc77aa99d7f32e9ebaeef971bc5dc3dcabab00b13470b5fd4f08d6",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0009",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "二律背反",
+      "sourceHash": "sha256:0850806669f57b7916a94da00a4c5704d983a60545fb05508aacb316fb72d9a6",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 银钥充能等级 +7.2 6件套： 队伍唯一。装备者的狂气上限及狂气爆发消耗狂气 +20，装备者指令卡的暴击率、暴击伤害、护盾、回复生命提高 20%。",
+      "sourceHash": "sha256:1f3e9c264afb352ff1024c79146157b634b78e477564f068225272c10755f422",
+      "status": "reference"
+    }
+  }
+}

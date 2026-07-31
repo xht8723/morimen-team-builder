@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0117",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "理智明灯",
+      "sourceHash": "sha256:6137f3f0747afb74f63306709cee4a28d532e6ce51e8537d512a30ea83bb1b83",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者每回合首次释放钥令后 100% 概率抽 1 张装备者的「打击」。",
+      "sourceHash": "sha256:1271ec42288c7c4bfdf00b1e1c5b2ced01c793ae29adb8b3c8bfc2484e6157d2",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.wanda.dreamlure",
+  "name": "Dreamlure",
+  "route": {
+    "slug": "dreamlure",
+    "canonicalPath": "/database/awakeners/wanda/overlays/dreamlure"
+  },
+  "assets": {
+    "icon": "asset-overlay.wanda.dreamlure-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0052",
+  "aliases": [],
+  "iconId": "IconS_Buff_043",
+  "textColor": "affliction",
+  "descriptionTemplate": "When Wanda's skill triggers the {Leap} effect and there are 5 stacks present, consume 5 stacks to grant an additional effect. The cap for {Dreamlure} is 10 stacks, which will carry over into the next battle.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Wanda"
+}

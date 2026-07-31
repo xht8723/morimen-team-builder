@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.faint.withering-hymn",
+  "name": "Withering Hymn",
+  "route": {
+    "slug": "withering-hymn",
+    "canonicalPath": "/database/awakeners/faint/enlightens/withering-hymn"
+  },
+  "ownerAwakenerId": "awakener-0016",
+  "slot": "E2",
+  "descriptionTemplate": "\"Basic Defense\" Shield Generation +25% and grants {Counter} equal to the amount of Shield.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faint"
+}

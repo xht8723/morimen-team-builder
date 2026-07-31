@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.miryam.unacquainted-pain",
+  "name": "Unacquainted Pain",
+  "route": {
+    "slug": "unacquainted-pain",
+    "canonicalPath": "/database/awakeners/miryam/skills/unacquainted-pain"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Additionally places 2 copies of {Sacrament} into hand, increasing the Tentacle Limit and Tentacle Count by +1.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Miryam"
+}

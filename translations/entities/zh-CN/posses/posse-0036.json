@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0036",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "错位命运",
+      "sourceHash": "sha256:47d14abcf2cf89e22256793bb16a3663e641f19c500871c4d3a1f0c2e6c82f64",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择一名唤醒体使其获得 15 点狂气，从抽牌堆中抽 2 张算力消耗最低的卡牌。若「卡斯托尔」在队伍中，使其伤害强效临时提高 30%。",
+      "sourceHash": "sha256:1aa7603931810eb6ec3cf259a532f37a1631411a00a9f6ded67c9c6b7510f877",
+      "status": "reference"
+    }
+  }
+}

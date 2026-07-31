@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0132",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "宿命纺轮",
+      "sourceHash": "sha256:90d89e7979101ed941ab3ec4b2737a7b259d5b404dc21456ac4d57c0e0bd21e5",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾提高 10%，装备者造成追击时 + 15% 临时强效，每回合最多生效 5 次。",
+      "sourceHash": "sha256:610f7bf5e433bafc9b2ead53c23320106df68d0e1347fb7a913117ae07536f56",
+      "status": "reference"
+    }
+  }
+}

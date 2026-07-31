@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.leigh.pain-of-unfulfilled-desires",
+  "name": "Pain of Unfulfilled Desires",
+  "route": {
+    "slug": "pain-of-unfulfilled-desires",
+    "canonicalPath": "/database/awakeners/leigh/skills/pain-of-unfulfilled-desires"
+  },
+  "ownerAwakenerId": "awakener-0028",
+  "slot": "Skill1",
+  "descriptionTemplate": "Lose [Arg1]% of current HP. {Embryo Fusion}+[Blood:Arg3]. Gain [Power:Arg2] Temporary {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "10",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["20", "22", "24", "26", "28", "30"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.leigh.step-into-the-sunlight.skill.leigh.pain-of-unfulfilled-desires",
+      "operation": "mixed",
+      "upgraderId": "enlighten.leigh.step-into-the-sunlight",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0028",
+      "ownerAwakenerName": "Leigh",
+      "patch": {
+        "descriptionTemplate": "Lose [Arg1]% of current HP. {Embryo Fusion}+[Blood:Arg3]. Gain [Power:Arg2] Temporary {STR}. Gain [Energy:Arg5] Aliemus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "fixed",
+            "value": "10",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["20", "22", "24", "26", "28", "30"]
+          },
+          "Arg5": {
+            "kind": "fixed",
+            "value": "10"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Leigh"
+}

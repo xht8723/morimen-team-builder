@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.aigis.sugary-aroma",
+  "name": "Sugary Aroma",
+  "route": {
+    "slug": "sugary-aroma",
+    "canonicalPath": "/database/awakeners/aigis/enlightens/sugary-aroma"
+  },
+  "ownerAwakenerId": "awakener-0003",
+  "slot": "E2",
+  "descriptionTemplate": "For each {Vulnerable} stack on the target, the Final DMG of {Decomposition} +5%, up to 500%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Aigis"
+}

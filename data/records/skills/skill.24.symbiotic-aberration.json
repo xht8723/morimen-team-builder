@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.24.symbiotic-aberration",
+  "name": "Symbiotic Aberration",
+  "route": {
+    "slug": "symbiotic-aberration",
+    "canonicalPath": "/database/awakeners/24/skills/symbiotic-aberration"
+  },
+  "ownerAwakenerId": "awakener-0001",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies. \"24\" obtains [Energy:Arg2] Aliemus.\nDepressed Persona: Also grant other Awakeners [DescArg1]× Aliemus. Manic Persona: Gain another [DescArg2]× Aliemus",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["35", "42", "49", "56", "63", "70"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "DescArg1": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "8"
+    },
+    "DescArg2": {
+      "kind": "fixed",
+      "value": "2"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.24.restraint-bonds.skill.24.symbiotic-aberration",
+      "operation": "mixed",
+      "upgraderId": "enlighten.24.restraint-bonds",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0001",
+      "ownerAwakenerName": "\"24\"",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies. \"24\" obtains [Energy:Arg2] Aliemus.\nDepressed Persona: Also grant other Awakeners [DescArg1]× Aliemus, inflict {Weakness} on all enemies for [DescArg3] {plural:[DescArg3]|turn|turns}. Manic Persona: Gain another [DescArg2]× Aliemus, inflict {Vulnerable} on all enemies for [DescArg3] turn",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["35", "42", "49", "56", "63", "70"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "DescArg1": {
+            "kind": "fixed",
+            "value": "1"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "10"
+          },
+          "DescArg2": {
+            "kind": "fixed",
+            "value": "2"
+          },
+          "DescArg3": {
+            "kind": "fixed",
+            "value": "1"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "24"
+}

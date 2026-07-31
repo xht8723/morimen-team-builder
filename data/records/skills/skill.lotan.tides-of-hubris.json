@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.lotan.tides-of-hubris",
+  "name": "Tides of Hubris",
+  "route": {
+    "slug": "tides-of-hubris",
+    "canonicalPath": "/database/awakeners/lotan/skills/tides-of-hubris"
+  },
+  "ownerAwakenerId": "awakener-0031",
+  "slot": "Skill2",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies, obtain [Power:Arg2] {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["7.5", "9", "10.5", "12", "13.5", "15"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["2.5", "3", "3.5", "4", "4.5", "5"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.lotan.surging-warlust.skill.lotan.tides-of-hubris",
+      "operation": "mixed",
+      "upgraderId": "enlighten.lotan.surging-warlust",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0031",
+      "ownerAwakenerName": "Lotan",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies, gain [Power:Arg2] {STR}. Counts as a \"Strike\".",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["7.5", "9", "10.5", "12", "13.5", "15"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Lotan"
+}

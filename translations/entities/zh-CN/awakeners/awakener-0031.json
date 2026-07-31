@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0031",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "萝坦",
+      "sourceHash": "sha256:8321c37f5670538a33ac629cde8a85c5b27ec28f8e07bcc849dfddbfed409623",
+      "status": "reference"
+    },
+    "description": {
+      "value": "萝坦身上的标签多得让人不知如何相处：谦卑会令她无聊，傲慢会招来巨剑，强硬或软弱也都有代价。最安全的办法，也许是用一场足够痛快的战斗向她打招呼。",
+      "sourceHash": "sha256:7e1429a253c449647600da5cc30ce8f1170806efce9f910f96552bf28b81b765",
+      "status": "machine"
+    }
+  }
+}

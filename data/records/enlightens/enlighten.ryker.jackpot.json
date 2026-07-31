@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ryker.jackpot",
+  "name": "Jackpot!",
+  "route": {
+    "slug": "jackpot",
+    "canonicalPath": "/database/awakeners/ryker/enlightens/jackpot"
+  },
+  "ownerAwakenerId": "awakener-0043",
+  "slot": "OverExalt",
+  "descriptionTemplate": "{All-in!} deals 3 instances DMG and reduces the Arithmetica Cost of drawn cards by 1.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ryker"
+}

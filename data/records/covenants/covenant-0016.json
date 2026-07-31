@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0016",
+  "name": "Sweet Slug",
+  "route": {
+    "slug": "sweet-slug",
+    "canonicalPath": "/database/covenants/sweet-slug"
+  },
+  "assets": {
+    "icon": "asset-covenant-0016-icon"
+  },
+  "acquisitionSource": "Purchase from Mythag Shop - Investigation Exchange",
+  "lineupToken": "p",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "{Death Resistance} +[Arg1]%",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "25.2",
+          "suffix": "%"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique. If {Annihilation} is unleashed and the Tentacle Stance is switched within 1 turn, the wielder's Shield, HP Recovery, and Final DMG +25% this turn, with a 3-turn cooldown.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "A lethal sweetness fills the air. Beware—the cloying grip of death is upon you."
+}

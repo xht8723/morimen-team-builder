@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pollux.the-nightbreaker",
+  "name": "The Nightbreaker",
+  "route": {
+    "slug": "the-nightbreaker",
+    "canonicalPath": "/database/awakeners/pollux/enlightens/the-nightbreaker"
+  },
+  "ownerAwakenerId": "awakener-0041",
+  "slot": "OverExalt",
+  "descriptionTemplate": "In this turn, all Pollux Command Cards gain +50% {Atonement by Pain} effect; his next Command Card takes effect 1 more time. Place 1 more {Sacred Heart} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pollux"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.arachne.elegy-over-fate",
+  "name": "Elegy Over Fate",
+  "route": {
+    "slug": "elegy-over-fate",
+    "canonicalPath": "/database/awakeners/arachne/enlightens/elegy-over-fate"
+  },
+  "ownerAwakenerId": "awakener-0056",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Generate up to 5 Temporary Base Copies of all cards with {Singularity Beacon} in hand and {Ultra Space}, randomly place them into the Draw Pile or Discard Pile, and set their Arithmetica Cost to 0.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Arachne"
+}

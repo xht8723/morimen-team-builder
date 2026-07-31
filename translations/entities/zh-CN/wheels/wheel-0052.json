@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0052",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "于暴雨之中",
+      "sourceHash": "sha256:4980fbb79df23c209abb892aa19c9c760fba26cad84c8e535d54cfefeba9d762",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的「打击」有 100% 概率获得 1 算力并触发所有敌人 10% 的中毒，若当前界域为「深海」，触发该效果时使 1 条触腕攻击 1 次。该效果单个回合只生效 1 次。",
+      "sourceHash": "sha256:84d939563ae4af37c432e3358906ac56df3bd066cfca4db1385fbc81b75958ea",
+      "status": "reference"
+    }
+  }
+}

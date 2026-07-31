@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.murphy.silent-defiance",
+  "name": "Silent Defiance",
+  "route": {
+    "slug": "silent-defiance",
+    "canonicalPath": "/database/awakeners/murphy/enlightens/silent-defiance"
+  },
+  "ownerAwakenerId": "awakener-0034",
+  "slot": "E1",
+  "descriptionTemplate": "{Vortex Reversed} is {Retained}. For every 2 Tentacles, deal an additional instance of DMG.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Murphy"
+}

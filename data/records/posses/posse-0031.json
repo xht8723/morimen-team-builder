@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0031",
+  "name": "Blessing of the Stars",
+  "route": {
+    "slug": "blessing-of-the-stars",
+    "canonicalPath": "/database/posses/blessing-of-the-stars"
+  },
+  "assets": {
+    "icon": "asset-posse-0031-icon",
+    "crystal": "asset-posse-0031-crystal",
+    "badge": "asset-posse-0031-badge"
+  },
+  "ownerAwakenerId": "awakener-0050",
+  "ownerAwakenerName": "Tulu",
+  "acquisitionSource": "Clear Psyche Deepdive: Coronation Day",
+  "realm": "AEQUOR",
+  "lineupToken": "K",
+  "descriptionTemplate": "Choose either {Slumber} or {Arouse}.",
+  "descriptionArgs": {},
+  "lore": "He chose that Crown, and that Crown also chose him.\nThe soul of the new king resonated with the ancient god in an instant. An overwhelming shadow appeared behind him, bringing eternal peace to the nation."
+}

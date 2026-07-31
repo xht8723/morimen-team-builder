@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0001",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "机械降神",
+      "sourceHash": "sha256:e2ca4380d0c69adac2c7b86cfbfddf811d2af9f9ad4771421ae2836d874119c1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 界域精通 +12 6件套： 每场战斗的首个回合获得 1 点算力，首领战中，每 4 回合额外获得 1 点算力。",
+      "sourceHash": "sha256:d45f4a46525e65ddb7c961a889f43555d89390fe51ad5d992e4e9d3d97ebf490",
+      "status": "reference"
+    }
+  }
+}

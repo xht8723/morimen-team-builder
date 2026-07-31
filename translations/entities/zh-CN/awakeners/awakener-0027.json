@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0027",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "凯蒂古拉",
+      "sourceHash": "sha256:93d994e35eb6ce6efd7756b4f7fb4f4e12f585cfbedcfd0b789bb3dae273e3e5",
+      "status": "reference"
+    },
+    "description": {
+      "value": "凯蒂古拉擅长用招牌笑容唤醒旁观者心底最残酷的寒意。双枪与火药只是她打发无聊的玩具；当她真正开火时，枪膛里甚至不需要装入子弹。",
+      "sourceHash": "sha256:8c098f04f033a16c0225830c028c57f9007b3f5900fbb3ee244c9b1b4d5ed505",
+      "status": "machine"
+    }
+  }
+}

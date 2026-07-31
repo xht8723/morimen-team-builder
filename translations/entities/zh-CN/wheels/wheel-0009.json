@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0009",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "饕餮寓言",
+      "sourceHash": "sha256:eec2986419b32d500008c509266a84e1c4fb8852e916854c1084f021d8d1f065",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者生命回复效果提高 15%。回合开始时，获得等同于上回合损失生命 15% 的临时力量和护盾。",
+      "sourceHash": "sha256:13305df4bb3f53ea6b87392495632d7d6ffd046d4bc39565c99591f8fcd9843e",
+      "status": "reference"
+    }
+  }
+}

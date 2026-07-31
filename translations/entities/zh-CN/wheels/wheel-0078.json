@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0078",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "专注精神",
+      "sourceHash": "sha256:1b00758f4a652202ed126a3803ffc0336e0453f1858589066fa8440f86b80f67",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：释放钥令后，装备者获得 15 狂气。",
+      "sourceHash": "sha256:67280e98cb307bf12f64cf5af7ee7ddbd44d5d3adba36bd1eedac7283f83b533",
+      "status": "reference"
+    }
+  }
+}

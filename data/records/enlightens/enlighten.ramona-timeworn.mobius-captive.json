@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ramona-timeworn.mobius-captive",
+  "name": "Mobius Captive",
+  "route": {
+    "slug": "mobius-captive",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/enlightens/mobius-captive"
+  },
+  "ownerAwakenerId": "awakener-0020",
+  "slot": "E3",
+  "descriptionTemplate": "Exalt {Paradox Converged}: Choose any unlocked Posse to replace the current one. It will be restored after use or at the end of the battle.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.lily.endure",
+  "name": "Endure",
+  "route": {
+    "slug": "endure",
+    "canonicalPath": "/database/awakeners/lily/overlays/endure"
+  },
+  "assets": {
+    "icon": "asset-overlay.lily.endure-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0029",
+  "aliases": [],
+  "iconId": "IconS_Buff_040",
+  "textColor": "misc",
+  "descriptionTemplate": "For every 1 point of HP lost, gain 1 stack of {Endure}, up to 100% of Max HP. {Endure} will carry over to the next battle.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Lily"
+}

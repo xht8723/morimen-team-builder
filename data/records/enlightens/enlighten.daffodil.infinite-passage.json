@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.daffodil.infinite-passage",
+  "name": "Infinite Passage",
+  "route": {
+    "slug": "infinite-passage",
+    "canonicalPath": "/database/awakeners/daffodil/enlightens/infinite-passage"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "slot": "E1",
+  "descriptionTemplate": "\"Basic Strike\" enjoys 2× {STR} bonus and gains {Leap}: Obtain 1 Arithmetica. \"Basic Defense\" grants {STR} equal to [Arg1]% of ATK and gains {Leap}: Obtain 1 Arithmetica.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["1", "1.2", "1.4", "1.6", "1.8", "2"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Daffodil"
+}

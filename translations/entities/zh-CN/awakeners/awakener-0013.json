@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0013",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "朵尔",
+      "sourceHash": "sha256:e6e58d4f8f59036b1377150a3e23e0a824696203a07aaa7175b45fd1b33085a5",
+      "status": "reference"
+    },
+    "description": {
+      "value": "烧过的实验台要擦亮，量具每三天必须校准，所有器皿都要焕然如新。朵尔对科学与世界奥秘的狂热，使她对实验室中的每个人和每件物品都抱有近乎苛刻的标准。",
+      "sourceHash": "sha256:0121490a4face9f11dd6e038573c187b771e451d609bb7f52e7906a525eb42ed",
+      "status": "machine"
+    }
+  }
+}

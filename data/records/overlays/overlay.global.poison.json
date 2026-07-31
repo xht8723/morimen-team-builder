@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.poison",
+  "name": "Poison",
+  "route": {
+    "slug": "poison",
+    "canonicalPath": "/database/overlays/poison"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.poison-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_006",
+  "textColor": "affliction",
+  "descriptionTemplate": "At turn end, take 1 DMG for each stack of {Poison}.",
+  "descriptionArgs": {}
+}

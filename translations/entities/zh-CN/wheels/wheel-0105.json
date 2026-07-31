@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0105",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "永不停歇的演奏",
+      "sourceHash": "sha256:173ec1961d271795f1ee8abf95e07a711494bdebc72ce8df691aa17dfe1f9083",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：回合结束后，装备者获得 5 点狂气。装备者释放狂气爆发后，本回合打出的下一张装备者的指令卡暴击率、暴击伤害、护盾、回复生命提高 20%。",
+      "sourceHash": "sha256:14f9bc58a1f55d7ff02461398f377dbd515f89d5455740a0dd36242d17d6c092",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.kathigu-ra.ashen-finale",
+  "name": "Ashen Finale",
+  "route": {
+    "slug": "ashen-finale",
+    "canonicalPath": "/database/awakeners/kathigu-ra/enlightens/ashen-finale"
+  },
+  "ownerAwakenerId": "awakener-0027",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Karmic Embers} is enhanced: The Final DMG and {STR} effects of each stack of {Fiamma} +30%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Kathigu-Ra"
+}

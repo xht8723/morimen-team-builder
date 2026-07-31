@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0084",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "致挚友",
+      "sourceHash": "sha256:cf50a3d1ceddeb694abbfe9e5bd1bdae3522c52a1dd87ad92ef2e5e4316316b1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后，全体友方本回合暴击率提高 25%。",
+      "sourceHash": "sha256:9ba80fe156b3eb5699f48212e056d074d4cca2c6468aef1989c7a6c4951f3421",
+      "status": "reference"
+    }
+  }
+}

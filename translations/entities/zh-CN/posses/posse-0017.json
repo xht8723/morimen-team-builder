@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0017",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "灰雾真容",
+      "sourceHash": "sha256:624153e0dc22a84c60c5bc5c0eb21aca6e9428b29ef9bd3427a19a200a29449d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点力量，将 1 张「灵感保留。消耗。」置入手中。若当前为超维回合，效果变更为将 2 张「灵感保留。消耗。」置入手中。",
+      "sourceHash": "sha256:0a56477070b75e3d5a1aa9552a4a7a0c73a4caf7f50cbf62a9e3442d731625e8",
+      "status": "reference"
+    }
+  }
+}

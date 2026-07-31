@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.murphy-fauxborn.kneelers-supplication",
+  "name": "Kneeler's Supplication",
+  "route": {
+    "slug": "kneelers-supplication",
+    "canonicalPath": "/database/awakeners/murphy-fauxborn/enlightens/kneelers-supplication"
+  },
+  "ownerAwakenerId": "awakener-0035",
+  "slot": "E1",
+  "descriptionTemplate": "{Waltz of Lemuria} {Tentacle DMG}, Shield Generation, and Final DMG +10%, with an additional 0.2% increase for each point of Keyflare Regen Level.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Murphy: Fauxborn"
+}

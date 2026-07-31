@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0165",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "樱花下的迷思",
+      "sourceHash": "sha256:498bd58dc221f4d70209f944efb4fdaeb2ead58e3a513ec4f9f9bc5d986244aa",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始后生成一张「春之信」置入牌库：1 算力，获得 250 银钥能量，打出后永久变化为「樱满开」。保留。「樱满开」：1 算力，获得 500 银钥能量，打出后永久变化为「花吹雪」。保留。「花吹雪」：1 算力，获得 750 银钥能量，打出后永久变化为「一期一会」。保留。「一期一会」：1 算力，从已解锁的 3 个随机钥令中选择 1 个立刻释放，并生效 2 次，打出后永久变化为「春之信」。保留。",
+      "sourceHash": "sha256:fa78102924766b2b8a5c57b5dae72a66166684b43d6f01f8a7a24bbc28eb971d",
+      "status": "reference"
+    }
+  }
+}

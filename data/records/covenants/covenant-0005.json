@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0005",
+  "name": "Twisted Twins: Black",
+  "route": {
+    "slug": "twisted-twins-black",
+    "canonicalPath": "/database/covenants/twisted-twins-black"
+  },
+  "assets": {
+    "icon": "asset-covenant-0005-icon"
+  },
+  "acquisitionSource": "Clear Interlude - Verboten Covenant: Town of Madness",
+  "lineupToken": "B",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Crit. Rate +[Arg1]%",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "4.8",
+          "suffix": "%"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "At the start of odd turns, add the wielder's \"Strike\" with {Fleeting} and {Exhaust} to your hand.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "Blood-dark sacrifice. May the Twins bless your body."
+}

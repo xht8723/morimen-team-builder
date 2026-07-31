@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.mouchette.mortal-blast",
+  "name": "Mortal Blast",
+  "route": {
+    "slug": "mortal-blast",
+    "canonicalPath": "/database/awakeners/mouchette/skills/mortal-blast"
+  },
+  "ownerAwakenerId": "awakener-0033",
+  "slot": "Skill1",
+  "descriptionTemplate": "Counts as a \"Strike\". Deal [Damage:Arg1] DMG to all enemies [Arg2] {plural:[Arg2]|time|times},",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "2"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.mouchette.irretrievable-past.skill.mouchette.mortal-blast",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.mouchette.irretrievable-past",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0033",
+      "ownerAwakenerName": "Mouchette",
+      "patch": {
+        "descriptionTemplate": "Counts as a \"Strike\". Deal [Damage:Arg1] DMG to all enemies [Arg2] {plural:[Arg2]|time|times}, generate 1 temporary copy of the last played other \"Strike\" and reduce its Arithmetica Cost by 1."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Mouchette"
+}

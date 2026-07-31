@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.salvador.shepard-of-the-souls",
+  "name": "Shepard of the Souls",
+  "route": {
+    "slug": "shepard-of-the-souls",
+    "canonicalPath": "/database/awakeners/salvador/talents/shepard-of-the-souls"
+  },
+  "ownerAwakenerId": "awakener-0044",
+  "family": "passive",
+  "descriptionTemplate": "Salvador's Furnace Healing benefits from the HP Recovery bonus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Salvador"
+}

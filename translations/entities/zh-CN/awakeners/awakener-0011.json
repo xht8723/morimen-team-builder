@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0011",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "克珀珊特",
+      "sourceHash": "sha256:62c8617ee522f74e94ada3faa475e3f710822f49070ad9b03149271f649c3268",
+      "status": "reference"
+    },
+    "description": {
+      "value": "克珀珊特既是高扬的旗帜，也是船沉没前坚守到最后的挽歌。责任、使命与生命都系于那艘船上；航向何处并不重要，重要的是她永远不会离开。",
+      "sourceHash": "sha256:0396c90f05fded4ddd7eb09d8ee4d9c4446ad146e8d52367ec9f5201ff1dfd63",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.casiah.a-thousand-and-one-miracles",
+  "name": "A Thousand and One Miracles",
+  "route": {
+    "slug": "a-thousand-and-one-miracles",
+    "canonicalPath": "/database/awakeners/casiah/enlightens/a-thousand-and-one-miracles"
+  },
+  "ownerAwakenerId": "awakener-0007",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Opening Act} is enhanced: Whenever any Awakener plays \"Strike,\" Casiah's {Opening Act} is triggered, generating Temporary {STR}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Casiah"
+}

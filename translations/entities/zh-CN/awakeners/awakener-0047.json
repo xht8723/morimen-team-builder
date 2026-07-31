@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0047",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "塔薇",
+      "sourceHash": "sha256:183697c904b6e3e24b2ac44a07e00acfabb56acf7ac732a066787c220c7d360b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "塔薇不存在于当前世界，因为其存在会招来「至高意志」的注视。守门人能给予求知者的只有智慧与沉默，而在漫长守望中，祂静静注视无数人来到门前又离去。",
+      "sourceHash": "sha256:16cce6ef0a619bc1ed553944db95d699fcf8d63d56f4aefec43ac35386704665",
+      "status": "machine"
+    }
+  }
+}

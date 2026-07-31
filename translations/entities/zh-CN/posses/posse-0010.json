@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0010",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "奥瑞塔的宝藏",
+      "sourceHash": "sha256:274f0b5c2bb44f1bf2d88b58999e7e480bba7de2af8d73f69e48f9c2230e5f22",
+      "status": "reference"
+    },
+    "description": {
+      "value": "从抽牌堆中抽 3 张算力消耗最低的卡牌。若当前界域为「深海」，则额外使触腕伤害提高 x 点。",
+      "sourceHash": "sha256:b38639b6aeda2729c8ea848e5293397a49bfa39618b304846a6133764c353610",
+      "status": "reference"
+    }
+  }
+}

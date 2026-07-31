@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.nymphaea.knell-of-death",
+  "name": "Knell of Death",
+  "route": {
+    "slug": "knell-of-death",
+    "canonicalPath": "/database/awakeners/nymphaea/skills/knell-of-death"
+  },
+  "ownerAwakenerId": "awakener-0037",
+  "slot": "Skill2",
+  "descriptionTemplate": "Inflict [{Poison}:Arg1] {plural:[{Poison}:Arg1]|stack|stacks} of {Poison} on all enemies for [Arg2] {plural:[Arg2]|turn|turns}, applying {Weakness} and {Vulnerable}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "ATK",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "DamageAmplification",
+        "multiplier": "0.5",
+        "mode": "scale_base"
+      }
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.nymphaea.oceans-vessel.skill.nymphaea.knell-of-death",
+      "operation": "mixed",
+      "upgraderId": "enlighten.nymphaea.oceans-vessel",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0037",
+      "ownerAwakenerName": "Nymphaea",
+      "patch": {
+        "descriptionTemplate": "Apply [{Poison}:Arg1] {plural:[{Poison}:Arg1]|stack|stacks} of {Poison} to all enemies, apply {Weakness} and {Vulnerable} for [Arg2] {plural:[Arg2]|turn|turns}, and gain [Block:Arg3] Shield.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["40", "48", "56", "64", "72", "80"],
+            "stat": "ATK",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "DamageAmplification",
+              "multiplier": "0.5",
+              "mode": "scale_base"
+            }
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "1"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["22.5", "27", "31.5", "36", "40.5", "45"],
+            "stat": "DEF",
+            "suffix": "%"
+          }
+        }
+      }
+    },
+    {
+      "id": "upgrade.talent.nymphaea.immerse.skill.nymphaea.knell-of-death",
+      "operation": "link_only",
+      "upgraderId": "talent.nymphaea.immerse",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Nymphaea"
+}

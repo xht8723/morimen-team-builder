@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.helot.irregular-form",
+  "name": "Irregular Form",
+  "route": {
+    "slug": "irregular-form",
+    "canonicalPath": "/database/awakeners/helot/derived-skills/irregular-form"
+  },
+  "ownerAwakenerId": "awakener-0023",
+  "derivedFromId": "skill.helot.blood-for-blood",
+  "rootSkillId": "skill.helot.blood-for-blood",
+  "descriptionTemplate": "Choose one from {Shattering Strike}, {Lasting Loathe}, \"Strike,\" and \"Defense\" to add to your hand and attach {Exhaust}.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Helot"
+}

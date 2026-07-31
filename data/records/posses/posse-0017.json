@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0017",
+  "name": "Truth Behind Grey Mist",
+  "route": {
+    "slug": "truth-behind-grey-mist",
+    "canonicalPath": "/database/posses/truth-behind-grey-mist"
+  },
+  "assets": {
+    "icon": "asset-posse-0017-icon",
+    "crystal": "asset-posse-0017-crystal",
+    "badge": "asset-posse-0017-badge"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "ownerAwakenerName": "Daffodil",
+  "acquisitionSource": "Clear Special Ops: Phantom of the Rainy Town",
+  "realm": "ULTRA",
+  "lineupToken": "v",
+  "descriptionTemplate": "Gain [Arg1] {STR} and create [Arg2] {derived:Insight}. If in an {Ultra Round}, instead create [Arg3] {derived:Insight}.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "esotericResearchDepth",
+      "rounding": "ceil",
+      "multiplier": 0.015,
+      "inputs": ["accountLevel", "ownedPosseCount", "realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "offensive"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "2"
+    }
+  },
+  "lore": "A breeze lifts her long hair, and the reflection of the grey sea of fog briefly appears before vanishing into thin air. Before you stands the same elegant and composed her. But you know, it is not an illusion."
+}

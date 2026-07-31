@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0115",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "渴求的画笔",
+      "sourceHash": "sha256:77686d3816ba6277b401e0d13a729b0b16c1b7b51ef630e7658c4dabf050bf3e",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后获得 1 层「共创」，本回合内下次其他唤醒体的狂气爆发能够消耗「共创」，使该次狂气爆发暴击率提高 25%，并使消耗「共创」的唤醒体获得装备者狂气回充 25% 的狂气。",
+      "sourceHash": "sha256:7ed8a33d24dc7550e096b47195e9ffcdda18107a063d8f03dc038b369ce9ed3f",
+      "status": "reference"
+    }
+  }
+}

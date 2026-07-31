@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0002",
+  "name": "Voices in Your Head",
+  "route": {
+    "slug": "voices-in-your-head",
+    "canonicalPath": "/database/posses/voices-in-your-head"
+  },
+  "assets": {
+    "icon": "asset-posse-0002-icon",
+    "crystal": "asset-posse-0002-crystal",
+    "badge": "asset-posse-0002-badge"
+  },
+  "acquisitionSource": "Automatically Unlocked",
+  "realm": "FADED_LEGACY",
+  "lineupToken": "h",
+  "descriptionTemplate": "Inflict 1 stack of {Weakness} and {Vulnerable} on each enemy, and {Steal} [Arg1] {STR} from them.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.01,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    }
+  },
+  "lore": "The moment your hands clasped, you saw confusion and bewilderment in each other's eyes.\nFragmented melodies converge here, for you have long forgotten the past.\nA silent symphony is about to be composed, for you are determined to step into the future."
+}

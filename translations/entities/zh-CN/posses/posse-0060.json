@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0060",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·壁垒",
+      "sourceHash": "sha256:03e7fa1b2ade16d2358e7d3effdef49834519facd17230db461893a0c140c593",
+      "status": "machine"
+    },
+    "description": {
+      "value": "获得 Arg1 点护盾。数值随原初精通成长。",
+      "sourceHash": "sha256:7223d610a3286d4037f0647b557c96c08e13fc91e15237691f9d55b3982bb959",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0058",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "引舵之帆",
+      "sourceHash": "sha256:b33bf00231cb439e7192b989e8d647931024a003b5f6846764e6342f4dac9015",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者生命回复提高 10%。释放狂气爆发后，下回合开始时回复 10% 已损失生命。",
+      "sourceHash": "sha256:f191894555209cca8bc2500618f2b2a7301d71073b29ee5e69cc9333d58bbf6e",
+      "status": "reference"
+    }
+  }
+}

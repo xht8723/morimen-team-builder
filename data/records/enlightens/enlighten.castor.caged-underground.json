@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.castor.caged-underground",
+  "name": "Caged Underground",
+  "route": {
+    "slug": "caged-underground",
+    "canonicalPath": "/database/awakeners/castor/enlightens/caged-underground"
+  },
+  "ownerAwakenerId": "awakener-0008",
+  "slot": "E1",
+  "descriptionTemplate": "At the start of the battle, place 1 {Onyx Plume} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Castor"
+}

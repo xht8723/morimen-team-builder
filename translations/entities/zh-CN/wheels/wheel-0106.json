@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0106",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "牧羊人的手杖",
+      "sourceHash": "sha256:b242d812eabd23c724b61f5d75c6e8620f1f22e0db7812bd351a533bb9adcf84",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时，装备者获得等同于 100% 装备者狂气回充的狂气。装备者每场战斗首次释放狂气爆发后，重复一次该效果。",
+      "sourceHash": "sha256:8017700d7aeb5580b10ad58e094adc66779ddd9f9edb47ae9a43b11004e05313",
+      "status": "reference"
+    }
+  }
+}

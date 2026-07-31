@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0102",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "冰川下的沉眠",
+      "sourceHash": "sha256:8a8b7a7836392b032a5df3ce72a64137b7bfe1c2ca691d6f5800301196e7e071",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾提高 10%。释放钥令后所有唤醒体获得 10% 临时暴击率和暴击伤害，但附加最大生命 3% 的献祭战斗结束时，剩余的献祭层数会继承至下一场战斗。。若当前界域为「深海」，释放钥令后还会使触腕伤害提高装备者攻击力的 3%。",
+      "sourceHash": "sha256:3b56ef6b3c3fc47aee0054da5e3e37da8081e4c736dc374d936d819c788e04eb",
+      "status": "reference"
+    }
+  }
+}

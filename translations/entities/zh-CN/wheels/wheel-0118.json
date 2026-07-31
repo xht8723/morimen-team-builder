@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0118",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "玉兰之饵",
+      "sourceHash": "sha256:de582e86ce84d3c38bcea2d89c07b1a0df415955814f4759fae7ae14c262f5a1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成固定中毒和触发中毒效果提高 10%。装备者每回合首次触发共振打出自身指令卡或回合结束后重置自身共振计数。时获得 10 点狂气。",
+      "sourceHash": "sha256:a4f21615ed0d0dd592461a2874063cffd9f81301232cbf2f437e680933b15f17",
+      "status": "reference"
+    }
+  }
+}

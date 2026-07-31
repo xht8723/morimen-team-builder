@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0022",
+  "name": "All of Her",
+  "route": {
+    "slug": "all-of-her",
+    "canonicalPath": "/database/posses/all-of-her"
+  },
+  "assets": {
+    "icon": "asset-posse-0022-icon",
+    "crystal": "asset-posse-0022-crystal",
+    "badge": "asset-posse-0022-badge"
+  },
+  "ownerAwakenerId": "awakener-0001",
+  "ownerAwakenerName": "24",
+  "acquisitionSource": "Clear Special Ops: Serene Fission",
+  "realm": "CHAOS",
+  "lineupToken": "t",
+  "descriptionTemplate": "Increase Realm Mastery by [Arg1]. Grant a chosen Awakener [Energy:Arg2] Aliemus.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 24.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "utility"
+    },
+    "Arg2": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 24.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "utility"
+    }
+  },
+  "lore": "All 24 merge into one, dissolving into starlight.\n\nHer personality becomes whole through division, and her body endures through fission.\n\nThere is only one 24 in this world, and she embodies them all."
+}

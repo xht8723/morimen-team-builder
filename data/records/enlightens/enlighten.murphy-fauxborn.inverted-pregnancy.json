@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.murphy-fauxborn.inverted-pregnancy",
+  "name": "Inverted Pregnancy",
+  "route": {
+    "slug": "inverted-pregnancy",
+    "canonicalPath": "/database/awakeners/murphy-fauxborn/enlightens/inverted-pregnancy"
+  },
+  "ownerAwakenerId": "awakener-0035",
+  "slot": "E2",
+  "descriptionTemplate": "Murphy: Fauxborn's Crit. Rate +3% per Tentacle. Murphy: Fauxborn's Crit. DMG +3% per 1% Max HP value of {Sacrifice} or {Delayed Sacrifice} stacks.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Murphy: Fauxborn"
+}

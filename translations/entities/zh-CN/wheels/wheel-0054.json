@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0054",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "海之梦",
+      "sourceHash": "sha256:70f5b4044ebea106a5dce46ef573f580e33af2edd2a7015048b05d17f5a7ad23",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者打出卡牌后，装备者获得 1 点狂气。战斗开始时，获得等同于装备者攻击力 9% 的 力量，若当前界域为「深海」，额外获得 6% 的 触腕伤害，后续的每个回合开始后，获得等同于装备者攻击力 3% 的 力量，若当前界域为「深海」，额外获得 2% 的 触腕伤害。",
+      "sourceHash": "sha256:09ae7fe33d4747db3281d480b03ebda86fe69e31663355a0d3db231b6babd6cd",
+      "status": "reference"
+    }
+  }
+}

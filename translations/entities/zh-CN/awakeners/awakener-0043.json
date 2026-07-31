@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0043",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "莱克",
+      "sourceHash": "sha256:b7f7b4f6269ad781b2a7ee6f7aad0a3dd366a2b28972ee85b63f9ff1f8671c8a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "莱克被同行称作「幸运侦探」：下注总能翻倍，猜测总会命中。极端好运让他无需依靠常规推理，却也使人怀疑，那究竟是天赋、诅咒，还是某种更危险的安排。",
+      "sourceHash": "sha256:9cce81d09d68e7f68394a62109c5eb0338eb5a87387cfff180f6c914761d8251",
+      "status": "machine"
+    }
+  }
+}

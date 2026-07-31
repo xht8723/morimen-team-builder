@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0026",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "珈伦",
+      "sourceHash": "sha256:89d2fcf7ff7b4c0c2df4ce107084952d81c5b93165855a730f92224578eaf674",
+      "status": "reference"
+    },
+    "description": {
+      "value": "珈伦想戴上酒色般深邃的紫晶，穿鸵鸟羽制成的华服，成为宴会唯一的光。她仍有无数美丽愿望，只是那位眨着琥珀色眼睛的女仆，已经再也无法亲口说出它们。",
+      "sourceHash": "sha256:28ee952b002f18faae2336b3b234b0562512d3950b42bea120c4e5cdb5ea6fc0",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.miryam.divine-realms-illusion",
+  "name": "Divine Realm's Illusion",
+  "route": {
+    "slug": "divine-realms-illusion",
+    "canonicalPath": "/database/awakeners/miryam/derived-skills/divine-realms-illusion"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "nodeKind": "group",
+  "derivedFromId": "derived.miryam.the-end-of-belief",
+  "rootSkillId": "skill.miryam.testament-of-faith",
+  "childDerivedSkillIds": [
+    "derived.miryam.faith-of-the-divine-realm",
+    "derived.miryam.call-of-the-divine-realm",
+    "derived.miryam.divine-realms-descent"
+  ],
+  "descriptionTemplate": "Randomly place 1 of these cards into your hand.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Miryam"
+}

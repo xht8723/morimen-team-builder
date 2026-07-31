@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ogier.sacrifice-for-justice",
+  "name": "Sacrifice for Justice",
+  "route": {
+    "slug": "sacrifice-for-justice",
+    "canonicalPath": "/database/awakeners/ogier/enlightens/sacrifice-for-justice"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "slot": "E3",
+  "descriptionTemplate": "{Unstable Barrier} Shield Generation +43% and grants {STR} equal to [Arg1]% of ATK (effect scales with {Unstable Barrier} skill level).",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["4", "4.8", "5.6", "6.4", "7.2", "8"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Ogier"
+}

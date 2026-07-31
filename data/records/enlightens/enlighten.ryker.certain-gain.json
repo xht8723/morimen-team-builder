@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ryker.certain-gain",
+  "name": "Certain Gain",
+  "route": {
+    "slug": "certain-gain",
+    "canonicalPath": "/database/awakeners/ryker/enlightens/certain-gain"
+  },
+  "ownerAwakenerId": "awakener-0043",
+  "slot": "E3",
+  "descriptionTemplate": "For every 1 Black Sigil consumed, increase the Base DMG of {All-in!} by 0.5% for this exploration. Ryker's \"Basic Strike\" and \"Basic Defense\" can consume 3 Black Sigils and activate twice when Arithmetica is insufficient.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ryker"
+}

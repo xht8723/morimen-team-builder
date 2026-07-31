@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0026",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "无声欢宴",
+      "sourceHash": "sha256:e1e08adbdae5a15c80a2cd0ee0d9c1e09dba2b868c2c973d0480af3b429e0353",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的中毒提高 15%。装备者释放狂气爆发后，回复等同于装备者体质 20% 的生命，每剩余 1 点算力就额外回复装备者体质的 5% 的生命。",
+      "sourceHash": "sha256:959f42d9d2dd8b906b639780bb1eaa466bf3b6d1ee7f98554b1bb3de6f20e4e6",
+      "status": "reference"
+    }
+  }
+}

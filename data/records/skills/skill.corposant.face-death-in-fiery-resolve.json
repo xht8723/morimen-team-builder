@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.corposant.face-death-in-fiery-resolve",
+  "name": "Face Death in Fiery Resolve",
+  "route": {
+    "slug": "face-death-in-fiery-resolve",
+    "canonicalPath": "/database/awakeners/corposant/skills/face-death-in-fiery-resolve"
+  },
+  "ownerAwakenerId": "awakener-0011",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Obtain 3 Tentacles. The discarded card {Aftershock} Effect triggers an additional time.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Corposant"
+}

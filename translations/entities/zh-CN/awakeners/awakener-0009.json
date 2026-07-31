@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0009",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "希莱斯特",
+      "sourceHash": "sha256:140c8c2de55c48626262c03f774b53ebb845e615bfd6bc2b224889b416a63fc2",
+      "status": "reference"
+    },
+    "description": {
+      "value": "希莱斯特空灵的美总让人想起飞向理想乡的天堂鸟。白裙随风轻扬，而栖在桅杆上的少女是否也曾幻想，自己终有一天能真正飞入碧空？",
+      "sourceHash": "sha256:8c1ae93280a7d0058ec65a19281452dd348173cc02e0e3baa95023869922f44c",
+      "status": "machine"
+    }
+  }
+}

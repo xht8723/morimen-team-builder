@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakener",
+  "id": "awakener-0051",
+  "name": "Uvhash",
+  "route": {
+    "slug": "uvhash",
+    "canonicalPath": "/database/awakeners/uvhash"
+  },
+  "assets": {
+    "icon": "asset-awakener-0051-icon"
+  },
+  "numericId": 51,
+  "ingameId": "B07",
+  "lineupToken": "Q",
+  "realm": "CARO",
+  "rarity": "SSR",
+  "type": "ASSAULT",
+  "availabilityType": "PERMANENT",
+  "releaseDate": "2023-11-29",
+  "faction": "Outlanders",
+  "aliases": ["uvhash"],
+  "searchTags": ["STR Up", "Self-Damage"],
+  "primaryScalingBase": 20,
+  "baseStatsLv1": {
+    "CON": 38,
+    "ATK": 36,
+    "DEF": 32
+  },
+  "substatsLv1": {
+    "CritRate": 5,
+    "CritDamage": 52.4,
+    "AliemusRegen": 0.4,
+    "KeyflareRegen": 15,
+    "RealmMastery": 0,
+    "SigilYield": 0,
+    "DamageAmplification": 0,
+    "DeathResistance": 0
+  },
+  "statScaling": {
+    "CON": 1.8,
+    "ATK": 1.7,
+    "DEF": 1.5
+  },
+  "substatScaling": {
+    "CritRate": 0,
+    "CritDamage": 2.4,
+    "AliemusRegen": 0.4,
+    "KeyflareRegen": 0,
+    "RealmMastery": 0,
+    "SigilYield": 0,
+    "DamageAmplification": 0,
+    "DeathResistance": 0
+  },
+  "profile": {
+    "title": "Uvhash",
+    "birthday": "4-Apr",
+    "gender": "Male",
+    "height": "6'2''",
+    "weight": "190lbs",
+    "gnosticIndex": "23.01",
+    "storySections": [
+      {
+        "kind": "introduction",
+        "title": "Basic Information",
+        "unlockCondition": "Awakener Level 1",
+        "content": "How could we ever forget the hero Uvhash? He was the finest of men. The warrior fell to his knees in the sunset-drenched sands, his body bathed in warm blood. Vultures circled above, singing his dirge:\n<Italic:No tears shall honor you, no weeping shall lay you to rest,\nFor in life, your name had already conquered Rome.>"
+      },
+      {
+        "kind": "story",
+        "title": "Story: I",
+        "unlockCondition": "Affinity Level 3",
+        "content": "Silver Core Number: B-005\nDate of Excavation: @3, A.F.1@1\nExcavation Site: Rural Flemish Lowlands—ruins of an unnamed ancient Roman mausoleum\nDetailed Record: The core's original bearer, Ludwig Prynn, was sentenced to burn at the stake by the local Inquisition following a necromancy incident. Prynn claimed to have acquired this Silver Core on the battlefields of the Ninth Holy Crusade. He then traveled to the outskirts of Brabantum, where, alongside his \"Servant from the Stars\" and \"Invisible Companion,\" he conducted blood rites to summon the \"Great Unnamable.\"\n\nRecorder: Ward Philips\n—<Italic:Awakener Silver Core Acquisition Report: B-005>"
+      },
+      {
+        "kind": "story",
+        "title": "Story: II",
+        "unlockCondition": "Affinity Level 5",
+        "content": "\"4:30 6-mile morning jog along the Aethis River. Argued with an elderly passerby and kicked a poodle into the air.\n\n...\n\n12:00 Lunch: Honey pancakes, olive appetizers, and... five servings of roast lamb? Unbelievable.\n\n13:00 Headed to the Trout Fighting Club. Record: 10 wins, 0 losses. Fastest match: 3 seconds—the opponent forfeited out of sheer fear.\n\n19:00 Watched <Italic:The Shepherd-King> at Corvint Theatre with the Keeper, got thrown out for shouting dangerous political opinions.\n\n22:00 Found loitering near St. Marian Hospital. Highly probable motive: casing the facility for blood bags theft.\n\nObservation ends; danger level: SSS.\"\n\n—Excerpt from <Italic:Hannah's Awakener Observation Notes>"
+      },
+      {
+        "kind": "story",
+        "title": "Story: III",
+        "unlockCondition": "Affinity Level 7",
+        "content": "A \"golem\" forged by Caligura's court alchemist, Marcus Antys, at the cost of countless living souls.\n\nDue to the imperfection of the alchemical ritual, he had to drink a large amount of blood daily. He killed Caligura's political enemies and helped him claim the throne of Rome.\n\nThe tyrant Caligura was murdered less than four years into his reign. The golem was also locked in the underground of the destroyed altar by enraged and fearful mobs, forced to endure hunger and thirst for nearly a thousand years.\n\nThroughout the long centuries, he survived on the blood of rats. The thirst ingrained deep within his nature slowly drove him mad.\n\n<Italic:Not enough, far from enough...>\nDuring the @2 period, a Lavantian sorcerer found him, promising to free him on one condition: he must slaughter the Remouans on the battlefield.\n\n<Italic:A deal like that? How could he refuse.>\nHe completed the task with ease, but there was a small complication: in his frenzy, he slaughtered every soul on the battlefield and drained them dry—including the sorcerer, and ultimately, himself."
+      },
+      {
+        "kind": "story",
+        "title": "Story: IV",
+        "unlockCondition": "Affinity Level 9",
+        "content": "Age@2, the ancient city of Akka.\n\nA thousand years of thirst finally broke loose—kill, drink, kill, drink—until nothing remained before him but an endless desert and a vast litter of desiccated corpses, so dreadful a sight that even the vultures dared not draw near.\n\nHe knelt in the yellow sand and laughed, and laughed, and laughed.\n\nGlorious! @1 glorious!\n\nAnd now—he would crown this magnificent feast of slaughter with his own blood.\n\nThe warrior bit open his own wrist, drained himself dry, and collapsed at last into the vast crimson pool he had made."
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.tranquil-sea",
+  "name": "Tranquil Sea",
+  "route": {
+    "slug": "tranquil-sea",
+    "canonicalPath": "/database/overlays/tranquil-sea"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "descriptionTemplate": "This turn, {Tentacle DMG} -50%, gain [Block:Arg1] Shield. Further gain [Block:Arg2] Shield every time Tentacle attacks.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "X",
+      "displayFormula": "Max HP * 1% * (8 + Realm Mastery / 100)"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "X",
+      "displayFormula": "Max HP * 0.2%"
+    }
+  }
+}

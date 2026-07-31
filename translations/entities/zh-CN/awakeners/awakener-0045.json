@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0045",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "珊",
+      "sourceHash": "sha256:e945e3a6fae294c59d8239694366bb8d3471e02b314d66e071be730aff7b0c07",
+      "status": "reference"
+    },
+    "description": {
+      "value": "来自希特的艺术家珊漠视旁人，只追求绝对而纯粹的美。灵感奔涌时凿刀永不停歇，她把转瞬即逝的瞬间刻成永恒，也让自己的身体逐渐沉入创作的代价。",
+      "sourceHash": "sha256:259dbd2a75cc5f2fd1dd05f4b1dbbcb91b3cc59ee67d190f10ecfe53cdfdcec4",
+      "status": "machine"
+    }
+  }
+}

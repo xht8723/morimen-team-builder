@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0001",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "纯白初遇",
+      "sourceHash": "sha256:21d0f1dfa26c56b35493ea13d7e17764122e0d7f0f4ef45e69f3d905cd16716e",
+      "status": "reference"
+    },
+    "description": {
+      "value": "弃掉所有手牌，抽取弃掉数量 +2 的牌。",
+      "sourceHash": "sha256:7e69f4dabe58716ca3917df0973f410f0639a7f1a988c259feea8ee37a7ad6bd",
+      "status": "reference"
+    }
+  }
+}

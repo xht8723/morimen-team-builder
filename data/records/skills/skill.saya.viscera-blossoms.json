@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.saya.viscera-blossoms",
+  "name": "Viscera Blossoms",
+  "route": {
+    "slug": "viscera-blossoms",
+    "canonicalPath": "/database/awakeners/saya/skills/viscera-blossoms"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "Skill1",
+  "descriptionTemplate": "Lose 10% of current HP, inflict [Corrosion:Arg1] {Corrosion} on all enemies. Discard all Command Cards and draw the same number of cards.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["5500", "6600", "7700", "8800", "9900", "11000"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.saya.ill-be-your-very-own-monster.skill.saya.viscera-blossoms",
+      "operation": "override_args",
+      "upgraderId": "enlighten.saya.ill-be-your-very-own-monster",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0057",
+      "ownerAwakenerName": "Saya",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["6050", "7260", "8470", "9680", "10890", "12100"],
+            "stat": "ATK",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "SigilYield",
+              "multiplier": "0.5",
+              "mode": "scale_base"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "upgrade.enlighten.saya.must-be-what-they-call-love.skill.saya.viscera-blossoms",
+      "operation": "mixed",
+      "upgraderId": "enlighten.saya.must-be-what-they-call-love",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0057",
+      "ownerAwakenerName": "Saya",
+      "patch": {
+        "descriptionTemplate": "Lose 10% of current HP, inflict [Corrosion:Arg1] {Corrosion} on all enemies. Additionally inflict {Corrosion} equal to 0.5% of the target's Max HP. Discard all Command Cards and draw the same number of cards.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["6050", "7260", "8470", "9680", "10890", "12100"],
+            "stat": "ATK",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "SigilYield",
+              "multiplier": "0.5",
+              "mode": "scale_base"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Saya"
+}

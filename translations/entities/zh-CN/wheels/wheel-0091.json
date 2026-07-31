@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0091",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "不存在之地",
+      "sourceHash": "sha256:d483456854cba25f93e6c9fcb8fc97d629e91dd4ba8b5d464ff47bedc4bcde25",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始时，将一张装备者的「防御」加入牌库，装备者「防御」护盾提高 40%。",
+      "sourceHash": "sha256:a8a788e9b59ad18dd46b08a09b401cc3cff3f38cc4dc731df36296ec64071e88",
+      "status": "reference"
+    }
+  }
+}

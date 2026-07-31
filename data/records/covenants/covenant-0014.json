@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0014",
+  "name": "April Tribute",
+  "route": {
+    "slug": "april-tribute",
+    "canonicalPath": "/database/covenants/april-tribute"
+  },
+  "assets": {
+    "icon": "asset-covenant-0014-icon"
+  },
+  "acquisitionSource": "Clear Interlude - Verboten Covenant: Prime Fissure",
+  "lineupToken": "b",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Crit. DMG +[Arg1]%",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "7.2",
+          "suffix": "%"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique: At turn start, if the enemies' total HP is above 75%, the wielder's Temporary Crit. Rate and Crit. DMG increase by 35%.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "Laid to rest in the spring of 18@2; the headstones stand as a chorus of silent hymns."
+}

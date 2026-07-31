@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0042",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "扭曲的骑士诗",
+      "sourceHash": "sha256:43e73a2faf4dbbf684aaa4db9922e0c225053467f450b66b0a45fc006ffbb68c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害与暴击伤害提高 35%。回合开始时和装备者释放狂气爆发后获得 1 层「心火」，装备者本回合打出指令卡时消耗 1 层使其最终伤害和护盾提高 15%。超维回合中改为获得「神焰」，效果翻倍。",
+      "sourceHash": "sha256:fea6c88f86ac381ce6ec7b64629446c79de182a53499bc419afc1c1b6ec41c79",
+      "status": "reference"
+    }
+  }
+}

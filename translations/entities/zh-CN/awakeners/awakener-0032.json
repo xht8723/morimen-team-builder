@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0032",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "弥利亚姆",
+      "sourceHash": "sha256:0717119c29a7b88c11b6491a974e658c413d4dfe53b30c56fa01a32bae147c06",
+      "status": "reference"
+    },
+    "description": {
+      "value": "黑袍遮住弥利亚姆瘦削的身体，她沉默而虔诚，像壁画中哀恸的圣母。她把全部存在都投入漫长等待，只为迎接那个足以终结信仰、也完成信仰的时刻。",
+      "sourceHash": "sha256:db6b32b63599c9954e1e125540aa1769596b3b3fcd56bd3c6fe2123ed9170fe4",
+      "status": "machine"
+    }
+  }
+}

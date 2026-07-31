@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0046",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "来自雾境",
+      "sourceHash": "sha256:5a1a5815bb532281b69c4583fbd15018ba4e49da21a63076de05ba99c8c1e977",
+      "status": "reference"
+    },
+    "description": {
+      "value": "抽 2 张「打击」，若「茉夏」在队伍中，使它们算力消耗 -1。",
+      "sourceHash": "sha256:6f88ed022adee2a0ff2b63b52e8fdb487547599025cbed4f0ceaa4011e5b649d",
+      "status": "reference"
+    }
+  }
+}

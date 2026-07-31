@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.horla.ink-stained-sonnet",
+  "name": "Ink-Stained Sonnet",
+  "route": {
+    "slug": "ink-stained-sonnet",
+    "canonicalPath": "/database/awakeners/horla/skills/ink-stained-sonnet"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Further increase the {Emotion} state bonus effect to 600%. Obtain 3 stacks of universal {Metaphor}, which can be treated as a {Metaphor} of any {Emotion}. Universal {Metaphor} takes priority for being consumed when a {Leap} effect is triggered.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Horla"
+}

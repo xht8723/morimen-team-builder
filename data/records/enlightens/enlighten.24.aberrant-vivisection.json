@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.24.aberrant-vivisection",
+  "name": "Aberrant Vivisection",
+  "route": {
+    "slug": "aberrant-vivisection",
+    "canonicalPath": "/database/awakeners/24/enlightens/aberrant-vivisection"
+  },
+  "ownerAwakenerId": "awakener-0001",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Obtain 24 Realm Mastery. The next Command Card of \"24\" will be effective 3 times.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "24"
+}

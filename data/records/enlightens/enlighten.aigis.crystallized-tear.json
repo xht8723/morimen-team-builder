@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.aigis.crystallized-tear",
+  "name": "Crystallized Tear",
+  "route": {
+    "slug": "crystallized-tear",
+    "canonicalPath": "/database/awakeners/aigis/enlightens/crystallized-tear"
+  },
+  "ownerAwakenerId": "awakener-0003",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Stagnant Curse} is enhanced: After Aigis unleashes Exalt, her next \"Defense\" takes effect 3 times, Exalt's Base DMG +50%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Aigis"
+}

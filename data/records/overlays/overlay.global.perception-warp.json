@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.perception-warp",
+  "name": "Perception Warp",
+  "route": {
+    "slug": "perception-warp",
+    "canonicalPath": "/database/overlays/perception-warp"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "This card is displayed in Dissolution text and has a 10% chance of -2, 25% chance of -1, 30% chance of no change, 25% chance of +1, and 10% chance of +2 to its Arithmetica Cost. Removed when played or discarded.",
+  "descriptionArgs": {}
+}

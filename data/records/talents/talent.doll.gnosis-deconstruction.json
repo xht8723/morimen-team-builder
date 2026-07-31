@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.doll.gnosis-deconstruction",
+  "name": "Gnosis Deconstruction",
+  "route": {
+    "slug": "gnosis-deconstruction",
+    "canonicalPath": "/database/awakeners/doll/talents/gnosis-deconstruction"
+  },
+  "ownerAwakenerId": "awakener-0013",
+  "family": "passive",
+  "descriptionTemplate": "For every 1 Aliemus Regen Level attribute Doll has, increase the HP Recovery effects of {Outer Surgery} and {Equivalent Exchange} by 0.5%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doll"
+}

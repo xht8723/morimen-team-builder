@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0033",
+  "name": "Mouchette Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/mouchette/builds/standard"
+  },
+  "awakenerId": "awakener-0033",
+  "primaryBuildId": "standard",
+  "recommendedPosseIds": ["posse-0046"],
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0014", "covenant-0017", "covenant-0004"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0024"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0055"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0083"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0018", "wheel-0029", "wheel-0093"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["CRIT_RATE"], ["DEATH_RESISTANCE"], ["CRIT_DMG"]],
+      "recommendedWheelMainstats": ["CRIT_RATE", "DEATH_RESISTANCE"]
+    }
+  ],
+  "ownerAwakenerName": "Mouchette"
+}

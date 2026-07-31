@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.saya.gynoecium",
+  "name": "Gynoecium",
+  "route": {
+    "slug": "gynoecium",
+    "canonicalPath": "/database/awakeners/saya/overlays/gynoecium"
+  },
+  "assets": {
+    "icon": "asset-overlay.saya.gynoecium-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0057",
+  "aliases": ["Gynoecium stacks"],
+  "iconId": "IconS_Buff_087",
+  "textColor": "light",
+  "descriptionTemplate": "Life, radiant and unbound, rises in a triumphant hymn to freedom. Can be consumed by Saya's Exalt to enhance its effect. Stacks up to 4, persists between battles.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Saya"
+}

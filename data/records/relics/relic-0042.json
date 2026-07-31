@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0042",
+  "name": "Dimensional Image: Ramona",
+  "route": {
+    "slug": "dimensional-image-ramona",
+    "canonicalPath": "/database/relics/dimensional-image-ramona"
+  },
+  "assets": {
+    "icon": "asset-relic-0042-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0042",
+  "ownerAwakenerId": "awakener-0042",
+  "ownerAwakenerName": "Ramona",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Ramona gains [Arg1] Aliemus. For every [Arg2]rd Command Card played, that Command Card takes effect 1 additional time and gains [Arg3] Keyflare.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "3"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "250"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0042",
+      "name": "Dimensional Image: Ramona",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0042",
+      "ownerAwakenerName": "Ramona",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Ramona gains [Arg1] Aliemus. For every [Arg2]rd Command Card played, that Command Card takes effect 1 additional time and gains [Arg3] Keyflare.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        },
+        "Arg2": {
+          "kind": "fixed",
+          "value": "3"
+        },
+        "Arg3": {
+          "kind": "fixed",
+          "value": "250"
+        }
+      }
+    }
+  ]
+}

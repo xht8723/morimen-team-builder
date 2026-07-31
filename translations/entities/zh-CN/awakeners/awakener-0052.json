@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0052",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "旺达",
+      "sourceHash": "sha256:df30a345ffded8c52f8e5d6890241a5cdecd21dce10426c81d5de64ee850e464",
+      "status": "reference"
+    },
+    "description": {
+      "value": "旺达聪明、富有而美丽，并宣称自己只为享乐而活。她让男人俯首成奴，把冰冷双足踏上他们的背；这位戴冠的维纳斯既是邪恶化身，也是梦境本身。",
+      "sourceHash": "sha256:3d4abe0f46dc3059d423bc58e95948c99fd540ca96f5f5735beda1dd766f0c28",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0002",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "阿格里帕",
+      "sourceHash": "sha256:67076084b49281260ae5093d5fe0fd7ede30df5771bbacace6c69f371e86a542",
+      "status": "reference"
+    },
+    "description": {
+      "value": "历史的烈火吞没一切之前，阿格里帕曾是卡普亚最耀眼的明珠。她任性而凌厉，以鞭笞掩饰脆弱，却在训练角斗士时展现出令人意外的耐心与才能。",
+      "sourceHash": "sha256:273e081721f02803a836a5907b835b85c5a3c0906abf7890f561365010e3d995",
+      "status": "machine"
+    }
+  }
+}

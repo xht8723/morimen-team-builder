@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.24.mediating-personalities",
+  "name": "Mediating Personalities",
+  "route": {
+    "slug": "mediating-personalities",
+    "canonicalPath": "/database/awakeners/24/skills/mediating-personalities"
+  },
+  "ownerAwakenerId": "awakener-0001",
+  "slot": "Rouse",
+  "descriptionTemplate": "\"24\" gains [Energy:Arg1] Aliemus. {Rouse}:\n{Chaos}: The Crit. Rate and Crit. DMG of \"24\" +[StateArg4]%. Each time a Posse is used, the Exalt Final DMG of \"24\" +[StateArg1]%.\n{Aequor}: The DMG \"24\" deals enjoys a [StateArg2]% {Tentacle DMG} bonus and inflicts {Poison} equal to 10% of DMG dealt. \"24\"'s Exalt can trigger 50% {Poison} on enemies.\n{Caro}: For every 1 Arithmetica \"24\" consumes, {Embryo Fusion} +[Blood:DescArg1], \"24\" gains [StateArg3] {STR}. Her Exalt enjoys an additional 300% {STR} bonus.\n{Ultra}: The DMG \"24\" deals enjoys a [StateArg5]% {Counter} DMG Bonus. Shuffle 1 {derived:Insight} into the Discard Pile at turn end, Hand Limit +2.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "DescArg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"],
+      "suffix": "%"
+    },
+    "StateArg2": {
+      "kind": "scaling",
+      "values": ["50", "55", "60", "65", "70", "75"],
+      "suffix": "%"
+    },
+    "StateArg3": {
+      "kind": "scaling",
+      "values": ["2", "2.4", "2.8", "3.2", "3.6", "4"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "StateArg4": {
+      "kind": "scaling",
+      "values": ["15", "16", "17", "18", "19", "20"],
+      "suffix": "%"
+    },
+    "StateArg5": {
+      "kind": "scaling",
+      "values": ["20", "21", "22", "23", "24", "25"],
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "ownerAwakenerName": "24"
+}

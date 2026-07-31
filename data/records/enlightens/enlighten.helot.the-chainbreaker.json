@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.helot.the-chainbreaker",
+  "name": "The Chainbreaker",
+  "route": {
+    "slug": "the-chainbreaker",
+    "canonicalPath": "/database/awakeners/helot/enlightens/the-chainbreaker"
+  },
+  "ownerAwakenerId": "awakener-0023",
+  "slot": "E3",
+  "descriptionTemplate": "\"Basic Strike\" grants Helot 5% Crit. DMG.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Helot"
+}

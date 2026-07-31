@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0025",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "詹金",
+      "sourceHash": "sha256:3cb763f9eda44c9146c693cc2cc0cddae0c041db2e14255554e335fff778144c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "有詹金的地方就有布朗，有布朗单独行动的地方，背后也一定藏着詹金。她总能一脸无辜地拿出不在场证明，哪怕失物此刻就在布朗怀里。",
+      "sourceHash": "sha256:bcf7c39af6807e3ef35a5ec99062590d77a56b8829d3c85f23985694e73c8788",
+      "status": "machine"
+    }
+  }
+}

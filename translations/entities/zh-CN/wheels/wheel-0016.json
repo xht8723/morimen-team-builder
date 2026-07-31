@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0016",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "坠入虚无的人偶",
+      "sourceHash": "sha256:6fd6b93aa03bb48acdc48f1ef645098cbec7f6531b3a0cccf3d6718705bc0cde",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的狂气、中毒、生命回复提高 10%。装备者释放狂气爆发后，获得等同于本次狂气消耗 20% 的狂气。",
+      "sourceHash": "sha256:7dde694d179753be2bf3639a19c8cc8d3154300d8b1905a5973047930602c0cd",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0011",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "海归线",
+      "sourceHash": "sha256:3dba91d20710aaa7a83e15f38b0809772951b748968703671c118bd93ed4306a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 界域精通 +12 6件套： 队伍唯一：战斗开始时，获得等同于装备者攻击力 12% 的力量。若当前界域为深海，效果改为“每回合开始时，有（50+0.25*队伍界域精通）%的机会获得 1 层触腕集结，超过 100% 时可获得多层，概率在首领战中翻倍。",
+      "sourceHash": "sha256:5adc81ef8297c91360d58944f32bfa0d2160d7b45586411acb4292600eefca7b",
+      "status": "reference"
+    }
+  }
+}

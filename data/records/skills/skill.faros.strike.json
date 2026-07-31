@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.faros.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/faros/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0017",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Faros obtains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.faros.congealed-ambergris.skill.faros.strike",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.faros.congealed-ambergris",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0017",
+      "ownerAwakenerName": "Faros",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. Faros obtains [Energy:Arg2] Aliemus. Make 1 Tentacle perform 2 attacks, but deal only 50% DMG."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Faros"
+}

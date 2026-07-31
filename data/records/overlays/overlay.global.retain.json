@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.retain",
+  "name": "Retain",
+  "route": {
+    "slug": "retain",
+    "canonicalPath": "/database/overlays/retain"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Retained"],
+  "textColor": "misc",
+  "descriptionTemplate": "Card will not enter the Discard Pile, but instead remains in your hand.",
+  "descriptionArgs": {}
+}

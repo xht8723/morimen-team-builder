@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0025",
+  "name": "Will Unyielding",
+  "route": {
+    "slug": "will-unyielding",
+    "canonicalPath": "/database/wheels/will-unyielding"
+  },
+  "assets": {
+    "icon": "asset-wheel-0025-icon"
+  },
+  "rarity": "SSR",
+  "realm": "CHAOS",
+  "mainstatKey": "DEATH_RESISTANCE",
+  "ownerAwakenerId": "awakener-0004",
+  "ownerAwakenerName": "Alva",
+  "lineupToken": "G",
+  "descriptionTemplate": "The wielder's Base DMG and Shield gained from them each +[StateArg1]%.\nAt the start of investigation, add 1 of the wielder's Basic Strike and 1 of their Basic Defense to the deck.\nWhenever one of their Strike Commands is played, Shield gained from their next Defense Command +15%;\nWhenever one of their Defense Commands is played, the Crit. Rate & Crit. DMG of their next Strike Command +15%.\nThese effects can stack up to 3 times, and persist between battles.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["9", "11", "13", "15"],
+      "suffix": "%"
+    },
+    "StateArg2": {
+      "kind": "scaling",
+      "values": ["6", "8", "10", "12"]
+    }
+  },
+  "lore": "\"Retreat, retreat!\"\n\"Retreat to @3! Move quickly!\"\n\"Help, help me! Don't abandon me!\"\n\"Leave him behind, retreat now—Alva!\"\nThe soldier wielding the gunblade surged forward, explosions erupting around her, blending with the clamor of battle, screams, and the blaring war horn. Blood drenched the earth, its stench overpowering even the smell of gunpowder. Lifeless soldiers lay scattered, their uniforms dyed a vivid red regardless of their original colors.\nAlva clenched her teeth, pushing forward against the relentless onslaught of enemies. She spotted him—a young man crying for help, pinned to the ground, desperately fending off a towering enemy's dagger.\nA deafening gunshot and searing pain struck simultaneously; the nearby enemy collapsed slowly. Alva spun around and slashed, enduring the agony in her leg as she lunged forward, driving her blade into her opponent's chest and pulling the trigger.\nBlood sprayed everywhere; she hastily wiped her face, only to realize the young man was gone.\nShe glanced down—a knife protruded from her left knee, blood gushing out.\nTearing a strip of cloth from her cloak to staunch the bleeding, she used her gunblade as a makeshift crutch and limped after her unit.",
+  "searchTags": ["Shield", "Strike", "Defense", "Crit Rate", "Crit DMG"]
+}

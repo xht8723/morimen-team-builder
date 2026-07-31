@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0030",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "旋转，旋转",
+      "sourceHash": "sha256:3677d760ecdf08cf481acfd8762002b43f1ad506bcdb1ae04030e443e5023613",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的主动伤害提高等同于装备者攻击力 20%。每打出或弃掉装备者的 1 张指令卡后，对随机敌人造成等同于装备者攻击力 12% 的中毒。超维回合结束后，有 100% 概率触发所有敌人一次中毒效果。",
+      "sourceHash": "sha256:155ea2c1d38fb99967c7d312f2ca3add05692c7c8abf05b5420987ff0a24245c",
+      "status": "reference"
+    }
+  }
+}

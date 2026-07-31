@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0007",
+  "name": "Unequal Exchange",
+  "route": {
+    "slug": "unequal-exchange",
+    "canonicalPath": "/database/posses/unequal-exchange"
+  },
+  "assets": {
+    "icon": "asset-posse-0007-icon",
+    "crystal": "asset-posse-0007-crystal",
+    "badge": "asset-posse-0007-badge"
+  },
+  "acquisitionSource": "Sediment Exchange",
+  "realm": "OTHER",
+  "lineupToken": "e",
+  "descriptionTemplate": "Draw 4 cards.",
+  "descriptionArgs": {},
+  "lore": "Mythag usually discourages me from contacting that merchant, but if it's to save everyone from this mire..."
+}

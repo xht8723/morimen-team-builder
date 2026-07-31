@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0025",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "海之祭",
+      "sourceHash": "sha256:ab64ce411f2b4c7729aed47da4f49266aee216efe05ee74d3a082127255fbee1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "抽 2 张牌，获得 2 点算力，所有唤醒体失去 5 点狂气。若当前处于「静海」姿态，对所有敌人施加 x 层中毒，在首领战中发挥 3 倍效果。",
+      "sourceHash": "sha256:1bfddd5f19850c749d54c454946e5039af6919b3fe23be8907ce93e0b7888741",
+      "status": "reference"
+    }
+  }
+}

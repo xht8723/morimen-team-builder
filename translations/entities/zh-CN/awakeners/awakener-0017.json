@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0017",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "法洛思",
+      "sourceHash": "sha256:999b2078229f9942d05e7452a0984ebf8a77aa0d8345f4ac82716f71d26148b8",
+      "status": "reference"
+    },
+    "description": {
+      "value": "法洛思冷静理性的言语下潜伏着海妖般的诱惑。不要探究畸形头盔下的模样，也别忘记她对这具人形躯体长久的不满；那道幽光从来不是为了照亮归途。",
+      "sourceHash": "sha256:616f19245c2b565ea01f05f0701d56d38050cebcea226c35fca95ad5e9d8945b",
+      "status": "machine"
+    }
+  }
+}

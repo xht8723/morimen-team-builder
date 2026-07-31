@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0008",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "不朽的葬仪",
+      "sourceHash": "sha256:e71a11c54af0daa41851a22230faa030cc0b264ee354667915abb7c381415132",
+      "status": "reference"
+    },
+    "description": {
+      "value": "所有唤醒体获得 15 点狂气，下回合开始时，获得 5% 最大生命献祭战斗结束时，剩余的献祭层数会继承至下一场战斗。。",
+      "sourceHash": "sha256:006c82ab1ea05ff3cc678770404c254e2484f63d9148536fa31ae31f1506ee75",
+      "status": "reference"
+    }
+  }
+}

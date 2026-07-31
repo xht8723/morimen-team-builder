@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.jenkins.ultimate-assemble",
+  "name": "Ultimate Assemble!",
+  "route": {
+    "slug": "ultimate-assemble",
+    "canonicalPath": "/database/awakeners/jenkin/derived-skills/ultimate-assemble"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "derivedFromId": "skill.jenkins.gotcha",
+  "rootSkillId": "skill.jenkins.gotcha",
+  "descriptionTemplate": "Shuffle 1 card that deals [Damage:Arg1] DMG X+10 times, {Swarm Impact} into the top of the Draw Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["30", "36", "42", "48", "54", "60"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "X",
+  "ownerAwakenerName": "Jenkin"
+}

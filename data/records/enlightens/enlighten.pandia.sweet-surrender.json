@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pandia.sweet-surrender",
+  "name": "Sweet Surrender",
+  "route": {
+    "slug": "sweet-surrender",
+    "canonicalPath": "/database/awakeners/pandia/enlightens/sweet-surrender"
+  },
+  "ownerAwakenerId": "awakener-0039",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Inflict {Vulnerable} on all enemies before dealing DMG. Obtain {Counter} equal to [Arg1]% of ATK.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["100", "120", "140", "160", "180", "200"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Pandia"
+}

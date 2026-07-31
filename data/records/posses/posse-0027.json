@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0027",
+  "name": "A Gun's Cry",
+  "route": {
+    "slug": "a-guns-cry",
+    "canonicalPath": "/database/posses/a-guns-cry"
+  },
+  "assets": {
+    "icon": "asset-posse-0027-icon",
+    "crystal": "asset-posse-0027-crystal",
+    "badge": "asset-posse-0027-badge"
+  },
+  "ownerAwakenerId": "awakener-0043",
+  "ownerAwakenerName": "Ryker",
+  "acquisitionSource": "Clear Special Ops: Happy Hunting!",
+  "realm": "CHAOS",
+  "lineupToken": "D",
+  "descriptionTemplate": "Create 1 {Shining Octahedron Dice} and gain [Arg1] Temporary Crit. Rate.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 15.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "suffix": "%",
+      "scalingBucket": "utility"
+    }
+  },
+  "lore": "Bang—\nA gunshot that splits the sky pierces the heart of the mastermind behind the conspiracy.\n\nDeath is not the end of life, but merely the peak of the puzzle's twist."
+}

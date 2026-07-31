@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0028",
+  "name": "Leigh Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/leigh/builds/standard"
+  },
+  "awakenerId": "awakener-0028",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0008", "covenant-0006"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0122"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0009"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0095"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN"]
+    }
+  ],
+  "ownerAwakenerName": "Leigh"
+}

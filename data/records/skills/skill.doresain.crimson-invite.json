@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.doresain.crimson-invite",
+  "name": "Crimson Invite",
+  "route": {
+    "slug": "crimson-invite",
+    "canonicalPath": "/database/awakeners/doresain/skills/crimson-invite"
+  },
+  "ownerAwakenerId": "awakener-0014",
+  "slot": "Rouse",
+  "descriptionTemplate": "Doresain gains [Energy:Arg1] Aliemus. {Rouse}: Gain [Power:Arg2] {STR}, and DMG dealt by Doresain gains an additional [Arg3]% {STR} bonus. The first time Doresain scores a Kill each turn, deal {Fixed DMG} equal to 50% of the overflow DMG to other enemies.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "200",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.doresain.styx-uncrossed.skill.doresain.crimson-invite",
+      "operation": "mixed",
+      "upgraderId": "enlighten.doresain.styx-uncrossed",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0014",
+      "ownerAwakenerName": "Doresain",
+      "patch": {
+        "descriptionTemplate": "Doresain gains [Energy:Arg1] Aliemus. {Rouse}: Gain [Power:Arg2] {STR}. DMG dealt by Doresain gains an extra [Arg3]% {STR} Bonus. Deal {Fixed DMG} equal to [Arg4]% of current HP to all enemies. After Doresain's first kill each turn, deal {Fixed DMG} to other enemies that equals 100% of overflow DMG.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["20", "24", "28", "32", "36", "40"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "200",
+            "suffix": "%"
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "20",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Doresain"
+}

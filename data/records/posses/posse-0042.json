@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0042",
+  "name": "Void Hues",
+  "route": {
+    "slug": "void-hues",
+    "canonicalPath": "/database/posses/void-hues"
+  },
+  "assets": {
+    "icon": "asset-posse-0042-icon",
+    "crystal": "asset-posse-0042-crystal",
+    "badge": "asset-posse-0042-badge"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "ownerAwakenerName": "Pickman",
+  "acquisitionSource": "Clear Psyche Deepdive: Ghastly Canvas",
+  "realm": "CARO",
+  "lineupToken": "U",
+  "descriptionTemplate": "Grant a chosen Awakener [Arg1] Aliemus, and shuffle 1 {derived:Insight} into the Draw Pile. If Pickman is in the team, he gains 1 stack of {Creativity}.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 20.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "utility"
+    }
+  },
+  "lore": "The rotting phantasm gives birth to a distorted neon on the retina—\nthus the concept of \"color\" transcends the virtual world, leaving only the delirious hues flowing on the corpse of reality."
+}

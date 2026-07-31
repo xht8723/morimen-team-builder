@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0121",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "陨日",
+      "sourceHash": "sha256:6a874927e8bc1493344b1a7ff5f87049d396791a9e24c7e665b9b408494daaf0",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害、中毒和反击提高 20%，暴击率和暴击伤害提高 20%。",
+      "sourceHash": "sha256:1d397d5558ad6ae68689d565f37379ae4ff95258b1dc5a9918ea7764ec9bcbd2",
+      "status": "reference"
+    }
+  }
+}

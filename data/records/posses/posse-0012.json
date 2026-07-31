@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0012",
+  "name": "Ephemeral Eternity",
+  "route": {
+    "slug": "ephemeral-eternity",
+    "canonicalPath": "/database/posses/ephemeral-eternity"
+  },
+  "assets": {
+    "icon": "asset-posse-0012-icon",
+    "crystal": "asset-posse-0012-crystal",
+    "badge": "asset-posse-0012-badge"
+  },
+  "ownerAwakenerId": "awakener-0015",
+  "ownerAwakenerName": "Erica",
+  "acquisitionSource": "Clear Psyche Deepdive: Twisted Core",
+  "realm": "ULTRA",
+  "lineupToken": "m",
+  "descriptionTemplate": "Gain [Arg4] Arithmetica. Choose an Awakener; create [Arg1] of their Basic Strike and [Arg1] of their Basic Defense. The copies have {Exhaust} and {Fleeting}. If the Realm includes {Ultra}, gain [Arg2] Temp. {STR} and [Arg3] Temp. {Alert}.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg2": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "esotericResearchDepth",
+      "rounding": "ceil",
+      "multiplier": 0.02,
+      "inputs": ["accountLevel", "ownedPosseCount", "realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "offensive"
+    },
+    "Arg3": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.005,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "lore": "The mechanical doll rejected the newborn spirit's promise of eternity, as the core's current scorched her soul. Before her body could no longer hold, she had one last task to complete—"
+}

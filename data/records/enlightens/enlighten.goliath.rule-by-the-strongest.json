@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.goliath.rule-by-the-strongest",
+  "name": "Rule by the Strongest",
+  "route": {
+    "slug": "rule-by-the-strongest",
+    "canonicalPath": "/database/awakeners/goliath/enlightens/rule-by-the-strongest"
+  },
+  "ownerAwakenerId": "awakener-0021",
+  "slot": "E2",
+  "descriptionTemplate": "{Law of the Strongest}: Aside from removing {STR} from all enemies, gain the same amount Temporary {STR}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Goliath"
+}

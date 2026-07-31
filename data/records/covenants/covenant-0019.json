@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0019",
+  "name": "Unstained Chronicle",
+  "route": {
+    "slug": "unstained-chronicle",
+    "canonicalPath": "/database/covenants/unstained-chronicle"
+  },
+  "assets": {
+    "icon": "asset-covenant-0019-icon"
+  },
+  "acquisitionSource": "Clear Interlude - Verboten Covenant: Ship of the Dark Sea",
+  "lineupToken": "v",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Keyflare Regen Level +[Arg1]",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "7.2"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique: After using Posse, recover HP equal to 12% of the wielder's CON, increasing with the percentage of lost HP, up to 24% of the wielder's CON.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "A gaze cast from the heart of eternity. Incorruptible, untainted, and absolute."
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.doll.flesh-transcended",
+  "name": "Flesh Transcended",
+  "route": {
+    "slug": "flesh-transcended",
+    "canonicalPath": "/database/awakeners/doll/enlightens/flesh-transcended"
+  },
+  "ownerAwakenerId": "awakener-0013",
+  "slot": "E3",
+  "descriptionTemplate": "{Rationality, Truth, and Reality} Healing +25%, and the Aliemus Regen also benefits Doll.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doll"
+}

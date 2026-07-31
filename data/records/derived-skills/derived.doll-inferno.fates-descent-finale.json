@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.doll-inferno.fates-descent-finale",
+  "name": "Fate's Descent: Finale",
+  "route": {
+    "slug": "fates-descent-finale",
+    "canonicalPath": "/database/awakeners/doll-inferno/derived-skills/fates-descent-finale"
+  },
+  "ownerAwakenerId": "awakener-0018",
+  "derivedFromId": "derived.doll-inferno.illusions-end",
+  "rootSkillId": "skill.doll-inferno.fates-descent",
+  "descriptionTemplate": "Gain [Energy:Arg1] Aliemus. Inflict [{Poison}:Arg2] {plural:[{Poison}:Arg2]|stack|stacks} of {Poison} on all enemies. For every 50 Aliemus currently possessed, apply an additional stack of {Poison}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["35", "38", "41", "44", "47", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["30", "36", "42", "48", "54", "60"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.doll-inferno.resonant-mycelium.derived.doll-inferno.fates-descent-finale",
+      "operation": "override_args",
+      "upgraderId": "enlighten.doll-inferno.resonant-mycelium",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0018",
+      "ownerAwakenerName": "Doll: Inferno",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["35", "38", "41", "44", "47", "50"]
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["45", "54", "63", "72", "81", "90"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Doll: Inferno"
+}

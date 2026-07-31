@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.agrippa.lady-of-labyrinths",
+  "name": "Lady of Labyrinths",
+  "route": {
+    "slug": "lady-of-labyrinths",
+    "canonicalPath": "/database/awakeners/agrippa/skills/lady-of-labyrinths"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Draw 2 Command Cards from Agrippa that are not Strike or Defense. Reduce the Arithmetica Cost of 2 such cards by 1 this turn.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Agrippa"
+}

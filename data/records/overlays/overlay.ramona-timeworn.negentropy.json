@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.ramona-timeworn.negentropy",
+  "name": "Negentropy",
+  "route": {
+    "slug": "negentropy",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/overlays/negentropy"
+  },
+  "assets": {
+    "icon": "asset-overlay.ramona-timeworn.negentropy-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0020",
+  "aliases": [],
+  "iconId": "IconS_Buff_039",
+  "textColor": "light",
+  "descriptionTemplate": "Ramona: Timeworn can accrue this negative entropy during battle, and utilizes it to power her Command Cards' {Loop} effects. Max 3 stacks. {Negentropy} stacks persist between battles.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

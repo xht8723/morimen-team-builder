@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0032",
+  "name": "Miryam Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/miryam/builds/standard"
+  },
+  "awakenerId": "awakener-0032",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0002", "covenant-0017"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0056"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0034"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"], ["CRIT_DMG"], ["ALIEMUS_REGEN"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN", "CRIT_DMG"]
+    }
+  ],
+  "ownerAwakenerName": "Miryam"
+}

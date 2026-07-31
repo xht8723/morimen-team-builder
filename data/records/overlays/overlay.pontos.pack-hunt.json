@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.pontos.pack-hunt",
+  "name": "Pack Hunt",
+  "route": {
+    "slug": "pack-hunt",
+    "canonicalPath": "/database/awakeners/pontos/overlays/pack-hunt"
+  },
+  "assets": {
+    "icon": "asset-overlay.pontos.pack-hunt-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0058",
+  "aliases": ["Battue"],
+  "iconId": "IconS_Buff_090",
+  "textColor": "shield",
+  "descriptionTemplate": "Each {Gaunt} played consumes 1 stack of {Pack Hunt} for 1 extra trigger. Max 9 stacks. Stacks persist after battle.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pontos"
+}

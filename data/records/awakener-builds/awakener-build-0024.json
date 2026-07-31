@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0024",
+  "name": "Horla Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/horla/builds/standard"
+  },
+  "awakenerId": "awakener-0024",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0006", "covenant-0007"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0123"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0035"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0085"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0100"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["DEATH_RESISTANCE"], ["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["DEATH_RESISTANCE", "KEYFLARE_REGEN"]
+    }
+  ],
+  "ownerAwakenerName": "Horla"
+}

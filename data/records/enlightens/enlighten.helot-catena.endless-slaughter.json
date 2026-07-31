@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.helot-catena.endless-slaughter",
+  "name": "Endless Slaughter",
+  "route": {
+    "slug": "endless-slaughter",
+    "canonicalPath": "/database/awakeners/helot-catena/enlightens/endless-slaughter"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "slot": "E1",
+  "descriptionTemplate": "\"Basic Strike\" grants \"Helot: Catena\" a temporary 15% increase in Crit. Rate and Crit. DMG. \"Basic Defense\" triggers 15% {Bleed} stacks on all enemies.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Helot: Catena"
+}

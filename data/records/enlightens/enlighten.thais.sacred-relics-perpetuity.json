@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.thais.sacred-relics-perpetuity",
+  "name": "Sacred Relic's Perpetuity",
+  "route": {
+    "slug": "sacred-relics-perpetuity",
+    "canonicalPath": "/database/awakeners/thais/enlightens/sacred-relics-perpetuity"
+  },
+  "ownerAwakenerId": "awakener-0048",
+  "slot": "OverExalt",
+  "descriptionTemplate": "For the next 3 turns, at turn start, attempt to convert 1 {Embryo} into {Scion of Purity}. If there is no {Embryo}, {Embryo Fusion} +100, unaffected by the {Embryo Fusion} boost Effect.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Thais"
+}

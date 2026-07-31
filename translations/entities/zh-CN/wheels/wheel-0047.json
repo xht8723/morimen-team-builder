@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0047",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "豪赌的智慧",
+      "sourceHash": "sha256:6d45a1e159c20d17346883fa27545d7ce2e6cbae1527c1a48e13b7695370df06",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始后，将 1 张「豪赌的智慧」洗入抽牌堆。「豪赌的智慧」：消耗 1 算力。将手中所有指令卡随机洗入抽牌堆，洗入的指令卡在下次打出时有 25% 概率额外生效 1 次，并且每洗入 1 张指令卡就使所有唤醒体获得 2 点狂气。保留。消耗。固有。",
+      "sourceHash": "sha256:ea08ea174c1b9be4a2aed080bb3480f8e3f12213b93969279b5ce500c7634a63",
+      "status": "reference"
+    }
+  }
+}

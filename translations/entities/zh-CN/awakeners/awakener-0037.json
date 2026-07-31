@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0037",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "宁菲亚",
+      "sourceHash": "sha256:9de2b7208786afed94b2b49dd364cac9f0f141456802f5842247dba8bf44b7bd",
+      "status": "reference"
+    },
+    "description": {
+      "value": "宁菲亚的投影仍保持着早逝少女的模样。破旧衣裙、苍白肌肤与沉在眼底的阴影，无声讲述着一段被疾病和苦难紧紧缠绕的过去。",
+      "sourceHash": "sha256:fa2c11c55917db5ad47bc20eea22542ec1ae3e611c8d0b0380d1a8b204232b3f",
+      "status": "machine"
+    }
+  }
+}

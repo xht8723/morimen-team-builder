@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0092",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "遗忘之手",
+      "sourceHash": "sha256:1438ff80f26aaa128f1a23f581481b667576fe4fb873dc1c93f544babf5c38b7",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始时，将一张装备者的「打击」加入牌库，装备者「打击」基础伤害提高 40%。",
+      "sourceHash": "sha256:d963ef8f9808c73c4c80d3695fc4284aeeb722c2b20eae6350db90062f13c0d2",
+      "status": "reference"
+    }
+  }
+}

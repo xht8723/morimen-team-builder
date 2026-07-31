@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0003",
+  "name": "Warded Injection",
+  "route": {
+    "slug": "warded-injection",
+    "canonicalPath": "/database/posses/warded-injection"
+  },
+  "assets": {
+    "icon": "asset-posse-0003-icon",
+    "crystal": "asset-posse-0003-crystal",
+    "badge": "asset-posse-0003-badge"
+  },
+  "acquisitionSource": "Clear Operation: Faded Legacy - Ch. 4 - Where Silence Reigns",
+  "realm": "FADED_LEGACY",
+  "lineupToken": "b",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. If current HP is below 25%, recover [Heal:Arg2] HP.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.1,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    },
+    "Arg2": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.1,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    }
+  },
+  "lore": "She said \"it doesn't hurt\"... but that must be a lie; she is clearly the child most afraid of pain."
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.liz.dance-to-destruction",
+  "name": "Dance to Destruction",
+  "route": {
+    "slug": "dance-to-destruction",
+    "canonicalPath": "/database/awakeners/liz/skills/dance-to-destruction"
+  },
+  "ownerAwakenerId": "awakener-0030",
+  "slot": "Exalt",
+  "descriptionTemplate": "Obtain [Power:Arg1] Temporary {STR}. Discard all Liz cards from your hand and trigger their effects.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.liz.last-dawnlight.skill.liz.dance-to-destruction",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.liz.last-dawnlight",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0030",
+      "ownerAwakenerName": "Liz",
+      "patch": {
+        "descriptionTemplate": "Obtain [Power:Arg1] Temporary {STR}. Discard all Liz cards from your hand and trigger their effects. For every 2 cards discarded, draw 1 card."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Liz"
+}

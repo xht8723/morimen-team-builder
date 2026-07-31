@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.faros.congealed-ambergris",
+  "name": "Congealed Ambergris",
+  "route": {
+    "slug": "congealed-ambergris",
+    "canonicalPath": "/database/awakeners/faros/enlightens/congealed-ambergris"
+  },
+  "ownerAwakenerId": "awakener-0017",
+  "slot": "E2",
+  "descriptionTemplate": "\"Basic Strike\" and \"Basic Defense\" allow 1 Tentacle to attack once, but only deal 50% DMG.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faros"
+}

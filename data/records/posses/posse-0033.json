@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0033",
+  "name": "Tavern's Opening",
+  "route": {
+    "slug": "taverns-opening",
+    "canonicalPath": "/database/posses/taverns-opening"
+  },
+  "assets": {
+    "icon": "asset-posse-0033-icon",
+    "crystal": "asset-posse-0033-crystal",
+    "badge": "asset-posse-0033-badge"
+  },
+  "acquisitionSource": "Clear Multiverse Link: My Turn!",
+  "realm": "OTHER",
+  "lineupToken": "L",
+  "descriptionTemplate": "Create 1 {Leah's Coin} and put it into the Discard Pile.",
+  "descriptionArgs": {},
+  "lore": "When one world comes to an end, the prologue of another world begins. Stories will be passed down by people alongside fine wine, but time will write answers for all things."
+}

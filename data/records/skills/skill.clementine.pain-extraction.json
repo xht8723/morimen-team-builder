@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.clementine.pain-extraction",
+  "name": "Pain Extraction",
+  "route": {
+    "slug": "pain-extraction",
+    "canonicalPath": "/database/awakeners/clementine/skills/pain-extraction"
+  },
+  "ownerAwakenerId": "awakener-0010",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG [AttackTimes:Arg2] {plural:[AttackTimes:Arg2]|time|times}. Gain [Arg3]% of Clementine's Keyflare Regen as Keyflare. {Quasar}: Obtain [Power:Arg5] {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["20", "24", "28", "32", "36", "40"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "3"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "150",
+      "suffix": "%"
+    },
+    "Arg5": {
+      "kind": "scaling",
+      "values": ["7.5", "9", "10.5", "12", "13.5", "15"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.prepare",
+      "value": 1
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "ownerAwakenerName": "Clementine"
+}

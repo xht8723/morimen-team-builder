@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0032",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "被缚的歌谣",
+      "sourceHash": "sha256:8c7c0bb72abe70158580ade9fb10b0d69eb0014b70d0e1eeebbe14560e10f7e5",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始时将一张「灵感」和装备者的「打击」加入牌库，装备者「打击」基础伤害提高 30%，打出后有 100% 概率抽 1 张牌。该效果每回合最多触发 1 次。若当前界域为「超维」并在超维回合中，「打击」将 1 张「灵感」置入手中，当回合最多触发 1 次。",
+      "sourceHash": "sha256:bfa00bd32c1cf7068b45437a77ea988329ccf5ce9e39f6f07996c8d8fc3d0056",
+      "status": "reference"
+    }
+  }
+}

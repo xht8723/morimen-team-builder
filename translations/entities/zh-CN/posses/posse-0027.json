@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0027",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "一声枪响",
+      "sourceHash": "sha256:47326fd9963cb83acd928f147a2de1335441594d46ca445aa26c852a6a3defa0",
+      "status": "reference"
+    },
+    "description": {
+      "value": "将 1 枚置入手中，获得 15% 临时暴击率。「闪耀偏方骰子」：投一颗 6 面骰子，获得等同于骰子点数 *13 的临时力量，若点数为 4 或更高，虚弱和易伤所有敌人 1 回合。若点数为 6 或更高，则获得临时力量翻倍并获得 1 点算力。消耗。保留。",
+      "sourceHash": "sha256:3e2feaf18e846e97474e3296d1a66e4f0cefbbbf1a91995f75a8daadabea62f1",
+      "status": "reference"
+    }
+  }
+}

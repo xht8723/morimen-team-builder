@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0074",
+  "name": "Aged",
+  "route": {
+    "slug": "aged",
+    "canonicalPath": "/database/wheels/aged"
+  },
+  "assets": {
+    "icon": "asset-wheel-0074-icon"
+  },
+  "rarity": "R",
+  "realm": "NEUTRAL",
+  "mainstatKey": "CRIT_DMG",
+  "lineupToken": "i",
+  "descriptionTemplate": "Team Unique: After each battle ends, gain [StateArg1] Keyflare. In {Astral Reign}, this effect changes to \"Increases the chance for the wielder's Dimensional Image Relic to appear by 100%.\"",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["400", "600", "800", "1000"]
+    }
+  },
+  "lore": "<Italic:We are the hollow men. We are the stuffed men.>",
+  "searchTags": ["Keyflare"]
+}

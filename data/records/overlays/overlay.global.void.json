@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.void",
+  "name": "Void",
+  "route": {
+    "slug": "void",
+    "canonicalPath": "/database/overlays/void"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.void-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_027",
+  "textColor": "aliemus",
+  "descriptionTemplate": "At turn end, all Awakeners lose Aliemus.",
+  "descriptionArgs": {}
+}

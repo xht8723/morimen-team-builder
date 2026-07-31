@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0014",
+  "name": "Bone-Chilling Embrace",
+  "route": {
+    "slug": "bone-chilling-embrace",
+    "canonicalPath": "/database/posses/bone-chilling-embrace"
+  },
+  "assets": {
+    "icon": "asset-posse-0014-icon",
+    "crystal": "asset-posse-0014-crystal",
+    "badge": "asset-posse-0014-badge"
+  },
+  "ownerAwakenerId": "awakener-0045",
+  "ownerAwakenerName": "Sanga",
+  "acquisitionSource": "Clear Psyche Deepdive: Sculpted Like a Song",
+  "realm": "AEQUOR",
+  "lineupToken": "n",
+  "descriptionTemplate": "Gain [Arg1] Arithmetica and [Block:Arg2] Delayed Shield. If your Tentacle Stance is {Surging Tides}, instead spawn [Arg3] {plural:[Arg3]|Tentacle|Tentacles}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg2": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.1,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "lore": "Flesh dissolves into the sea, bones harden into coral. Her gaze burns; she embraces you and sculpts you.\n\nShe promises to take you home."
+}

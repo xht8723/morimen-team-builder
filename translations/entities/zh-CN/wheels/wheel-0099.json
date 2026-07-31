@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0099",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "灼热的吻别",
+      "sourceHash": "sha256:a0630436598471e889d8fe4f0f7536dcdfe2c2205c0b094018fc593f7cb1ea5e",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后，获得等同于装备者攻击力 3% 的力量。若当前界域为「血肉」，释放狂气爆发后，胚胎融合 +10%。",
+      "sourceHash": "sha256:3160c354dc0faac7b29a22c7eb1e2ff7d5c2c1857625aec8913dade8e3e01a79",
+      "status": "reference"
+    }
+  }
+}

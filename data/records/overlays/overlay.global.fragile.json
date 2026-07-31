@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.fragile",
+  "name": "Fragile",
+  "route": {
+    "slug": "fragile",
+    "canonicalPath": "/database/overlays/fragile"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.fragile-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_015",
+  "textColor": "affliction",
+  "descriptionTemplate": "All Shield gained is reduced by 25%. Remove 1 stack at the end of each turn.",
+  "descriptionArgs": {}
+}

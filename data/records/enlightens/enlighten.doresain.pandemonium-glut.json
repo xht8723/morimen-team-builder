@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.doresain.pandemonium-glut",
+  "name": "Pandemonium Glut",
+  "route": {
+    "slug": "pandemonium-glut",
+    "canonicalPath": "/database/awakeners/doresain/enlightens/pandemonium-glut"
+  },
+  "ownerAwakenerId": "awakener-0014",
+  "slot": "OverExalt",
+  "descriptionTemplate": "In this Exalt: Crit. Rate +25%, Base DMG +50%, Final DMG +100%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doresain"
+}

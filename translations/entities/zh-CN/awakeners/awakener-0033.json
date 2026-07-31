@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0033",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "茉夏",
+      "sourceHash": "sha256:eaad734affd85ace2667dcf02c4c5aa73b132adb4732697033bb027825c287df",
+      "status": "reference"
+    },
+    "description": {
+      "value": "严格来说，茉夏并不属于这个濒临崩溃的世界，但她欣赏它燃烧的壮景，也欣赏绝望中的痛苦与瓦解。信仰已死，而她把末日当成一场值得喝彩的演出。",
+      "sourceHash": "sha256:a069172deed01a6a49cf6ac7815f139c73cfab85c8eef906e024263e7cb9d9d5",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.ogier.formless-refinement",
+  "name": "Formless Refinement",
+  "route": {
+    "slug": "formless-refinement",
+    "canonicalPath": "/database/awakeners/ogier/talents/formless-refinement"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "family": "passive",
+  "descriptionTemplate": "For every 1% Sigil Yield Ogier has, the Temporary {STR} gained from {Seven Arts and Virtues} +3%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ogier"
+}

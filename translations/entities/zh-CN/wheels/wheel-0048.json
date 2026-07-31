@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0048",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "未送出的花",
+      "sourceHash": "sha256:4f9fa34f192616bccc0e45d81c3147e8c38af33c83b0e1084d3fd493017c2993",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：若装备者为唤醒体「拉蒙娜」，完成关卡时获得的同调率提高 50% 。",
+      "sourceHash": "sha256:b764fd8d04ae7f2a7faaf2743bfec66a562e717adf73a079a100ea33bc2a6b5f",
+      "status": "reference"
+    }
+  }
+}

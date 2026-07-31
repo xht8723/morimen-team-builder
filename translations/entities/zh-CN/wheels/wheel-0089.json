@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0089",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "信息就是生命",
+      "sourceHash": "sha256:0edbfd4b9ffc5f9c41713f9fd13d0ef009c1a7ce8303442452ea591786a2ff3a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者指令卡基础伤害提高 30%，护盾和生命回复提高 15%。",
+      "sourceHash": "sha256:d04b47f2d18bcba2e69655630a5791b95b50d4a2d1cb8e337cfe9d90f68a220f",
+      "status": "reference"
+    }
+  }
+}

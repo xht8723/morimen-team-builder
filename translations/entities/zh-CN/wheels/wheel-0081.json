@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0081",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "伏于夜色",
+      "sourceHash": "sha256:3d7d07a8299d4984ecb0ac5da3edae9fcfa8bdea2ae64e3aa507acd3eba26461",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的 反击 提高 12%。「防御」获得等同于装备者防御力 30% 的临时反击，在首领战中，改为获得 3 倍临时反击。死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。触发后，对所有敌人造成等同于自身反击层数 100% 的真实伤害。",
+      "sourceHash": "sha256:dce1c3d7989b5b635d7f43f2daf3e16a3f1241b7d5a2dc6a39c0c556d1b0f953",
+      "status": "reference"
+    }
+  }
+}

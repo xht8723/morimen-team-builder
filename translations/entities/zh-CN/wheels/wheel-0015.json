@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0015",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "超越死亡",
+      "sourceHash": "sha256:289306db17b8e568760c92f3900872911a0072d763d570dce49ba7d569b95a38",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者指令卡造成的治疗提高 17%。装备者释放「狂气爆发」前，其他唤醒体获得 6 点狂气。若我方队伍处于 易伤 状态，效果翻倍。",
+      "sourceHash": "sha256:dd7e95f0ee6a1b51d95386204203816d0a594e7a37206e4de00d9b5538b79826",
+      "status": "reference"
+    }
+  }
+}

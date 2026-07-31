@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.annihilation",
+  "name": "Annihilation",
+  "route": {
+    "slug": "annihilation",
+    "canonicalPath": "/database/overlays/annihilation"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "descriptionTemplate": "{Destroy} the leftmost card in {Ultra Space}, and create 1 {derived:Insight}. {Annihilation} can only be used once per turn.",
+  "descriptionArgs": {}
+}

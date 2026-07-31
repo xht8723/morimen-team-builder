@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.fainted",
+  "name": "Fainted",
+  "route": {
+    "slug": "fainted",
+    "canonicalPath": "/database/overlays/fainted"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.fainted-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_023",
+  "textColor": "misc",
+  "descriptionTemplate": "Cannot perform any actions until turn end.",
+  "descriptionArgs": {}
+}

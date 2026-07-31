@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.thais.seed-of-chaos",
+  "name": "Seed of Chaos",
+  "route": {
+    "slug": "seed-of-chaos",
+    "canonicalPath": "/database/awakeners/thais/enlightens/seed-of-chaos"
+  },
+  "ownerAwakenerId": "awakener-0048",
+  "slot": "E2",
+  "descriptionTemplate": "{Ritual of Abundance} also reduces the Arithmetica Cost of the Base Copy placed into hand by 1.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Thais"
+}

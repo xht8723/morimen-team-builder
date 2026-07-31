@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0011",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "咆哮的血与沙",
+      "sourceHash": "sha256:aede3d2f5260b117d342e5c3176907d15172a8bb471f4d524e15bbbd86a68ae5",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择 1 名唤醒体使其获得 20 点狂气，获得 x 点力量，若当前界域为「血肉」，额外使胚胎融合 +20，但失去 10% 当前生命。",
+      "sourceHash": "sha256:5c9b596ca33ab24fa996850525a38d255423a70eed65615b5dc2b96fa717f1a6",
+      "status": "reference"
+    }
+  }
+}

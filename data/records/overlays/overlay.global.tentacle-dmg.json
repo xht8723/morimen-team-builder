@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.tentacle-dmg",
+  "name": "Tentacle DMG",
+  "route": {
+    "slug": "tentacle-dmg",
+    "canonicalPath": "/database/overlays/tentacle-dmg"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "Increases {Tentacle DMG}.",
+  "descriptionArgs": {}
+}

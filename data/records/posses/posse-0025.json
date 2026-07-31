@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0025",
+  "name": "Festival of Tides",
+  "route": {
+    "slug": "festival-of-tides",
+    "canonicalPath": "/database/posses/festival-of-tides"
+  },
+  "assets": {
+    "icon": "asset-posse-0025-icon",
+    "crystal": "asset-posse-0025-crystal",
+    "badge": "asset-posse-0025-badge"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "ownerAwakenerName": "Miryam",
+  "acquisitionSource": "Clear Dreamscape: Desecrate",
+  "realm": "AEQUOR",
+  "lineupToken": "C",
+  "descriptionTemplate": "Draw 2 cards. Gain 2 Arithmetica. All Awakeners lose 5 Aliemus. If your Tentacle Stance is {Tranquil Sea}, inflict [Arg1] {Poison} on all enemies. Inflict 3× that much {Poison} instead in Boss Battles.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "occultResearchDepth",
+      "rounding": "ceil",
+      "multiplier": 0.08,
+      "inputs": ["accountLevel", "ownedPosseCount", "realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "offensive"
+    }
+  },
+  "lore": "The High Priestess of Lemuria never expects a response from the ocean.\n\nShe offers everything to the ocean, which has nothing to do with the ocean."
+}

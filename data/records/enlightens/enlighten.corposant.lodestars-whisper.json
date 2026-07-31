@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.corposant.lodestars-whisper",
+  "name": "lodestar's Whisper",
+  "route": {
+    "slug": "lodestars-whisper",
+    "canonicalPath": "/database/awakeners/corposant/enlightens/lodestars-whisper"
+  },
+  "ownerAwakenerId": "awakener-0011",
+  "slot": "E1",
+  "descriptionTemplate": "\"Basic Strike\" and \"Basic Defense\" gain 5 Aliemus, and obtain {Aftershock}: the next Aliemus gained from playing a card +5, stacking up to 2 times.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Corposant"
+}

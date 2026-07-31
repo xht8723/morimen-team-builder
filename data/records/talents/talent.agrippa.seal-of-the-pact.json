@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.agrippa.seal-of-the-pact",
+  "name": "Seal of the Pact",
+  "route": {
+    "slug": "seal-of-the-pact",
+    "canonicalPath": "/database/awakeners/agrippa/talents/seal-of-the-pact"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "family": "passive",
+  "descriptionTemplate": "For every 1% Sigil Yield Agrippa and her equipped WoD & Covenant have, the Base Shield of {Pale Blessing} +0.5%, and Base {Poison} +1%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Agrippa"
+}

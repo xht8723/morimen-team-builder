@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.doresain.casket-harvest",
+  "name": "Casket Harvest",
+  "route": {
+    "slug": "casket-harvest",
+    "canonicalPath": "/database/awakeners/doresain/talents/casket-harvest"
+  },
+  "ownerAwakenerId": "awakener-0014",
+  "family": "passive",
+  "descriptionTemplate": "Doresain gathers 1 {Corpse} after killing an enemy or dealing Exalt DMG to a Boss.\nHe can keep up to 3 stacks of {Corpse}, which is {Retained} throughout the exploration.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doresain"
+}

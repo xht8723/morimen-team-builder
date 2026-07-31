@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.nautila.forgotten-dreams",
+  "name": "Forgotten Dreams",
+  "route": {
+    "slug": "forgotten-dreams",
+    "canonicalPath": "/database/awakeners/nautila/enlightens/forgotten-dreams"
+  },
+  "ownerAwakenerId": "awakener-0036",
+  "slot": "E3",
+  "descriptionTemplate": "Increases {Fixed DMG} of {Ready and Set} by 50%. After release, gain Immune to {Fragile}, {Weakness}, and {Vulnerable} for 1 turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Nautila"
+}

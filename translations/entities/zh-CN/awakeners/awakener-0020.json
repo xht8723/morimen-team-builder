@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0020",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "环行·拉蒙娜",
+      "sourceHash": "sha256:29da886dcb9f32bf2f15c9c8dc1f4e3d9e00ec11021eaa1973a5db16fb45407f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "环行·拉蒙娜计算剑速、闪避角度、逃脱概率，也计算世界走向未来的可能。直到最后一刻她都没有停止演算，正如她从未停止沿着时间向前行走。",
+      "sourceHash": "sha256:7a2c6dc4d804b62b323b87d193ba469904ce4927951c26a24e19905dff900e3e",
+      "status": "machine"
+    }
+  }
+}

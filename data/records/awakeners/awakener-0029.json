@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakener",
+  "id": "awakener-0029",
+  "name": "Lily",
+  "route": {
+    "slug": "lily",
+    "canonicalPath": "/database/awakeners/lily"
+  },
+  "assets": {
+    "icon": "asset-awakener-0029-icon"
+  },
+  "numericId": 29,
+  "ingameId": "C10",
+  "lineupToken": "w",
+  "realm": "CHAOS",
+  "rarity": "SSR",
+  "type": "WARDEN",
+  "availabilityType": "LIMITED_FADED_LEGACY",
+  "releaseDate": "2024-01-31",
+  "faction": "Hybrid",
+  "aliases": ["lily"],
+  "searchTags": ["Poison", "Death Resistance", "Heal", "Strike"],
+  "primaryScalingBase": 20,
+  "baseStatsLv1": {
+    "CON": 38,
+    "ATK": 28,
+    "DEF": 38
+  },
+  "substatsLv1": {
+    "CritRate": 5,
+    "CritDamage": 50,
+    "AliemusRegen": 0,
+    "KeyflareRegen": 15,
+    "RealmMastery": 0,
+    "SigilYield": 0,
+    "DamageAmplification": 1.6,
+    "DeathResistance": 2.8
+  },
+  "statScaling": {
+    "CON": 1.8,
+    "ATK": 1.3,
+    "DEF": 1.8
+  },
+  "substatScaling": {
+    "CritRate": 0,
+    "CritDamage": 0,
+    "AliemusRegen": 0,
+    "KeyflareRegen": 0,
+    "RealmMastery": 0,
+    "SigilYield": 0,
+    "DamageAmplification": 1.6,
+    "DeathResistance": 2.8
+  },
+  "profile": {
+    "title": "Lily",
+    "birthday": "15-Jun",
+    "gender": "Female",
+    "height": "4'4.2''",
+    "weight": "340lbs",
+    "gnosticIndex": "27.6",
+    "storySections": [
+      {
+        "kind": "introduction",
+        "title": "Basic Information",
+        "unlockCondition": "Awakener Level 1",
+        "content": "Yearning for an entity she calls \"Mommy\", this girl obediently follows the commands of her \"Master\".\n\nHer true name lost to the world, she is now known only by the form she inhabits: a delicate white filament, reminiscent of a lily, blooming at the center of a giant black eyeball made of sludge. Hence, they named her Lily."
+      },
+      {
+        "kind": "story",
+        "title": "Story: I",
+        "unlockCondition": "Awakener Level 3",
+        "content": "When trying to query records of Lily Oswood, Erica triggered 81 error alerts. As someone who was once forgotten by the world, Lily's birth records and medical history have turned into a handful of black sludge.\n\nBut we can still observe her silver shape through special instruments: delicate twists, resembling strands of intertwined hair—more accurately, like a child's lanugo.\n\nIt is particularly noteworthy that Lily always expresses a special attachment to linkers, and perhaps identifying herself as \"mother\" rather than calling herself a \"companion\" or \"master\" may help to bridge a quicker relationship with her"
+      },
+      {
+        "kind": "story",
+        "title": "Story: II",
+        "unlockCondition": "Affinity Level 5",
+        "content": "The aftereffects of incomplete awakening, coupled with the psychological impact of switching Links, have caused significant regression in Lily's character and mentality. Her silence on campus is evident to all.\n\nApart from staying close to the Keeper and Awakener Lotan, Lily is rarely seen alone around the campus. She doesn't attend classes nor join other Awakeners in their games. When not in battle, she quietly awaits orders in her dorm.\n\nLily's room window faces the Silver Key Tomb at the back of the campus. As the sun sets, she stands by the window, staring blankly at the tomb bathed in faint yellow light.\n\nThe Silver Key-shaped tombstones cast long shadows in the setting sun, and Lily stands in silence, just like the tombstones outside."
+      },
+      {
+        "kind": "story",
+        "title": "Story: III",
+        "unlockCondition": "Affinity Level 7",
+        "content": "\"Mommy, Mommy, I didn't cry when I got the shot!\"\n\n\"You're so brave!\"\n\n\"Because I knew Mommy was coming back! It didn't hurt at all!\"\n\n...\n\n\"Master, give me an order.\"\n\n\"Lie down on the operating table; the operation will start in fifteen minutes. Did you take your medicine on time?\"\n\n\"I did, Master.\"\n\n\"I'll cut you here.  It doesn't hurt, right?\"\n\n\"... It doesn't hurt, Master.\""
+      },
+      {
+        "kind": "story",
+        "title": "Story: IV",
+        "unlockCondition": "Affinity Level 9",
+        "content": "If only she had not awakened, those who are lost in the abyss should not gaze directly at the dazzling sun wheel.  \n\nShe should be a numb experiment material, someone buried by this world, and should not possess the perception of pain or the desire to be loved.  \n\nHer mother's lingering attachment created the tragedy of her life, while Lily is still caught in the confusion of \"whether to obey the arrangement of the world.\"  \n\nPerhaps one day, she will find the answer from someone who defies fate"
+      },
+      {
+        "kind": "story",
+        "title": "Story: V",
+        "unlockCondition": "Affinity Level 10",
+        "content": "The small soul, which should have been lost to the river of history, relied on her mother's wish, the abundant spiritual energy from establishing the magic circle with @1@2@1, and the fusion with the giant creature frozen beneath Elworth, resurrecting as the monster \"Lily\".\n\nDue to incomplete awakening, Lily at the beginning had no consciousness, merely a combat doll that obeyed orders.\n\nFrancis Oswood, a member of the Sculptors' Association, used Lily as a prototype to conduct illegal experiments lasting @2 years. From Francis's diary, it was known that Lily's state back then was extremely unstable, often going out of control and causing localized destruction, which forced Francis to frequently change residences.\n\nWith the intake of the gnosis elixir and the implantation of the silver chip, Lily regained her perception and some memories on an undocumented day. After some twists and turns, Francis took over the almost bankrupt Lai Hospital and transformed it into a testing ground.\n\nDuring the \"Hellhound\" incident in Lai Town No. L-776, her mother, Francis Oswood, was trapped in her self-created anomalous dimension and lost contact."
+      }
+    ]
+  }
+}

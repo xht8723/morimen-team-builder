@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.jenkins.from-the-shrouded-mist",
+  "name": "From the Shrouded Mist",
+  "route": {
+    "slug": "from-the-shrouded-mist",
+    "canonicalPath": "/database/awakeners/jenkin/enlightens/from-the-shrouded-mist"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Spatial Fold} is enhanced: Jenkin enjoys 2× the Crit. DMG effect of {Spatial Fold} and {Mistborn Street Urchin}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Jenkin"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.lily.blackened-nourishment",
+  "name": "Blackened Nourishment",
+  "route": {
+    "slug": "blackened-nourishment",
+    "canonicalPath": "/database/awakeners/lily/enlightens/blackened-nourishment"
+  },
+  "ownerAwakenerId": "awakener-0029",
+  "slot": "E1",
+  "descriptionTemplate": "When your current HP is below 50%, {Forbidden Swamp} gains an additional shield, and the {Poison} effect is doubled.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Lily"
+}

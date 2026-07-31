@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.horla.grief",
+  "name": "Grief",
+  "route": {
+    "slug": "grief",
+    "canonicalPath": "/database/awakeners/horla/overlays/grief"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0024",
+  "aliases": [],
+  "descriptionTemplate": "All Awakeners' Shield Generated, HP Recovery, and {STR} Reduction effect +[StateArg1]%. Increase the HP Recovery of {Resplendent Chapters}.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "fixed",
+      "value": "20",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "DeathResistance",
+        "multiplier": "0.1",
+        "mode": "scale_base"
+      }
+    }
+  },
+  "ownerAwakenerName": "Horla"
+}

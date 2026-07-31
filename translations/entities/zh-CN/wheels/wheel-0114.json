@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0114",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "海上领航者",
+      "sourceHash": "sha256:59fb62d82f3b2fa70eda693961f4bceb84c1b9dcef3ea9d9fe614ca2a1ee66c9",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时，获得等同于装备者防御力 30% 的护盾。触发死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。后，下回合开始时再次触发该效果。",
+      "sourceHash": "sha256:dcb3be07fd69df3e0b4e8fe90c2e56aeac0cfb260b17ab5951ab38815f560fb8",
+      "status": "reference"
+    }
+  }
+}

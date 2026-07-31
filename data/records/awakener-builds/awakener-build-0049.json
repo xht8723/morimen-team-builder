@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0049",
+  "name": "Tinct Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/tinct/builds/standard"
+  },
+  "awakenerId": "awakener-0049",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0018", "covenant-0013"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0051"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0021"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0091"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0107"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"], ["SIGIL_YIELD", "DMG_AMP"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN", "SIGIL_YIELD", "DMG_AMP"]
+    }
+  ],
+  "ownerAwakenerName": "Tinct"
+}

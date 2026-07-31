@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.lily.at-your-behest",
+  "name": "At Your Behest",
+  "route": {
+    "slug": "at-your-behest",
+    "canonicalPath": "/database/awakeners/lily/enlightens/at-your-behest"
+  },
+  "ownerAwakenerId": "awakener-0029",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Increase {Endure} Limit by 100% for this battle, granting {Endure} equal to Max HP. Add 2 {Strike to Protect} cards with additional {Exhaust} to your hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Lily"
+}

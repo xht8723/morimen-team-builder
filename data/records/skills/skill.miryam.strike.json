@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.miryam.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/miryam/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG, which benefits from 100% {Tentacle DMG} bonus. Miryam gains [Energy:Arg2] Aliemus. {Ritual}: Final DMG bonus by [Arg4]%/[Arg5]%/[Arg6]%.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "100",
+      "suffix": "%"
+    },
+    "Arg5": {
+      "kind": "fixed",
+      "value": "250",
+      "suffix": "%"
+    },
+    "Arg6": {
+      "kind": "fixed",
+      "value": "500",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.miryam.vanitys-collapse.skill.miryam.strike",
+      "operation": "override_args",
+      "upgraderId": "enlighten.miryam.vanitys-collapse",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0032",
+      "ownerAwakenerName": "Miryam",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "130",
+            "suffix": "%"
+          },
+          "Arg5": {
+            "kind": "fixed",
+            "value": "325",
+            "suffix": "%"
+          },
+          "Arg6": {
+            "kind": "fixed",
+            "value": "650",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Miryam"
+}

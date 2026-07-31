@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0054",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "徐",
+      "sourceHash": "sha256:112cc719cab569ae9bfa5a2400bb5f951d8899fd1baebf45ad7886bf887a49ba",
+      "status": "reference"
+    },
+    "description": {
+      "value": "优雅而魅惑的东方「神明」徐拥有致命吸引力。传说她放下折扇时，人会在扇后看见挚爱之脸；更应祈祷她永远别注视你，否则她会像夜雾般渗入记忆，只留下空洞痴迷。",
+      "sourceHash": "sha256:3dce56a157e83859ceaf30be533b44900d315a5fac714c44f57f9277070e0a74",
+      "status": "machine"
+    }
+  }
+}

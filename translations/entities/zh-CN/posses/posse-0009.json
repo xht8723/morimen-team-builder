@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0009",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "最后的誓言",
+      "sourceHash": "sha256:143d83d876f73d97d9e2c97db7fe8d4a16f58e8a72feb86778e3440fb6d44291",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 25% 临时暴击率和 x 点临时力量。若在首领战中且本回合尚未打出过任何牌，则尝试触发 1 次死亡抵抗，若成功则获得 x 点护盾，此效果只能触发 1 次。",
+      "sourceHash": "sha256:3acc961ac9b2bf63cb8be521bac2c3017ef76d3545bd20cb3f777112a80cc9ec",
+      "status": "reference"
+    }
+  }
+}

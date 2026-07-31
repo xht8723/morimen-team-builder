@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.corposant.cinders",
+  "name": "Cinders",
+  "route": {
+    "slug": "cinders",
+    "canonicalPath": "/database/awakeners/corposant/talents/cinders"
+  },
+  "ownerAwakenerId": "awakener-0011",
+  "family": "passive",
+  "descriptionTemplate": "Every 1% {Death Resistance} Corposant and her equipped WoD & Covenant have, increase her Base DMG by 0.2% and Shield by 0.05%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Corposant"
+}

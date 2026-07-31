@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0109",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "珍馐",
+      "sourceHash": "sha256:5f2da71be269a21debb2d8b55fe25945c38d2849407a8b9815603215d816b4f9",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害提高 15%。若当前界域为「血肉」，装备者击杀敌方时积攒装备者攻击力 20%的猩红熔炉。",
+      "sourceHash": "sha256:c575ac632ec25dd18600fe821085239fbefdf07848f138f29eab99ec69bff615",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0053",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "伤痛之鳍",
+      "sourceHash": "sha256:1ca01b344f586fe02877e5d14117ccb04a2f3d026d2b06554dd74816b4fc8fff",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾和生命回复提高，提高量为 4% 装备者的体质，装备者造成的反击提高 15%，打出「防御」时还会获得装备者防御力 20% 的反击。战斗开始后，获得等同于装备者体质 12% 的 力量。若当前界域为「深海」，额外获得等量的触腕伤害。",
+      "sourceHash": "sha256:a90465d45a5ef7c788d7928b819f86f344feb7333d5b4870e22489cca0177783",
+      "status": "reference"
+    }
+  }
+}

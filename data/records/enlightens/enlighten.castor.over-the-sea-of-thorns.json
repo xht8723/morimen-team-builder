@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.castor.over-the-sea-of-thorns",
+  "name": "Over the Sea of Thorns",
+  "route": {
+    "slug": "over-the-sea-of-thorns",
+    "canonicalPath": "/database/awakeners/castor/enlightens/over-the-sea-of-thorns"
+  },
+  "ownerAwakenerId": "awakener-0008",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Add 3 additional {Onyx Plume} to your hand. This turn, increase the amount of Shield {Retained} by {Onyx Plume} by 10% of Castor's DEF, and each time you play an {Onyx Plume} card, additionally inflict Castor's ATK*160% stacks of {Corrosion}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Castor"
+}

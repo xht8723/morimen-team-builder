@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0016",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "菲茵特",
+      "sourceHash": "sha256:2af6bb534ee1cde12a6c0195a81c0ba5ee5b221ad8c71c75057182f595d43d86",
+      "status": "reference"
+    },
+    "description": {
+      "value": "菲茵特是一颗褪色而难以孵化的种子。人们因她的缺陷而怜惜她、因她的脆弱而爱她；但知道她是自愿留在壳中的人，早已化作星尘。",
+      "sourceHash": "sha256:40cb0e077cc7387fc566cee8ae00415addb5566c5952291915fba1981d4c5df7",
+      "status": "machine"
+    }
+  }
+}

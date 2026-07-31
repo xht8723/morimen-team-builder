@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.winkle.forsaken-homeland",
+  "name": "Forsaken Homeland",
+  "route": {
+    "slug": "forsaken-homeland",
+    "canonicalPath": "/database/awakeners/winkle/enlightens/forsaken-homeland"
+  },
+  "ownerAwakenerId": "awakener-0053",
+  "slot": "E2",
+  "descriptionTemplate": "{Psyche Reforged} grants Shield equal to [Arg1]% of DEF for each card discarded (the effect increases with the level of {Psyche Reforged}). Draw 1 card immediately if {Leap} is triggered.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Winkle"
+}

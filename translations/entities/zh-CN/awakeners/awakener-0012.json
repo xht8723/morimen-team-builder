@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0012",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "达芙黛尔",
+      "sourceHash": "sha256:c85909d063fcada75be26e67390d05c2b9359a917a0a895fd438d3b1b3622c58",
+      "status": "reference"
+    },
+    "description": {
+      "value": "欢迎来到达芙黛尔女士的交换所：以物易物，也收购人头，童叟无欺。灰雾与烟斗之后，她以优雅笑容经营着一门危险而绝对公平的生意。",
+      "sourceHash": "sha256:6d69b03b0db1b92e8776cf30c51b58a3b09e229e37aa7d157d4d711276eaf47b",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0061",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "暴食",
+      "sourceHash": "sha256:e2bdbeda6a3a64e93119ccaef0ac523b52804b81f04e7dfd032f381f1c99e513",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：普通战斗结束后，可以选择放弃刻印，生命上限提高 20%。该效果最多生效 2 次。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:92ce78fbeea01eaaf6ce5c37f0992c5975bcc3069aaa6db26319b00d98c98c31",
+      "status": "reference"
+    }
+  }
+}

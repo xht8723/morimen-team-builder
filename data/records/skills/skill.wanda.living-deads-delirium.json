@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.wanda.living-deads-delirium",
+  "name": "Living Dead's Delirium",
+  "route": {
+    "slug": "living-deads-delirium",
+    "canonicalPath": "/database/awakeners/wanda/skills/living-deads-delirium"
+  },
+  "ownerAwakenerId": "awakener-0052",
+  "slot": "Rouse",
+  "descriptionTemplate": "Wanda gains [Energy:Arg1] Aliemus. {Rouse}: Immediately gain 5 stacks of {Dreamlure}. Gain 1 stack of {Dreamlure} At turn start. Whenever {Dreamlure} reaches 5 or 10 stacks, gain [Block:Arg2] Shield.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.wanda.black-stone-decree.skill.wanda.living-deads-delirium",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.wanda.black-stone-decree",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0052",
+      "ownerAwakenerName": "Wanda",
+      "patch": {
+        "descriptionTemplate": "Wanda gains [Energy:Arg1] Aliemus. {Rouse}: Immediately gain 5 stacks of {Dreamlure}. Gain 1 stack of {Dreamlure} at turn start. Whenever gaining {Dreamlure} brings it to 5 or 10 stacks, gain [Block:Arg2] Shield. After Wanda uses her Exalt, her next 2 Command Cards take effect 1 extra time."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Wanda"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0022",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "哈姆林",
+      "sourceHash": "sha256:ee09c407737bdc9bbfd197ae3ef8c213ec2d6b291bde2850f4acba3a6670ecf5",
+      "status": "reference"
+    },
+    "description": {
+      "value": "哈姆林像一件洁白奢华的东方瓷器，优雅、细腻，却触手冰冷。端正外表下是一颗纯净到空洞的灵魂，他的一生只有一条指令：演奏，永不停歇地演奏。",
+      "sourceHash": "sha256:40e65e33f0200c86354d4774326a81972493a486321dac20dfcfe778bd4b73c0",
+      "status": "machine"
+    }
+  }
+}

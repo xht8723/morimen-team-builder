@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.discover",
+  "name": "Discover",
+  "route": {
+    "slug": "discover",
+    "canonicalPath": "/database/overlays/discover"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "Generates random options to choose from.",
+  "descriptionArgs": {}
+}

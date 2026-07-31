@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0005",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "扭曲双子·黑",
+      "sourceHash": "sha256:73eb293467df2f7eb3b74319b78d47fe485a91aab7806e90ff1545d35910f00a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 暴击率 +4.8% 6件套： 奇数回合开始后，将一张附加虚无和消耗的装备者的「打击」加入手牌。",
+      "sourceHash": "sha256:f8b5e29f1f23748d5dc512fb4ca374297dc82b9291bb6de1d67cf35ccef8b4ac",
+      "status": "reference"
+    }
+  }
+}

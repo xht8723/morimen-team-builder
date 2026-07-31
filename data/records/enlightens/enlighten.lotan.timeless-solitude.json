@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.lotan.timeless-solitude",
+  "name": "Timeless Solitude",
+  "route": {
+    "slug": "timeless-solitude",
+    "canonicalPath": "/database/awakeners/lotan/enlightens/timeless-solitude"
+  },
+  "ownerAwakenerId": "awakener-0031",
+  "slot": "E3",
+  "descriptionTemplate": "{Beast of Chaos} increases the number of DMG instances by 1, and additionally places 2 \"Basic Strike\" cards with added {Exhaust} and {Fleeting} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Lotan"
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.madness",
+  "name": "Madness",
+  "route": {
+    "slug": "madness",
+    "canonicalPath": "/database/overlays/madness"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.madness-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_030",
+  "textColor": "heal",
+  "descriptionTemplate": "Each stack increases instances of DMG dealt by 1.",
+  "descriptionArgs": {}
+}

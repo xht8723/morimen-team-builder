@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.erica.system-reboot",
+  "name": "System Reboot",
+  "route": {
+    "slug": "system-reboot",
+    "canonicalPath": "/database/awakeners/erica/enlightens/system-reboot"
+  },
+  "ownerAwakenerId": "awakener-0015",
+  "slot": "E3",
+  "descriptionTemplate": "{Function Overload} {Leap}: Has both DMG and Shield effects.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Erica"
+}

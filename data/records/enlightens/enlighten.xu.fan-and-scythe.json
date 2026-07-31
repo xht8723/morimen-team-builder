@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.xu.fan-and-scythe",
+  "name": "Fan and Scythe",
+  "route": {
+    "slug": "fan-and-scythe",
+    "canonicalPath": "/database/awakeners/xu/enlightens/fan-and-scythe"
+  },
+  "ownerAwakenerId": "awakener-0054",
+  "slot": "E2",
+  "descriptionTemplate": "\"Strike\" and \"Defense\" gain {Resonance 3}: additionally gain 15 Aliemus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Xu"
+}

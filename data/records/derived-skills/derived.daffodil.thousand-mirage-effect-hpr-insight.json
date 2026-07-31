@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.daffodil.thousand-mirage-effect-hpr-insight",
+  "name": "Hpr. Insight",
+  "route": {
+    "slug": "hpr-insight",
+    "canonicalPath": "/database/awakeners/daffodil/derived-skills/hpr-insight"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "derivedFromId": "derived.daffodil.thousand-mirage-extra-effects",
+  "rootSkillId": "skill.daffodil.sea-of-primordial-essence",
+  "descriptionTemplate": "Add 2 {Insight} cards to your Draw Pile.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Daffodil"
+}

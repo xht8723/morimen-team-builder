@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.clementine.knocking-on-minds-portal",
+  "name": "Knocking on Mind's Portal",
+  "route": {
+    "slug": "knocking-on-minds-portal",
+    "canonicalPath": "/database/awakeners/clementine/enlightens/knocking-on-minds-portal"
+  },
+  "ownerAwakenerId": "awakener-0010",
+  "slot": "E1",
+  "descriptionTemplate": "Obtain 5 stacks of {Symbiosis} when the battle begins. Base DMG of {Lifeform Reconstruction} +20%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Clementine"
+}

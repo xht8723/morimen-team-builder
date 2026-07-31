@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.pickman.art-is-madness",
+  "name": "Art is Madness",
+  "route": {
+    "slug": "art-is-madness",
+    "canonicalPath": "/database/awakeners/pickman/skills/art-is-madness"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Gain 1 stack of {Fantasia} and additionally {Discover} 1 time.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Pickman"
+}

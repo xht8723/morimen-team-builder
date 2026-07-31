@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.doll-inferno.finale",
+  "name": "Finale",
+  "route": {
+    "slug": "finale",
+    "canonicalPath": "/database/awakeners/doll-inferno/overlays/finale"
+  },
+  "assets": {
+    "icon": "asset-overlay.doll-inferno.finale-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0018",
+  "aliases": [],
+  "iconId": "IconS_Buff_052",
+  "descriptionTemplate": "When you have 10 stacks of {Finale}, place 1 {derived:Illusion's End} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doll: Inferno"
+}

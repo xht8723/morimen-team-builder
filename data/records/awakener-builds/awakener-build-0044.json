@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0044",
+  "name": "Salvador Builds",
+  "route": {
+    "slug": "support",
+    "canonicalPath": "/database/awakeners/salvador/builds/support"
+  },
+  "awakenerId": "awakener-0044",
+  "primaryBuildId": "support",
+  "builds": [
+    {
+      "id": "support",
+      "label": "Support",
+      "recommendedCovenantIds": ["covenant-0009", "covenant-0008"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0002"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0014"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0089"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0095", "wheel-0035"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN"]
+    },
+    {
+      "id": "dps",
+      "label": "DPS",
+      "recommendedCovenantIds": ["covenant-0009", "covenant-0014"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0002"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0055"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0083"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0035"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["CRIT_RATE", "CRIT_DMG"], ["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["CRIT_RATE", "CRIT_DMG"]
+    }
+  ],
+  "ownerAwakenerName": "Salvador"
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0013",
+  "name": "Life Drain",
+  "route": {
+    "slug": "life-drain",
+    "canonicalPath": "/database/covenants/life-drain"
+  },
+  "assets": {
+    "icon": "asset-covenant-0013-icon"
+  },
+  "acquisitionSource": "Clear Interlude - Verboten Covenant: Wall of Desert Sands",
+  "lineupToken": "n",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Keyflare Regen Level +[Arg1]",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "7.2"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique: At the end of the turn, gain Keyflare equal to 200% of the wielder's Keyflare Regen. If the current Realm is {Caro}, the Effect changes to: for every 5 points of Keyflare Regen, {Embryo Fusion} +1.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "The cord binds child to mother, a conduit for the fetus to drain an infinite future."
+}

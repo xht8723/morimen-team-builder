@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.pollux.soulsearing-light",
+  "name": "Soulsearing Light",
+  "route": {
+    "slug": "soulsearing-light",
+    "canonicalPath": "/database/awakeners/pollux/skills/soulsearing-light"
+  },
+  "ownerAwakenerId": "awakener-0041",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies and draw 2 Command Cards with the lowest Arithmetica Cost.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["40", "48", "56", "64", "72", "80"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "ownerAwakenerName": "Pollux"
+}

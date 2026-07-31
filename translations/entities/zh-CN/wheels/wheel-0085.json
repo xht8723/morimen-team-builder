@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0085",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "记忆症候",
+      "sourceHash": "sha256:ac175093f7d655dc52ec70304d3ecbb4aff354fb3ca5e0a9962888ccea262b48",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：打出一张症状卡后，装备者获得 12 狂气。该效果一个回合内最多触发 2 次。装备者打出 1 张指令卡后，获得 1 点狂气。",
+      "sourceHash": "sha256:ee0006660c779a38ee0ce42cb5fcf40e16da2162784b551de5b9753c07db6b2b",
+      "status": "reference"
+    }
+  }
+}

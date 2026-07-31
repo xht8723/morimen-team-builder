@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.ogier.gnostic-potential",
+  "name": "Gnostic Potential",
+  "route": {
+    "slug": "gnostic-potential",
+    "canonicalPath": "/database/awakeners/ogier/talents/gnostic-potential"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "family": "gnostic_potential",
+  "maxLevel": 5,
+  "descriptionTemplate": "This Awakener gains [Arg1] Levels of Base Attributes.\n·CON +[Talent_Attr_Lv_physique]\n·ATK +[Talent_Attr_Lv_atk]\n·DEF +[Talent_Attr_Lv_def]",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "2",
+      "gainPerLevel": "2"
+    },
+    "Talent_Attr_Lv_physique": {
+      "kind": "scaling",
+      "values": ["4", "7", "11", "14", "17"]
+    },
+    "Talent_Attr_Lv_atk": {
+      "kind": "linear",
+      "base": "3",
+      "gainPerLevel": "3"
+    },
+    "Talent_Attr_Lv_def": {
+      "kind": "scaling",
+      "values": ["4", "8", "12", "15", "19"]
+    }
+  },
+  "ownerAwakenerName": "Ogier"
+}

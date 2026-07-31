@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0049",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "踏过泥泞的玫瑰",
+      "sourceHash": "sha256:020c098c00114230e22f2e51f649a4915776c2412a4c3f555545b99cff685a7a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：若装备者为唤醒体「环行·拉蒙娜」，完成关卡时其他唤醒体获得的同调率提高 50% ，但自身不获得同调率。",
+      "sourceHash": "sha256:fe590b87a2cd3aee6465e98a4799adafac03a195c55b7f1975d58772b52bf851",
+      "status": "reference"
+    }
+  }
+}

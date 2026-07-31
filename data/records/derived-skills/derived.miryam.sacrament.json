@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.miryam.sacrament",
+  "name": "Sacrament",
+  "route": {
+    "slug": "sacrament",
+    "canonicalPath": "/database/awakeners/miryam/derived-skills/sacrament"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "derivedFromId": "skill.miryam.pray-to-the-abyss",
+  "rootSkillId": "skill.miryam.pray-to-the-abyss",
+  "childDerivedSkillIds": ["derived.miryam.obsession"],
+  "descriptionTemplate": "Recover 10% of lost HP. Can be transformed into {Obsession} through {Ritual}, enhancing this Command Card's effects.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    },
+    {
+      "id": "mechanic.exhaust"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Miryam"
+}

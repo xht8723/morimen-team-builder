@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.agrippa.ashes-and-skulls",
+  "name": "Ashes and Skulls",
+  "route": {
+    "slug": "ashes-and-skulls",
+    "canonicalPath": "/database/awakeners/agrippa/enlightens/ashes-and-skulls"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "slot": "E2",
+  "descriptionTemplate": "\"Basic Strike\" and \"Basic Defense\" triggers 10% {Poison} on all enemies.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Agrippa"
+}

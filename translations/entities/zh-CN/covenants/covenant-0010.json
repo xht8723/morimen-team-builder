@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0010",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "光合祭礼",
+      "sourceHash": "sha256:bc7d2b97e714f4eb751760a2a0e568bc1f05a43f25df288a6f5df6e9cafeebba",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 伤害强效 +7.2% 6件套： 队伍唯一。装备者的指令卡进入超维空间后，胚胎融合 +25%~50%，当前生命越低则获得胚胎融合越高。",
+      "sourceHash": "sha256:85edbed75234dfa9ba4ac2ee82d70f4de017acc58ccf8525d684aa6e9e0e2b28",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0057",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "珊瑚女之死",
+      "sourceHash": "sha256:a459c4ee68957020e719631998a38de6a8cd50cd57de87b0532f5557f1edeba0",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：打出装备者的卡牌后，获得等同于装备者 12% 防御力的护盾，每有 1 条触腕就使护盾提高装备者防御力的 3%。该效果单个回合只生效 1 次。",
+      "sourceHash": "sha256:05cfa02056b7c1b2fa44d781f907d474ecdd0a1ff7e6324befaa6b281e600b94",
+      "status": "reference"
+    }
+  }
+}

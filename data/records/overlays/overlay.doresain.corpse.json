@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.doresain.corpse",
+  "name": "Corpse",
+  "route": {
+    "slug": "corpse",
+    "canonicalPath": "/database/awakeners/doresain/overlays/corpse"
+  },
+  "assets": {
+    "icon": "asset-overlay.doresain.corpse-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0014",
+  "aliases": [],
+  "iconId": "IconS_Buff_076",
+  "textColor": "misc",
+  "descriptionTemplate": "Up to 3 Corpses can be stored. When all 3 are present, the next {Necrotic Gala} consumes them for an enhanced effect. Corpses persist between battles.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doresain"
+}

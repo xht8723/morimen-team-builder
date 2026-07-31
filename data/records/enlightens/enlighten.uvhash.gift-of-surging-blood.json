@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.uvhash.gift-of-surging-blood",
+  "name": "Gift of Surging Blood",
+  "route": {
+    "slug": "gift-of-surging-blood",
+    "canonicalPath": "/database/awakeners/uvhash/enlightens/gift-of-surging-blood"
+  },
+  "ownerAwakenerId": "awakener-0051",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Fill your hand with {Screech, Blood!} with {Exhaust} and {Fleeting}. Uvhash deals 1 more instance of DMG this turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Uvhash"
+}

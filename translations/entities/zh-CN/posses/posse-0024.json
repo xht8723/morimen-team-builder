@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0024",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "群山的觉悟",
+      "sourceHash": "sha256:7fffb965f6e68fdca473567d55c4069298a3aec4480c4bf89b6b238bc6599e49",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择一名唤醒体，抽 2 张该唤醒体的指令卡。",
+      "sourceHash": "sha256:a70aff9d30538f7cb7537d0c4598a7378f25b12f9e7a09c019d29a388493635d",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.lotan.surging-warlust",
+  "name": "Surging Warlust",
+  "route": {
+    "slug": "surging-warlust",
+    "canonicalPath": "/database/awakeners/lotan/enlightens/surging-warlust"
+  },
+  "ownerAwakenerId": "awakener-0031",
+  "slot": "E2",
+  "descriptionTemplate": "{Tides of Hubris} is considered as a \"Strike,\" and the {STR} obtained is doubled.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Lotan"
+}

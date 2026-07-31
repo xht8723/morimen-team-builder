@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0019",
+  "name": "Helot: Catena Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/helot-catena/builds/standard"
+  },
+  "awakenerId": "awakener-0019",
+  "primaryBuildId": "standard",
+  "recommendedPosseIds": ["posse-0023"],
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0014", "covenant-0004"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0055"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0006"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0092"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0018"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["CRIT_RATE", "CRIT_DMG"], ["KEYFLARE_REGEN"], ["DMG_AMP"]],
+      "recommendedWheelMainstats": ["CRIT_RATE", "CRIT_DMG"]
+    }
+  ],
+  "ownerAwakenerName": "Helot: Catena"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.jenkins.get-em-brown",
+  "name": "Get 'em! Brown!",
+  "route": {
+    "slug": "get-em-brown",
+    "canonicalPath": "/database/awakeners/jenkin/skills/get-em-brown"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "slot": "Skill2",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG to all enemies. In this battle, the DMG dealt by {Get 'em! Brown!} +[Arg2]. {Leap}: This skill additionally benefits from an additional 1× {STR} bonus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "ATK",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "CritRate",
+        "multiplier": "2",
+        "mode": "scale_base"
+      }
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.jenkins.red-ribbon.skill.jenkins.get-em-brown",
+      "operation": "mixed",
+      "upgraderId": "enlighten.jenkins.red-ribbon",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0025",
+      "ownerAwakenerName": "Jenkin",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG. In this battle, the DMG of {Get 'em! Brown!} +[Arg2], and the DMG of {Swarm Impact} +[Arg3]. {Leap}: Enjoys an additional 1× {STR} bonus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["15", "18", "21", "24", "27", "30"],
+            "stat": "ATK",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "CritRate",
+              "multiplier": "2",
+              "mode": "scale_base"
+            }
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["2.5", "3", "3.5", "4", "4.5", "5"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    },
+    {
+      "id": "upgrade.talent.jenkins.a-common-enemy.skill.jenkins.get-em-brown",
+      "operation": "link_only",
+      "upgraderId": "talent.jenkins.a-common-enemy",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Jenkin"
+}

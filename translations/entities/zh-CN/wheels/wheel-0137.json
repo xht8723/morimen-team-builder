@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0137",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "催眠灵摆",
+      "sourceHash": "sha256:a02f37cab88d462fda2b4010f8db3f74f8c584d1357b1f068e5f72f323affb38",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者银钥充能提高 10%。首场战斗开始后，对所有敌人施加 1 层虚弱和易伤。",
+      "sourceHash": "sha256:75287f7c9203a8373346476c4daa5bd4cc5caf8601771d1ecf1c533d0a1d0c7f",
+      "status": "reference"
+    }
+  }
+}

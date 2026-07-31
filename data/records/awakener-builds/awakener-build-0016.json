@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0016",
+  "name": "Faint Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/faint/builds/standard"
+  },
+  "awakenerId": "awakener-0016",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0006", "covenant-0008"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0123"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0050"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0081"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0093"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN"]
+    }
+  ],
+  "ownerAwakenerName": "Faint"
+}

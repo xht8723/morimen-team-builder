@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.faros.flickering-candle",
+  "name": "Flickering Candle",
+  "route": {
+    "slug": "flickering-candle",
+    "canonicalPath": "/database/awakeners/faros/enlightens/flickering-candle"
+  },
+  "ownerAwakenerId": "awakener-0017",
+  "slot": "E3",
+  "descriptionTemplate": "At turn end, for each card in hand, trigger 3% {Poison} on all enemies and gain 3 Aliemus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faros"
+}

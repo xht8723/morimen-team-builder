@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0083",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "死亡的剖析",
+      "sourceHash": "sha256:a5184ed2468d9e3663df72e055e6970e6797c91a257c81c33c4e5904a3705032",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者击杀敌方后，获得 20 狂气，获得 1% 暴击伤害，整场探索有效。",
+      "sourceHash": "sha256:f801236487a0079128c3d808a1a0e1ff3eab1926f4425491860fe1906df58cea",
+      "status": "reference"
+    }
+  }
+}

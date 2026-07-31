@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.tawil.emissarys-verdict",
+  "name": "Emissary's Verdict",
+  "route": {
+    "slug": "emissarys-verdict",
+    "canonicalPath": "/database/awakeners/tawil/derived-skills/emissarys-verdict"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "derivedFromId": "derived.tawil.memories",
+  "rootSkillId": "skill.tawil.pinions-of-time",
+  "descriptionTemplate": "Deal [Arg1]% of the target's max HP as {Fixed DMG} to the enemy in the last row. This DMG cannot be less than 300% of your own max HP.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Tawil"
+}

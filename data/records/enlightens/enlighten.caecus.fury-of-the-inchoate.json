@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.caecus.fury-of-the-inchoate",
+  "name": "Fury of the Inchoate",
+  "route": {
+    "slug": "fury-of-the-inchoate",
+    "canonicalPath": "/database/awakeners/caecus/enlightens/fury-of-the-inchoate"
+  },
+  "ownerAwakenerId": "awakener-0006",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Metamorphosed Body} is enhanced: After Caecus plays a card, 1 Tentacle performs an attack and gains {Counter} equal to 50% of DMG dealt.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Caecus"
+}

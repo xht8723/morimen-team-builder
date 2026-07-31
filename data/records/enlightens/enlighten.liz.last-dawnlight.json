@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.liz.last-dawnlight",
+  "name": "Last Dawnlight",
+  "route": {
+    "slug": "last-dawnlight",
+    "canonicalPath": "/database/awakeners/liz/enlightens/last-dawnlight"
+  },
+  "ownerAwakenerId": "awakener-0030",
+  "slot": "E3",
+  "descriptionTemplate": "{Dance to Destruction}: Draw 1 card for every 2 cards discarded.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Liz"
+}

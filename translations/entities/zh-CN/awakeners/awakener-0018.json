@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0018",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "熔毁·朵尔",
+      "sourceHash": "sha256:483db854c8c5b972da89f3fedca7792ab1fd2d66575be5646214c752be1ed667",
+      "status": "reference"
+    },
+    "description": {
+      "value": "天才与疯狂只隔一线。曾经最耀眼的密大学者在理性废墟中化作熔毁·朵尔，她仍披着科学的外衣，却把生命、伦理与常识一并投入疯狂实验。",
+      "sourceHash": "sha256:36cf1e436806e7109403373fd1e0c9bf2068629c636f87c9bc848b322310da13",
+      "status": "machine"
+    }
+  }
+}

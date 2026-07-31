@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.surging-tides",
+  "name": "Surging Tides",
+  "route": {
+    "slug": "surging-tides",
+    "canonicalPath": "/database/overlays/surging-tides"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "descriptionTemplate": "Default Tentacle stance at turn start, with 100% {Tentacle DMG}. At turn end, if still in {Surging Tides} stance, gain 1 Permanent Tentacle.",
+  "descriptionArgs": {}
+}

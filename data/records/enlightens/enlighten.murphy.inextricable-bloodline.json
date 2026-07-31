@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.murphy.inextricable-bloodline",
+  "name": "Inextricable Bloodline",
+  "route": {
+    "slug": "inextricable-bloodline",
+    "canonicalPath": "/database/awakeners/murphy/enlightens/inextricable-bloodline"
+  },
+  "ownerAwakenerId": "awakener-0034",
+  "slot": "E2",
+  "descriptionTemplate": "\"Basic Strike\" grants {Tentacle DMG} equal to [Arg1]% of Murphy's ATK, while \"Basic Defense\" grants {Tentacle DMG} equal to [Arg2]% of Murphy's ATK (effects scale with \"Strike\" and \"Defense\" skill levels).",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["2", "2.4", "2.8", "3.2", "3.6", "4"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["2", "2.4", "2.8", "3.2", "3.6", "4"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Murphy"
+}

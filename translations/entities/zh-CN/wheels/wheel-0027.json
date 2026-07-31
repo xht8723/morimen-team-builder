@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0027",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "隐世的转轮",
+      "sourceHash": "sha256:6062665e9a938b7e4aaa2e841a82837527bf55021e9b0cab6b818d3b3c06651b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：银钥积攒上限提高100%。手牌上限 +2，无法和其他命轮提供的手牌上限叠加。装备者银钥充能提高 25%。装备者打出卡牌后，本回合装备者指令卡暴击率和暴击伤害、造成的护盾、狂气和力量提高 6%，至多叠加 5 层。",
+      "sourceHash": "sha256:4d70f5f6091c3852b0166370ac23f71dcd1dfc9c508762197ce346d76241e377",
+      "status": "reference"
+    }
+  }
+}

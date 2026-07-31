@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0123",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "极夜与破晓",
+      "sourceHash": "sha256:8cb7c15d214fe57b40af18917605edca7b43c08c8b608e3f280e0acdc7688650",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：回合结束后获得 200 点银钥能量。触发死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。后获得 1000 点银钥能量。使用应急灵知体后，算力上限提高 3，每回合抽牌数提高 3。",
+      "sourceHash": "sha256:11bb05c4bb08769e05eb40dfedf615a54d71579d91212907c9f8cc939a2379cf",
+      "status": "reference"
+    }
+  }
+}

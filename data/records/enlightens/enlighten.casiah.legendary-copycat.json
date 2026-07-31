@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.casiah.legendary-copycat",
+  "name": "Legendary Copycat",
+  "route": {
+    "slug": "legendary-copycat",
+    "canonicalPath": "/database/awakeners/casiah/enlightens/legendary-copycat"
+  },
+  "ownerAwakenerId": "awakener-0007",
+  "slot": "E3",
+  "descriptionTemplate": "{Telekinesis} gains {Aftershock}: Shuffle 1 {derived:Insight} into the Draw Pile.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Casiah"
+}

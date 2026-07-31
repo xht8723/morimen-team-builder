@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0035",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "诗笺的句尾",
+      "sourceHash": "sha256:17e7f3d06bf9deed1d837b341b8cfbcb26904b076532c6443f292cbdf6c11974",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者指令卡暴击率和暴击伤害、指令卡造成的护盾、生命回复、狂气和力量提高 20%。若当前界域为「超维」，释放「湮灭」后获得 200 点银钥能量。进入超维回合后，本回合下一个钥令释放 2 次。",
+      "sourceHash": "sha256:528d3f268d329fe176d03a988c7b671740d66e010f4d54d433960f5d743d2986",
+      "status": "reference"
+    }
+  }
+}

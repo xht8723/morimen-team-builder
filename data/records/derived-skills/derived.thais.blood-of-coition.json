@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.thais.blood-of-coition",
+  "name": "Blood of Coition",
+  "route": {
+    "slug": "blood-of-coition",
+    "canonicalPath": "/database/awakeners/thais/derived-skills/blood-of-coition"
+  },
+  "ownerAwakenerId": "awakener-0048",
+  "derivedFromId": "skill.thais.sacred-bloods-instinct",
+  "rootSkillId": "skill.thais.sacred-bloods-instinct",
+  "descriptionTemplate": "{Embryo Fusion} +[Blood:Arg1].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "20"
+    }
+  },
+  "cardKeywords": [],
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.thais.forests-embrace.derived.thais.blood-of-coition",
+      "operation": "override_args",
+      "upgraderId": "enlighten.thais.forests-embrace",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0048",
+      "ownerAwakenerName": "Thais",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "fixed",
+            "value": "40"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Thais"
+}

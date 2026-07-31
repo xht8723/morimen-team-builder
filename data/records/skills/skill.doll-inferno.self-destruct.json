@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.doll-inferno.self-destruct",
+  "name": "Self-Destruct",
+  "route": {
+    "slug": "self-destruct",
+    "canonicalPath": "/database/awakeners/doll-inferno/skills/self-destruct"
+  },
+  "ownerAwakenerId": "awakener-0018",
+  "slot": "Skill1",
+  "descriptionTemplate": "Choose {Elation} or {Curse}.\n{Self-Destruct: Finale}",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.doll-inferno.borealis-visitor.skill.doll-inferno.self-destruct",
+      "operation": "link_only",
+      "upgraderId": "enlighten.doll-inferno.borealis-visitor",
+      "upgraderType": "enlighten",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Doll: Inferno"
+}

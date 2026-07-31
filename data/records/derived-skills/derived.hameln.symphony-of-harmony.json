@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.hameln.symphony-of-harmony",
+  "name": "Symphony of Harmony",
+  "route": {
+    "slug": "symphony-of-harmony",
+    "canonicalPath": "/database/awakeners/hameln/derived-skills/symphony-of-harmony"
+  },
+  "ownerAwakenerId": "awakener-0022",
+  "nodeKind": "group",
+  "derivedFromId": "skill.hameln.laudable-masterpiece",
+  "rootSkillId": "skill.hameln.laudable-masterpiece",
+  "childDerivedSkillIds": ["derived.hameln.ascending-scale", "derived.hameln.descending-scale"],
+  "descriptionTemplate": "Choose: {Ascending Scale} or {Descending Scale}.",
+  "descriptionArgs": {},
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "0",
+  "ownerAwakenerName": "Hameln"
+}

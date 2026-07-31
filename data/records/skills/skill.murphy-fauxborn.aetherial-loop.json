@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.murphy-fauxborn.aetherial-loop",
+  "name": "Aetherial Loop",
+  "route": {
+    "slug": "aetherial-loop",
+    "canonicalPath": "/database/awakeners/murphy-fauxborn/skills/aetherial-loop"
+  },
+  "ownerAwakenerId": "awakener-0035",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Inflict +5 stacks of {Birth Ritual}. Generate 3 {Waltz of Lemuria} with 2 Arithmetica Cost, with {Prepare} and {Exhaust}.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Murphy: Fauxborn"
+}

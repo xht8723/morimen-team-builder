@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.vulnerable",
+  "name": "Vulnerable",
+  "route": {
+    "slug": "vulnerable",
+    "canonicalPath": "/database/overlays/vulnerable"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.vulnerable-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Vulnerability"],
+  "iconId": "IconS_Buff_003",
+  "textColor": "damage",
+  "descriptionTemplate": "All DMG received is increased by 50%. Remove 1 stack at the end of each turn.",
+  "descriptionArgs": {}
+}

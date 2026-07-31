@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0007",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "不平等交换",
+      "sourceHash": "sha256:46726637cac734657472122e02b30f9366d49efbd1c58034489feca7f8b313e9",
+      "status": "reference"
+    },
+    "description": {
+      "value": "抽 4 张牌。",
+      "sourceHash": "sha256:015efc032e98f23975f7715b9487f20c7b8eab4d8300db18771a9404c27cde0a",
+      "status": "reference"
+    }
+  }
+}

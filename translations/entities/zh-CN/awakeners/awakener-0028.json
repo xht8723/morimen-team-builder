@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0028",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "雷娅",
+      "sourceHash": "sha256:01e9c3128336b39472f138a65e1a42672dc8a7839078ae3f2e9709c5109553c6",
+      "status": "reference"
+    },
+    "description": {
+      "value": "嘘，别怕，那只是湿冷地窖里老鼠腐烂的声音。雷娅灵魂深处囚禁着猩红欲望，如盲者渴望光、饥者渴望血；满足它的代价，往往也是鲜血。",
+      "sourceHash": "sha256:2c8225606a0dbb5471e49edb01441284958fad601798d3fc6e15cd16e15cf2f4",
+      "status": "machine"
+    }
+  }
+}

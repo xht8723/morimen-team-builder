@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0035",
+  "name": "Dimensional Image: Murphy: Fauxborn",
+  "route": {
+    "slug": "dimensional-image-murphy-fauxborn",
+    "canonicalPath": "/database/relics/dimensional-image-murphy-fauxborn"
+  },
+  "assets": {
+    "icon": "asset-relic-0035-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0035",
+  "ownerAwakenerId": "awakener-0035",
+  "ownerAwakenerName": "Murphy: Fauxborn",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Murphy: Fauxborn gains [Arg1] Aliemus. {Waltz of Lemuria} takes effect 3 times every {ordinal:3rd} play.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0035",
+      "name": "Dimensional Image: Murphy: Fauxborn",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0035",
+      "ownerAwakenerName": "Murphy: Fauxborn",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Murphy: Fauxborn gains [Arg1] Aliemus. {Waltz of Lemuria} takes effect 3 times every {ordinal:3rd} play.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        }
+      }
+    }
+  ]
+}

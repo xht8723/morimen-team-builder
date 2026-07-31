@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.crimson-furnace",
+  "name": "Crimson Furnace",
+  "route": {
+    "slug": "crimson-furnace",
+    "canonicalPath": "/database/overlays/crimson-furnace"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "descriptionTemplate": "Consume all {Crimson Furnace}, restore [Heal:Arg1] HP. Can accumulate up to [Arg2] {Crimson Furnace}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "X",
+      "displayFormula": "stored Crimson Furnace healing * (1 - Lost HP %)"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "X",
+      "displayFormula": "Base cap is 25% Max HP, plus flat Crimson Furnace cap bonuses, then multiplied by Crimson Furnace cap %. If Propagation: Caro is active, the base Max HP cap is doubled to 50% before those bonuses."
+    }
+  }
+}

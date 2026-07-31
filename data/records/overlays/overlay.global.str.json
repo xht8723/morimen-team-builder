@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.str",
+  "name": "STR",
+  "route": {
+    "slug": "str",
+    "canonicalPath": "/database/overlays/str"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.str-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Strength"],
+  "iconId": "IconS_Buff_021",
+  "textColor": "heal",
+  "descriptionTemplate": "Active DMG is increased by 1 for each stack of {STR}.\n({Tentacle DMG} benefits from 50% of {STR}.)",
+  "descriptionArgs": {}
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0010",
+  "name": "Photosynthesis Ritual",
+  "route": {
+    "slug": "photosynthesis-ritual",
+    "canonicalPath": "/database/covenants/photosynthesis-ritual"
+  },
+  "assets": {
+    "icon": "asset-covenant-0010-icon"
+  },
+  "acquisitionSource": "Purchase from Mythag Shop - Investigation Exchange",
+  "lineupToken": "l",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "DMG Amplification +[Arg1]%",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "7.2",
+          "suffix": "%"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique: After one of the wielder's Command Cards enters {Ultra Space}, {Embryo Fusion} +25~50. The lower your current HP, the more {Embryo Fusion} is gained.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "Science is spectral analysis; art is photosynthesis."
+}

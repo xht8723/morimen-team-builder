@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0044",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "开学日",
+      "sourceHash": "sha256:f10312e671645ac99ba1d8da37930105c3d79994ed7d4795116a929f55174997",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：「融痕」和「灰烬遗迹」刷新后使装备者获得 45 点狂气。",
+      "sourceHash": "sha256:cdbf02e639e1183a52e80176eacb7cb1b0ba847c0169ef5dbae0a5a82c8521c3",
+      "status": "reference"
+    }
+  }
+}

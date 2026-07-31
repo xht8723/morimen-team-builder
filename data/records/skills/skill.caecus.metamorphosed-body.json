@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.caecus.metamorphosed-body",
+  "name": "Metamorphosed Body",
+  "route": {
+    "slug": "metamorphosed-body",
+    "canonicalPath": "/database/awakeners/caecus/skills/metamorphosed-body"
+  },
+  "ownerAwakenerId": "awakener-0006",
+  "slot": "Rouse",
+  "descriptionTemplate": "Caecus gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle. Whenever Caecus plays 1 card, restore [Heal:Arg2] HP and gain [Counterattack:Arg3] stacks of {Counter}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["7", "8.4", "9.8", "11.2", "12.6", "14"],
+      "stat": "CON",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.caecus.fury-of-the-inchoate.skill.caecus.metamorphosed-body",
+      "operation": "mixed",
+      "upgraderId": "enlighten.caecus.fury-of-the-inchoate",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0006",
+      "ownerAwakenerName": "Caecus",
+      "patch": {
+        "descriptionTemplate": "Caecus gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle. For each card Caecus plays, restore [Heal:Arg2] HP and gain [Counterattack:Arg3] {plural:[Counterattack:Arg3]|stack|stacks} of {Counter}. 1 Tentacle performs an attack and gains {Counter} equal to [Arg4]% of DMG dealt.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["7", "8.4", "9.8", "11.2", "12.6", "14"],
+            "stat": "CON",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "50",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Caecus"
+}

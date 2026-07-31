@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.ryker.honest-return",
+  "name": "Honest Return",
+  "route": {
+    "slug": "honest-return",
+    "canonicalPath": "/database/awakeners/ryker/enlightens/honest-return"
+  },
+  "ownerAwakenerId": "awakener-0043",
+  "slot": "E2",
+  "descriptionTemplate": "Obtain 15 Black Sigils at the start of the exploration. For every 1% of Sigil Yield attribute Ryker has, the amount of Black Sigil obtained in this way +1%, and it will also increase the progress of \"Winner Takes All\".",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Ryker"
+}

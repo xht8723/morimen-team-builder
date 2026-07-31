@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0010",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "克莱门汀",
+      "sourceHash": "sha256:ac99e1bdd635028275c3cbd1556bbd4b9140bf9451f591945424a50443deab8f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "人人都戴着不同的人格面具，克莱门汀选择了最能麻痹人心的一张。她温柔的笑容和话语让来访者相信遇见了救赎，却很少有人能窥见面具后真正的她。",
+      "sourceHash": "sha256:d5d98651ef7b726fae6e23d987837862207484dfc07b45cc6e993c9256ca576f",
+      "status": "machine"
+    }
+  }
+}

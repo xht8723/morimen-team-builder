@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0068",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "明悟",
+      "sourceHash": "sha256:e56186f60d718683e7724d705d7f3d65d73347c457d4dd33bdc595fecf341e79",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：关卡开始后，获得 1000 点银钥能量。首领战开始后，获得 2 点算力。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:37d070faafa29708e54f7c147b4d7c6a7db22ac580970a5ef07790aa6c3ed6fe",
+      "status": "reference"
+    }
+  }
+}

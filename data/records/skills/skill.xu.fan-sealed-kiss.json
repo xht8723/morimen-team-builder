@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.xu.fan-sealed-kiss",
+  "name": "Fan-Sealed Kiss",
+  "route": {
+    "slug": "fan-sealed-kiss",
+    "canonicalPath": "/database/awakeners/xu/skills/fan-sealed-kiss"
+  },
+  "ownerAwakenerId": "awakener-0054",
+  "slot": "Skill2",
+  "descriptionTemplate": "Inflict [{Poison}:Arg1] {Poison} on all enemies, temporarily reducing their {STR▼} by [Exhaustion:Arg2]. {Resonance 3}: Inflict 1 stack of {Spellbound} on all enemies.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["40", "48", "56", "64", "72", "80"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.xu.nirvanas-kiss.skill.xu.fan-sealed-kiss",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.xu.nirvanas-kiss",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0054",
+      "ownerAwakenerName": "Xu",
+      "patch": {
+        "descriptionTemplate": "Inflict [{Poison}:Arg1] {Poison} on all enemies, temporarily reducing their {STR▼} by [Exhaustion:Arg2]. {Resonance 3}: Inflict 1 stack of {Spellbound} on all enemies."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Xu"
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.xu.enthrall",
+  "name": "Enthrall",
+  "route": {
+    "slug": "enthrall",
+    "canonicalPath": "/database/awakeners/xu/derived-skills/enthrall"
+  },
+  "ownerAwakenerId": "awakener-0054",
+  "derivedFromId": "skill.xu.mist-bound-vow",
+  "rootSkillId": "skill.xu.mist-bound-vow",
+  "descriptionTemplate": "Remove all enemies' {Spellbound}. For each stack removed: {Crimson Furnace} +[Arg3]; cause {Fixed DMG} equal to [Arg1]% of the target's Max HP; trigger [Arg2]% {Poison}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "1",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "40",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "20",
+      "stat": "CON",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.xu.nirvanas-kiss.derived.xu.enthrall",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.xu.nirvanas-kiss",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0054",
+      "ownerAwakenerName": "Xu",
+      "patch": {
+        "descriptionTemplate": "Remove all enemies' {Spellbound}. For each stack removed: {Crimson Furnace} +[Arg3]; cause {Fixed DMG} equal to [Arg1]% of the target's Max HP; trigger [Arg2]% {Poison}."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Xu"
+}

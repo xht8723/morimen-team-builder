@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.liz.burning-tribute",
+  "name": "Burning Tribute",
+  "route": {
+    "slug": "burning-tribute",
+    "canonicalPath": "/database/awakeners/liz/enlightens/burning-tribute"
+  },
+  "ownerAwakenerId": "awakener-0030",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Emerald Reflection} is enhanced: For every 3 instances of DMG dealt by Liz, her DMG in this battle is permanently increased by 15% of her ATK.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Liz"
+}

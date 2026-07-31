@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0167",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "愿世界化作芬芳",
+      "sourceHash": "sha256:f4358bc805dc4892b6fef9f01df57153e17f7b1f822090f4e8e7688fe5998e92",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：算力上限 +1，无法和其他命轮提供的算力上限叠加。装备者每有 10 点基础狂气，造成的侵蚀提高 5%，造成的胚胎融合提高 1.5%。",
+      "sourceHash": "sha256:7f616a934875bd91301e1627259b12cb741de22ffe2f8501ddca9248294957f1",
+      "status": "reference"
+    }
+  }
+}

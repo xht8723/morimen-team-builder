@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.arachne.eternal-loom",
+  "name": "Eternal Loom",
+  "route": {
+    "slug": "eternal-loom",
+    "canonicalPath": "/database/awakeners/arachne/skills/eternal-loom"
+  },
+  "ownerAwakenerId": "awakener-0056",
+  "slot": "Skill1",
+  "descriptionTemplate": "Inflict [FateCut:Arg1] {Final Verdict} on all enemies, then create 1 {Guiding Strings}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["300", "360", "420", "480", "540", "600"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.arachne.universe-as-i-conceive.skill.arachne.eternal-loom",
+      "operation": "override_args",
+      "upgraderId": "enlighten.arachne.universe-as-i-conceive",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["450", "540", "630", "720", "810", "900"],
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Arachne"
+}

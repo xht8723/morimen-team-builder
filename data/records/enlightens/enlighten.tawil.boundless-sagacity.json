@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.tawil.boundless-sagacity",
+  "name": "Boundless Sagacity",
+  "route": {
+    "slug": "boundless-sagacity",
+    "canonicalPath": "/database/awakeners/tawil/enlightens/boundless-sagacity"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "slot": "E1",
+  "descriptionTemplate": "{Omniscient Verity} reduces the Arithmetica of the card it changes into by 1. {Pinions of Time} places an additional {derived:Insight} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tawil"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0007",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "卡茜亚",
+      "sourceHash": "sha256:3a33ab0f4131eef0a520a5d296c5fe8c3ba22a8c202c1cf81f6833f974f0e202",
+      "status": "reference"
+    },
+    "description": {
+      "value": "来跳舞吧，欢快地、疯狂地跳，直到气氛沸腾。聚光灯下，疯癫的魔术师卡茜亚已经把手伸进帽中，而下一幕取出的东西未必适合观众观看。",
+      "sourceHash": "sha256:423f46429c80c61e55d1ac453d3cccf971fb3c043441ef61d4c1deead51e213a",
+      "status": "machine"
+    }
+  }
+}

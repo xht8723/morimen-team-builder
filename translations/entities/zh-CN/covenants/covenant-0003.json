@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0003",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "猩红之拥",
+      "sourceHash": "sha256:9a2e076687aa5536022069d0e519d17e820fcd1e56d3de30af402199b6096fc8",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 暴击率 +4.8% 6件套： 装备者造成伤害时获得 35 点银钥能量，若造成暴击伤害，改为获得 70 点银钥能量，每回合最多触发 3 次。",
+      "sourceHash": "sha256:01040f3bcec8341435b4ceeaaf93597115aa536caa67cf30a024a6b0dd71d498",
+      "status": "reference"
+    }
+  }
+}

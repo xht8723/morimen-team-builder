@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.sanga.the-sea-of-corals",
+  "name": "The Sea of Corals",
+  "route": {
+    "slug": "the-sea-of-corals",
+    "canonicalPath": "/database/awakeners/sanga/enlightens/the-sea-of-corals"
+  },
+  "ownerAwakenerId": "awakener-0045",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Shield obtained +200%. {The Lost Art} and \"Basic Strike\" enjoy an additional 100% Shield bonus during this battle.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Sanga"
+}

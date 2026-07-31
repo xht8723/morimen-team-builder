@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.aurita.jellyfish-congregation",
+  "name": "Jellyfish Congregation",
+  "route": {
+    "slug": "jellyfish-congregation",
+    "canonicalPath": "/database/awakeners/aurita/enlightens/jellyfish-congregation"
+  },
+  "ownerAwakenerId": "awakener-0005",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Grants additional {STR} and {Tentacle DMG} equal to 24% ATK. The next 5 times {Gland Division} is played, draw 1 card.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Aurita"
+}

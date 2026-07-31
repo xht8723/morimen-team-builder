@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0072",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "放逐",
+      "sourceHash": "sha256:7bca1c7bffa45bf98c3a886d0183525e0fe02ee472c604c221cac894117351fc",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：融痕售卖卡牌处允许售卖症状卡，卖出症状卡后获得 25 点黑印。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:4f722ee9541c64c5077c3845610d75c9eaa508fd5ffa0f2fb8a7870bf855d507",
+      "status": "reference"
+    }
+  }
+}

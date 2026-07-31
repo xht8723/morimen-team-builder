@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.doresain.feasts-overture",
+  "name": "Feast's Overture",
+  "route": {
+    "slug": "feasts-overture",
+    "canonicalPath": "/database/awakeners/doresain/enlightens/feasts-overture"
+  },
+  "ownerAwakenerId": "awakener-0014",
+  "slot": "E1",
+  "descriptionTemplate": "For every 1% Crit. DMG Doresain and his equipped WoD & Covenant have, increase his Crit. Rate by 0.1%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doresain"
+}

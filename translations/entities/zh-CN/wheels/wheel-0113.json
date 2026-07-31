@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0113",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "圣子尊容",
+      "sourceHash": "sha256:e13c0c55c09ab26ce604c0c8b97a48465f89118d02ac5de5adf1b15482db1c02",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：超维回合装备者获得 3 层「心火」，装备者本回合打出指令卡时消耗 1 层，使其最终伤害和护盾提高 15%。",
+      "sourceHash": "sha256:cef87e85645eb1dffdd94c9737bd96e1e02838697413e3e8f5f602ee8c2ad154",
+      "status": "reference"
+    }
+  }
+}

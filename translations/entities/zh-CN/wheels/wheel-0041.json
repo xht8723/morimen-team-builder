@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0041",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "隐没的痛楚",
+      "sourceHash": "sha256:bff7a78c8a72cd85883fe022e42b0b0d0f8cc49266e9655ce71d895a8d86b226",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者狂气爆发造成的基础伤害提高 50%，银钥充能提高 30%。进入超维回合后，所有唤醒体获得 20 点狂气。释放「湮灭」后，装备者获得 20 点狂气。",
+      "sourceHash": "sha256:71dfa4d7bf59705304d9104981264237ecc6beb6a79f0811dab07e1a9a79f150",
+      "status": "reference"
+    }
+  }
+}

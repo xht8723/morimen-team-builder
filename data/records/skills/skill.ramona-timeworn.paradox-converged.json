@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.ramona-timeworn.paradox-converged",
+  "name": "Paradox Converged",
+  "route": {
+    "slug": "paradox-converged",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/skills/paradox-converged"
+  },
+  "ownerAwakenerId": "awakener-0020",
+  "slot": "Exalt",
+  "descriptionTemplate": "Obtain [Arg1] Keyflare. Place the temporary copies of the last 3 different non-Derived Command Cards played in the previous turn into hand, with -1 Arithmetica Cost, {Exhaust}, {Fleeting}. If there are not enough Command Cards to place into hand, draw a card for each Command Card missing.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["100", "120", "140", "160", "180", "200"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.ramona-timeworn.mobius-captive.skill.ramona-timeworn.paradox-converged",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.ramona-timeworn.mobius-captive",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0020",
+      "ownerAwakenerName": "Ramona: Timeworn",
+      "patch": {
+        "descriptionTemplate": "Obtain [Arg1] Keyflare. Place the temporary copies of the last 3 different non-Derived Command Cards played in the previous turn into hand, with -1 Arithmetica Cost, {Exhaust}, {Fleeting}. If there are not enough Command Cards to place into hand, draw a card for each Command Card missing. Choose 1 unlocked Posse to replace your current Posse. Your current Posse will be restored after using a Posse or at the End of Battle."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

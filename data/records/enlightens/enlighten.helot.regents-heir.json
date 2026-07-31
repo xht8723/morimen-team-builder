@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.helot.regents-heir",
+  "name": "Regent's Heir",
+  "route": {
+    "slug": "regents-heir",
+    "canonicalPath": "/database/awakeners/helot/enlightens/regents-heir"
+  },
+  "ownerAwakenerId": "awakener-0023",
+  "slot": "E1",
+  "descriptionTemplate": "At the start of the battle, place 1 {Irregular Form} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Helot"
+}

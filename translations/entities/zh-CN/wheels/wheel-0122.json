@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0122",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "灵魂诞生",
+      "sourceHash": "sha256:f7e29b18c81db7615ce345a4fc4285edeb411b688ecea19739eb5dd660206a5b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：队伍生命上限提高 10%。装备者造成的治疗和护盾提高 10%。打出装备者的「打击」后，回复 6% 已损失生命。打出装备者的「防御」后，获得 6% 当前生命的护盾。该效果每回合最多各触发 1 次。",
+      "sourceHash": "sha256:4a72443d600b15aea601c19f4d0d546b9a73ecaa75504017358e92d13f873763",
+      "status": "reference"
+    }
+  }
+}

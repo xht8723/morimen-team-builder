@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.nymphaea.midnight-tide",
+  "name": "Midnight Tide",
+  "route": {
+    "slug": "midnight-tide",
+    "canonicalPath": "/database/awakeners/nymphaea/skills/midnight-tide"
+  },
+  "ownerAwakenerId": "awakener-0037",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG to the enemy with the highest HP and apply an equal amount of {Poison}, which enjoys a 2× {STR} bonus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["22.5", "27", "31.5", "36", "40.5", "45"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.nymphaea.silent-permeation.skill.nymphaea.midnight-tide",
+      "operation": "mixed",
+      "upgraderId": "enlighten.nymphaea.silent-permeation",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0037",
+      "ownerAwakenerName": "Nymphaea",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG to the enemy with the highest HP and apply an equal amount of {Poison}, which enjoys a 2× {STR} bonus. The first 3 Symptom Cards played each turn increase the DMG dealt by {Midnight Tide} in this battle by [Arg2].",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["33.75", "40.5", "47.25", "54", "60.75", "67.5"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "20",
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Nymphaea"
+}

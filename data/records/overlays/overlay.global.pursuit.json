@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.pursuit",
+  "name": "Pursuit",
+  "route": {
+    "slug": "pursuit",
+    "canonicalPath": "/database/overlays/pursuit"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "descriptionTemplate": "A follow-up attack that automatically triggers when its condition is met.",
+  "descriptionArgs": {}
+}

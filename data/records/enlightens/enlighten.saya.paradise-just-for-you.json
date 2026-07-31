@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.saya.paradise-just-for-you",
+  "name": "Paradise Just For You",
+  "route": {
+    "slug": "paradise-just-for-you",
+    "canonicalPath": "/database/awakeners/saya/enlightens/paradise-just-for-you"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "OverExalt",
+  "descriptionTemplate": "All copied \"Skill\" cards take effect 1 additional time.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Saya"
+}

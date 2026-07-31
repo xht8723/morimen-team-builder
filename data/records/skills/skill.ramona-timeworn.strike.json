@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.ramona-timeworn.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/ramona-timeworn/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0020",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Ramona: Timeworn obtains [Energy:Arg2] Aliemus. {Loop}: Deal DMG [Arg3] {plural:[Arg3]|time|times}, Ramona: Timeworn's Crit. Rate +[Arg5]%.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "5"
+    },
+    "Arg5": {
+      "kind": "fixed",
+      "value": "0",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "KeyflareRegen",
+        "multiplier": "0.2"
+      }
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.talent.ramona-timeworn.silverheart-resonance.skill.ramona-timeworn.strike",
+      "operation": "link_only",
+      "upgraderId": "talent.ramona-timeworn.silverheart-resonance",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Ramona: Timeworn"
+}

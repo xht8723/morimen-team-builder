@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.saya.here-my-one-last-gift",
+  "name": "Here, My One Last Gift...",
+  "route": {
+    "slug": "here-my-one-last-gift",
+    "canonicalPath": "/database/awakeners/saya/enlightens/here-my-one-last-gift"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "Gnosis {Rouse} {Cognitive Alteration} is Enhanced. After using {Crimson Furnace}, Saya gains 50 Aliemus and 1 stack of {Gynoecium}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Saya"
+}

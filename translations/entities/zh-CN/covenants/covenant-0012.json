@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0012",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "36室之环",
+      "sourceHash": "sha256:9859cc94ceee7dfff4ae49b526d0501b82c3b9b9bd8a112864d5f3a1b0ed8f54",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 狂气回充等级 +2.4 6件套： 队伍唯一。银钥能量上限及钥令消耗银钥能量 +200，装备者狂气爆发的暴击率、暴击伤害、护盾、回复生命提高 30%。",
+      "sourceHash": "sha256:8e522dcef9152237139d9a4355d4f31f466a80838f8d00177956833948507f53",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.nautila.vroom-vroom",
+  "name": "Vroom Vroom!",
+  "route": {
+    "slug": "vroom-vroom",
+    "canonicalPath": "/database/awakeners/nautila/skills/vroom-vroom"
+  },
+  "ownerAwakenerId": "awakener-0036",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Current Shield +50%, ignore the Shield Limit. Increases {Fixed DMG} against all enemies to 500% of {Counter}.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Nautila"
+}

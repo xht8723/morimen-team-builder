@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0069",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "惩戒",
+      "sourceHash": "sha256:167b9597f17b4ecb228219d708ba58ad4b880e5f772903a76d206565e177e2f1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：首领战开始后，消耗最多 50 黑印，每消耗 1 点黑印获得 5% 死亡抵抗触发后在本次调查中概率减半，获得的死亡抵抗减半。。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:c49cef794eae0dfdfc92af61fbeab5c5351e6a11d321c038bab2fa318c7cb0c7",
+      "status": "reference"
+    }
+  }
+}

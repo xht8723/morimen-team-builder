@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0037",
+  "name": "Nymphaea Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/nymphaea/builds/standard"
+  },
+  "awakenerId": "awakener-0037",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0020", "covenant-0013", "covenant-0002"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0016"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0022"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0104"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"], ["DMG_AMP"], ["ALIEMUS_REGEN"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN", "DMG_AMP"]
+    }
+  ],
+  "ownerAwakenerName": "Nymphaea"
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.erica.electromagnetic-blast",
+  "name": "Electromagnetic Blast",
+  "route": {
+    "slug": "electromagnetic-blast",
+    "canonicalPath": "/database/awakeners/erica/skills/electromagnetic-blast"
+  },
+  "ownerAwakenerId": "awakener-0015",
+  "slot": "Exalt",
+  "descriptionTemplate": "Erica gains [Arg4]% Temporary Crit. Rate and Crit. DMG. Gain [Block:Arg2] Shield. Deal [Damage:Arg1] DMG to all enemies and apply [Arg3] {plural:[Arg3]|stack|stacks}{Weakness} and {Vulnerable}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["50", "60", "70", "80", "90", "100"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["35", "42", "49", "56", "63", "70"],
+      "stat": "DEF",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "0",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "KeyflareRegen",
+        "multiplier": "0.5"
+      }
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.erica.force-circuit.skill.erica.electromagnetic-blast",
+      "operation": "mixed",
+      "upgraderId": "enlighten.erica.force-circuit",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0015",
+      "ownerAwakenerName": "Erica",
+      "patch": {
+        "descriptionTemplate": "Erica gains [Arg4]% Temporary Crit. Rate and Crit. DMG. Gain [Block:Arg2] Shield. Deal [Damage:Arg1] DMG to all enemies and apply [Arg3] {plural:[Arg3]|stack|stacks}{Weakness} and {Vulnerable}. This skill additionally enjoys a [Arg7]x {STR} and {Alert} bonus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["50", "60", "70", "80", "90", "100"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["35", "42", "49", "56", "63", "70"],
+            "stat": "DEF",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "1"
+          },
+          "Arg4": {
+            "kind": "fixed",
+            "value": "0",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "KeyflareRegen",
+              "multiplier": "0.5"
+            }
+          },
+          "Arg7": {
+            "kind": "fixed",
+            "value": "1"
+          }
+        }
+      }
+    },
+    {
+      "id": "upgrade.talent.erica.external-power-source.skill.erica.electromagnetic-blast",
+      "operation": "link_only",
+      "upgraderId": "talent.erica.external-power-source",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Erica"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0045",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "亲爱的圣诞老爹",
+      "sourceHash": "sha256:95cc909d0feb1a0dafa0a3c8ce8251570cbe9515abc95675747d791304e4ec2a",
+      "status": "machine"
+    },
+    "description": {
+      "value": "队伍唯一：在「D-Mark」商店首次购买「祈愿」，或在灰烬遗迹首次购买折扣商品时，有 100% 概率不消耗黑印。每次探索仅触发 1 次。",
+      "sourceHash": "sha256:273e86d73bc19e780469398ae7577641f0b924e6c9ff6d2b28f6df5ce82e4743",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.liz.verdant-spark",
+  "name": "Verdant Spark",
+  "route": {
+    "slug": "verdant-spark",
+    "canonicalPath": "/database/awakeners/liz/enlightens/verdant-spark"
+  },
+  "ownerAwakenerId": "awakener-0030",
+  "slot": "E1",
+  "descriptionTemplate": "{Corrupted Flames} will upgrade to {Deadly Flames} if it remains in the hand or {Ultra Space} at turn end.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Liz"
+}

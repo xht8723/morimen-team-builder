@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0095",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "镜中人",
+      "sourceHash": "sha256:c6dd3c16868e3639771e67b0aea77ab2856b7d429fc4be4156bf7bf3a4e0f9df",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：回合结束时，装备者获得 3 点狂气。受到攻击伤害时，下回合开始时获得 2.0% 伤害的护盾。若当前界域为血肉，不再获得延迟护盾，而是积攒 2.0% 伤害的回复量到猩红熔炉。",
+      "sourceHash": "sha256:06fd7d5209f222375c00bfd71efe993c25baac65b95d3731c4f5dc78e214e4fd",
+      "status": "reference"
+    }
+  }
+}

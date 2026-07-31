@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0055",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "莫丝",
+      "sourceHash": "sha256:dcc6d098ffa2a72e8e8b84918d0b9caec1f1cc280969ff5116e1c0bbe11bc745",
+      "status": "reference"
+    },
+    "description": {
+      "value": "语言不通可以用手势，力量失控在这所学校也算寻常。莫丝凭灿烂笑容和近乎野性的直率迅速融入校园，只是她表达友好的方式，往往伴随着过于惊人的破坏力。",
+      "sourceHash": "sha256:2af2ab935433994f6b4e0e3a8606a63d54dd47fc27ee7face2d3a2f40299d531",
+      "status": "machine"
+    }
+  }
+}

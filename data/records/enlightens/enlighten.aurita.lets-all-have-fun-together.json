@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.aurita.lets-all-have-fun-together",
+  "name": "Let's All Have Fun Together!",
+  "route": {
+    "slug": "lets-all-have-fun-together",
+    "canonicalPath": "/database/awakeners/aurita/enlightens/lets-all-have-fun-together"
+  },
+  "ownerAwakenerId": "awakener-0005",
+  "slot": "E3",
+  "descriptionTemplate": "\"Basic Defense\" draws 1 card. Every 3 turns, add 1 {Gland Division} with {Exhaust} and {Fleeting}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Aurita"
+}

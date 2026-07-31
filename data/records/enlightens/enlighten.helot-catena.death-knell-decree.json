@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.helot-catena.death-knell-decree",
+  "name": "Death Knell Decree",
+  "route": {
+    "slug": "death-knell-decree",
+    "canonicalPath": "/database/awakeners/helot-catena/enlightens/death-knell-decree"
+  },
+  "ownerAwakenerId": "awakener-0019",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Reaper's Declaration} is enhanced: After Helot: Catena unleashes Exalt, grant each different Command Card of hers in hand 50 stacks of {Temporary Enhance}, removed at turn end or after being played.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Helot: Catena"
+}

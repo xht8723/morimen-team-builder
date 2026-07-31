@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.corposant.unquenched-unfelled-undimmed",
+  "name": "Unquenched, Unfelled, Undimmed",
+  "route": {
+    "slug": "unquenched-unfelled-undimmed",
+    "canonicalPath": "/database/awakeners/corposant/enlightens/unquenched-unfelled-undimmed"
+  },
+  "ownerAwakenerId": "awakener-0011",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Sunken in the Profound} is enhanced: The first {Lightning Retribution} and {Ominous Semaphore} Corposant plays each turn place 1 additional {Pilot} into hand. {Pilot} effect +50%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Corposant"
+}

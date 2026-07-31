@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0051",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "献给新世界",
+      "sourceHash": "sha256:3df90f51ee4fe2319733f2a1d39445d93ff96ef05366d6840aabcdc07e407add",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点护盾，抽 2 张「技能」并赋予其认知错乱打出或弃置后移除该状态。。若「沙耶」在队伍中，获得 1 层羽种该状态至多积攒 4 层，战斗结束后会保留。。",
+      "sourceHash": "sha256:8d03a0cf6fbecc72a662140e3f36812d1a25d0fd0bcc4c02d78ee738ddb85368",
+      "status": "reference"
+    }
+  }
+}

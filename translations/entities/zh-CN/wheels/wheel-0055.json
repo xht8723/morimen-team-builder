@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0055",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "巨人之刃",
+      "sourceHash": "sha256:b073907b6d90963193bd54d4b47e967d0f44c0275061a5d0a3f0db6b4a26b682",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后，其本回合暴击伤害提高 60% ，手中所有装备者的卡牌都有 35% 概率本回合内算力消耗降低 1 点。",
+      "sourceHash": "sha256:075bfee16a907a66708b624c9b9b183e85e8f16124dedf6a03c7f322563b414c",
+      "status": "reference"
+    }
+  }
+}

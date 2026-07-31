@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.daffodil.thousand-mirage-counter",
+  "name": "Thousand Mirage",
+  "route": {
+    "slug": "thousand-mirage-counter",
+    "canonicalPath": "/database/awakeners/daffodil/derived-skills/thousand-mirage-counter"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "derivedFromId": "derived.daffodil.thousand-mirage-base-cards",
+  "rootSkillId": "skill.daffodil.sea-of-primordial-essence",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. This DMG enjoys a [Arg2]x {STR} bonus. Obtain {Temporary Counter} equal to [Arg3]% DMG dealt.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["100", "120", "140", "160", "180", "200"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "4"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "50",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.exhaust"
+    },
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "ownerAwakenerName": "Daffodil"
+}

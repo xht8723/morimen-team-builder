@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.arithmetica-harmony",
+  "name": "Arithmetica Harmony",
+  "route": {
+    "slug": "arithmetica-harmony",
+    "canonicalPath": "/database/overlays/arithmetica-harmony"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.arithmetica-harmony-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_069",
+  "textColor": "misc",
+  "descriptionTemplate": "After playing [DescArg1] Command Cards, enter the {Arithmetica Harmony} state.",
+  "descriptionArgs": {
+    "DescArg1": {
+      "kind": "fixed",
+      "value": "11"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.miryam.homeland-resurgence",
+  "name": "Homeland Resurgence",
+  "route": {
+    "slug": "homeland-resurgence",
+    "canonicalPath": "/database/awakeners/miryam/enlightens/homeland-resurgence"
+  },
+  "ownerAwakenerId": "awakener-0032",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Testament of Faith} is enhanced: For every 2 {Sacrament} cards flipped, place 1 {Divine Realm's Illusion} into hand.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Miryam"
+}

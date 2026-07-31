@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.death-resistance",
+  "name": "Death Resistance",
+  "route": {
+    "slug": "death-resistance",
+    "canonicalPath": "/database/overlays/death-resistance"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.death-resistance-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_012",
+  "textColor": "heal",
+  "descriptionTemplate": "When taking fatal DMG, there is a chance to trigger {Death Resistance} and survive at 1 HP. Each trigger halves your current {Death Resistance} as well as all subsequent {Death Resistance} gains during this investigation.",
+  "descriptionArgs": {}
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0120",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "阿库特之春",
+      "sourceHash": "sha256:87df4765668a2c5bc68ca171bfdfd6de810fe6f073bfb384741ddf2e9fd43054",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：回合结束时装备者获得 15 点狂气，获得等同于装备者银钥充能的银钥能量。",
+      "sourceHash": "sha256:eb627639a5aafff32321d687db51ed53bb81bb335fb1fd1d81d0fa5bbf16689d",
+      "status": "reference"
+    }
+  }
+}

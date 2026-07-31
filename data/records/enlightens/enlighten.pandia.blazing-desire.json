@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.pandia.blazing-desire",
+  "name": "Blazing Desire",
+  "route": {
+    "slug": "blazing-desire",
+    "canonicalPath": "/database/awakeners/pandia/enlightens/blazing-desire"
+  },
+  "ownerAwakenerId": "awakener-0039",
+  "slot": "E2",
+  "descriptionTemplate": "{Wax-Hot Desire} gains 20 Aliemus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pandia"
+}

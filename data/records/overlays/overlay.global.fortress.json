@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.fortress",
+  "name": "Fortress",
+  "route": {
+    "slug": "fortress",
+    "canonicalPath": "/database/overlays/fortress"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.fortress-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_046",
+  "textColor": "shield",
+  "descriptionTemplate": "Each stack reduces DMG taken by 1%.",
+  "descriptionArgs": {}
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.wanda.hypnotic-veins",
+  "name": "Hypnotic Veins",
+  "route": {
+    "slug": "hypnotic-veins",
+    "canonicalPath": "/database/awakeners/wanda/derived-skills/hypnotic-veins"
+  },
+  "ownerAwakenerId": "awakener-0052",
+  "derivedFromId": "skill.wanda.lost-dreams-guide",
+  "rootSkillId": "skill.wanda.lost-dreams-guide",
+  "descriptionTemplate": "Obtain 1 stack of {Dreamlure}.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Wanda"
+}

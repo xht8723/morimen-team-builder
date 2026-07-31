@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0058",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·尖刺",
+      "sourceHash": "sha256:1de07732440b0778cba36d85eb427b5472cfcc7ac27f1413b100a3c6facdf0cd",
+      "status": "machine"
+    },
+    "description": {
+      "value": "获得 Arg1 层临时反击。数值随原初精通成长。",
+      "sourceHash": "sha256:330de2eda987baa3843982530b8c1ae1161a7196abb03cb698141f694879f4fb",
+      "status": "machine"
+    }
+  }
+}

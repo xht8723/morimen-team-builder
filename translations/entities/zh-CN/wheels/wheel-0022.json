@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0022",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "腐朽赠礼",
+      "sourceHash": "sha256:05811d5b1665165baba08d83d6a70bf5dc52820097934bfab2e5001454e3aa8d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的 中毒 提高 25%，装备者释放狂气爆发前，先对所有敌人施加等同于装备者攻击力 30% 的中毒。使用钥令后，装备者获得 8 点狂气。",
+      "sourceHash": "sha256:8fe847980369c75491a9c0dbaab26f4b1823b8e510e8b0200bafc3479a542d91",
+      "status": "reference"
+    }
+  }
+}

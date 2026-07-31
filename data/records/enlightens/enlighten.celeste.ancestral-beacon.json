@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.celeste.ancestral-beacon",
+  "name": "Ancestral Beacon",
+  "route": {
+    "slug": "ancestral-beacon",
+    "canonicalPath": "/database/awakeners/celeste/enlightens/ancestral-beacon"
+  },
+  "ownerAwakenerId": "awakener-0009",
+  "slot": "E2",
+  "descriptionTemplate": "{Tintless Dream} retains for each turn; the next time it is played, it will restore an additional amount of HP equal to [Arg1]% of CON (the effect increases with the level of {Tintless Dream}).",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "CON",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Celeste"
+}

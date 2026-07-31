@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.erica.multiple-calculations",
+  "name": "Multiple Calculations",
+  "route": {
+    "slug": "multiple-calculations",
+    "canonicalPath": "/database/awakeners/erica/skills/multiple-calculations"
+  },
+  "ownerAwakenerId": "awakener-0015",
+  "slot": "OverExalt",
+  "descriptionTemplate": "{Electromagnetic Blast} Base DMG and Shield Generation +100%. Erica's \"Basic Strike\" deals DMG +1 time, and \"Basic Defense\" grants Shield +1 time, lasting for 3 turns.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Erica"
+}

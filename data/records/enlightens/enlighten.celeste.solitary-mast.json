@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.celeste.solitary-mast",
+  "name": "Solitary Mast",
+  "route": {
+    "slug": "solitary-mast",
+    "canonicalPath": "/database/awakeners/celeste/enlightens/solitary-mast"
+  },
+  "ownerAwakenerId": "awakener-0009",
+  "slot": "E1",
+  "descriptionTemplate": "{Everlasting Phantasm} gains {Retain}, and the healing effect +25%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Celeste"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.saya.ill-be-your-very-own-monster",
+  "name": "I'll be Your Very Own Monster",
+  "route": {
+    "slug": "ill-be-your-very-own-monster",
+    "canonicalPath": "/database/awakeners/saya/enlightens/ill-be-your-very-own-monster"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "E1",
+  "descriptionTemplate": "Saya's Exalt Base Shield generation +5%, and the Base {Corrosion} inflicted by {Viscera Blossoms} +10%. For every 1% Sigil Yield provided by Saya herself, her equipped Wheel of Destiny, and Covenants, Saya's Exalt Base Shield generation additionally +0.25%, and the Base {Corrosion} inflicted by {Viscera Blossoms} additionally +0.5%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Saya"
+}

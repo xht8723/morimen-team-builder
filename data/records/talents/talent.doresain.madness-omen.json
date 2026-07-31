@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.doresain.madness-omen",
+  "name": "Madness Omen",
+  "route": {
+    "slug": "madness-omen",
+    "canonicalPath": "/database/awakeners/doresain/talents/madness-omen"
+  },
+  "ownerAwakenerId": "awakener-0014",
+  "family": "madness_omen",
+  "maxLevel": 12,
+  "descriptionTemplate": "Gain [Arg1] Aliemus at the start of exploration.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "5",
+      "gainPerLevel": "5"
+    }
+  },
+  "ownerAwakenerName": "Doresain"
+}

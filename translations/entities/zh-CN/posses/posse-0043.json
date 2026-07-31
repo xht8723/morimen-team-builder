@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0043",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "美梦一刹",
+      "sourceHash": "sha256:5bf7485de663f1f963c2d6864adeefbb3e9538ed25dec515c5a220f528250381",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点护盾和等同于当前护盾 10% 的临时力量。",
+      "sourceHash": "sha256:a4c7f694f267f543c647615dfe6e7945c38561df075311dd441c7860a1fd26b4",
+      "status": "reference"
+    }
+  }
+}

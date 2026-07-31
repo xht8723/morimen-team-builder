@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.arachne.weaver",
+  "name": "Weaver",
+  "route": {
+    "slug": "weaver",
+    "canonicalPath": "/database/awakeners/arachne/overlays/weaver"
+  },
+  "assets": {
+    "icon": "asset-overlay.arachne.weaver-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0056",
+  "aliases": [],
+  "iconId": "IconS_Buff_084",
+  "textColor": "affliction",
+  "descriptionTemplate": "The Fate-{Weaver} draws her threads. Max [DescArg1] stacks. Persists between battles. If Arachne's Exalt triggers {Singularity Warp}, she can consume these to perform her {Pursuit}: {Infinite Threads}.",
+  "descriptionArgs": {
+    "DescArg1": {
+      "kind": "fixed",
+      "value": "3"
+    }
+  },
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.arachne.destiny-as-i-arrange.overlay.arachne.weaver",
+      "operation": "override_args",
+      "upgraderId": "enlighten.arachne.destiny-as-i-arrange",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "patch": {
+        "descriptionArgs": {
+          "DescArg1": {
+            "kind": "fixed",
+            "value": "5"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Arachne"
+}

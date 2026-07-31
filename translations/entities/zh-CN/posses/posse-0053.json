@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0053",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "噬鲸风暴",
+      "sourceHash": "sha256:a7f4ba6d03a22985a006415319323d94ab9e8fee4fdb00a42661a52c8ffa3cb3",
+      "status": "machine"
+    },
+    "description": {
+      "value": "获得 Arg2 点力量。选择 1 名唤醒体，从其他唤醒体处偷取最多 10 点狂气。若鲸皇·萝坦在队伍中，其下一次「打击」额外生效 1 次。数值随原初精通成长。",
+      "sourceHash": "sha256:5487401faa32beb2611467ff1f3513ce52210f621057e0dc9efa25c4e510d680",
+      "status": "machine"
+    }
+  }
+}

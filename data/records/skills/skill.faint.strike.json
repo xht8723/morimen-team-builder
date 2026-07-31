@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.faint.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/faint/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0016",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Faint obtains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.faint.binary-stars.skill.faint.strike",
+      "operation": "mixed",
+      "upgraderId": "enlighten.faint.binary-stars",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0016",
+      "ownerAwakenerName": "Faint",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG [Arg3] {plural:[Arg3]|time|times}, gain a Temporary {Counter} equal to 50% of the damage dealt. Faint obtains [Energy:Arg2] Aliemus.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"]
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "2"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Faint"
+}

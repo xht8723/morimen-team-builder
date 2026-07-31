@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0107",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "青石王座",
+      "sourceHash": "sha256:3cffb7de6a4a9ac28d9a7988e495d2231c11d17475917e8a5f020671200100b4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗开始时，赋予抽牌堆中装备者所有算力消耗大于 3 的指令卡「不朽支配」效果：此卡牌拥有保留，打出后所有唤醒体临时暴击率提高 10% 并移除「不朽支配」。若当前界域为「深海」，「不朽支配」移除后获得 1 点算力。",
+      "sourceHash": "sha256:5d279f1d04a9b105e05fa7b9b0365b674ed07480edfdb76343104ace94c84922",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.doll.flesh-detached",
+  "name": "Flesh Detached",
+  "route": {
+    "slug": "flesh-detached",
+    "canonicalPath": "/database/awakeners/doll/skills/flesh-detached"
+  },
+  "ownerAwakenerId": "awakener-0013",
+  "slot": "Rouse",
+  "descriptionTemplate": "Doll gains [Energy:Arg1] Aliemus. {Rouse}: When Doll performs Healing, gain [Block:Arg2] Shield.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.doll.ego-restructured.skill.doll.flesh-detached",
+      "operation": "mixed",
+      "upgraderId": "enlighten.doll.ego-restructured",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0013",
+      "ownerAwakenerName": "Doll",
+      "patch": {
+        "descriptionTemplate": "Doll gains [Energy:Arg1] Aliemus. {Rouse}: Gain [Block:Arg2] Shield when Doll performs HP Recovery. Doll's \"Strike\" and \"Defense\" also trigger Shield Generation.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["22.5", "27", "31.5", "36", "40.5", "45"],
+            "stat": "DEF",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Doll"
+}

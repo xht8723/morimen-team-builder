@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0025",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "坚韧意志",
+      "sourceHash": "sha256:fe9914b312d452ba517f479e9a385b543587427a094ed8ff9753973d4f12028a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害和护盾提高 15%。探索开始时将一张装备者的「打击」和「防御」加入牌库。装备者打出「防御」后，使装备者下一张「打击」暴击率与暴击伤害提高 15%，装备者打出「打击」后，使装备者下一张「防御」护盾提高 15%，可堆叠 3 次。",
+      "sourceHash": "sha256:b7f930ec84c1c83ffc4d0938d4221af30e15bf36257bf4d6e4a72aad778dfb37",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.jenkins.gotcha",
+  "name": "Gotcha!",
+  "route": {
+    "slug": "gotcha",
+    "canonicalPath": "/database/awakeners/jenkin/skills/gotcha"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Place 1 {Ultimate Assemble!} with {Exhaust} into hand.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Jenkin"
+}

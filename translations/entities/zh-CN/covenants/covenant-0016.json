@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0016",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "甜蜜蛞蝓",
+      "sourceHash": "sha256:0774a4dec90cc3ece0bb76433b2c46ca805444ff7e8a24bd189aed60de0a12ac",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 死亡抵抗 +25.2% 6件套： 队伍唯一。若在 1 回合内同时释放了「湮灭」并切换过触腕姿态，装备者本回合造成的护盾、生命回复、最终伤害 +25%，3回合冷却。",
+      "sourceHash": "sha256:d05863ca57fc615f6c10b733baf840815ea9a7ac27359b99f186ec06dee75ba2",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0021",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "记忆螺旋",
+      "sourceHash": "sha256:86b93451ee957eb89708fb0f9fecab7dc5fb84433adde8ce52bf5dd9e790abc9",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾提高 20%。回合开始时，保留 50% 剩余护盾，保留的护盾至多为 20% 最大生命护盾。",
+      "sourceHash": "sha256:b1c30a0403cb8af00b4ff1a532a184e3804551c05379133662eee58dfb5737c5",
+      "status": "reference"
+    }
+  }
+}

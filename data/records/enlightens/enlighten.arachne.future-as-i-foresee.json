@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.arachne.future-as-i-foresee",
+  "name": "Future, As I Foresee",
+  "route": {
+    "slug": "future-as-i-foresee",
+    "canonicalPath": "/database/awakeners/arachne/enlightens/future-as-i-foresee"
+  },
+  "ownerAwakenerId": "awakener-0056",
+  "slot": "E1",
+  "descriptionTemplate": "Arachne's Exalt grants +25% Temporary DMG Amplification.\n\nFor every point of Realm Mastery provided by Arachne and her equipped WoD & Covenant, the Temporary DMG Amplification additionally +0.25%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Arachne"
+}

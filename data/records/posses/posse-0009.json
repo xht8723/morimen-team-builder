@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0009",
+  "name": "The Final Vow",
+  "route": {
+    "slug": "the-final-vow",
+    "canonicalPath": "/database/posses/the-final-vow"
+  },
+  "assets": {
+    "icon": "asset-posse-0009-icon",
+    "crystal": "asset-posse-0009-crystal",
+    "badge": "asset-posse-0009-badge"
+  },
+  "ownerAwakenerId": "awakener-0038",
+  "ownerAwakenerName": "Ogier",
+  "acquisitionSource": "Clear Psyche Deepdive: The Knight's Wish",
+  "realm": "CHAOS",
+  "lineupToken": "l",
+  "descriptionTemplate": "Gain +[Arg1] Temporary Crit. Rate and [Arg2] Temporary {STR}. If you're in a Boss Battle and have played no cards this turn, attempt to trigger {Death Resistance} [Arg3] {plural:[Arg3]|time|times}. If successful, gain [Block:Arg4] Shield. This effect can only trigger [Arg5] {plural:[Arg5]|time|times} per battle.\nScaling guide: {Primordia Mastery Scaling}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "fixed",
+      "baseValue": 25.0,
+      "rounding": "ceil",
+      "inputs": ["realmMasteryFinal", "primordiaAllChaosTeam"],
+      "suffix": "%",
+      "scalingBucket": "utility"
+    },
+    "Arg2": {
+      "kind": "computed",
+      "formulaKey": "primordiaPosseScaled",
+      "baseFormula": "esotericResearchDepth",
+      "rounding": "ceil",
+      "multiplier": 0.02,
+      "inputs": ["accountLevel", "ownedPosseCount", "realmMasteryFinal", "primordiaAllChaosTeam"],
+      "scalingBucket": "offensive"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "1"
+    },
+    "Arg4": {
+      "kind": "computed",
+      "formulaKey": "scaled",
+      "baseFormula": "esotericResearchDepth",
+      "multiplier": 0.4,
+      "inputs": ["accountLevel", "ownedPosseCount"]
+    },
+    "Arg5": {
+      "kind": "fixed",
+      "value": "1"
+    }
+  },
+  "lore": "The knight had sworn to guard those dear to him with this lance. Now it pierces his chest, yet only to keep danger at bay—his final vow fulfilled."
+}

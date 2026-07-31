@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.mouchette.ego-beyond-the-fog",
+  "name": "Ego Beyond the Fog",
+  "route": {
+    "slug": "ego-beyond-the-fog",
+    "canonicalPath": "/database/awakeners/mouchette/enlightens/ego-beyond-the-fog"
+  },
+  "ownerAwakenerId": "awakener-0033",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Mist Realm Vestige} is enhanced: When played, generate 1 Temporary {Mortal Blast} and reduce the Arithmetica Cost of these 2 {Mortal Blast} to 0. Mouchette's Talent \"Dramatic Encounter\" trigger limit per turn increases to 5.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Mouchette"
+}

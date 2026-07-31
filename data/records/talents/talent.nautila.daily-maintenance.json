@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.nautila.daily-maintenance",
+  "name": "Daily Maintenance",
+  "route": {
+    "slug": "daily-maintenance",
+    "canonicalPath": "/database/awakeners/nautila/talents/daily-maintenance"
+  },
+  "ownerAwakenerId": "awakener-0036",
+  "family": "passive",
+  "descriptionTemplate": "For each 1 Realm Mastery Attributes Nautila possesses, the {Counter} DMG from {Ready and Set} +0.25%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Nautila"
+}

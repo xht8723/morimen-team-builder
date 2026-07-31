@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.leigh.flatterers-embrace",
+  "name": "Flatterer's Embrace",
+  "route": {
+    "slug": "flatterers-embrace",
+    "canonicalPath": "/database/awakeners/leigh/skills/flatterers-embrace"
+  },
+  "ownerAwakenerId": "awakener-0028",
+  "slot": "Exalt",
+  "descriptionTemplate": "[{Devour}: Restore [Arg4]% of lost HP. Dispel self {Vulnerable} state.] Restore [Heal:Arg1] HP. Obtain [Power:Arg2] {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["60", "72", "84", "96", "108", "120"],
+      "stat": "CON",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["12.5", "15", "17.5", "20", "22.5", "25"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "16",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.leigh.basement-journal.skill.leigh.flatterers-embrace",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.leigh.basement-journal",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0028",
+      "ownerAwakenerName": "Leigh",
+      "patch": {
+        "descriptionTemplate": "[{Devour}: Restore [Arg4]% lost HP, dispel self {Vulnerable} status. The {STR} gained from this {Flatterer's Embrace} is doubled.] Restore [Heal:Arg1] HP. Obtain [Power:Arg2] {STR}."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Leigh"
+}

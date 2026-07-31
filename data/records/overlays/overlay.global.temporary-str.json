@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.temporary-str",
+  "name": "Temporary STR",
+  "route": {
+    "slug": "temporary-str",
+    "canonicalPath": "/database/overlays/temporary-str"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.temporary-str-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_021",
+  "textColor": "heal",
+  "descriptionTemplate": "This turn, DMG dealt +[Layer].",
+  "descriptionArgs": {
+    "Layer": {
+      "kind": "fixed",
+      "value": "X"
+    }
+  }
+}

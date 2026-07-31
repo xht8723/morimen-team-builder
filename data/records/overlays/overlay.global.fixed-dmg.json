@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.fixed-dmg",
+  "name": "Fixed DMG",
+  "route": {
+    "slug": "fixed-dmg",
+    "canonicalPath": "/database/overlays/fixed-dmg"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "Deals a fixed amount of DMG, unaffected by states such as {STR}, {Weakness}, or {Vulnerability}.",
+  "descriptionArgs": {}
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0171",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "活体牢笼",
+      "sourceHash": "sha256:14fbec4b935e759ea0000238023a9a396f6298af9c03cde10cd6ff2c04f3c73d",
+      "status": "machine"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的力量降低效果提高 35%。本次探索中每击杀 1 个敌人，装备者回合结束时固定回复的狂气 +2，最多叠加 10 次。切换至怒涛姿态后，临时暴击伤害提高基础暴击伤害的 35%，冷却 3 回合。",
+      "sourceHash": "sha256:026465af586cef6b4f1e701bcbaa59df48c86f835ab4ae25206ba988b0601489",
+      "status": "machine"
+    }
+  }
+}

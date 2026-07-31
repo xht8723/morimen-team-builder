@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.24.restraint-bonds",
+  "name": "Restraint Bonds",
+  "route": {
+    "slug": "restraint-bonds",
+    "canonicalPath": "/database/awakeners/24/enlightens/restraint-bonds"
+  },
+  "ownerAwakenerId": "awakener-0001",
+  "slot": "E2",
+  "descriptionTemplate": "{Symbiotic Aberration} generates 2 more Aliemus. In Depressed state, inflict {Weakness} on all enemies for 1 turn; in Manic state, inflict {Vulnerable} on all enemies for 1 turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "24"
+}

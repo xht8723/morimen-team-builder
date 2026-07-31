@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0013",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "腐烂盛筵",
+      "sourceHash": "sha256:728b5554bd032f4e1a38c1f736767f82d4fb3b160723334b299e12f6235ae89b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 x 点反击，使所有敌人降低 x 点临时力量。若当前处于「超维回合」，不再降低临时力量，则对所有敌人造成等同于自身反击的伤害。",
+      "sourceHash": "sha256:e73c82cdb501d85b55472ba9362ee757ad2c21611e7ef6a3981ee124812ddc01",
+      "status": "reference"
+    }
+  }
+}

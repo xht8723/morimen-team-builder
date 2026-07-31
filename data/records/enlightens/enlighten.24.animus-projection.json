@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.24.animus-projection",
+  "name": "Animus Projection",
+  "route": {
+    "slug": "animus-projection",
+    "canonicalPath": "/database/awakeners/24/enlightens/animus-projection"
+  },
+  "ownerAwakenerId": "awakener-0001",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Mediating Personalities} is enhanced: The Persona Effect Bonus of \"24\"'s Command Cards is doubled; this effect expires after \"24\" unleashes Exalt each turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "24"
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.global.vernal-message",
+  "name": "Vernal Message",
+  "route": {
+    "slug": "vernal-message",
+    "canonicalPath": "/database/derived-skills/vernal-message"
+  },
+  "descriptionTemplate": "Gain [Arg1] Keyflare and put {Sakura Blossoms} into the Discard Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "computed",
+      "formulaKey": "wheelRefinementLinear",
+      "baseValue": 100.0,
+      "perLevel": 50.0,
+      "inputs": ["wheelRefinementLevel"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1"
+}

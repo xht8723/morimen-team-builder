@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0054",
+  "name": "Xu Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/xu/builds/standard"
+  },
+  "awakenerId": "awakener-0054",
+  "primaryBuildId": "standard",
+  "recommendedPosseIds": ["posse-0047"],
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": [
+        "covenant-0006",
+        "covenant-0007",
+        "covenant-0005",
+        "covenant-0001"
+      ],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0013"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0022"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0118"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0034", "wheel-0052", "wheel-0078"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [
+        ["DEATH_RESISTANCE"],
+        ["KEYFLARE_REGEN", "DMG_AMP"],
+        ["REALM_MASTERY"]
+      ],
+      "recommendedWheelMainstats": ["DMG_AMP", "KEYFLARE_REGEN"]
+    }
+  ],
+  "ownerAwakenerName": "Xu"
+}

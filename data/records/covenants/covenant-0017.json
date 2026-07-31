@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0017",
+  "name": "Dream of Medicine",
+  "route": {
+    "slug": "dream-of-medicine",
+    "canonicalPath": "/database/covenants/dream-of-medicine"
+  },
+  "assets": {
+    "icon": "asset-covenant-0017-icon"
+  },
+  "acquisitionSource": "Purchase from Mythag Shop - Investigation Exchange",
+  "lineupToken": "o",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "DMG Amplification +[Arg1]%",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "4.8",
+          "suffix": "%"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique: Lose 8 Black Sigils after the battle ends. At the start of battle, shuffle 1 Basic Copy of each of the wielder's Command Cards, except Strike and Defense, into the Draw Pile.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "A thousand years ago, five minutes was equivalent to forty ounces of fine sand."
+}

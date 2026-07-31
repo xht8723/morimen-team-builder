@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0007",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "苍白后裔",
+      "sourceHash": "sha256:2b19763b262a33de3d2b9cdc3c691d7947d0d915d00cbef840b0c70748e1926e",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾提高 10%。装备者的「防御」对生命最高敌人造成装备者防御力 24% 的中毒。若当前界域为「血肉」，施加中毒时胚胎融合增加 12%，该效果每回合最多触发 3 次。",
+      "sourceHash": "sha256:8e84320167533cb318b0d41d4f4302a1f7bafc20dbbd132104632fc67ace532c",
+      "status": "reference"
+    }
+  }
+}

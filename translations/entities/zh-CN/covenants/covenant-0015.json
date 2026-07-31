@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0015",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "有机形态",
+      "sourceHash": "sha256:e967e423adb0b00f290833aee8e2c9421931475073b9d4263f186a260f6ebdf6",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 黑印掉落 +3.6% 6件套： 队伍唯一。探索开始时扣除至多 100% 死亡抵抗。每扣除 1% 死亡抵抗，就使装备者造成的狂气提高 0.15%。",
+      "sourceHash": "sha256:3d04dbd8dab4f1b1df60a8fac3f200b1d0259257761345e35a28cb53f1f79190",
+      "status": "reference"
+    }
+  }
+}

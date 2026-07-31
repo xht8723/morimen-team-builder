@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0023",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "唯一的种子",
+      "sourceHash": "sha256:d64609afa4ab3b9fe982902818027388f128d08ff239bd9191815b2dd1598949",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择 1 张手中的非衍生指令卡，获得一张附加消耗的原始复制，并使指令卡的所有者获得 15 点狂气。",
+      "sourceHash": "sha256:3dd82f8f83670548cf9cdf3e3b77d88b853fc84e37e7c50c823025f10458ea37",
+      "status": "reference"
+    }
+  }
+}

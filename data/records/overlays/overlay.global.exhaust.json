@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.exhaust",
+  "name": "Exhaust",
+  "route": {
+    "slug": "exhaust",
+    "canonicalPath": "/database/overlays/exhaust"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Exhausted"],
+  "textColor": "misc",
+  "descriptionTemplate": "After playing, this card is removed from deck instead of discarded.",
+  "descriptionArgs": {}
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.bleed",
+  "name": "Bleed",
+  "route": {
+    "slug": "bleed",
+    "canonicalPath": "/database/overlays/bleed"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.bleed-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Bleeding"],
+  "iconId": "IconS_Buff_022",
+  "textColor": "damage",
+  "descriptionTemplate": "At turn end, remove all stacks of {Bleed}, and take 1 DMG for each stack removed.",
+  "descriptionArgs": {
+    "Layer": {
+      "kind": "fixed",
+      "value": "X"
+    }
+  }
+}

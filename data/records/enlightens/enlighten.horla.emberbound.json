@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.horla.emberbound",
+  "name": "Emberbound",
+  "route": {
+    "slug": "emberbound",
+    "canonicalPath": "/database/awakeners/horla/enlightens/emberbound"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "slot": "E1",
+  "descriptionTemplate": "{Snarl Psalm}: Applies 1 stack of {Vulnerable} to all enemies.\n{Elegy Psalm}: Applies 1 stack of {Weakness} to all enemies.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Horla"
+}

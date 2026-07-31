@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.erica.retract-mecha",
+  "name": "Retract: Mecha",
+  "route": {
+    "slug": "retract-mecha",
+    "canonicalPath": "/database/awakeners/erica/derived-skills/retract-mecha"
+  },
+  "ownerAwakenerId": "awakener-0015",
+  "derivedFromId": "skill.erica.unleash-mecha",
+  "rootSkillId": "skill.erica.unleash-mecha",
+  "descriptionTemplate": "Gain [Arg1] Temporary {Alert}. Obtain Keyflare equal to Erica's Keyflare Regen. Dispel self {Fragile} state. Whenever a card enters {Ultra Space}, transform into {Unleash: Mecha}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["2.5", "3", "3.5", "4", "4.5", "5"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.erica.auto-rectification.derived.erica.retract-mecha",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.erica.auto-rectification",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0015",
+      "ownerAwakenerName": "Erica",
+      "patch": {
+        "descriptionTemplate": "Gain [Arg1] Temporary {Alert}. Obtain Keyflare equal to Erica's Keyflare Regen. Dispel self {Fragile} State. Place 1 of Erica's \"Defense\" with {Exhaust} into hand. Whenever a card enters {Ultra Space}, transform into {Unleash: Mecha}."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Erica"
+}

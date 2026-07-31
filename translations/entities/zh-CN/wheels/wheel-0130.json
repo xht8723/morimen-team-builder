@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0130",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "私密午歇时间",
+      "sourceHash": "sha256:f39e7e4e308ae309ceaec8263aa9ec98b9387931a5d87dc80fa3549680802569",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始后，将 1 张「私密午歇时间」洗入抽牌堆。「私密午歇时间」：消耗 1 算力。临时暴击伤害 + 80%。保留。消耗。",
+      "sourceHash": "sha256:4ba3f0b4b11a1b9809343602ae2825b369ee13ec262fc0728e4b12a0ee27c243",
+      "status": "reference"
+    }
+  }
+}

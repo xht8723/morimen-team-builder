@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0035",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "诞妄·墨菲",
+      "sourceHash": "sha256:4b8fbfaa205ec3dd5acbc054a808b25e0772a966233172ceae8326a15d40b68b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "诞妄·墨菲傲慢地自称「神母」，冷漠而敌视地把所有人挡在安全范围外。人们很难把她与从前娇纵的小公主联系起来，但那份以自我为中心的本质从未真正改变。",
+      "sourceHash": "sha256:b6e1b4ad991ae6252d3d047e64962ff93d53764f5ef2e3dde678bc5aaf38adab",
+      "status": "machine"
+    }
+  }
+}

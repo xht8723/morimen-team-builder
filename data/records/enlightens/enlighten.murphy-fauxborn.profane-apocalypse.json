@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.murphy-fauxborn.profane-apocalypse",
+  "name": "Profane Apocalypse",
+  "route": {
+    "slug": "profane-apocalypse",
+    "canonicalPath": "/database/awakeners/murphy-fauxborn/enlightens/profane-apocalypse"
+  },
+  "ownerAwakenerId": "awakener-0035",
+  "slot": "E3",
+  "descriptionTemplate": "Draw 1 {Abyss Hymns} when \"Strike\" or \"Defense\" is used. Takes effect once per turn.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Murphy: Fauxborn"
+}

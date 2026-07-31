@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.doll.ego-restructured",
+  "name": "Ego Restructured",
+  "route": {
+    "slug": "ego-restructured",
+    "canonicalPath": "/database/awakeners/doll/enlightens/ego-restructured"
+  },
+  "ownerAwakenerId": "awakener-0013",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Flesh Detached} is enhanced: Shield generated +50%; Doll's \"Strike\" and \"Defense\" now also generate Shield.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Doll"
+}

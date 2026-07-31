@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0056",
+  "name": "Dimensional Image: Arachne",
+  "route": {
+    "slug": "dimensional-image-arachne",
+    "canonicalPath": "/database/relics/dimensional-image-arachne"
+  },
+  "assets": {
+    "icon": "asset-relic-0056-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0056",
+  "ownerAwakenerId": "awakener-0056",
+  "ownerAwakenerName": "Arachne",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At the start of each turn, Arachne gains [Arg1] Aliemus. When Arachne's Basic Strike or Basic Defense are played, she performs her {Pursuit}: {Infinite Threads}. These 2 effects can trigger up to once each turn respectively, and do not consume {Weaver}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0056",
+      "name": "Dimensional Image: Arachne",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0056",
+      "ownerAwakenerName": "Arachne",
+      "rarity": "SSR",
+      "descriptionTemplate": "At the start of each turn, Arachne gains [Arg1] Aliemus. When Arachne's Basic Strike or Basic Defense are played, she performs her {Pursuit}: {Infinite Threads}. These 2 effects can trigger up to once each turn respectively, and do not consume {Weaver}.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        }
+      }
+    }
+  ]
+}

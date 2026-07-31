@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0050",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "图鲁",
+      "sourceHash": "sha256:cd4f9e837d9b633134fde86ec3fe2a443d7afbf90a3a7eeb4dc5f3cd2b2bc13f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "年轻的王沉睡于王座，醒来便颁下传遍世界的敕令。可太阳尚未落山，图鲁已经厌倦权力、超凡智慧与臣民狂热的膜拜，只想从神王身份中得到片刻安静。",
+      "sourceHash": "sha256:1ababe7c2a32bf949549920635036718b37cab9439f2cbcbcf6c8db58c91ac4f",
+      "status": "machine"
+    }
+  }
+}

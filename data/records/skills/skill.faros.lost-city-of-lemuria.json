@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.faros.lost-city-of-lemuria",
+  "name": "Lost City of Lemuria",
+  "route": {
+    "slug": "lost-city-of-lemuria",
+    "canonicalPath": "/database/awakeners/faros/skills/lost-city-of-lemuria"
+  },
+  "ownerAwakenerId": "awakener-0017",
+  "slot": "Exalt",
+  "descriptionTemplate": "Gain [Block:Arg1] Shield. Dispel self {Vulnerable} state. Choose up to 3 cards from the Draw Pile and add them to your hand.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["36", "43.2", "50.4", "57.6", "64.8", "72"],
+      "stat": "DEF",
+      "suffix": "%",
+      "substatBonus": {
+        "substat": "DamageAmplification",
+        "multiplier": "0.4",
+        "mode": "scale_base"
+      }
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.faros.flickering-candle.skill.faros.lost-city-of-lemuria",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.faros.flickering-candle",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0017",
+      "ownerAwakenerName": "Faros",
+      "patch": {
+        "descriptionTemplate": "Gain [Block:Arg1] Shield. Dispel self {Vulnerable} state. Choose up to 3 cards from the Draw Pile and add them to your hand.\n{overlay:Dimmed candle}"
+      }
+    },
+    {
+      "id": "upgrade.talent.faros.homesick.skill.faros.lost-city-of-lemuria",
+      "operation": "link_only",
+      "upgraderId": "talent.faros.homesick",
+      "upgraderType": "talent",
+      "patch": {}
+    }
+  ],
+  "ownerAwakenerName": "Faros"
+}

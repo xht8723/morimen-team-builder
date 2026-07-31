@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0013",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "枉蹙眉",
+      "sourceHash": "sha256:4818cb2b0affc6b15da850c0c55f28e5cb206365c148951c0bf3fb6f1d30e1e3",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的固定中毒和触发中毒效果提高 30%，血肉界域自动回复的胚胎融合提高 30%。装备者每回合首次触发共振打出自身指令卡或回合结束后重置自身共振计数。时其他唤醒体获得 10 点狂气。",
+      "sourceHash": "sha256:04c1bd8efd3ddc94abac31f1f95984a8ec967adcb5fe302ebb5bf9cb97c831aa",
+      "status": "reference"
+    }
+  }
+}

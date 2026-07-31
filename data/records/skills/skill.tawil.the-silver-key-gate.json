@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.tawil.the-silver-key-gate",
+  "name": "The Silver Key Gate",
+  "route": {
+    "slug": "the-silver-key-gate",
+    "canonicalPath": "/database/awakeners/tawil/skills/the-silver-key-gate"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "slot": "Rouse",
+  "descriptionTemplate": "Tawil obtains [Energy:Arg1] Aliemus. Place 1 {derived:Silver Key Dawn} into hand. Gain +50% Keyflare for every point of Arithmetica consumed by Tawil.\n{overlay:Rouse}",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.tawil.the-first-logos.skill.tawil.the-silver-key-gate",
+      "operation": "mixed",
+      "upgraderId": "enlighten.tawil.the-first-logos",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0047",
+      "ownerAwakenerName": "Tawil",
+      "patch": {
+        "descriptionTemplate": "Tawil gains [Energy:Arg1] Aliemus. Place 1 {derived:Silver Key Dawn} into hand. Gain +50% Keyflare for every point of Arithmetica consumed by Tawil. After Tawil unleashes Exalt, all Awakeners' Command Cards this turn gain [Arg2]% Final DMG bonus, and the next Command Card played by another Awakener triggers once more.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "15",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Tawil"
+}

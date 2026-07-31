@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0056",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "阿拉克涅",
+      "sourceHash": "sha256:4b6a653fef9f4ec612b31958165ad6e49d5c6e9146680a2ceb3904e45bd55717",
+      "status": "reference"
+    },
+    "description": {
+      "value": "阿拉克涅是被自身蛛网困住的织者，也是命运剧场的编剧与永恒观众。丝线从指尖化作幕布、剧本与牢笼，最终将她裹进无法逃脱的茧，让独角戏永无落幕。",
+      "sourceHash": "sha256:866dae77aff9f7c7c93958c4e6f23a78a827fa6bb03804f1a98370a6c8bef013",
+      "status": "machine"
+    }
+  }
+}

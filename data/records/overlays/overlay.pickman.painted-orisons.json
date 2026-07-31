@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.pickman.painted-orisons",
+  "name": "Painted Orisons",
+  "route": {
+    "slug": "painted-orisons",
+    "canonicalPath": "/database/awakeners/pickman/overlays/painted-orisons"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0040",
+  "aliases": ["Advanced Orisons", "Orisons"],
+  "textColor": "misc",
+  "descriptionTemplate": "Includes the following {Orisons}: {Computation}, {Finesse}, Berserk, {Catalyst}, Might, Bastion, Drain, {derived:Insight}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Pickman"
+}

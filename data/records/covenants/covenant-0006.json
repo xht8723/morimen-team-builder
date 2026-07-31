@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0006",
+  "name": "Burial Ground's Sighs",
+  "route": {
+    "slug": "burial-grounds-sighs",
+    "canonicalPath": "/database/covenants/burial-grounds-sighs"
+  },
+  "assets": {
+    "icon": "asset-covenant-0006-icon"
+  },
+  "acquisitionSource": "Clear Interlude - Verboten Covenant: Distorted Mountains",
+  "lineupToken": "D",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "{Death Resistance} +[Arg1]%",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "16.8",
+          "suffix": "%"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "At the start of the level, {Death Resistance} +25%. After triggering {Death Resistance}, the wielder gains 50 Aliemus.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "I spit on your grave.\nFor you have found a rare peace in death."
+}

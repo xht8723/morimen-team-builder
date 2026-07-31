@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 3,
+  "kind": "covenant",
+  "id": "covenant-0009",
+  "name": "Paradox",
+  "route": {
+    "slug": "paradox",
+    "canonicalPath": "/database/covenants/paradox"
+  },
+  "assets": {
+    "icon": "asset-covenant-0009-icon"
+  },
+  "acquisitionSource": "Purchase from Mythag Shop - Sediment Exchange",
+  "lineupToken": "f",
+  "setEffects": [
+    {
+      "set": 3,
+      "descriptionTemplate": "Keyflare Regen Level +[Arg1]",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "7.2"
+        }
+      }
+    },
+    {
+      "set": 6,
+      "descriptionTemplate": "Team Unique: Increases the wielder's Base Aliemus by 20. Increases Crit. Rate, Crit. DMG, Shield, and HP Recovery of the wielder's Command Cards by 20%.",
+      "descriptionArgs": {}
+    }
+  ],
+  "lore": "Inevitable, but accidental. Shackled, but unbound."
+}

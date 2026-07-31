@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.hameln.all-realms-resound",
+  "name": "All Realms Resound",
+  "route": {
+    "slug": "all-realms-resound",
+    "canonicalPath": "/database/awakeners/hameln/enlightens/all-realms-resound"
+  },
+  "ownerAwakenerId": "awakener-0022",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Laudable Masterpiece} is enhanced: At turn start, for every 1 Command Card with {Rondino} or {Crescendo}, Hameln gains 5 Aliemus. When Hameln unleashes Exalt, for every 2 Command Cards with {Rondino} or {Crescendo}, deal +1 hit.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Hameln"
+}

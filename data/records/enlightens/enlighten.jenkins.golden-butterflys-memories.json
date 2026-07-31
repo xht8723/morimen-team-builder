@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.jenkins.golden-butterflys-memories",
+  "name": "Golden Butterfly's Memories",
+  "route": {
+    "slug": "golden-butterflys-memories",
+    "canonicalPath": "/database/awakeners/jenkin/enlightens/golden-butterflys-memories"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "slot": "E2",
+  "descriptionTemplate": "\"Basic Defense\" draws 2 cards; if they are not Jenkin's, discard them.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Jenkin"
+}

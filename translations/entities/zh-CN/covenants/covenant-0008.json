@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0008",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "诅咒兔",
+      "sourceHash": "sha256:2a948cea47ee273ea4c38217b47fad58e182dbb21dda2ad8e47578e7b4fca846",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 界域精通 +12 6件套： 装备者造成的护盾与生命回复提高 12%。",
+      "sourceHash": "sha256:b374069aad05ebe6ed77c8329ab021d4df464944b3cce7c57eb7b40a01472f91",
+      "status": "reference"
+    }
+  }
+}

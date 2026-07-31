@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0049",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "溺亡的纯真",
+      "sourceHash": "sha256:29465aa7b6190bc00e90cc3d580c0c302b7969800884f84bdb735db0198bdd2c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "选择一名唤醒体获得 15 点狂气，其他唤醒体获得 5 点狂气。若「莫丝」在队伍中，立刻释放「涡!流!弹！」进行追击。",
+      "sourceHash": "sha256:c27536d397444799075ad4a93cc3c92eb9cf3285d7fc2e21b47e2d7822108c77",
+      "status": "reference"
+    }
+  }
+}

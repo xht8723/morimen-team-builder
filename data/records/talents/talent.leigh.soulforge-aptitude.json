@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.leigh.soulforge-aptitude",
+  "name": "Soulforge Aptitude",
+  "route": {
+    "slug": "soulforge-aptitude",
+    "canonicalPath": "/database/awakeners/leigh/talents/soulforge-aptitude"
+  },
+  "ownerAwakenerId": "awakener-0028",
+  "family": "soulforge_aptitude",
+  "maxLevel": 10,
+  "descriptionTemplate": "This talent is only effective in the {Astral Reign} stages.\nThis Awakener's CON, ATK, and DEF +[Arg1]%, and they gain [Arg2] Keyflare upon their first {Rouse}.\nLeigh's {STR} Generation effect +[Arg4]%. After playing Leigh's Command Card, gain {STR} equal to [Arg3]% of Leigh's ATK. This effect can increase by up to 200% based on current lost HP. Triggers up to 3 times per turn.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "3",
+      "gainPerLevel": "3"
+    },
+    "Arg2": {
+      "kind": "linear",
+      "base": "50",
+      "gainPerLevel": "50"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["2", "2.3", "2.6", "2.9", "3.2", "3.5", "3.8", "4.1", "1.4", "5"]
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10", "11", "12", "13", "15"]
+    }
+  },
+  "ownerAwakenerName": "Leigh"
+}

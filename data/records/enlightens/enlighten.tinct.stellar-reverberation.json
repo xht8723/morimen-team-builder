@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.tinct.stellar-reverberation",
+  "name": "Stellar Reverberation",
+  "route": {
+    "slug": "stellar-reverberation",
+    "canonicalPath": "/database/awakeners/tinct/enlightens/stellar-reverberation"
+  },
+  "ownerAwakenerId": "awakener-0049",
+  "slot": "E1",
+  "descriptionTemplate": "\"Basic Strike\" deals DMG twice and gains {Leap}: Deal DMG for one more time.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tinct"
+}

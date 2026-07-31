@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.temporary-enhance",
+  "name": "Temporary Enhance",
+  "route": {
+    "slug": "temporary-enhance",
+    "canonicalPath": "/database/overlays/temporary-enhance"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "Each stack increases the card’s Final DMG, {STR} Generation, {Tentacle DMG} Generation, Fixed {Poison}, and Fixed {Counter} by 2%, and its Final Shield, Healing, and {STR▼} by 1%. Clears when played or at end of turn.",
+  "descriptionArgs": {}
+}

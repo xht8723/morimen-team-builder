@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.blighten",
+  "name": "Blighten",
+  "route": {
+    "slug": "blighten",
+    "canonicalPath": "/database/overlays/blighten"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.blighten-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_031",
+  "textColor": "damage",
+  "descriptionTemplate": "HP recovery is reduced by 25%. Remove 1 stack at the end of each turn.",
+  "descriptionArgs": {}
+}

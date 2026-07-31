@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.liz.corrupted-flames",
+  "name": "Corrupted Flames",
+  "route": {
+    "slug": "corrupted-flames",
+    "canonicalPath": "/database/awakeners/liz/derived-skills/corrupted-flames"
+  },
+  "ownerAwakenerId": "awakener-0030",
+  "derivedFromId": "skill.liz.green-flames",
+  "rootSkillId": "skill.liz.green-flames",
+  "descriptionTemplate": "Deal [Damage:Arg2] {Pierce DMG} [Arg1] {plural:[Arg1]|time|times} to a random enemy, and inflict {Poison} with [Arg3]% DMG. If Arithmetica is insufficient, it can be played forcefully, andthe effect changes to gaining [Energy:Arg4] Aliemus and {Exhaust} after played.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "2"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "50",
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "5"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.liz.verdant-spark.derived.liz.corrupted-flames",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.liz.verdant-spark",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0030",
+      "ownerAwakenerName": "Liz",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg2] {Pierce DMG} [Arg1] {plural:[Arg1]|time|times} to a random enemy, and inflict [Arg3]% DMG {Poison}. At turn end, if in hand or {Ultra Space}, upgrade to {Deadly Flames}. Can be played with insufficient Arithmetica, changing its effect to Gain [Energy:Arg4] Aliemus and {Exhaust}."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Liz"
+}

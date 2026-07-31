@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.casiah.veil-of-illusion",
+  "name": "Veil of Illusion",
+  "route": {
+    "slug": "veil-of-illusion",
+    "canonicalPath": "/database/awakeners/casiah/enlightens/veil-of-illusion"
+  },
+  "ownerAwakenerId": "awakener-0007",
+  "slot": "E2",
+  "descriptionTemplate": "{Magic Carnival} draws an additional card. Drawing a Symptom or State card also deals 1 instance of DMG to a random enemy.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Casiah"
+}

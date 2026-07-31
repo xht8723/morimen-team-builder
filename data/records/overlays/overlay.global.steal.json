@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.steal",
+  "name": "Steal",
+  "route": {
+    "slug": "steal",
+    "canonicalPath": "/database/overlays/steal"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.steal-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Stealing"],
+  "iconId": "IconS_Buff_014",
+  "textColor": "affliction",
+  "descriptionTemplate": "Inflict an amount of Temporary {STR▼} and gain an equivalent amount of Temporary {STR}.",
+  "descriptionArgs": {}
+}

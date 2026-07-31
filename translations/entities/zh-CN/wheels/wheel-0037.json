@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0037",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "核心熔解",
+      "sourceHash": "sha256:95c0cbe159c6a298f22ee0e38822f205fa0336dc99f2f577cfe2c84d12b0283a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的「打击」基础伤害提高 25%，「防御」基础护盾提高 25%。打出装备者「打击」时获得装备者攻击力 15% 的临时力量，打出装备者「防御」时获得装备者防御力 5% 的临时戒备。若当前界域为「超维」，进入超维回合时获得一次临时力量与临时戒备。",
+      "sourceHash": "sha256:aed732abeaa62b4c337427830331a13036245ac29a4e5b3ccdda2e84e5458626",
+      "status": "reference"
+    }
+  }
+}

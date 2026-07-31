@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.nautila.vroom-vroom",
+  "name": "Vroom Vroom!",
+  "route": {
+    "slug": "vroom-vroom",
+    "canonicalPath": "/database/awakeners/nautila/enlightens/vroom-vroom"
+  },
+  "ownerAwakenerId": "awakener-0036",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Current Shield +50%, ignore the Shield Limit. Increases {Fixed DMG} against all enemies to 500% of {Counter}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Nautila"
+}

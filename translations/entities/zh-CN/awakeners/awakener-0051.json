@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0051",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "尤乌哈希",
+      "sourceHash": "sha256:3338d8d52eb2b54b85c7068088ca63c280c8e16c6d5ad87880f644111c654d92",
+      "status": "reference"
+    },
+    "description": {
+      "value": "谁会忘记英雄尤乌哈希？战士跪倒在夕阳染红的沙地，温热鲜血浸透身体，秃鹫在头顶盘旋唱起挽歌。英雄之名被永远记住，代价却是无人替他流泪。",
+      "sourceHash": "sha256:1aa941b931851571b5adab0a0e1c6b798d674d1a64d3b7bb08907bc689ffa839",
+      "status": "machine"
+    }
+  }
+}

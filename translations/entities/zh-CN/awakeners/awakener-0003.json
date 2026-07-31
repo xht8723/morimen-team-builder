@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0003",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "艾继丝",
+      "sourceHash": "sha256:9f5094dffbe823d177ad5b868ff68cf73748aca153bec2680d27c8838e195488",
+      "status": "reference"
+    },
+    "description": {
+      "value": "不要靠近、触碰、直视或怜悯艾继丝。有些存在注定只能栖居黑暗；即使她并无恶意，对那双眼睛投以温柔，也可能让注视者付出无法挽回的代价。",
+      "sourceHash": "sha256:c73d86e5f265e26c866cf73c2753acfe78b2bbd43de4946910d2f47c5b9e81e7",
+      "status": "machine"
+    }
+  }
+}

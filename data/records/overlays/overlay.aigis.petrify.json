@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.aigis.petrify",
+  "name": "Petrify",
+  "route": {
+    "slug": "petrify",
+    "canonicalPath": "/database/awakeners/aigis/overlays/petrify"
+  },
+  "assets": {
+    "icon": "asset-overlay.aigis.petrify-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0003",
+  "aliases": [],
+  "iconId": "IconS_Buff_023",
+  "textColor": "misc",
+  "descriptionTemplate": "Cannot act for 1 turn. Previously Petrified enemies can't be Petrified again.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Aigis"
+}

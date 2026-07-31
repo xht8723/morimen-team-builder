@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0001",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "「24」",
+      "sourceHash": "sha256:0af27f6703726099fb6c5de5674e388083598626e5700a8ea29f32135cb9ea5e",
+      "status": "reference"
+    },
+    "description": {
+      "value": "独处时，更要学会作为团队行动。二十四个意识挤在「24」的灵魂中，于黑暗里低语嬉笑，仿佛随时准备将她吞噬；她早已告别东区工人的平凡过去，却又踏入新的泥沼。",
+      "sourceHash": "sha256:b2ba1bbedd3e4c78193a8b47a00139ced0533b4e0184f8c315dbe40f062b8830",
+      "status": "machine"
+    }
+  }
+}

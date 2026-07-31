@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0036",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "诺缔拉",
+      "sourceHash": "sha256:095eabce099551fa3c858140d56662f584324c28f2a2788796702c1738396266",
+      "status": "reference"
+    },
+    "description": {
+      "value": "诺缔拉总绕着名为「幻影」的摩托忙碌：拧紧螺丝、调整管线，永远没有完工的一天。别人认为修理早已完美，她却仍日复一日投入其中，仿佛停下才会失去方向。",
+      "sourceHash": "sha256:8a5b882819fd308cfd2773f67e3d58c5602a76f8590846f0b633424adbba3a93",
+      "status": "machine"
+    }
+  }
+}

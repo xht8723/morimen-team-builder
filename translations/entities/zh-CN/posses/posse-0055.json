@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0055",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·催化",
+      "sourceHash": "sha256:c9c634f2cf76ee1be1098e346cfc5aeb1afa50ce0a6a6e9ebf8608e478b61c4f",
+      "status": "machine"
+    },
+    "description": {
+      "value": "所有唤醒体获得 Arg1 点狂气。数值随原初精通成长。",
+      "sourceHash": "sha256:d75441d66bc15aa9cd381cf1503761457b2c39d4ae1d6bc08bdd5d56ad579642",
+      "status": "machine"
+    }
+  }
+}

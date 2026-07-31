@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0036",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "迷失的道路",
+      "sourceHash": "sha256:90de1aef1c8dc3dee8cdf206aec6ab9b547c5bd94c032c5e2d380d597d97ed6f",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成伤害后，有 30% 的概率抽 1 张装备者的指令卡并使其算力消耗降低 1。该效果单个回合只生效 1 次。",
+      "sourceHash": "sha256:c68906953305c85fcf45ab431f76e4749d862b96a934426b9de5c631b9c3b3a8",
+      "status": "reference"
+    }
+  }
+}

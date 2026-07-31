@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0009",
+  "name": "Celeste Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/celeste/builds/standard"
+  },
+  "awakenerId": "awakener-0009",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0008", "covenant-0006"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0122"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0123"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0078"],
+          "tier": "BIS_SR"
+        },
+        {
+          "wheelIds": ["wheel-0095"],
+          "tier": "GOOD"
+        }
+      ],
+      "substatPriorityGroups": [["KEYFLARE_REGEN"], ["ALIEMUS_REGEN", "DMG_AMP"]],
+      "recommendedWheelMainstats": ["KEYFLARE_REGEN", "ALIEMUS_REGEN", "DMG_AMP"]
+    }
+  ],
+  "ownerAwakenerName": "Celeste"
+}

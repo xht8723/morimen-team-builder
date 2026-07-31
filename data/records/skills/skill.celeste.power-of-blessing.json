@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.celeste.power-of-blessing",
+  "name": "Power of Blessing",
+  "route": {
+    "slug": "power-of-blessing",
+    "canonicalPath": "/database/awakeners/celeste/skills/power-of-blessing"
+  },
+  "ownerAwakenerId": "awakener-0009",
+  "slot": "Rouse",
+  "descriptionTemplate": "Celeste gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle, Celeste's HP Recovery +15%, and when recovering HP, Temporary {Tentacle DMG} +[TentaclePower:Arg2].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.celeste.imaginary-cathuria.skill.celeste.power-of-blessing",
+      "operation": "mixed",
+      "upgraderId": "enlighten.celeste.imaginary-cathuria",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0009",
+      "ownerAwakenerName": "Celeste",
+      "patch": {
+        "descriptionTemplate": "Celeste gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 Tentacle. Celeste's Healing +15%. When healing, Temporary {Tentacle DMG} +[TentaclePower:Arg2]. When triggers resurrect of {Undying Bird of Paradise}, Temporary {Tentacle DMG} +[TentaclePower:Arg3], with the effect doubled in Boss Battles.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["25", "30", "35", "40", "45", "50"]
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["15", "18", "21", "24", "27", "30"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg3": {
+            "kind": "fixed",
+            "value": "150",
+            "stat": "ATK",
+            "suffix": "%"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Celeste"
+}

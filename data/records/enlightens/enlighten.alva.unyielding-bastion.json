@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.alva.unyielding-bastion",
+  "name": "Unyielding Bastion",
+  "route": {
+    "slug": "unyielding-bastion",
+    "canonicalPath": "/database/awakeners/alva/enlightens/unyielding-bastion"
+  },
+  "ownerAwakenerId": "awakener-0004",
+  "slot": "E1",
+  "descriptionTemplate": "{Combat Stance} is considered \"Defense\".",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Alva"
+}

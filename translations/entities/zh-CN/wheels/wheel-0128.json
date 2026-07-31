@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0128",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "永世编织之网",
+      "sourceHash": "sha256:f4c7e95225b617b5bebf31a9edbb66e759498551de6608d331e16ac23658a69b",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者护盾提高 25%，装备者造成追击时 + 40% 临时强效，每回合最多生效 5 次。每当触发维度穿梭时，装备者获得 10 点狂气。",
+      "sourceHash": "sha256:dbd43f7a2a1a9c4b603f3c7ea9be3c1cf69e224da1d0389217caf4b9b551d01d",
+      "status": "reference"
+    }
+  }
+}

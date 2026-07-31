@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.daffodil.thousand-mirage-effect-catalyst",
+  "name": "Catalyst",
+  "route": {
+    "slug": "catalyst",
+    "canonicalPath": "/database/awakeners/daffodil/derived-skills/catalyst"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "derivedFromId": "derived.daffodil.thousand-mirage-extra-effects",
+  "rootSkillId": "skill.daffodil.sea-of-primordial-essence",
+  "descriptionTemplate": "Other Awakeners gain [Energy:Arg1] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "5"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Daffodil"
+}

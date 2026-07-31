@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.stagnation",
+  "name": "Stagnation",
+  "route": {
+    "slug": "stagnation",
+    "canonicalPath": "/database/overlays/stagnation"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.stagnation-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_024",
+  "textColor": "affliction",
+  "descriptionTemplate": "Increase a card's Arithmetica Cost.",
+  "descriptionArgs": {}
+}

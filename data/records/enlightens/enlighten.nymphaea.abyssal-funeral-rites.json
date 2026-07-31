@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.nymphaea.abyssal-funeral-rites",
+  "name": "Abyssal Funeral Rites",
+  "route": {
+    "slug": "abyssal-funeral-rites",
+    "canonicalPath": "/database/awakeners/nymphaea/enlightens/abyssal-funeral-rites"
+  },
+  "ownerAwakenerId": "awakener-0037",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Increases the {Poison} effect caused by Nymphaea by 50% for 3 turns.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Nymphaea"
+}

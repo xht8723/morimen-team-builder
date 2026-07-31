@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0073",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "吮吸",
+      "sourceHash": "sha256:33a723f015d3656f4e7a688cddf7693ad269c9516b8799079b7444da7def3328",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：休息处的回复量提高 40%，选择回复生命后，将 2 张「灵感」加入牌库。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:b4bc5d9a132da90e6f5450b79735cb64ebc372d7cd092ca70c4849396bc073c1",
+      "status": "reference"
+    }
+  }
+}

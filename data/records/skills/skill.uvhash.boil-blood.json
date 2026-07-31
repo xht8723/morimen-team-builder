@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.uvhash.boil-blood",
+  "name": "Boil, Blood!",
+  "route": {
+    "slug": "boil-blood",
+    "canonicalPath": "/database/awakeners/uvhash/skills/boil-blood"
+  },
+  "ownerAwakenerId": "awakener-0051",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG three times. Uvhash obtains [Energy:Arg2] Aliemus, doubled if HP is below 25%.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["12", "14.4", "16.8", "19.2", "21.6", "24"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["10", "11", "12", "13", "14", "15"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.uvhash.roman-elegy.skill.uvhash.boil-blood",
+      "operation": "mixed",
+      "upgraderId": "enlighten.uvhash.roman-elegy",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0051",
+      "ownerAwakenerName": "Uvhash",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG 3 times. Uvhash obtains [Energy:Arg2] Aliemus, and when HP is below 25%, deal an additional 2 instances of DMG and the Aliemus gained is doubled.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["16", "19.2", "22.4", "25.6", "28.8", "32"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["10", "11", "12", "13", "14", "15"]
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Uvhash"
+}

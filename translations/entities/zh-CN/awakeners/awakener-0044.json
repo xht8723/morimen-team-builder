@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0044",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "萨尔瓦多",
+      "sourceHash": "sha256:aa6088fe4012c81e57a826071656899b5c64ba7ffefde9059af9581b70ff4882",
+      "status": "reference"
+    },
+    "description": {
+      "value": "不必畏惧萨尔瓦多的黑色眼罩，窒息般的黑暗遮不住他的慈悲。肉身的视线或许已死，救赎的意志却依然存在；在他面前，一切都应当被爱，也终将得到爱。",
+      "sourceHash": "sha256:a5325181097235fcf3e254ad3424304084ce1b75957ec08314d9cd62439f149c",
+      "status": "machine"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0077",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "职责所在",
+      "sourceHash": "sha256:abcaafaf32133ff5f6c7911fb78265a3c7ca7ed3a04bd7f945306c9975fecebb",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者释放狂气爆发后，所有友方获得 5 狂气。",
+      "sourceHash": "sha256:cc02c5f4895cdef45ae777e9e855851a17a773cfbdb2f8b83b3a2fe2f9187c10",
+      "status": "reference"
+    }
+  }
+}

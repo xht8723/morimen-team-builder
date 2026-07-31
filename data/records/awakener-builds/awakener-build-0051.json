@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 3,
+  "kind": "awakenerBuild",
+  "id": "awakener-build-0051",
+  "name": "Uvhash Builds",
+  "route": {
+    "slug": "standard",
+    "canonicalPath": "/database/awakeners/uvhash/builds/standard"
+  },
+  "awakenerId": "awakener-0051",
+  "primaryBuildId": "standard",
+  "builds": [
+    {
+      "id": "standard",
+      "label": "Core",
+      "recommendedCovenantIds": ["covenant-0014", "covenant-0004"],
+      "recommendedWheels": [
+        {
+          "wheelIds": ["wheel-0008"],
+          "tier": "BIS_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0055"],
+          "tier": "ALT_SSR"
+        },
+        {
+          "wheelIds": ["wheel-0083"],
+          "tier": "BIS_SR"
+        }
+      ],
+      "substatPriorityGroups": [["CRIT_RATE"], ["CRIT_DMG"], ["KEYFLARE_REGEN"]],
+      "recommendedWheelMainstats": ["CRIT_RATE", "CRIT_DMG"]
+    }
+  ],
+  "ownerAwakenerName": "Uvhash"
+}

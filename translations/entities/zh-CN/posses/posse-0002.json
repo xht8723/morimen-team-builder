@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0002",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "脑中之音",
+      "sourceHash": "sha256:4f1af3e5a4a07be36e649fd8b032720ebce7ffb37a2978ab7b7467263a7bb1ee",
+      "status": "reference"
+    },
+    "description": {
+      "value": "对所有敌人造成 1 回合虚弱和易伤，偷取 x 点临时力量。",
+      "sourceHash": "sha256:1f7c6d04675d8d0f3c6ae6501ae095d0262e4e149b34f007910ba23b33178b3c",
+      "status": "reference"
+    }
+  }
+}

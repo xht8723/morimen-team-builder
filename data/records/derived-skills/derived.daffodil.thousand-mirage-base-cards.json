@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.daffodil.thousand-mirage-base-cards",
+  "name": "Thousand Mirage: Base Cards",
+  "route": {
+    "slug": "thousand-mirage-base-cards",
+    "canonicalPath": "/database/awakeners/daffodil/derived-skills/thousand-mirage-base-cards"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "nodeKind": "group",
+  "derivedFromId": "derived.daffodil.thousand-mirage",
+  "rootSkillId": "skill.daffodil.sea-of-primordial-essence",
+  "childDerivedSkillIds": [
+    "derived.daffodil.thousand-mirage-poison",
+    "derived.daffodil.thousand-mirage-counter",
+    "derived.daffodil.thousand-mirage-damage"
+  ],
+  "descriptionTemplate": "Choose a base {Thousand Mirage} card before adding extra effects.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Daffodil"
+}

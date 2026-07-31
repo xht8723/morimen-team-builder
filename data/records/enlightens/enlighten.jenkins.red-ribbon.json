@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.jenkins.red-ribbon",
+  "name": "Red Ribbon",
+  "route": {
+    "slug": "red-ribbon",
+    "canonicalPath": "/database/awakeners/jenkin/enlightens/red-ribbon"
+  },
+  "ownerAwakenerId": "awakener-0025",
+  "slot": "E1",
+  "descriptionTemplate": "For each use of {Get 'em! Brown!} in this battle, the Base DMG of {Swarm Impact} +[Arg1]% of ATK (effect scales with {Get 'em! Brown!} skill level).",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["2.5", "3", "3.5", "4", "4.5", "5"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "ownerAwakenerName": "Jenkin"
+}

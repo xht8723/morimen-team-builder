@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0040",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "猎食决心",
+      "sourceHash": "sha256:00e3726950e00489d1aa7747cfdbeb669e0580a6e97c76d5bde76bb0c64dc416",
+      "status": "reference"
+    },
+    "description": {
+      "value": "从出战唤醒体的技能卡中发现 3 张，选择 1 张将其临时复制置入手中，并使其算力消耗降低 1。若当前界域为「血肉」，可以选择「一扫而光！」。",
+      "sourceHash": "sha256:e999e43dd0df71356683c7324343e0d58eabda84b48106cc9f1a4a27a5ed974e",
+      "status": "reference"
+    }
+  }
+}

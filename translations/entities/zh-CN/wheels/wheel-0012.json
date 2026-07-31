@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0012",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "写实主义悖谬",
+      "sourceHash": "sha256:67c7e81a4d72dc0fd51a9d01987ca22ad09c543245a1b5a41aa41f372da70bd3",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的狂气和力量提高 12%。释放狂气爆发后本回合下次其他唤醒体狂气爆发最终伤害、护盾、生命回复提高 15%，若本次狂气爆发触发了吞噬，装备者获得 15 点狂气。",
+      "sourceHash": "sha256:f055295c768f59ab477bd8c54a9a1a9dddb140cedb385af5acb16d8690e4f716",
+      "status": "reference"
+    }
+  }
+}

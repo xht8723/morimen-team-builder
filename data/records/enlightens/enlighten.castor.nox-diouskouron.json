@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.castor.nox-diouskouron",
+  "name": "Nox Diouskouron",
+  "route": {
+    "slug": "nox-diouskouron",
+    "canonicalPath": "/database/awakeners/castor/enlightens/nox-diouskouron"
+  },
+  "ownerAwakenerId": "awakener-0008",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Skybound Oath} is enhanced: Castor's first {Onyx Plume} each turn inflicts {Cleansing Feathers} {Corrosion} on the front-row enemy. {Corrosion} removal DMG: 300% → 500%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Castor"
+}

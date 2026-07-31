@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.castor.umbral-flight",
+  "name": "Umbral Flight",
+  "route": {
+    "slug": "umbral-flight",
+    "canonicalPath": "/database/awakeners/castor/skills/umbral-flight"
+  },
+  "ownerAwakenerId": "awakener-0008",
+  "slot": "Skill1",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG [Arg2] {plural:[Arg2]|time|times}, increase other allies' Temporary Crit. DMG by [Arg3]%. {Quasar}: Shuffle 1 {Onyx Plume} into the Draw Pile and gain [Block:Arg4] Shield.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["35", "42", "49", "56", "63", "70"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "3"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["25", "27", "29", "31", "33", "35"],
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.castor.unyielding-will.skill.castor.umbral-flight",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.castor.unyielding-will",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0008",
+      "ownerAwakenerName": "Castor",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG [Arg2] {plural:[Arg2]|time|times}, increase other allies' Temporary Crit. DMG by [Arg3]%. For every {Onyx Plume} played this turn, Arithmetica Cost -1. {Quasar}: Shuffle 1 {Onyx Plume} into the Draw Pile and gain [Block:Arg4] Shield."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Castor"
+}

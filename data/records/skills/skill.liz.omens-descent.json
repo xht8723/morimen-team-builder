@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.liz.omens-descent",
+  "name": "Omen's Descent",
+  "route": {
+    "slug": "omens-descent",
+    "canonicalPath": "/database/awakeners/liz/skills/omens-descent"
+  },
+  "ownerAwakenerId": "awakener-0030",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Upgrade all {Green Flames} and {Corrupted Flames} in your hand to {Deadly Flames}. For the next 3 turns, at turn start, this effect will repeat once.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Liz"
+}

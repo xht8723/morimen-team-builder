@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.horla.carol-psalm",
+  "name": "Carol Psalm",
+  "route": {
+    "slug": "carol-psalm",
+    "canonicalPath": "/database/awakeners/horla/skills/carol-psalm"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "slot": "Skill1",
+  "descriptionTemplate": "Choose 1 other Awakeners to gain [Energy:Arg1] Aliemus. {Leap}: Switch {Emotion} state to {Happiness}. For each stack of {Happiness} {Metaphor} consumed, increase the amount of Aliemus granted by [Energy:Arg2].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "11", "12", "13", "14", "15"]
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "10"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.horla.chamber-of-shadows.skill.horla.carol-psalm",
+      "operation": "override_card_keywords",
+      "upgraderId": "enlighten.horla.chamber-of-shadows",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E2",
+      "ownerAwakenerId": "awakener-0024",
+      "ownerAwakenerName": "Horla",
+      "patch": {
+        "cardKeywords": [
+          {
+            "id": "mechanic.retain"
+          }
+        ]
+      }
+    },
+    {
+      "id": "upgrade.enlighten.horla.blossoms-and-verses-reunited.skill.horla.carol-psalm",
+      "operation": "override_card_keywords",
+      "upgraderId": "enlighten.horla.blossoms-and-verses-reunited",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0024",
+      "ownerAwakenerName": "Horla",
+      "patch": {
+        "cardKeywords": [
+          {
+            "id": "mechanic.retain"
+          }
+        ]
+      }
+    }
+  ],
+  "ownerAwakenerName": "Horla"
+}

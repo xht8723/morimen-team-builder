@@ -1,0 +1,10 @@
+node_modules/
+.pnpm-store/
+dist/
+playwright-report/
+test-results/
+coverage/
+src/generated/
+public/generated-assets/
+*.local
+debug.log

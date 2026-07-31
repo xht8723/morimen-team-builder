@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.alert",
+  "name": "Alert",
+  "route": {
+    "slug": "alert",
+    "canonicalPath": "/database/overlays/alert"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.alert-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_009",
+  "textColor": "shield",
+  "descriptionTemplate": "Shield gained from sources with {Alert} is increased by 1 for each stack of {Alert}.",
+  "descriptionArgs": {}
+}

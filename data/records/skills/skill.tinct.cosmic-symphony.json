@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.tinct.cosmic-symphony",
+  "name": "Cosmic Symphony",
+  "route": {
+    "slug": "cosmic-symphony",
+    "canonicalPath": "/database/awakeners/tinct/skills/cosmic-symphony"
+  },
+  "ownerAwakenerId": "awakener-0049",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Set the Arithmetica Cost of 5 random cards in hand to 0 until turn end.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Tinct"
+}

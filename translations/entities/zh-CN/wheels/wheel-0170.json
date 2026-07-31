@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0170",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "梦游异世界",
+      "sourceHash": "sha256:5301f1a8dd572d7fe4b9ecce5ac64596f847bdcbc927f55cba965e3380c01a18",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索开始后，将 1 张衍生牌「梦游异世界」加入牌组。消耗 2 点算力，使装备者获得 50 点狂气与 3 层精神干扰；保留，消耗。",
+      "sourceHash": "sha256:df5a0c4bf63b7ff0dd6d2331d3e5cbbb1d46838a6e4b4f2dfb5679b299cd3668",
+      "status": "machine"
+    }
+  }
+}

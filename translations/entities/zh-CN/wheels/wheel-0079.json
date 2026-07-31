@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0079",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "苦咒缚",
+      "sourceHash": "sha256:d6f5bf7af25c46d082f472d075215194919d8a9196c12b7d7f4f8e012303cad8",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的 中毒提高 12%。「打击」对目标敌人造成等同于攻击力 15% 的 中毒。该效果每回合最多生效 3 次。",
+      "sourceHash": "sha256:a765a3126c4d580a9b3542fcd5dc387d270cb52356d990d2bfae8d6a0bb8d51b",
+      "status": "reference"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0136",
+  "name": "Greed",
+  "route": {
+    "slug": "greed",
+    "canonicalPath": "/database/wheels/greed"
+  },
+  "assets": {
+    "icon": "asset-wheel-0136-icon"
+  },
+  "rarity": "R",
+  "realm": "NEUTRAL",
+  "mainstatKey": "ALIEMUS_REGEN",
+  "lineupToken": "xB",
+  "descriptionTemplate": "Team Unique: After each stage starts, gain [StateArg1] Black Sigils. Relic Capacity +2. In {Astral Reign}, this effect changes to \"Increases the chance for the wielder's Dimensional Image Relic to appear by 100%.\"",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["15", "20", "25", "30"]
+    }
+  },
+  "lore": "Shh... let it end here, with me.\nAnd do not seek its origins.",
+  "searchTags": ["Sigil Gain"]
+}

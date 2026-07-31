@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.daffodil.thousand-mirage-effect-keyflare",
+  "name": "Keyflare",
+  "route": {
+    "slug": "keyflare",
+    "canonicalPath": "/database/awakeners/daffodil/derived-skills/keyflare"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "derivedFromId": "derived.daffodil.thousand-mirage-extra-effects",
+  "rootSkillId": "skill.daffodil.sea-of-primordial-essence",
+  "descriptionTemplate": "Gain [Arg1] Keyflare. Gain [Block:Arg2] Shield.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "250"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Daffodil"
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.mouchette.mist-realm-vestige",
+  "name": "Mist Realm Vestige",
+  "route": {
+    "slug": "mist-realm-vestige",
+    "canonicalPath": "/database/awakeners/mouchette/skills/mist-realm-vestige"
+  },
+  "ownerAwakenerId": "awakener-0033",
+  "slot": "Rouse",
+  "descriptionTemplate": "Mouchette gains [Energy:Arg1] Aliemus. {Rouse}: {Dramatic Encounter} DMG instances +2. Each time {Dramatic Encounter} is triggered, Mouchette's \"Strike\" Temporary Final DMG +25%. Immediately generate 1 Temporary {Mortal Blast}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.mouchette.ego-beyond-the-fog.skill.mouchette.mist-realm-vestige",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.mouchette.ego-beyond-the-fog",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0033",
+      "ownerAwakenerName": "Mouchette",
+      "patch": {
+        "descriptionTemplate": "Mouchette gains [Energy:Arg1] Aliemus. {Rouse}: {Dramatic Encounter} DMG instances +2. The trigger limit per turn is increased to 5. Each time {Dramatic Encounter} is triggered, Mouchette's \"Strike\" Temporary Final DMG +25%. Immediately generate 2 Temporary {Mortal Blast} with 0 Arithmetica Cost."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Mouchette"
+}

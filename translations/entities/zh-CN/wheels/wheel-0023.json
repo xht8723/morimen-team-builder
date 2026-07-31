@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0023",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "欲海浮沉",
+      "sourceHash": "sha256:30ddb05c62da34adc0c33e15dba40a631f4ad768f03740ace369aee4476d1229",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的反击提高 25%。每受到 1 次攻击，就获得等同于装备者攻击力 8% 的临时力量。装备者使用狂气爆发后，获得等同于装备者攻击力 15% 的反击。",
+      "sourceHash": "sha256:ae3afbe6ed69bd2b49d7a9d0e72b069c6d1cdd25d3fda02c5fbe60322c0da2c4",
+      "status": "reference"
+    }
+  }
+}

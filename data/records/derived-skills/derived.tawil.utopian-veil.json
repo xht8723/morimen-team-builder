@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.tawil.utopian-veil",
+  "name": "Utopian Veil",
+  "route": {
+    "slug": "utopian-veil",
+    "canonicalPath": "/database/awakeners/tawil/derived-skills/utopian-veil"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "derivedFromId": "derived.tawil.memories",
+  "rootSkillId": "skill.tawil.pinions-of-time",
+  "descriptionTemplate": "View 3 Posse and choose 1 to release immediately.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Tawil"
+}

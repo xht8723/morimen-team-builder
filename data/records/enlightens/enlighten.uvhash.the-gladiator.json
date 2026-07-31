@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.uvhash.the-gladiator",
+  "name": "The Gladiator",
+  "route": {
+    "slug": "the-gladiator",
+    "canonicalPath": "/database/awakeners/uvhash/enlightens/the-gladiator"
+  },
+  "ownerAwakenerId": "awakener-0051",
+  "slot": "E1",
+  "descriptionTemplate": "{Screech, Blood!} Base DMG and {STR} increase by 30%.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Uvhash"
+}

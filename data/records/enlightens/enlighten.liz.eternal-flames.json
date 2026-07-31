@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.liz.eternal-flames",
+  "name": "Eternal Flames",
+  "route": {
+    "slug": "eternal-flames",
+    "canonicalPath": "/database/awakeners/liz/enlightens/eternal-flames"
+  },
+  "ownerAwakenerId": "awakener-0030",
+  "slot": "E2",
+  "descriptionTemplate": "\"Basic Strike\" applies 50% DMG as {Poison}; \"Basic Defense\" triggers 25% {Poison} on all enemies.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Liz"
+}

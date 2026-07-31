@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.devour",
+  "name": "Devour",
+  "route": {
+    "slug": "devour",
+    "canonicalPath": "/database/overlays/devour"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Devouring", "Devoured"],
+  "textColor": "misc",
+  "descriptionTemplate": "{Caro} Awakeners' Exalts will consume an {Embryo} card in hand to trigger {Devour}, modifying the effects of their Exalt.",
+  "descriptionArgs": {}
+}

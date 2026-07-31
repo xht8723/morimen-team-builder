@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.burn",
+  "name": "Burn",
+  "route": {
+    "slug": "burn",
+    "canonicalPath": "/database/overlays/burn"
+  },
+  "assets": {
+    "icon": "asset-overlay.global.burn-icon"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "iconId": "IconS_Buff_057",
+  "textColor": "damage",
+  "descriptionTemplate": "Set the card on fire, dealing 5% of Max HP damage upon playing, and if still in hand at turn end, it will be {Exhausted}.",
+  "descriptionArgs": {}
+}

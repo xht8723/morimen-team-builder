@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.ramona.labyrinth-of-thought",
+  "name": "Labyrinth of Thought",
+  "route": {
+    "slug": "labyrinth-of-thought",
+    "canonicalPath": "/database/awakeners/ramona/skills/labyrinth-of-thought"
+  },
+  "ownerAwakenerId": "awakener-0042",
+  "slot": "OverExalt",
+  "descriptionTemplate": "Apply {Weakness} and {Vulnerable} to all enemies for 1 turn. The next released Posse will take effect 2 times.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Ramona"
+}

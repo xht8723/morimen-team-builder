@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0014",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "蚀骨的拥抱",
+      "sourceHash": "sha256:e41e50ee9a20037c5ed06c30f7d1746fb77da5191ea09602e81232910cc29e2d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 1 点算力，下回合开始时获得 x 点护盾。若当前界域为「深海」且处于「潮涌」姿态，则效果变为生成 1 条触腕。",
+      "sourceHash": "sha256:cd1546133fd266aa2068ba713e8f23ab32a1e64d2d5392617d4b7db3a5a701ce",
+      "status": "reference"
+    }
+  }
+}

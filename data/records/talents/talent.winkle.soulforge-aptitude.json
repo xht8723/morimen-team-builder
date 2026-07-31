@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.winkle.soulforge-aptitude",
+  "name": "Soulforge Aptitude",
+  "route": {
+    "slug": "soulforge-aptitude",
+    "canonicalPath": "/database/awakeners/winkle/talents/soulforge-aptitude"
+  },
+  "ownerAwakenerId": "awakener-0053",
+  "family": "soulforge_aptitude",
+  "maxLevel": 10,
+  "descriptionTemplate": "This talent is only effective in the {Astral Reign} stages.\nThis Awakener's CON, ATK, and DEF +[Arg1]%, and they gain [Arg2] Keyflare upon their first {Rouse}.\nAfter unleashing {Annihilation}, Winkle gains [Arg3] Aliemus, with a 3-turn cooldown.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "3",
+      "gainPerLevel": "3"
+    },
+    "Arg2": {
+      "kind": "linear",
+      "base": "50",
+      "gainPerLevel": "50"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20", "22", "24", "26", "30"]
+    }
+  },
+  "ownerAwakenerName": "Winkle"
+}

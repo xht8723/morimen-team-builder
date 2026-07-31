@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0024",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "跨越疼痛",
+      "sourceHash": "sha256:18d43825314b348968efa3e6e40ade019f2f75dc4a1f2aa6a9bc5dcddbebd274",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的中毒和护盾提高 15%。装备者的「打击」暴击率和暴击伤害提高 35%，并获得最大生命 5% 的护盾，护盾效果每回合最多生效1次。",
+      "sourceHash": "sha256:1f5a7a26450c3229ce725b0a0dadd677e8462f2be8882e1428b2b99840773293",
+      "status": "reference"
+    }
+  }
+}

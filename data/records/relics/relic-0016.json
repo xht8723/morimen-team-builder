@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0016",
+  "name": "Dimensional Image: Faint",
+  "route": {
+    "slug": "dimensional-image-faint",
+    "canonicalPath": "/database/relics/dimensional-image-faint"
+  },
+  "assets": {
+    "icon": "asset-relic-0016-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0016",
+  "ownerAwakenerId": "awakener-0016",
+  "ownerAwakenerName": "Faint",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Faint gains [Arg1] Aliemus. Faint's Shield, {Counter}, and HP recovery effects +[Arg2]%. Each time {Death Resistance} is triggered, this effect +[Arg3]% for the current exploration, up to [Arg4] {plural:[Arg4]|time|times}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "15",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "5",
+      "suffix": "%"
+    },
+    "Arg4": {
+      "kind": "fixed",
+      "value": "5"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0016",
+      "name": "Dimensional Image: Faint",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0016",
+      "ownerAwakenerName": "Faint",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Faint gains [Arg1] Aliemus. Faint's Shield, {Counter}, and HP recovery effects +[Arg2]%. Each time {Death Resistance} is triggered, this effect +[Arg3]% for the current exploration, up to [Arg4] {plural:[Arg4]|time|times}.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        },
+        "Arg2": {
+          "kind": "fixed",
+          "value": "15",
+          "suffix": "%"
+        },
+        "Arg3": {
+          "kind": "fixed",
+          "value": "5",
+          "suffix": "%"
+        },
+        "Arg4": {
+          "kind": "fixed",
+          "value": "5"
+        }
+      }
+    }
+  ]
+}

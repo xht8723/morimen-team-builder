@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0169",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "伪北罗盘",
+      "sourceHash": "sha256:db9447079395591f0ffca08620317621d69d8326d46fa7514d1d14ca1a2dafb4",
+      "status": "machine"
+    },
+    "description": {
+      "value": "队伍唯一：装备者的力量降低效果提高 15%。切换至怒涛姿态后，临时暴击伤害提高，数值等于装备者基础暴击伤害的 15%，冷却 3 回合。",
+      "sourceHash": "sha256:b2e0700ce8210084540e54223284f5932eeb2f2b4e4f8c717081666bbaa4288f",
+      "status": "machine"
+    }
+  }
+}

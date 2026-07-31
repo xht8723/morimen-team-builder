@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.doresain.pandemonium-glut",
+  "name": "Pandemonium Glut",
+  "route": {
+    "slug": "pandemonium-glut",
+    "canonicalPath": "/database/awakeners/doresain/skills/pandemonium-glut"
+  },
+  "ownerAwakenerId": "awakener-0014",
+  "slot": "OverExalt",
+  "descriptionTemplate": "In this Exalt: Crit. Rate +25%, Base DMG +50%, Final DMG +100%.",
+  "descriptionArgs": {},
+  "cardKeywords": [],
+  "ownerAwakenerName": "Doresain"
+}

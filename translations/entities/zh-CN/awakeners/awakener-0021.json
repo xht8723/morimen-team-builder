@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0021",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "戈利亚",
+      "sourceHash": "sha256:58cae00066d4cafbb812e2d56c865d840a4c3daa03e6c72b8a7225bf42e83091",
+      "status": "reference"
+    },
+    "description": {
+      "value": "戈利亚只是一个巨人：身影令人敬畏，力量不可撼动，巨刃无人能举。他以战争与牺牲磨亮胜利，也在一座座战利品堆成的山上证明强者的法则。",
+      "sourceHash": "sha256:53db9122be51cd58b2edc5cd859e479a807ad4bd7e6ca9cf98eac90d0715acaa",
+      "status": "machine"
+    }
+  }
+}

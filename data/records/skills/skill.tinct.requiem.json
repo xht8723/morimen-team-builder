@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.tinct.requiem",
+  "name": "Requiem",
+  "route": {
+    "slug": "requiem",
+    "canonicalPath": "/database/awakeners/tinct/skills/requiem"
+  },
+  "ownerAwakenerId": "awakener-0049",
+  "slot": "Skill1",
+  "descriptionTemplate": "Dispel self {Fragile}, {Weakness}, and {Vulnerable} states. {Steal} [Arg1] {STR} from all enemies. The next card played this turn is guaranteed to {Leap}. {Leap}: Instead {Steal} [Arg2] {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["7.5", "9", "10.5", "12", "13.5", "15"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["17.5", "21", "24.5", "28", "31.5", "35"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "ownerAwakenerName": "Tinct"
+}

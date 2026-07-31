@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0058",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "蓬托斯",
+      "sourceHash": "sha256:408a5b179341e967ef0dee5b4c799053083f54b890f0c4ace1aa8ae548239999",
+      "status": "reference"
+    },
+    "description": {
+      "value": "本该划过夜空的英雄史诗在途中折断。蓬托斯选择坠入深渊，将自己献给更庞大而不可理解的存在，从此把亲族、朋友与敌人都永远留在与自身融合的埃布维诺斯之中。",
+      "sourceHash": "sha256:f52b31ea1dee9f03a788bfd495efadf93a4723e4cde4b92ef0aa2f9c7865e1c3",
+      "status": "machine"
+    }
+  }
+}

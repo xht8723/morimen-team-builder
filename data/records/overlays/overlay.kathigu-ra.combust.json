@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.kathigu-ra.combust",
+  "name": "Combust",
+  "route": {
+    "slug": "combust",
+    "canonicalPath": "/database/awakeners/kathigu-ra/overlays/combust"
+  },
+  "assets": {
+    "icon": "asset-overlay.kathigu-ra.combust-icon"
+  },
+  "overlayType": "mechanic",
+  "ownerAwakenerId": "awakener-0027",
+  "aliases": [],
+  "iconId": "IconS_Buff_057",
+  "textColor": "damage",
+  "descriptionTemplate": "When {Combust} reaches 10 stacks, gain 2 Arithmetica and upgrade all {Solarflare} to {Hyperflare}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Kathigu-Ra"
+}

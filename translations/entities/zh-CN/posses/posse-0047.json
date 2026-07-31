@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0047",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "深宅往事",
+      "sourceHash": "sha256:a2a923b3e8a3da3de46d91b043f3d111b5ff35c9527c99dcc788265865767e9c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 1 点算力并临时降低所有敌人 x 点力量。若「徐」在队伍中，对所有敌人施加 1 层痴醉。",
+      "sourceHash": "sha256:d4e8cbcfcaa60d0f9110d436a53937573478a5e1f8ac53b03d211f81400a72e0",
+      "status": "reference"
+    }
+  }
+}

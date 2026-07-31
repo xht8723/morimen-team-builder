@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0004",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "以蔷薇之名",
+      "sourceHash": "sha256:fc7b859148c67a5b546477d35edbfac2c3170f221fdf826ca357fedd143408d4",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者每造成 1 次伤害，有 100% 几率使装备者获得 2% 临时暴击伤害。装备者释放狂气爆发后对随机敌人造成 3 次等同于装备者攻击力 30% 的主动伤害。若当前界域为「血肉」，装备者每吞噬一个胚胎，就使胚胎融合 +20%。",
+      "sourceHash": "sha256:457883a4f0ed360808793bbad3e83c211ccfe716bfc46bb77aa66269cb3a4e44",
+      "status": "reference"
+    }
+  }
+}

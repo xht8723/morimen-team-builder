@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0097",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "待到雪山消融",
+      "sourceHash": "sha256:806b3fb0d0c522da5d8b4799ed64c1f4d81bf08e3d8d2f2c21f837413d86e32a",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害提高 15%。战斗开始时，装备者获得 25 层「冰雪」，装备者打出卡牌后获得 2 点狂气并移除 1 层。「冰雪」被完全移除后，装备者获得 20% 暴击率。",
+      "sourceHash": "sha256:c13fb028ac7c92e02ca5a314e2624012495a6b7ff5e6d69f7a9e5a1c7d7afc10",
+      "status": "reference"
+    }
+  }
+}

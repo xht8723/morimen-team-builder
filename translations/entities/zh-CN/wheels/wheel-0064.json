@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0064",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "涌现",
+      "sourceHash": "sha256:754f2d079bac93b264a4c9f81aad07a1305a6f1b3ec8239f7185f86902c02cf5",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：融痕刷新次数 ＋1 ，刷新价格减少 5 点黑印。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:7aec11d58525c20a5c2c95805b02f9929b92b185c90514003fdc579648bf7a13",
+      "status": "reference"
+    }
+  }
+}

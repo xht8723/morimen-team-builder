@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0011",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "安息之吻",
+      "sourceHash": "sha256:a4fc570c3e3eec4f6c95bd1dccc1542610b50385c5af20c788dd6d4026c632ed",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的基础伤害提高 25%。每造成 1 次击杀就使装备者本次探索内暴击率提高 2% 且狂气爆发造成的基础伤害提高 5%，至多叠加 10 次。若当前界域为「血肉」，对装备者直接使用「胚胎」时额外获得 30 点狂气， 3 回合冷却。",
+      "sourceHash": "sha256:a5940c330f3c0458241b8f54b6447af22dddbc6e835f01a717c8a67125b611c8",
+      "status": "reference"
+    }
+  }
+}

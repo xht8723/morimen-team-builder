@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0053",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "温柯尔",
+      "sourceHash": "sha256:1414bf6fa10c09fb9be0b8dec3d4c0e37e049331a04388e04f50130fb85bb7d8",
+      "status": "reference"
+    },
+    "description": {
+      "value": "温柯尔的办公室被称作密大的北极星，灯笼、油灯、钨丝灯与蜡烛驱散每一寸阴影。她对黑暗的恐惧近乎偏执，却也让那间永不熄灯的房间成为迷途者的坐标。",
+      "sourceHash": "sha256:0eb9f75de3326d57764217075a829fc698a50687eec2af95bda81fa031bd90e4",
+      "status": "machine"
+    }
+  }
+}

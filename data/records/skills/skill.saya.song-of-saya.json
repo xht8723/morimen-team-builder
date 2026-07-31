@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.saya.song-of-saya",
+  "name": "Song of Saya",
+  "route": {
+    "slug": "song-of-saya",
+    "canonicalPath": "/database/awakeners/saya/skills/song-of-saya"
+  },
+  "ownerAwakenerId": "awakener-0057",
+  "slot": "Exalt",
+  "descriptionTemplate": "[{Devour}: Randomly grant 2 copied \"Basic Strike\" or \"Basic Defense\" Enhance, set their Arithmetica Cost to 0, and make them take effect +1 time.] Gain [Block:Arg1] Shield. Choose another Awakener. Generate a Basic Copy of each of their Basic Command Cards with {Fleeting} and {Destroy}, placing one set into the Draw Pile and another into the Discard Pile. Consume all {Gynoecium} stacks, each stack consumed randomly sets the Arithmetica Cost of 1 copied \"Skill\" card to 0.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["130", "156", "182", "208", "234", "260"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "200",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.saya.ill-be-your-very-own-monster.skill.saya.song-of-saya",
+      "operation": "override_args",
+      "upgraderId": "enlighten.saya.ill-be-your-very-own-monster",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0057",
+      "ownerAwakenerName": "Saya",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["130", "156", "182", "208", "234", "260"],
+            "stat": "DEF",
+            "suffix": "%",
+            "substatBonus": {
+              "substat": "SigilYield",
+              "multiplier": "0.25",
+              "mode": "additive_factor",
+              "baseMultiplier": "1.05"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Saya"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.pierce-dmg",
+  "name": "Pierce DMG",
+  "route": {
+    "slug": "pierce-dmg",
+    "canonicalPath": "/database/overlays/pierce-dmg"
+  },
+  "overlayType": "mechanic",
+  "aliases": [],
+  "textColor": "misc",
+  "descriptionTemplate": "DMG that reduces both Shield and HP. Cannot be Immuned, and ignores {Barrier}.",
+  "descriptionArgs": {}
+}

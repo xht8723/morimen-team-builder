@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "overlay",
+  "id": "overlay.global.rouse",
+  "name": "Rouse",
+  "route": {
+    "slug": "rouse",
+    "canonicalPath": "/database/overlays/rouse"
+  },
+  "overlayType": "mechanic",
+  "aliases": ["Keyflare Rouse"],
+  "textColor": "misc",
+  "descriptionTemplate": "Grants the Awakener permanent combat boosts. Repeated {Rouse} uses don't stack.",
+  "descriptionArgs": {}
+}

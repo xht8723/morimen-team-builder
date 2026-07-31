@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 3,
+  "kind": "relic",
+  "id": "relic-0037",
+  "name": "Dimensional Image: Nymphaea",
+  "route": {
+    "slug": "dimensional-image-nymphaea",
+    "canonicalPath": "/database/relics/dimensional-image-nymphaea"
+  },
+  "assets": {
+    "icon": "asset-relic-0037-icon"
+  },
+  "relicType": "Dimensional Image",
+  "categories": ["DIMENSIONAL_IMAGE"],
+  "variantCount": 1,
+  "defaultVariantId": "relic-variant-0037",
+  "ownerAwakenerId": "awakener-0037",
+  "ownerAwakenerName": "Nymphaea",
+  "rarity": "SSR",
+  "aliases": [],
+  "descriptionTemplate": "At turn start, Nymphaea gains [Arg1] Aliemus. After playing Nymphaea's \"Strike,\" the {Poison} dealt by \"Nymphaea\" in this battle +[Arg2]%. After playing Nymphaea's \"Defense,\" it triggers [Arg3]% {Poison} to all enemies. Each effect can take place at most once per turn.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "15"
+    },
+    "Arg2": {
+      "kind": "fixed",
+      "value": "10",
+      "suffix": "%"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "50",
+      "suffix": "%"
+    }
+  },
+  "variants": [
+    {
+      "id": "relic-variant-0037",
+      "name": "Dimensional Image: Nymphaea",
+      "label": "Dimensional Image",
+      "variantType": "DIMENSIONAL_IMAGE",
+      "tier": "Unique",
+      "category": "DIMENSIONAL_IMAGE",
+      "ownerAwakenerId": "awakener-0037",
+      "ownerAwakenerName": "Nymphaea",
+      "rarity": "SSR",
+      "descriptionTemplate": "At turn start, Nymphaea gains [Arg1] Aliemus. After playing Nymphaea's \"Strike,\" the {Poison} dealt by \"Nymphaea\" in this battle +[Arg2]%. After playing Nymphaea's \"Defense,\" it triggers [Arg3]% {Poison} to all enemies. Each effect can take place at most once per turn.",
+      "descriptionArgs": {
+        "Arg1": {
+          "kind": "fixed",
+          "value": "15"
+        },
+        "Arg2": {
+          "kind": "fixed",
+          "value": "10",
+          "suffix": "%"
+        },
+        "Arg3": {
+          "kind": "fixed",
+          "value": "50",
+          "suffix": "%"
+        }
+      }
+    }
+  ]
+}

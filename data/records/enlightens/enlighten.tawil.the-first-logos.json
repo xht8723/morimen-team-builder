@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.tawil.the-first-logos",
+  "name": "The First Logos",
+  "route": {
+    "slug": "the-first-logos",
+    "canonicalPath": "/database/awakeners/tawil/enlightens/the-first-logos"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {The Silver Key Gate} is enhanced: After Tawil unleashes Exalt, other Awakeners' Command Card Final DMG +15% this turn, and the next 1 other Awakener's Command Card takes effect 1 additional time.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Tawil"
+}

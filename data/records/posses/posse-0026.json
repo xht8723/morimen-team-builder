@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0026",
+  "name": "Spring's Verse",
+  "route": {
+    "slug": "springs-verse",
+    "canonicalPath": "/database/posses/springs-verse"
+  },
+  "assets": {
+    "icon": "asset-posse-0026-icon",
+    "crystal": "asset-posse-0026-crystal",
+    "badge": "asset-posse-0026-badge"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "ownerAwakenerName": "Horla",
+  "acquisitionSource": "Clear Special Ops: Rose's Abode",
+  "realm": "ULTRA",
+  "lineupToken": "A",
+  "descriptionTemplate": "Choose one of four {Poetry Pages} that haven't been chosen; reset after all {Poems} have been chosen.",
+  "descriptionArgs": {},
+  "lore": "Pray, accept my poem, this offering of spring to the garden.\nIn our desolate lives, the roses dwell in deep red."
+}

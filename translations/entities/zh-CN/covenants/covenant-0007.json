@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0007",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "扭曲双子·白",
+      "sourceHash": "sha256:4b928437ad540e0e60ac8f27aa970c77f2ce46a352f625542d4049a1190d0e43",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 死亡抵抗 +16.8% 6件套： 偶数回合开始后，将一张附加虚无和消耗的装备者的「防御」加入手牌。",
+      "sourceHash": "sha256:48eb4ed3e1b382a3835a1f837d438b98369554464057a355decdea7fbd4e781d",
+      "status": "reference"
+    }
+  }
+}

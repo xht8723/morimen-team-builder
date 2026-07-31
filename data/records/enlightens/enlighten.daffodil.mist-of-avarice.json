@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.daffodil.mist-of-avarice",
+  "name": "Mist of Avarice",
+  "route": {
+    "slug": "mist-of-avarice",
+    "canonicalPath": "/database/awakeners/daffodil/enlightens/mist-of-avarice"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "slot": "E2",
+  "descriptionTemplate": "When Daffodil kills an enemy by any means, the team's Crit. Rate is permanently increased by 5% for this stage.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Daffodil"
+}

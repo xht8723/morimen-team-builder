@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0034",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "无法完成的演算",
+      "sourceHash": "sha256:09c4291830975d33586cac52a6e2a146df7a7eb35c0a05452069bb8bacb275ae",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者产生的狂气提高 15%。装备者释放狂气爆发后，获得 200 点银钥能量。",
+      "sourceHash": "sha256:5c70844dacd4c58bf9da5248018e9aded1e50f8fe031ef394a379db5dcc452f8",
+      "status": "reference"
+    }
+  }
+}

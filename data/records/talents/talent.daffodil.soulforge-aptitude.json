@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.daffodil.soulforge-aptitude",
+  "name": "Soulforge Aptitude",
+  "route": {
+    "slug": "soulforge-aptitude",
+    "canonicalPath": "/database/awakeners/daffodil/talents/soulforge-aptitude"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "family": "soulforge_aptitude",
+  "maxLevel": 10,
+  "descriptionTemplate": "This talent is only effective in the {Astral Reign} stages.\nThis Awakener's CON, ATK, and DEF +[Arg1]%, and they gain [Arg2] Keyflare upon their first {Rouse}.\nWhen {Ashen Ruins} refreshes, the discount chance +[Arg3]%, and the discount rate +[Arg4]%.\n{Skull Reaver} Base DMG +[Arg5]%, which is calculated independently of the Base DMG increase from scoring kills.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "3",
+      "gainPerLevel": "3"
+    },
+    "Arg2": {
+      "kind": "linear",
+      "base": "50",
+      "gainPerLevel": "50"
+    },
+    "Arg3": {
+      "kind": "fixed",
+      "value": "5"
+    },
+    "Arg4": {
+      "kind": "linear",
+      "base": "1",
+      "gainPerLevel": "1"
+    },
+    "Arg5": {
+      "kind": "scaling",
+      "values": ["20", "23", "26", "29", "32", "35", "38", "41", "44", "50"]
+    }
+  },
+  "ownerAwakenerName": "Daffodil"
+}

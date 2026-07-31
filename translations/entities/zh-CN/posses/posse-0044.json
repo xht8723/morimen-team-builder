@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0044",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "偏航船",
+      "sourceHash": "sha256:dcb267e8f8df2553371337b6dcf8a0e4e1942e0fa6b805960bb66f1d1a73126c",
+      "status": "reference"
+    },
+    "description": {
+      "value": "获得 1 点算力，所有敌人施加 5 层降生仪式。若「诞妄·墨菲」在队伍中，抽 1 张「螺湮圆舞」。",
+      "sourceHash": "sha256:2ee0ed2cef0b3ff7deb2af8307d84284ce3acefba124028bb49e9b88582e8bf8",
+      "status": "reference"
+    }
+  }
+}

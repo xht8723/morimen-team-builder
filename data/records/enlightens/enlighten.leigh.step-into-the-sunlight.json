@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.leigh.step-into-the-sunlight",
+  "name": "Step into the Sunlight",
+  "route": {
+    "slug": "step-into-the-sunlight",
+    "canonicalPath": "/database/awakeners/leigh/enlightens/step-into-the-sunlight"
+  },
+  "ownerAwakenerId": "awakener-0028",
+  "slot": "E2",
+  "descriptionTemplate": "{Pain of Unfulfilled Desires} Obtain 10 Aliemus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Leigh"
+}

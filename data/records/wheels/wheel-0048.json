@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0048",
+  "name": "Unsent Flowers",
+  "route": {
+    "slug": "unsent-flowers",
+    "canonicalPath": "/database/wheels/unsent-flowers"
+  },
+  "assets": {
+    "icon": "asset-wheel-0048-icon"
+  },
+  "rarity": "N",
+  "realm": "NEUTRAL",
+  "mainstatKey": "KEYFLARE_REGEN",
+  "lineupToken": "ya",
+  "descriptionTemplate": "Team Unique: If the wielder is the Awakener \"Ramona,\" the Affinity gained upon completing the stage +[StateArg1]%.",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "fixed",
+      "value": "50",
+      "suffix": "%"
+    }
+  },
+  "lore": "A bouquet that has withered and dried from being left for too long.\nIt will never see its master return."
+}

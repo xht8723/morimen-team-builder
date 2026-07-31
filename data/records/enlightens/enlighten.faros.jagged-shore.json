@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.faros.jagged-shore",
+  "name": "Jagged Shore",
+  "route": {
+    "slug": "jagged-shore",
+    "canonicalPath": "/database/awakeners/faros/enlightens/jagged-shore"
+  },
+  "ownerAwakenerId": "awakener-0017",
+  "slot": "E1",
+  "descriptionTemplate": "{Ocean of Elation} enjoys 100% more {Tentacle DMG} bonus.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faros"
+}

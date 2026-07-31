@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.daffodil.dimensional-projection",
+  "name": "Dimensional Projection",
+  "route": {
+    "slug": "dimensional-projection",
+    "canonicalPath": "/database/awakeners/daffodil/skills/dimensional-projection"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "slot": "Rouse",
+  "descriptionTemplate": "Daffodil gains [Energy:Arg1] Aliemus. {Rouse}: Whenever Daffodil's card enters {Ultra Space}, place 1 {derived:Insight} into hand, up to 2 times per turn.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "3",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.daffodil.dead-souls.skill.daffodil.dimensional-projection",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.daffodil.dead-souls",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0012",
+      "ownerAwakenerName": "Daffodil",
+      "patch": {
+        "descriptionTemplate": "Daffodil gains [Energy:Arg1] Aliemus. {Rouse}: Whenever Daffodil's card enters {Ultra Space}, place 1 {derived:Insight} into hand, up to 2 times per turn. Generate 1 Temporary {Skull Reaver} with 0 Arithmetica Cost and place it into {Ultra Space}."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Daffodil"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0076",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "洞悉",
+      "sourceHash": "sha256:73523cb252949cf655f9e2f29a19bcdb3ff264635b811405f71e524779f176b7",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：探索中视野+1，地图视野全开后获得 30 点黑印。首领战开始时，虚弱和易伤所有敌人 1 回合。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:8fe47bb5f1a861f8ef74be11ac276cc6e531b4aea8e88f2f76feeafb4e92c84f",
+      "status": "reference"
+    }
+  }
+}

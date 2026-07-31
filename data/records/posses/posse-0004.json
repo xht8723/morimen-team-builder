@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 3,
+  "kind": "posse",
+  "id": "posse-0004",
+  "name": "A Mouse's Wisdom",
+  "route": {
+    "slug": "a-mouses-wisdom",
+    "canonicalPath": "/database/posses/a-mouses-wisdom"
+  },
+  "assets": {
+    "icon": "asset-posse-0004-icon",
+    "crystal": "asset-posse-0004-crystal",
+    "badge": "asset-posse-0004-badge"
+  },
+  "acquisitionSource": "Clear Operation: Faded Legacy - Ch. 2 - Waxen Legacy",
+  "realm": "FADED_LEGACY",
+  "lineupToken": "c",
+  "descriptionTemplate": "Gain 3 Arithmetica.",
+  "descriptionArgs": {},
+  "lore": "The little mouse and its owner share many traits:\nCunning, bravery, and speed...\nThey freely roam the gaps between the scattered houses in the Eastern District, using the sky as their blanket and rooftops as their bed.\nThey thrive in the corners of the city."
+}

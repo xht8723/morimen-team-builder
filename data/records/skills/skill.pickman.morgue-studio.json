@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.pickman.morgue-studio",
+  "name": "Morgue Studio",
+  "route": {
+    "slug": "morgue-studio",
+    "canonicalPath": "/database/awakeners/pickman/skills/morgue-studio"
+  },
+  "ownerAwakenerId": "awakener-0040",
+  "slot": "Rouse",
+  "descriptionTemplate": "Pickman gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 stack of {Fantasia}. For each stack of {Creativity} Pickman gains, {Embryo Fusion}+ [Arg2].",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["25", "30", "35", "40", "45", "50"]
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["20", "22", "24", "26", "28", "30"]
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.pickman.world-in-the-painting.skill.pickman.morgue-studio",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.pickman.world-in-the-painting",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "AbsoluteAxiom",
+      "ownerAwakenerId": "awakener-0040",
+      "ownerAwakenerName": "Pickman",
+      "patch": {
+        "descriptionTemplate": "Pickman gains [Energy:Arg1] Aliemus. {Rouse}: Gain 1 stack of {Fantasia}. For each stack of {Creativity} Pickman gains, {Embryo Fusion}+ [Arg2]. The duration of the Painted Golden Relic created by {Lifelike Rendition} is increased from 1 turn to 2 turns."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Pickman"
+}

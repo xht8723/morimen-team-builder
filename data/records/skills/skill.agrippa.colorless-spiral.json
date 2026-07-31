@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.agrippa.colorless-spiral",
+  "name": "Colorless Spiral",
+  "route": {
+    "slug": "colorless-spiral",
+    "canonicalPath": "/database/awakeners/agrippa/skills/colorless-spiral"
+  },
+  "ownerAwakenerId": "awakener-0002",
+  "slot": "Skill2",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG and equal {Poison}. Whenever {Devour} is triggered, move {Colorless Spiral} from the Discard Pile to your hand.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["15", "18", "21", "24", "27", "30"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.agrippa.spider-queens-kiss.skill.agrippa.colorless-spiral",
+      "operation": "mixed",
+      "upgraderId": "enlighten.agrippa.spider-queens-kiss",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E3",
+      "ownerAwakenerId": "awakener-0002",
+      "ownerAwakenerName": "Agrippa",
+      "patch": {
+        "descriptionTemplate": "Deal [Damage:Arg1] DMG and apply equal {Poison}. {Embryo Fusion} +[Blood:Arg2]. Whenever {Devour} is triggered, place {Colorless Spiral} from the Discard Pile into hand.",
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["22.5", "27", "31.5", "36", "40.5", "45"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "fixed",
+            "value": "20"
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Agrippa"
+}

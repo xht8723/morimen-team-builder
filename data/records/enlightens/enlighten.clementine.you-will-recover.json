@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.clementine.you-will-recover",
+  "name": "You Will Recover",
+  "route": {
+    "slug": "you-will-recover",
+    "canonicalPath": "/database/awakeners/clementine/enlightens/you-will-recover"
+  },
+  "ownerAwakenerId": "awakener-0010",
+  "slot": "E3",
+  "descriptionTemplate": "At turn end, obtain 2 stacks of {Symbiosis}. The stacking limit for {Symbiosis}, {Psychic Trauma}, and {Phobic Fixation} is increased to 15.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Clementine"
+}

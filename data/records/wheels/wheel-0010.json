@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 3,
+  "kind": "wheel",
+  "id": "wheel-0010",
+  "name": "Lullaby Devoured",
+  "route": {
+    "slug": "lullaby-devoured",
+    "canonicalPath": "/database/wheels/lullaby-devoured"
+  },
+  "assets": {
+    "icon": "asset-wheel-0010-icon"
+  },
+  "rarity": "SSR",
+  "realm": "CARO",
+  "mainstatKey": "DEATH_RESISTANCE",
+  "ownerAwakenerId": "awakener-0016",
+  "ownerAwakenerName": "Faint",
+  "lineupToken": "C",
+  "descriptionTemplate": "Team Unique: At the start of battle, gain {Counter} equal to [StateArg1]% of the wielder's DEF. After triggering {Death Resistance}, gain up to 2 stacks of \"Cradle\" in total: Shield gained from and HP recovered by all allies +[StateArg2]%, remove 1 stack at the end of the turn. If the current Realm is {Caro}, after triggering {Death Resistance}, {Embryo Fusion} +[Blood:StateArg3].",
+  "descriptionArgs": {
+    "StateArg1": {
+      "kind": "scaling",
+      "values": ["26", "34", "42", "50"],
+      "suffix": "%"
+    },
+    "StateArg2": {
+      "kind": "scaling",
+      "values": ["15", "20", "25", "30"],
+      "suffix": "%"
+    },
+    "StateArg3": {
+      "kind": "scaling",
+      "values": ["13", "17", "21", "25"]
+    }
+  },
+  "lore": "She is called the cursed child born with death, an unblessed daughter. \nThe \"cradle\" belonging to her and her sister has just shattered, and brilliant light spills out from the cracks, taking root on the ground. In an instant, green grass withers, flowers fade, and even distant trees and fish in the lake lose their vitality, becoming soulless husks. \nHer family gasps in horror and hurriedly relocates all other cradles. She struggles to break free from the cradle, like a chick hatching from an egg, but her outstretched hands are repulsed with disgust, and all she sees are faces of contempt. \nOnly her sister, who was born that night and matured earlier than her, will forever hold her. She sings lullabies with a voice like a spirit bird. \n\"Sleep, sleep, my dear sister; \nSleep, sleep, sweet dreams will surely come.\" \n\nShe should not exist, and if she did not, her shimmering sister would not be stained by the shadow of sin. \nMy poor sister, she always thinks that you bear the cost of existence you shouldn't have to shoulder. \nMy poor sister, she always thinks that as long as the sister can do it, she will surely give her all for you. \n\"Sleep, sleep, my dear sister; \nSleep, sleep, I love you even in dreams.\"",
+  "searchTags": ["Counter", "Death Resistance", "Shield", "Heal", "Embryo Fusion"]
+}

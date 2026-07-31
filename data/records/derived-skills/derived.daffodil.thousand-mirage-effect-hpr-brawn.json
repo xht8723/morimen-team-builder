@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 3,
+  "kind": "derivedSkill",
+  "id": "derived.daffodil.thousand-mirage-effect-hpr-brawn",
+  "name": "Hpr. Brawn",
+  "route": {
+    "slug": "hpr-brawn",
+    "canonicalPath": "/database/awakeners/daffodil/derived-skills/hpr-brawn"
+  },
+  "ownerAwakenerId": "awakener-0012",
+  "derivedFromId": "derived.daffodil.thousand-mirage-extra-effects",
+  "rootSkillId": "skill.daffodil.sea-of-primordial-essence",
+  "descriptionTemplate": "Enjoys an additional 4× {STR} bonus. Obtain [Power:Arg1] {STR}.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "0",
+  "ownerAwakenerName": "Daffodil"
+}

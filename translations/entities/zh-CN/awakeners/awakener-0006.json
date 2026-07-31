@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0006",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "凯刻斯",
+      "sourceHash": "sha256:6875d02afd441b7ff9843135a29c070ae9bb3886f7bbecf18341279e8a37bf98",
+      "status": "reference"
+    },
+    "description": {
+      "value": "凯刻斯总阴沉地徘徊在湖畔，学生们于是把那里称作「忧郁半鱼人的领地」。他每日像领主般巡视水域，却很少有人知道湖面之下真正牵动他的是什么。",
+      "sourceHash": "sha256:01f2ceb1e8d2219e52b244cfdfa8d2b09f0564cb81e50621fcf8b014469a3a57",
+      "status": "machine"
+    }
+  }
+}

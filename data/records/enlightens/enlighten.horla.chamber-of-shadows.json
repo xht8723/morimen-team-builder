@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.horla.chamber-of-shadows",
+  "name": "Chamber of Shadows",
+  "route": {
+    "slug": "chamber-of-shadows",
+    "canonicalPath": "/database/awakeners/horla/enlightens/chamber-of-shadows"
+  },
+  "ownerAwakenerId": "awakener-0024",
+  "slot": "E2",
+  "descriptionTemplate": "Horla's Psalms gain {Retain}.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Horla"
+}

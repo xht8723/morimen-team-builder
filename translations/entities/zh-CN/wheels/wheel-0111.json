@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0111",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "蓝环毒素",
+      "sourceHash": "sha256:1d601600e39ca4848f1843c280a52880cf3b160fdbdb409e253a615da493c4a8",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者银钥充能、狂气爆发造成的最终伤害、护盾提高 8%。",
+      "sourceHash": "sha256:60f4efb80aa9513dc05fa84c6a7f5385145e48995e0658d9861b8695ede8f331",
+      "status": "reference"
+    }
+  }
+}

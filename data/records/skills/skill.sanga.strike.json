@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.sanga.strike",
+  "name": "Strike",
+  "route": {
+    "slug": "strike",
+    "canonicalPath": "/database/awakeners/sanga/skills/strike"
+  },
+  "ownerAwakenerId": "awakener-0045",
+  "slot": "Strike",
+  "descriptionTemplate": "Deal [Damage:Arg1] DMG. Sanga obtains [Energy:Arg2] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["10", "12", "14", "16", "18", "20"],
+      "stat": "ATK",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "cost": "1",
+  "upgrades": [
+    {
+      "id": "upgrade.talent.sanga.enlightenment-of-death.skill.sanga.strike",
+      "operation": "override_args",
+      "upgraderId": "talent.sanga.enlightenment-of-death",
+      "upgraderType": "talent",
+      "ownerAwakenerId": "awakener-0045",
+      "ownerAwakenerName": "Sanga",
+      "patch": {
+        "descriptionArgs": {
+          "Arg1": {
+            "kind": "scaling",
+            "values": ["10", "12", "14", "16", "18", "20"],
+            "stat": "ATK",
+            "suffix": "%"
+          },
+          "Arg2": {
+            "kind": "scaling",
+            "values": ["5", "6", "7", "8", "9", "10"],
+            "substatBonus": {
+              "substat": "DeathResistance",
+              "multiplier": "0.03",
+              "mode": "additive"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "ownerAwakenerName": "Sanga"
+}

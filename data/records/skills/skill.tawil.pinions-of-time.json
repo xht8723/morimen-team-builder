@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.tawil.pinions-of-time",
+  "name": "Pinions of Time",
+  "route": {
+    "slug": "pinions-of-time",
+    "canonicalPath": "/database/awakeners/tawil/skills/pinions-of-time"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "slot": "Skill2",
+  "descriptionTemplate": "Obtain [Power:Arg1] {STR}. Shuffle {Twin Wings} into the Draw Pile.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["3", "3.6", "4.2", "4.8", "5.4", "6"],
+      "stat": "ATK",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [
+    {
+      "id": "mechanic.retain"
+    }
+  ],
+  "cost": "2",
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.tawil.boundless-sagacity.skill.tawil.pinions-of-time",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.tawil.boundless-sagacity",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0047",
+      "ownerAwakenerName": "Tawil",
+      "patch": {
+        "descriptionTemplate": "Obtain [Power:Arg1] {STR} and 1 {derived:Insight}. Shuffle {Twin Wings} into the Draw Pile."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Tawil"
+}

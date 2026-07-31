@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "awakener-0015",
+  "kind": "awakener",
+  "fields": {
+    "name": {
+      "value": "艾瑞卡",
+      "sourceHash": "sha256:bff2a7c9ad83b59da74c00f0a2d9b9df9a42844b67ec78a80aede96fee350c91",
+      "status": "reference"
+    },
+    "description": {
+      "value": "朵尔检查过艾瑞卡的每一处身体结构，却找不到任何能让她发声的部件。她如何说话至今仍是密大谜团之一，而偶尔从她体内传出的陌生声音，更让答案显得危险。",
+      "sourceHash": "sha256:9531a649ca36c47eb0693053994ae8e05818b2fe7366eb2ae48a631346366fae",
+      "status": "machine"
+    }
+  }
+}

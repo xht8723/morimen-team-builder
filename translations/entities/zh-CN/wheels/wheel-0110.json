@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0110",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "魔女宽檐帽",
+      "sourceHash": "sha256:e809d824d0e34fcb5e9b43b13dea6bdd95144aeb8d2f74fa69293ea2a4f410b1",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者每回合使用的第一张指令卡造成的基础伤害提高 60%.若其进入了超维空间，装备者获得 8 点狂气。",
+      "sourceHash": "sha256:7311c8abf55a0f14beefe62089f841cdb36c5a63896991e1e061ee6d26a93808",
+      "status": "reference"
+    }
+  }
+}

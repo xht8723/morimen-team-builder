@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "talent",
+  "id": "talent.sanga.soulforge-aptitude",
+  "name": "Soulforge Aptitude",
+  "route": {
+    "slug": "soulforge-aptitude",
+    "canonicalPath": "/database/awakeners/sanga/talents/soulforge-aptitude"
+  },
+  "ownerAwakenerId": "awakener-0045",
+  "family": "soulforge_aptitude",
+  "maxLevel": 10,
+  "descriptionTemplate": "This talent is only effective in the {Astral Reign} stages.\nThis Awakener's CON, ATK, and DEF +[Arg1]%, and they gain [Arg2] Keyflare upon their first {Rouse}.\nWhen Sanga generates Shield, the {Tentacle DMG} increases by [Arg3]% Shield. Sanga's Exalt DMG additionally enjoys [Arg4]% {Tentacle DMG} bonus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "linear",
+      "base": "3",
+      "gainPerLevel": "3"
+    },
+    "Arg2": {
+      "kind": "linear",
+      "base": "50",
+      "gainPerLevel": "50"
+    },
+    "Arg3": {
+      "kind": "scaling",
+      "values": ["3", "3.3", "3.6", "3.9", "4.2", "4.5", "4.8", "5.1", "5.4", "6"]
+    },
+    "Arg4": {
+      "kind": "scaling",
+      "values": ["100", "110", "120", "130", "140", "150", "160", "170", "180", "200"]
+    }
+  },
+  "ownerAwakenerName": "Sanga"
+}

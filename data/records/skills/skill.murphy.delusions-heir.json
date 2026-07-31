@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.murphy.delusions-heir",
+  "name": "Delusion's Heir",
+  "route": {
+    "slug": "delusions-heir",
+    "canonicalPath": "/database/awakeners/murphy/skills/delusions-heir"
+  },
+  "ownerAwakenerId": "awakener-0034",
+  "slot": "Exalt",
+  "descriptionTemplate": "All enemies DMG -[Arg1]%; when attacked, receive half the DMG as {Sacrifice} for 1 turn. Gain [Block:Arg2] Shield, command all Tentacles to attack once.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "fixed",
+      "value": "50",
+      "suffix": "%"
+    },
+    "Arg2": {
+      "kind": "scaling",
+      "values": ["30", "36", "42", "48", "54", "60"],
+      "stat": "DEF",
+      "suffix": "%"
+    }
+  },
+  "cardKeywords": [],
+  "cost": "100",
+  "ownerAwakenerName": "Murphy"
+}

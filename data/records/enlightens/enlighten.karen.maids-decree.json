@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.karen.maids-decree",
+  "name": "Maid's Decree",
+  "route": {
+    "slug": "maids-decree",
+    "canonicalPath": "/database/awakeners/karen/enlightens/maids-decree"
+  },
+  "ownerAwakenerId": "awakener-0026",
+  "slot": "E1",
+  "descriptionTemplate": "{Silent Fealty} maximum stack count increased to 3.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Karen"
+}

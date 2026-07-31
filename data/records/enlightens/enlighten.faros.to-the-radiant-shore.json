@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 3,
+  "kind": "enlighten",
+  "id": "enlighten.faros.to-the-radiant-shore",
+  "name": "To the Radiant Shore",
+  "route": {
+    "slug": "to-the-radiant-shore",
+    "canonicalPath": "/database/awakeners/faros/enlightens/to-the-radiant-shore"
+  },
+  "ownerAwakenerId": "awakener-0017",
+  "slot": "AbsoluteAxiom",
+  "descriptionTemplate": "{Rouse} {Abyssal Obsession} is enhanced: After Faros plays a card, Tentacles inflict {Poison} equal to 5% of {Tentacle DMG} generated this turn, up to 3 times.",
+  "descriptionArgs": {},
+  "ownerAwakenerName": "Faros"
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 3,
+  "kind": "skill",
+  "id": "skill.tawil.omniscient-verity",
+  "name": "Omniscient Verity",
+  "route": {
+    "slug": "omniscient-verity",
+    "canonicalPath": "/database/awakeners/tawil/skills/omniscient-verity"
+  },
+  "ownerAwakenerId": "awakener-0047",
+  "slot": "Skill1",
+  "descriptionTemplate": "While in hand, if the card at the top of the Draw Pile is a Command Card, become a copy of it. Revert after playing and gain [Energy:Arg1] Aliemus.",
+  "descriptionArgs": {
+    "Arg1": {
+      "kind": "scaling",
+      "values": ["5", "6", "7", "8", "9", "10"]
+    }
+  },
+  "cardKeywords": [],
+  "upgrades": [
+    {
+      "id": "upgrade.enlighten.tawil.boundless-sagacity.skill.tawil.omniscient-verity",
+      "operation": "replace_description",
+      "upgraderId": "enlighten.tawil.boundless-sagacity",
+      "upgraderType": "enlighten",
+      "upgraderSlot": "E1",
+      "ownerAwakenerId": "awakener-0047",
+      "ownerAwakenerName": "Tawil",
+      "patch": {
+        "descriptionTemplate": "While in hand, if the top card of the Draw Pile is a Command Card, transform into its Copy with Arithmetica Cost reduced by 1. After playing, revert and gain [Energy:Arg1] Aliemus."
+      }
+    }
+  ],
+  "ownerAwakenerName": "Tawil"
+}

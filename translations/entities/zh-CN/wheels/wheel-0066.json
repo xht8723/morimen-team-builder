@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0066",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "呢喃",
+      "sourceHash": "sha256:6d013c3daaa98bdebadf7b518156fb39111b628e5cf7cefcfb02751679c82e3d",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：战斗结束后，狂气最低的唤醒体获得 50 点狂气。在星辰篇中，效果改为「使装备者的维度影像造物出现的可能性提高100%」。",
+      "sourceHash": "sha256:d3b6cb93c31fb57c4d9877523b909dd1b2f5f32cfbd0d7606a82307a1283797f",
+      "status": "reference"
+    }
+  }
+}

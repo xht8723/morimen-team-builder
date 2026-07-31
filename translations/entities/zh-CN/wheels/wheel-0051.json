@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "wheel-0051",
+  "kind": "wheel",
+  "fields": {
+    "name": {
+      "value": "隐秘的诞生",
+      "sourceHash": "sha256:7a99198cf4fa2bb25352070e4ecaf190912501ed589a25f2524e043251606b32",
+      "status": "reference"
+    },
+    "description": {
+      "value": "队伍唯一：装备者造成的护盾提高 15%，并且造成护盾时，己方全员获得 8% 临时暴击率，每回合最多生效 2 次。若当前界域为「深海」，每当有 1 条触腕攻击时，装备者获得 1 点狂气，每回合最多获得 10点。",
+      "sourceHash": "sha256:11fd161c9fddefcdcf4f6b84e19be325d954278f3d48ec87eaaeab9b74d1d7bc",
+      "status": "reference"
+    }
+  }
+}

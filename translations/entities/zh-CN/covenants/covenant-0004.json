@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "covenant-0004",
+  "kind": "covenant",
+  "fields": {
+    "name": {
+      "value": "猩红之悸",
+      "sourceHash": "sha256:75b3ef7dfaf2d819ba0f199c304d1bfa5dab43cb8e82327687f712c6ea2038c9",
+      "status": "reference"
+    },
+    "description": {
+      "value": "3件套： 暴击伤害 +7.2% 6件套： 释放钥令后，装备者获得 30% 临时暴击率。",
+      "sourceHash": "sha256:195402b997fe8168b3b308408a7ce04a91c8f04910fd53dfb8c972e93ff65fb6",
+      "status": "reference"
+    }
+  }
+}

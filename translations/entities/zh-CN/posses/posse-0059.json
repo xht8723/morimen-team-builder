@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "posse-0059",
+  "kind": "posse",
+  "fields": {
+    "name": {
+      "value": "原初记忆·力量",
+      "sourceHash": "sha256:723ced27368a22e5aa13cd7275e5018dfe5492e08c2ac73c0eb0cc50616e3329",
+      "status": "machine"
+    },
+    "description": {
+      "value": "获得 Arg1 点力量。数值随原初精通成长。",
+      "sourceHash": "sha256:087dedc925f02dbce0135506b09aabab57766fbf99153d74248bd1a9d22f0c0c",
+      "status": "machine"
+    }
+  }
+}
