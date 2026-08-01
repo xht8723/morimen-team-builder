@@ -38,6 +38,17 @@ function getEntityMeta(entity: GameEntity, translateEnum: (value: string) => str
 }
 
 const wheelRarityOrder = ["SSR", "SR", "R", "N"];
+const wheelRealmOrder = [...gameCatalog.filters.realms, "NEUTRAL"];
+
+interface PickerEntityView extends LocalizedEntityView {
+  used: boolean;
+  blocked: boolean;
+}
+
+function getAvailabilityRank({ used, blocked }: PickerEntityView) {
+  if (used) return 1;
+  return blocked ? 2 : 0;
+}
 
 function compareRankedValues(left: string, right: string, order: string[]) {
   const leftIndex = order.indexOf(left);
@@ -54,21 +65,26 @@ function compareRankedValues(left: string, right: string, order: string[]) {
 }
 
 function comparePickerEntities(
-  left: LocalizedEntityView,
-  right: LocalizedEntityView,
+  left: PickerEntityView,
+  right: PickerEntityView,
   collator: Intl.Collator,
 ) {
+  const availabilityComparison = getAvailabilityRank(left) - getAvailabilityRank(right);
+  if (availabilityComparison !== 0) return availabilityComparison;
+
   const leftEntity = left.entity;
   const rightEntity = right.entity;
   if (leftEntity.kind !== rightEntity.kind) return leftEntity.kind.localeCompare(rightEntity.kind);
 
   let categoryComparison = 0;
   if (leftEntity.kind === "wheel" && rightEntity.kind === "wheel") {
-    categoryComparison = compareRankedValues(
+    const rarityComparison = compareRankedValues(
       leftEntity.rarity,
       rightEntity.rarity,
       wheelRarityOrder,
     );
+    categoryComparison =
+      rarityComparison || compareRankedValues(leftEntity.realm, rightEntity.realm, wheelRealmOrder);
   } else if (leftEntity.kind === "awakener" && rightEntity.kind === "awakener") {
     categoryComparison = compareRankedValues(
       leftEntity.realm,
@@ -139,8 +155,19 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
       .filter(
         ({ entity }) => entity.kind !== "wheel" || rarity === "ALL" || entity.rarity === rarity,
       )
+      .map((view) => ({
+        ...view,
+        used:
+          target !== null &&
+          view.entity.kind !== "covenant" &&
+          isEntityAssigned(teams, view.entity.kind, view.entity.id),
+        blocked:
+          target !== null &&
+          view.entity.kind === "awakener" &&
+          !canAssignAwakener(teams, target, view.entity.id),
+      }))
       .sort((left, right) => comparePickerEntities(left, right, collator));
-  }, [allEntities, collator, filter, fuse, query, rarity]);
+  }, [allEntities, collator, filter, fuse, query, rarity, target, teams]);
 
   if (!target) {
     return (
@@ -243,11 +270,7 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
       </div>
 
       <div className="picker-grid">
-        {filtered.map(({ entity, text }) => {
-          const used =
-            entity.kind !== "covenant" && isEntityAssigned(teams, entity.kind, entity.id);
-          const blocked =
-            entity.kind === "awakener" && !canAssignAwakener(teams, target, entity.id);
+        {filtered.map(({ entity, text, used, blocked }) => {
           const meta = getEntityMeta(entity, translateEnum);
           const hasStatus = blocked || !entity.lineupToken;
           return (

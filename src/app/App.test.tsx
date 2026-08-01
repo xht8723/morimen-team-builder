@@ -35,6 +35,20 @@ function pickerCardNames() {
   );
 }
 
+function pickerCards() {
+  return [...document.querySelectorAll<HTMLButtonElement>(".picker-card")];
+}
+
+function pickerCardAvailabilityRank(card: HTMLButtonElement) {
+  if (card.classList.contains("picker-card--used")) return 1;
+  return card.disabled ? 2 : 0;
+}
+
+function expectAvailabilityOrder() {
+  const ranks = pickerCards().map(pickerCardAvailabilityRank);
+  expect(ranks).toEqual([...ranks].sort((left, right) => left - right));
+}
+
 function namesByCategory<T extends { name: string }>(
   entities: T[],
   getCategory: (entity: T) => string,
@@ -52,6 +66,24 @@ function pickerVisiblePosses() {
   return gameCatalog.entities.posses.filter(
     (posse) => !/^primordial memory(?:·|\b)/i.test(posse.name),
   );
+}
+
+function sortedWheelNames(wheels = gameCatalog.entities.wheels) {
+  const rarityOrder = ["SSR", "SR", "R", "N"];
+  const realmOrder = [...gameCatalog.filters.realms, "NEUTRAL"];
+  const rank = (value: string, order: string[]) => {
+    const index = order.indexOf(value);
+    return index === -1 ? order.length : index;
+  };
+
+  return [...wheels]
+    .sort(
+      (left, right) =>
+        rank(left.rarity, rarityOrder) - rank(right.rarity, rarityOrder) ||
+        rank(left.realm, realmOrder) - rank(right.realm, realmOrder) ||
+        left.name.localeCompare(right.name),
+    )
+    .map((wheel) => wheel.name);
 }
 
 describe("builder interface", () => {
@@ -373,13 +405,12 @@ describe("builder interface", () => {
 
     await user.click(screen.getByRole("button", { name: "Close picker" }));
     await user.click(screen.getByRole("button", { name: "Choose wheel 1 for slot 1" }));
+    expect(pickerCardNames()).toEqual(sortedWheelNames());
+
+    const rarityFilters = within(screen.getByLabelText("Rarity filters"));
+    await user.click(rarityFilters.getByRole("button", { name: "SSR" }));
     expect(pickerCardNames()).toEqual(
-      namesByCategory(gameCatalog.entities.wheels, (entity) => entity.rarity, [
-        "SSR",
-        "SR",
-        "R",
-        "N",
-      ]),
+      sortedWheelNames(gameCatalog.entities.wheels.filter((entity) => entity.rarity === "SSR")),
     );
 
     await user.click(screen.getByRole("button", { name: "Close picker" }));
@@ -394,6 +425,93 @@ describe("builder interface", () => {
     )) {
       expect(screen.queryByText(posse.name)).not.toBeInTheDocument();
     }
+  });
+
+  it("sorts used and realm-blocked picker options after every selectable option", async () => {
+    const user = userEvent.setup();
+    const aequor = gameCatalog.entities.awakeners.find((entity) => entity.realm === "AEQUOR")!;
+    const caro = gameCatalog.entities.awakeners.find((entity) => entity.realm === "CARO")!;
+    const usedAndBlocked = gameCatalog.entities.awakeners.find(
+      (entity) => entity.realm === "CHAOS",
+    )!;
+    const usedWheel = gameCatalog.entities.wheels.find((entity) => /a/i.test(entity.name))!;
+    const usedPosse = pickerVisiblePosses()[0]!;
+    const usedCovenant = gameCatalog.entities.covenants[0]!;
+    const teams = createDefaultTeams();
+    teams[0].slots[0].awakenerId = aequor.id;
+    teams[0].slots[1].awakenerId = caro.id;
+    teams[1].slots[0].awakenerId = usedAndBlocked.id;
+    teams[1].slots[0].wheelIds[0] = usedWheel.id;
+    teams[1].slots[0].covenantId = usedCovenant.id;
+    teams[1].posseId = usedPosse.id;
+    useBuilderStore.setState({ teams });
+    render(<App />);
+
+    await user.click(screen.getByRole("button", { name: "Choose awakener for slot 3" }));
+    expectAvailabilityOrder();
+    const usedAndBlockedCard = screen
+      .getByText(usedAndBlocked.name, { selector: ".picker-card strong" })
+      .closest("button")!;
+    expect(usedAndBlockedCard).toHaveClass("picker-card--used");
+    expect(usedAndBlockedCard).toBeDisabled();
+    expect(pickerCardAvailabilityRank(usedAndBlockedCard)).toBe(1);
+
+    const awakenerCards = pickerCards();
+    const realmOnlyBlockedIndex = awakenerCards.findIndex(
+      (card) => card.disabled && !card.classList.contains("picker-card--used"),
+    );
+    expect(realmOnlyBlockedIndex).toBeGreaterThanOrEqual(0);
+    expect(
+      awakenerCards
+        .filter((card) => pickerCardAvailabilityRank(card) === 1)
+        .map((card) => card.querySelector("strong")?.textContent),
+    ).toEqual([aequor.name, caro.name, usedAndBlocked.name]);
+    expect(awakenerCards.indexOf(usedAndBlockedCard)).toBeLessThan(realmOnlyBlockedIndex);
+
+    const realmFilters = within(screen.getByLabelText("Primary filters"));
+    await user.click(realmFilters.getByRole("button", { name: "Aequor" }));
+    expectAvailabilityOrder();
+    expect(pickerCards().at(-1)).toHaveTextContent(aequor.name);
+
+    await user.click(screen.getByRole("button", { name: "Close picker" }));
+    await user.click(screen.getByRole("button", { name: "Choose wheel 1 for slot 3" }));
+    expectAvailabilityOrder();
+    expect(pickerCards().at(-1)).toHaveTextContent(usedWheel.name);
+
+    const mainstatFilters = within(screen.getByLabelText("Primary filters"));
+    await user.click(
+      mainstatFilters.getByRole("button", {
+        name: formatEnumLabel(usedWheel.mainstatKey),
+      }),
+    );
+    expectAvailabilityOrder();
+    expect(pickerCards().at(-1)).toHaveTextContent(usedWheel.name);
+
+    const rarityFilters = within(screen.getByLabelText("Rarity filters"));
+    await user.click(rarityFilters.getByRole("button", { name: usedWheel.rarity }));
+    expectAvailabilityOrder();
+    expect(pickerCards().at(-1)).toHaveTextContent(usedWheel.name);
+
+    await user.click(mainstatFilters.getByRole("button", { name: "All" }));
+    await user.click(rarityFilters.getByRole("button", { name: "All rarity" }));
+    await user.type(screen.getByRole("textbox", { name: "Search records" }), "a");
+    expect(pickerCards().length).toBeGreaterThan(1);
+    expectAvailabilityOrder();
+    expect(pickerCards().at(-1)).toHaveTextContent(usedWheel.name);
+
+    await user.click(screen.getByRole("button", { name: "Close picker" }));
+    await user.click(screen.getByRole("button", { name: "Team posse: Empty" }));
+    expectAvailabilityOrder();
+    expect(pickerCards().at(-1)).toHaveTextContent(usedPosse.name);
+
+    await user.click(screen.getByRole("button", { name: "Close picker" }));
+    await user.click(screen.getByRole("button", { name: "Choose covenant for slot 3" }));
+    expect(document.querySelectorAll(".picker-card--used")).toHaveLength(0);
+    expect(pickerCardNames()).toEqual(
+      gameCatalog.entities.covenants
+        .map((entity) => entity.name)
+        .sort((left, right) => left.localeCompare(right)),
+    );
   });
 
   it("marks a used awakener for replacement while preserving move behavior", async () => {
