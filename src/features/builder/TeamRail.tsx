@@ -2,7 +2,7 @@ import { CircleAlert, RotateCcw } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
-import { awakenersById, possesById } from "@/data-access/catalog";
+import { awakenersById, possesById, wheelsById } from "@/data-access/catalog";
 import { resolveEntityText } from "@/data-access/entity-localization";
 import { encodeTeam } from "@/domain/share-code";
 import { getTeamRealms } from "@/domain/team-rules";
@@ -49,6 +49,21 @@ export function TeamRail({ teams, activeTeamId, onSelect, onReset }: TeamRailPro
           const realms = getTeamRealms(team);
           const posse = team.posseId ? possesById.get(team.posseId) : undefined;
           const posseText = posse ? resolveEntityText(posse, language) : undefined;
+          const awakeners = team.slots.map((slot) =>
+            slot.awakenerId ? awakenersById.get(slot.awakenerId) : undefined,
+          );
+          const awakenerNames = awakeners.map((awakener) =>
+            awakener ? resolveEntityText(awakener, language).name : t("builder.empty"),
+          );
+          const wheelGroups = team.slots.map((slot) =>
+            slot.wheelIds.map((wheelId) => (wheelId ? wheelsById.get(wheelId) : undefined)),
+          );
+          const wheelNames = wheelGroups.flatMap((wheels) =>
+            wheels.map((wheel) =>
+              wheel ? resolveEntityText(wheel, language).name : t("builder.empty"),
+            ),
+          );
+          const posseName = posseText?.name ?? t("builder.noPosse");
           return (
             <button
               type="button"
@@ -59,38 +74,72 @@ export function TeamRail({ teams, activeTeamId, onSelect, onReset }: TeamRailPro
               onClick={() => onSelect(team.id)}
               aria-pressed={team.id === activeTeamId}
             >
-              <span className="team-rail-card__number">{String(index + 1).padStart(2, "0")}</span>
-              <span className="team-rail-card__copy">
-                <strong title={team.name}>{team.name}</strong>
-                <span>
+              <span className="team-rail-card__header">
+                <span className="team-rail-card__number">{String(index + 1).padStart(2, "0")}</span>
+                <strong className="team-rail-card__name" title={team.name}>
+                  {team.name}
+                </strong>
+                <span className="team-rail-card__realms">
                   {realms.length > 0
-                    ? realms.map((realm) => <RealmBadge key={realm} realm={realm} />)
-                    : t("builder.noRealm")}
+                    ? realms.map((realm) => <RealmBadge key={realm} realm={realm} iconOnly />)
+                    : null}
                 </span>
-              </span>
-              <span className="team-rail-card__portraits" aria-hidden="true">
-                {team.slots.map((slot, slotIndex) => (
-                  <EntityArtwork
-                    key={`${team.id}-${String(slotIndex)}`}
-                    entity={slot.awakenerId ? awakenersById.get(slot.awakenerId) : undefined}
-                    size="small"
-                  />
-                ))}
-              </span>
-              <span className="team-rail-card__footer">
-                <span
-                  className="team-rail-card__posse"
-                  title={posseText?.name ?? t("builder.noPosse")}
-                >
+                <span className="team-rail-card__posse" title={posseName} aria-hidden="true">
                   <EntityArtwork entity={posse} size="small" />
-                  {posseText?.name ?? t("builder.noPosse")}
                 </span>
                 {!code.ok && (
-                  <span className="code-state">
-                    <CircleAlert size={13} />
-                    {t("builder.tokenMissing")}
+                  <span
+                    className="team-rail-card__warning"
+                    title={t("builder.tokenMissing")}
+                    aria-hidden="true"
+                  >
+                    <CircleAlert size={14} />
                   </span>
                 )}
+              </span>
+
+              <span className="team-rail-card__awakeners" aria-hidden="true">
+                {awakeners.map((awakener, slotIndex) => {
+                  const name = awakenerNames[slotIndex];
+                  return (
+                    <span
+                      className="team-rail-card__awakener"
+                      key={`${team.id}-awakener-${String(slotIndex)}`}
+                      title={`${t("builder.awakener")} ${String(slotIndex + 1)}: ${name}`}
+                    >
+                      <EntityArtwork entity={awakener} size="small" />
+                    </span>
+                  );
+                })}
+              </span>
+
+              <span className="team-rail-card__wheels" aria-hidden="true">
+                {wheelGroups.map((wheels, slotIndex) => (
+                  <span
+                    className="team-rail-card__wheel-pair"
+                    key={`${team.id}-wheels-${String(slotIndex)}`}
+                  >
+                    {wheels.map((wheel, wheelIndex) => {
+                      const wheelName = wheelNames[slotIndex * 2 + wheelIndex];
+                      return (
+                        <span
+                          className="team-rail-card__wheel"
+                          key={`${team.id}-${String(slotIndex)}-wheel-${String(wheelIndex)}`}
+                          title={`${t("builder.wheelNumber", { number: wheelIndex + 1 })}: ${wheelName}`}
+                        >
+                          <EntityArtwork entity={wheel} size="small" />
+                        </span>
+                      );
+                    })}
+                  </span>
+                ))}
+              </span>
+
+              <span className="sr-only">
+                {t("builder.railAwakeners", { names: awakenerNames.join(", ") })}{" "}
+                {t("builder.railWheels", { names: wheelNames.join(", ") })}{" "}
+                {t("builder.railPosse", { name: posseName })}
+                {!code.ok ? ` ${t("builder.tokenMissing")}` : ""}
               </span>
             </button>
           );

@@ -306,6 +306,8 @@ button:disabled {
   min-height: 0;
   flex: 1 1 auto;
   display: grid;
+  grid-auto-rows: max-content;
+  align-content: start;
   gap: 10px;
   overflow-y: auto;
   overscroll-behavior: contain;
@@ -315,9 +317,8 @@ button:disabled {
 .team-rail-card {
   width: 100%;
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  gap: 5px 10px;
-  padding: 13px 12px;
+  gap: 7px;
+  padding: 10px;
   text-align: left;
   color: var(--text);
   border: 1px solid transparent;
@@ -357,87 +358,112 @@ button:disabled {
   opacity: 1;
 }
 
+.team-rail-card__header {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) auto 26px auto;
+  align-items: center;
+  gap: 4px;
+}
+
 .team-rail-card__number {
   color: var(--faint);
   font-family: "Droid Serif", serif;
   font-size: 0.72rem;
-  padding-top: 2px;
 }
 
 .team-rail-card[data-active="true"] .team-rail-card__number {
   color: var(--accent);
 }
 
-.team-rail-card__copy {
-  display: grid;
-  gap: 5px;
+.team-rail-card__name {
   min-width: 0;
-}
-
-.team-rail-card__copy strong {
+  display: block;
   overflow: hidden;
   font-family: "Droid Serif", serif;
-  font-size: 0.93rem;
+  font-size: 0.86rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.team-rail-card__copy > span {
-  min-width: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  color: var(--faint);
-  font-size: 0.64rem;
-}
-
-.team-rail-card__portraits {
-  grid-column: 2;
-  display: flex;
-  margin-top: 5px;
-}
-
-.team-rail-card__portraits .entity-artwork {
-  margin-left: -4px;
-  border: 2px solid #10131a;
-}
-
-.team-rail-card__portraits .entity-artwork:first-child {
-  margin-left: 0;
-}
-
-.team-rail-card__footer {
-  min-width: 0;
-  grid-column: 2;
+.team-rail-card__realms {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 6px;
-  margin-top: 4px;
+  gap: 2px;
+}
+
+.team-rail-card__realms .realm-badge {
+  width: 14px;
+  min-height: 14px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.team-rail-card__realms .realm-badge img {
+  width: 14px;
+  height: 14px;
 }
 
 .team-rail-card__posse {
-  min-width: 0;
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  overflow: hidden;
-  color: var(--muted);
-  font-size: 0.62rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
 }
 
-.code-state {
-  flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
+.team-rail-card__posse .entity-artwork {
+  width: 26px;
+  height: 26px;
+}
+
+.team-rail-card__warning {
+  display: inline-grid;
+  place-items: center;
   color: #d39a75;
-  font-size: 0.56rem;
-  font-weight: 750;
-  white-space: nowrap;
+}
+
+.team-rail-card__awakeners,
+.team-rail-card__wheels {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 6px;
+}
+
+.team-rail-card__awakener,
+.team-rail-card__wheel {
+  min-width: 0;
+  display: grid;
+  place-items: center;
+}
+
+.team-rail-card__awakener .entity-artwork {
+  width: min(100%, 40px);
+  height: auto;
+  aspect-ratio: 1;
+  border-color: rgb(255 255 255 / 17%);
+}
+
+.team-rail-card__wheel-pair {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  gap: 2px;
+}
+
+.team-rail-card__wheel .entity-artwork {
+  width: min(100%, 21px);
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 4px;
+}
+
+.team-rail-card__wheel .entity-artwork--empty {
+  font-size: 0.65rem;
 }
 
 .team-board {
@@ -1802,12 +1828,9 @@ button:disabled {
   }
 
   .team-rail-card {
-    min-width: 200px;
-  }
-
-  .team-rail-card__portraits,
-  .team-rail-card__footer {
-    display: none;
+    width: 220px;
+    min-width: 220px;
+    flex: 0 0 220px;
   }
 
   .entity-picker {
@@ -1865,6 +1888,40 @@ button:disabled {
   .language-toggle {
     min-width: 38px;
     padding-inline: 6px !important;
+  }
+
+  .team-rail {
+    padding-inline: 10px;
+  }
+
+  .team-rail-card {
+    width: 205px;
+    min-width: 205px;
+    flex-basis: 205px;
+    padding: 8px;
+  }
+
+  .team-rail-card__header {
+    grid-template-columns: 19px minmax(0, 1fr) auto 24px auto;
+  }
+
+  .team-rail-card__posse,
+  .team-rail-card__posse .entity-artwork {
+    width: 24px;
+    height: 24px;
+  }
+
+  .team-rail-card__awakeners,
+  .team-rail-card__wheels {
+    gap: 5px;
+  }
+
+  .team-rail-card__awakener .entity-artwork {
+    max-width: 36px;
+  }
+
+  .team-rail-card__wheel .entity-artwork {
+    max-width: 18px;
   }
 
   .team-board {

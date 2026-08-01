@@ -53,7 +53,10 @@
     "defaultTeam": "队伍 {{number}}",
     "noRealm": "尚未选择界域",
     "noPosse": "无编队技能",
-    "tokenMissing": "缺少代码标记"
+    "tokenMissing": "缺少代码标记",
+    "railAwakeners": "唤醒体：{{names}}。",
+    "railWheels": "命轮：{{names}}。",
+    "railPosse": "编队技能：{{name}}。"
   },
   "picker": {
     "emptyTitle": "选择一个位置开始。",

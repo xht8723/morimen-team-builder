@@ -53,7 +53,10 @@
     "defaultTeam": "Team {{number}}",
     "noRealm": "No realm selected",
     "noPosse": "No posse",
-    "tokenMissing": "Token missing"
+    "tokenMissing": "Token missing",
+    "railAwakeners": "Awakeners: {{names}}.",
+    "railWheels": "Wheels: {{names}}.",
+    "railPosse": "Posse: {{name}}."
   },
   "picker": {
     "emptyTitle": "Select a slot to begin.",

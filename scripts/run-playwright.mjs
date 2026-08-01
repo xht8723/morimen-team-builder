@@ -1,4 +1,5 @@
 import { spawn, spawnSync } from "node:child_process";
+import { once } from "node:events";
 import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
@@ -21,7 +22,13 @@ async function waitForPreview(child) {
         }`,
       );
     }
-    if (previewOutput.includes(previewUrl)) return;
+    try {
+      const response = await fetch(previewUrl, { signal: AbortSignal.timeout(1_000) });
+      await response.body?.cancel();
+      if (response.ok) return;
+    } catch {
+      // The preview is still starting. Retry until the bounded deadline.
+    }
     await new Promise((resolve) => setTimeout(resolve, 200));
   }
   throw new Error(
@@ -31,12 +38,22 @@ async function waitForPreview(child) {
   );
 }
 
-function stopPreview(child) {
-  if (!child.pid || child.exitCode != null) return;
-  if (process.platform === "win32") {
-    spawnSync("taskkill", ["/PID", String(child.pid), "/T", "/F"], { stdio: "ignore" });
-  } else {
-    child.kill("SIGTERM");
+async function waitForExit(child, timeoutMs) {
+  if (child.exitCode != null || child.signalCode != null) return;
+  await Promise.race([
+    once(child, "exit"),
+    new Promise((resolve) => setTimeout(resolve, timeoutMs)),
+  ]);
+}
+
+async function stopPreview(child) {
+  if (!child.pid || child.exitCode != null || child.signalCode != null) return;
+
+  child.kill("SIGTERM");
+  await waitForExit(child, 3_000);
+  if (child.exitCode == null && child.signalCode == null) {
+    child.kill("SIGKILL");
+    await waitForExit(child, 2_000);
   }
 }
 
@@ -71,5 +88,5 @@ try {
   console.error(error instanceof Error ? error.message : String(error));
   process.exitCode = 1;
 } finally {
-  stopPreview(preview);
+  await stopPreview(preview);
 }

@@ -74,10 +74,23 @@ test("uses the game branding and transitions between teams", async ({ page }, te
   await expect(page.getByRole("heading", { name: "Team 10" })).toBeVisible();
   const railMetrics = await page.evaluate(() => {
     const list = document.querySelector(".team-rail__list")!.getBoundingClientRect();
-    const active = document
-      .querySelector(".team-rail-card[data-active='true']")!
-      .getBoundingClientRect();
+    const activeElement = document.querySelector<HTMLElement>(
+      ".team-rail-card[data-active='true']",
+    )!;
+    const active = activeElement.getBoundingClientRect();
     const listElement = document.querySelector(".team-rail__list")!;
+    const awakeners = activeElement.querySelector(".team-rail-card__awakeners")!;
+    const wheels = activeElement.querySelector(".team-rail-card__wheels")!;
+    const posse = activeElement.querySelector(".team-rail-card__posse")!;
+    const contentFits = [awakeners, wheels, posse].every((element) => {
+      const bounds = element.getBoundingClientRect();
+      return (
+        bounds.left >= active.left - 1 &&
+        bounds.right <= active.right + 1 &&
+        bounds.top >= active.top - 1 &&
+        bounds.bottom <= active.bottom + 1
+      );
+    });
     return {
       activeTop: active.top,
       activeRight: active.right,
@@ -89,11 +102,26 @@ test("uses the game branding and transitions between teams", async ({ page }, te
       clientHeight: listElement.clientHeight,
       scrollWidth: listElement.scrollWidth,
       clientWidth: listElement.clientWidth,
+      activeClientHeight: activeElement.clientHeight,
+      activeScrollHeight: activeElement.scrollHeight,
+      awakenersDisplay: getComputedStyle(awakeners).display,
+      wheelsDisplay: getComputedStyle(wheels).display,
+      posseDisplay: getComputedStyle(posse).display,
+      awakenerCount: activeElement.querySelectorAll(".team-rail-card__awakener").length,
+      wheelCount: activeElement.querySelectorAll(".team-rail-card__wheel").length,
+      contentFits,
     };
   });
   expect(railMetrics.activeTop).toBeGreaterThanOrEqual(railMetrics.listTop - 1);
   expect(railMetrics.activeRight).toBeLessThanOrEqual(railMetrics.listRight + 1);
   expect(railMetrics.activeBottom).toBeLessThanOrEqual(railMetrics.listBottom + 1);
+  expect(railMetrics.activeScrollHeight).toBeLessThanOrEqual(railMetrics.activeClientHeight + 1);
+  expect(railMetrics.awakenersDisplay).not.toBe("none");
+  expect(railMetrics.wheelsDisplay).not.toBe("none");
+  expect(railMetrics.posseDisplay).not.toBe("none");
+  expect(railMetrics.awakenerCount).toBe(4);
+  expect(railMetrics.wheelCount).toBe(8);
+  expect(railMetrics.contentFits).toBe(true);
   if (testInfo.project.name === "desktop") {
     expect(railMetrics.scrollHeight).toBeGreaterThan(railMetrics.clientHeight);
   } else {

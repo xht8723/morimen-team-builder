@@ -93,6 +93,68 @@ describe("builder interface", () => {
     expect(within(screen.getByRole("main")).getByRole("button", { name: "Import" })).toBeVisible();
   });
 
+  it("renders a fixed icon-only loadout overview in every team-rail card", () => {
+    const teams = createDefaultTeams();
+    const awakeners = gameCatalog.entities.awakeners.slice(0, 4);
+    const wheels = gameCatalog.entities.wheels.slice(0, 8);
+    const partialAwakener = gameCatalog.entities.awakeners[4];
+    const partialWheel = gameCatalog.entities.wheels[8];
+    const posse = gameCatalog.entities.posses.find((entity) => entity.lineupToken);
+    const covenant = gameCatalog.entities.covenants[0];
+    expect(awakeners).toHaveLength(4);
+    expect(wheels).toHaveLength(8);
+    expect(partialAwakener).toBeDefined();
+    expect(partialWheel).toBeDefined();
+    expect(posse).toBeDefined();
+    expect(covenant).toBeDefined();
+
+    teams[0].posseId = posse!.id;
+    teams[0].slots.forEach((slot, slotIndex) => {
+      slot.awakenerId = awakeners[slotIndex]!.id;
+      slot.wheelIds = [wheels[slotIndex * 2]!.id, wheels[slotIndex * 2 + 1]!.id];
+    });
+    teams[0].slots[0].covenantId = covenant!.id;
+    teams[1].slots[0].awakenerId = partialAwakener!.id;
+    teams[1].slots[0].wheelIds[0] = partialWheel!.id;
+    useBuilderStore.setState({ teams });
+
+    render(<App />);
+
+    const card = screen
+      .getByText("Team 1", { selector: ".team-rail-card__name" })
+      .closest("button")!;
+    expect(card.querySelectorAll(".team-rail-card__awakener")).toHaveLength(4);
+    expect(card.querySelectorAll(".team-rail-card__wheel")).toHaveLength(8);
+    expect(card.querySelectorAll(".team-rail-card__wheel-pair")).toHaveLength(4);
+    expect(card.querySelectorAll(".team-rail-card__posse .entity-artwork")).toHaveLength(1);
+
+    const posseIcon = card.querySelector(".team-rail-card__posse")!;
+    expect(posseIcon).toHaveAttribute("title", posse!.name);
+    expect(posseIcon.textContent).toBe("");
+
+    const realmBadges = card.querySelectorAll(".team-rail-card__realms .realm-badge");
+    expect(realmBadges.length).toBeGreaterThan(0);
+    realmBadges.forEach((badge) => {
+      expect(badge.textContent).toBe("");
+      expect(badge).toHaveAttribute("aria-label");
+    });
+
+    const titles = [...card.querySelectorAll<HTMLElement>("[title]")].map(
+      (element) => element.title,
+    );
+    expect(titles.some((title) => title.includes(awakeners[0]!.name))).toBe(true);
+    expect(titles.some((title) => title.includes(wheels[0]!.name))).toBe(true);
+    expect(titles).not.toContain(covenant!.name);
+    expect(card.querySelector(".sr-only")).toHaveTextContent(`Posse: ${posse!.name}.`);
+
+    const partialCard = screen
+      .getByText("Team 2", { selector: ".team-rail-card__name" })
+      .closest("button")!;
+    expect(partialCard.querySelectorAll(".team-rail-card__awakener")).toHaveLength(4);
+    expect(partialCard.querySelectorAll(".team-rail-card__wheel")).toHaveLength(8);
+    expect(partialCard.querySelectorAll(".entity-artwork--empty")).toHaveLength(11);
+  });
+
   it("switches to Simplified Chinese, localizes enum labels, and persists the preference", async () => {
     const user = userEvent.setup();
     render(<App />);
@@ -405,9 +467,13 @@ describe("builder interface", () => {
     teams[0].posseId = tokenlessPosse!.id;
     useBuilderStore.setState({ teams });
 
-    render(<App />);
+    const { container } = render(<App />);
 
-    expect(screen.getByText("Token missing")).toBeInTheDocument();
+    const tokenWarning = container.querySelector(".team-rail-card__warning");
+    expect(tokenWarning).toHaveAttribute("title", "Token missing");
+    expect(tokenWarning?.closest(".team-rail-card")?.querySelector(".sr-only")).toHaveTextContent(
+      "Token missing",
+    );
     expect(screen.queryByText("Code ready")).not.toBeInTheDocument();
   });
 
