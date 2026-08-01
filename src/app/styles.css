@@ -477,17 +477,20 @@ button:disabled {
     linear-gradient(90deg, rgb(255 255 255 / 1%) 1px, transparent 1px);
   background-size: 40px 40px;
   opacity: 1;
-  transition: opacity 150ms ease;
-}
-
-.team-board[data-team-transition="out"] {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .team-board[data-team-transition="in"] {
-  opacity: 1;
-  pointer-events: none;
+  animation: team-board-fade-in 150ms ease-out both;
+}
+
+@keyframes team-board-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .team-board__header {
@@ -1187,6 +1190,20 @@ button:disabled {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+
+.entity-picker:not(.entity-picker--empty) {
+  animation: entity-picker-fade-in 140ms ease-out both;
+}
+
+@keyframes entity-picker-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .entity-picker--empty {

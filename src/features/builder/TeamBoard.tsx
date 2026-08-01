@@ -15,8 +15,8 @@ import { formatCodecFailure } from "./codec-message";
 interface TeamBoardProps {
   team: Team;
   teamNumber: number;
-  transitionPhase?: "idle" | "out" | "in";
-  onTransitionEnd?: () => void;
+  transitionPhase?: "idle" | "in";
+  onTransitionComplete?: () => void;
   onOpenPicker: (target: PickerTarget) => void;
   onRename: (name: string) => void;
   onClearTeam: () => void;
@@ -28,7 +28,7 @@ export function TeamBoard({
   team,
   teamNumber,
   transitionPhase = "idle",
-  onTransitionEnd,
+  onTransitionComplete,
   onOpenPicker,
   onRename,
   onClearTeam,
@@ -60,9 +60,9 @@ export function TeamBoard({
     <main
       className="team-board"
       data-team-transition={transitionPhase}
-      onTransitionEnd={(event) => {
-        if (event.target === event.currentTarget && event.propertyName === "opacity") {
-          onTransitionEnd?.();
+      onAnimationEnd={(event) => {
+        if (event.target === event.currentTarget) {
+          onTransitionComplete?.();
         }
       }}
     >

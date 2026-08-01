@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
+import { cleanup, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -251,24 +251,20 @@ describe("builder interface", () => {
     );
   });
 
-  it("fades the previous team out before fading the selected team in", async () => {
+  it("switches team content immediately and only fades the selected team in", async () => {
     const user = userEvent.setup();
     render(<App />);
 
-    const board = screen.getByRole("main");
+    const previousBoard = screen.getByRole("main");
     await user.click(
       screen.getByText("Team 10", { selector: ".team-rail-card strong" }).closest("button")!,
     );
 
-    expect(board).toHaveAttribute("data-team-transition", "out");
-    expect(screen.getByRole("heading", { name: "Team 1" })).toBeInTheDocument();
-
-    fireEvent.transitionEnd(board, { propertyName: "opacity" });
     expect(screen.getByRole("heading", { name: "Team 10" })).toBeInTheDocument();
-    expect(board).toHaveAttribute("data-team-transition", "in");
-
-    fireEvent.transitionEnd(board, { propertyName: "opacity" });
-    expect(board).toHaveAttribute("data-team-transition", "idle");
+    expect(screen.queryByRole("heading", { name: "Team 1" })).not.toBeInTheDocument();
+    const selectedBoard = screen.getByRole("main");
+    expect(selectedBoard).not.toBe(previousBoard);
+    expect(selectedBoard).toHaveAttribute("data-team-transition", "in");
   });
 
   it("reveals the active team card when selection changes", async () => {
@@ -316,6 +312,8 @@ describe("builder interface", () => {
 
     await user.click(screen.getAllByRole("button", { name: /choose awakener/i })[0]);
     expect(screen.getByRole("heading", { name: "Awakener 1" })).toBeInTheDocument();
+    const awakenerPicker = screen.getByLabelText("Awakener 1 picker");
+    expect(awakenerPicker).toHaveAttribute("data-picker-target", "awakener:team-1:0");
     const realmFilters = within(screen.getByLabelText("Primary filters"));
     for (const realm of gameCatalog.filters.realms) {
       expect(
@@ -334,6 +332,9 @@ describe("builder interface", () => {
     await user.click(awakenerName.closest("button")!);
 
     expect(screen.getByRole("heading", { name: "Slot 1 · Wheel 1" })).toBeInTheDocument();
+    const wheelPicker = screen.getByLabelText("Slot 1 · Wheel 1 picker");
+    expect(wheelPicker).not.toBe(awakenerPicker);
+    expect(wheelPicker).toHaveAttribute("data-picker-target", "wheel:team-1:0:0");
     const mainstatFilters = within(screen.getByLabelText("Primary filters"));
     for (const mainstat of gameCatalog.filters.wheelMainstats) {
       expect(

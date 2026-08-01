@@ -61,12 +61,11 @@ test("uses the game branding and transitions between teams", async ({ page }, te
   const board = page.locator(".team-board");
 
   await teamCards.nth(1).click();
+  await expect(page.getByRole("heading", { name: "Team 2" })).toBeVisible();
+  await expect(board).not.toHaveAttribute("data-team-transition", "out");
   await teamCards.nth(2).click();
   await expect(page.getByRole("heading", { name: "Team 3" })).toBeVisible();
   await expect(board).toHaveAttribute("data-team-transition", "idle");
-  expect(await board.evaluate((element) => getComputedStyle(element).transitionDuration)).not.toBe(
-    "0s",
-  );
 
   await teamCards.nth(9).click();
   await expect(page.getByRole("heading", { name: "Team 10" })).toBeVisible();
@@ -143,6 +142,14 @@ test("switches to Simplified Chinese and preserves it across reloads", async ({ 
   await expect(page.locator(".team-rail__heading")).toContainText("十队阵容");
 
   await page.getByRole("button", { name: "为第 1 个位置选择唤醒体" }).click();
+  const pickerMotion = await page
+    .locator(".entity-picker:not(.entity-picker--empty)")
+    .evaluate((element) => ({
+      animationName: getComputedStyle(element).animationName,
+      animationDuration: getComputedStyle(element).animationDuration,
+    }));
+  expect(pickerMotion.animationName).toBe("entity-picker-fade-in");
+  expect(pickerMotion.animationDuration).not.toBe("0s");
   await expect(page.getByLabel("主要筛选").getByRole("button", { name: "深海" })).toBeVisible();
   await expect(page.getByLabel("主要筛选").getByRole("button", { name: "血肉" })).toBeVisible();
 

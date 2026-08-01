@@ -25,6 +25,13 @@ interface EntityPickerProps {
 
 const hiddenPosseNamePattern = /^primordial memory(?:·|\b)/i;
 
+function getPickerTargetKey(target: PickerTarget | null) {
+  if (!target) return "empty";
+  if (target.kind === "posse") return `posse:${target.teamId}`;
+  const slotKey = `${target.kind}:${target.teamId}:${String(target.slotIndex)}`;
+  return target.kind === "wheel" ? `${slotKey}:${String(target.wheelIndex)}` : slotKey;
+}
+
 function entitiesForTarget(target: PickerTarget): GameEntity[] {
   if (target.kind === "awakener") return gameCatalog.entities.awakeners;
   if (target.kind === "wheel") return gameCatalog.entities.wheels;
@@ -107,6 +114,7 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("ALL");
   const [rarity, setRarity] = useState("ALL");
+  const pickerTargetKey = getPickerTargetKey(target);
   const translateEnum = (value: string) =>
     t(`enums.${value}`, { defaultValue: formatEnumLabel(value) });
 
@@ -171,7 +179,11 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
 
   if (!target) {
     return (
-      <aside className="entity-picker entity-picker--empty">
+      <aside
+        key={pickerTargetKey}
+        className="entity-picker entity-picker--empty"
+        data-picker-target={pickerTargetKey}
+      >
         <span className="picker-orbit" aria-hidden="true">
           <span />
         </span>
@@ -192,7 +204,9 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
 
   return (
     <aside
+      key={pickerTargetKey}
       className="entity-picker"
+      data-picker-target={pickerTargetKey}
       aria-label={t("picker.label", { target: describeTarget(target) })}
     >
       <header className="entity-picker__header">

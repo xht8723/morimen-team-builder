@@ -1,5 +1,5 @@
 import { Database, Languages } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Toast } from "@/components/ui/Toast";
@@ -11,7 +11,7 @@ import { TeamBoard } from "@/features/builder/TeamBoard";
 import { TeamRail } from "@/features/builder/TeamRail";
 import { APP_LANGUAGES, normalizeAppLanguage } from "@/i18n";
 
-type TeamTransitionPhase = "idle" | "out" | "in";
+type TeamTransitionPhase = "idle" | "in";
 
 export function App() {
   const { t, i18n } = useTranslation();
@@ -35,11 +35,8 @@ export function App() {
   const setAboutOpen = useBuilderStore((state) => state.setAboutOpen);
 
   const activeTeam = teams.find((team) => team.id === activeTeamId) ?? teams[0];
-  const [displayedTeamId, setDisplayedTeamId] = useState(activeTeam.id);
   const [teamTransitionPhase, setTeamTransitionPhase] = useState<TeamTransitionPhase>("idle");
-  const pendingTeamId = useRef(activeTeam.id);
-  const displayedTeam = teams.find((team) => team.id === displayedTeamId) ?? activeTeam;
-  const displayedTeamNumber = teams.findIndex((team) => team.id === displayedTeam.id) + 1;
+  const activeTeamNumber = teams.findIndex((team) => team.id === activeTeam.id) + 1;
   const notify = useCallback((message: string) => useBuilderStore.setState({ toast: message }), []);
   const currentLanguage = normalizeAppLanguage(i18n.resolvedLanguage ?? i18n.language) ?? "en";
   const nextLanguage = currentLanguage === "en" ? "zh-CN" : "en";
@@ -76,34 +73,15 @@ export function App() {
     });
   }, [currentLanguage, i18n]);
 
-  useEffect(() => {
-    pendingTeamId.current = activeTeam.id;
-
-    if (activeTeam.id === displayedTeamId) {
-      setTeamTransitionPhase((phase) => (phase === "out" ? "in" : phase));
-      return;
-    }
-
-    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
-      setDisplayedTeamId(activeTeam.id);
-      setTeamTransitionPhase("idle");
-      return;
-    }
-
-    setTeamTransitionPhase("out");
-  }, [activeTeam.id, displayedTeamId]);
-
-  const finishTeamTransition = useCallback(() => {
-    if (teamTransitionPhase === "out") {
-      setDisplayedTeamId(pendingTeamId.current);
-      setTeamTransitionPhase("in");
-      return;
-    }
-
-    if (teamTransitionPhase === "in") {
-      setTeamTransitionPhase(displayedTeamId === pendingTeamId.current ? "idle" : "out");
-    }
-  }, [displayedTeamId, teamTransitionPhase]);
+  const selectTeamWithTransition = useCallback(
+    (teamId: string) => {
+      if (teamId === activeTeam.id) return;
+      const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+      setTeamTransitionPhase(reducedMotion ? "idle" : "in");
+      selectTeam(teamId);
+    },
+    [activeTeam.id, selectTeam],
+  );
 
   return (
     <div className="app-shell">
@@ -141,17 +119,18 @@ export function App() {
         <TeamRail
           teams={teams}
           activeTeamId={activeTeam.id}
-          onSelect={selectTeam}
+          onSelect={selectTeamWithTransition}
           onReset={resetAll}
         />
         <TeamBoard
-          team={displayedTeam}
-          teamNumber={displayedTeamNumber}
+          key={activeTeam.id}
+          team={activeTeam}
+          teamNumber={activeTeamNumber}
           transitionPhase={teamTransitionPhase}
-          onTransitionEnd={finishTeamTransition}
+          onTransitionComplete={() => setTeamTransitionPhase("idle")}
           onOpenPicker={openPicker}
-          onRename={(name) => renameTeam(displayedTeam.id, name)}
-          onClearTeam={() => clearTeam(displayedTeam.id)}
+          onRename={(name) => renameTeam(activeTeam.id, name)}
+          onClearTeam={() => clearTeam(activeTeam.id)}
           onImport={() => setImportOpen(true)}
           onNotify={notify}
         />
