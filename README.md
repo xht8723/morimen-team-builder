@@ -1,6 +1,6 @@
-# Morimens Five-Team Builder
+# Morimens Ten-Team Builder
 
-A desktop-first static React team builder for planning five Morimens teams, enforcing shared-roster rules, and generating game-compatible share codes. It runs entirely in the browser and stores builds locally.
+A desktop-first static React team builder for planning ten Morimens teams, enforcing shared-roster rules, and generating game-compatible share codes. It runs entirely in the browser and stores builds locally.
 
 ## Develop
 
@@ -40,7 +40,7 @@ pnpm test:e2e
 
 ## GitHub Pages
 
-The workflow in `.github/workflows/pages.yml` verifies and deploys `dist` on pushes to `main` or manual dispatch. Vite emits relative asset paths, so the same build works on a repository subpath or a custom domain.
+The workflow in `.github/workflows/pages.yml` verifies and deploys `dist` on pushes to `master` or manual dispatch. Vite emits relative asset paths, so the same build works on a repository subpath or a custom domain.
 
 After connecting this directory to a GitHub repository, enable **Settings → Pages → Source: GitHub Actions**.
 

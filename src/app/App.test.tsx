@@ -61,6 +61,7 @@ describe("builder interface", () => {
     const brandIcon = container.querySelector(".brand-mark");
 
     expect(screen.getByRole("heading", { name: "Morimen Team Builder" })).toBeInTheDocument();
+    expect(container.querySelectorAll(".team-rail-card")).toHaveLength(10);
     expect(brandIcon).toHaveAttribute("src", "./generated-assets/icons/game_icon.jpg");
     expect(brandIcon).toHaveAttribute("width", "32");
     expect(brandIcon).toHaveAttribute("height", "32");
@@ -108,7 +109,7 @@ describe("builder interface", () => {
     expect(document.title).toBe("忘却前夜队伍构筑器");
     expect(document.querySelector('meta[name="description"]')).toHaveAttribute(
       "content",
-      "快速、非官方的忘却前夜五队构筑工具。",
+      "快速、非官方的忘却前夜十队构筑工具。",
     );
     expect(window.localStorage.getItem(LANGUAGE_STORAGE_KEY)).toBe("zh-CN");
     expect(screen.getByRole("button", { name: "切换到英文" })).toBeVisible();
@@ -129,28 +130,29 @@ describe("builder interface", () => {
   it("confirms a rail reset and keeps the existing one-level Undo behavior", async () => {
     const user = userEvent.setup();
     const assignedTeams = createDefaultTeams();
-    assignedTeams[0].slots[0].awakenerId = gameCatalog.entities.awakeners[0].id;
+    assignedTeams[9].slots[0].awakenerId = gameCatalog.entities.awakeners[0].id;
     useBuilderStore.setState({ teams: assignedTeams });
     const confirm = vi.spyOn(window, "confirm");
     render(<App />);
 
     confirm.mockReturnValueOnce(false);
     await user.click(
-      within(screen.getByLabelText("Five teams")).getByRole("button", { name: "Reset" }),
+      within(screen.getByLabelText("Ten teams")).getByRole("button", { name: "Reset" }),
     );
-    expect(useBuilderStore.getState().teams[0].slots[0].awakenerId).toBe(
+    expect(confirm).toHaveBeenLastCalledWith("Reset all ten teams? You can undo this once.");
+    expect(useBuilderStore.getState().teams[9].slots[0].awakenerId).toBe(
       gameCatalog.entities.awakeners[0].id,
     );
 
     confirm.mockReturnValueOnce(true);
     await user.click(
-      within(screen.getByLabelText("Five teams")).getByRole("button", { name: "Reset" }),
+      within(screen.getByLabelText("Ten teams")).getByRole("button", { name: "Reset" }),
     );
-    expect(useBuilderStore.getState().teams[0].slots[0].awakenerId).toBeNull();
+    expect(useBuilderStore.getState().teams[9].slots[0].awakenerId).toBeNull();
     expect(useBuilderStore.getState().undoSnapshot).not.toBeNull();
 
     await user.click(screen.getByRole("button", { name: "Undo" }));
-    expect(useBuilderStore.getState().teams[0].slots[0].awakenerId).toBe(
+    expect(useBuilderStore.getState().teams[9].slots[0].awakenerId).toBe(
       gameCatalog.entities.awakeners[0].id,
     );
   });
@@ -161,18 +163,49 @@ describe("builder interface", () => {
 
     const board = screen.getByRole("main");
     await user.click(
-      screen.getByText("Team 2", { selector: ".team-rail-card strong" }).closest("button")!,
+      screen.getByText("Team 10", { selector: ".team-rail-card strong" }).closest("button")!,
     );
 
     expect(board).toHaveAttribute("data-team-transition", "out");
     expect(screen.getByRole("heading", { name: "Team 1" })).toBeInTheDocument();
 
     fireEvent.transitionEnd(board, { propertyName: "opacity" });
-    expect(screen.getByRole("heading", { name: "Team 2" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Team 10" })).toBeInTheDocument();
     expect(board).toHaveAttribute("data-team-transition", "in");
 
     fireEvent.transitionEnd(board, { propertyName: "opacity" });
     expect(board).toHaveAttribute("data-team-transition", "idle");
+  });
+
+  it("reveals the active team card when selection changes", async () => {
+    const user = userEvent.setup();
+    const scrollIntoView = vi.fn();
+    const originalDescriptor = Object.getOwnPropertyDescriptor(Element.prototype, "scrollIntoView");
+    Object.defineProperty(Element.prototype, "scrollIntoView", {
+      configurable: true,
+      value: scrollIntoView,
+    });
+
+    try {
+      render(<App />);
+      expect(scrollIntoView).toHaveBeenCalled();
+      scrollIntoView.mockClear();
+
+      await user.click(
+        screen.getByText("Team 10", { selector: ".team-rail-card strong" }).closest("button")!,
+      );
+
+      expect(scrollIntoView).toHaveBeenCalledWith({ block: "nearest", inline: "nearest" });
+      expect(
+        screen.getByText("Team 10", { selector: ".team-rail-card strong" }).closest("button"),
+      ).toHaveAttribute("data-active", "true");
+    } finally {
+      if (originalDescriptor) {
+        Object.defineProperty(Element.prototype, "scrollIntoView", originalDescriptor);
+      } else {
+        delete (Element.prototype as unknown as { scrollIntoView?: unknown }).scrollIntoView;
+      }
+    }
   });
 
   it("renders the empty posse dock without a decorative shield", () => {

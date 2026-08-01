@@ -1,4 +1,5 @@
 import { CircleAlert, RotateCcw } from "lucide-react";
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import { awakenersById, possesById } from "@/data-access/catalog";
@@ -18,6 +19,12 @@ interface TeamRailProps {
 export function TeamRail({ teams, activeTeamId, onSelect, onReset }: TeamRailProps) {
   const { t, i18n } = useTranslation();
   const language = i18n.resolvedLanguage ?? i18n.language;
+  const activeCardRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    activeCardRef.current?.scrollIntoView?.({ block: "nearest", inline: "nearest" });
+  }, [activeTeamId]);
+
   return (
     <aside className="team-rail" aria-label={t("builder.teamsLabel")}>
       <div className="team-rail__heading">
@@ -46,6 +53,7 @@ export function TeamRail({ teams, activeTeamId, onSelect, onReset }: TeamRailPro
             <button
               type="button"
               key={team.id}
+              ref={team.id === activeTeamId ? activeCardRef : undefined}
               className="team-rail-card"
               data-active={team.id === activeTeamId}
               onClick={() => onSelect(team.id)}

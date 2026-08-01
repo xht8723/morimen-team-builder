@@ -16,7 +16,7 @@ import type {
   Team,
 } from "./types";
 
-export const TEAM_COUNT = 5;
+export const TEAM_COUNT = 10;
 export const SLOT_COUNT = 4;
 export const MAX_REALMS_PER_TEAM = 2;
 

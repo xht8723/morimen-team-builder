@@ -48,4 +48,18 @@ describe("application languages", () => {
     );
     expect(zhCN.picker.realmLimitDetail).toContain("唤醒体");
   });
+
+  it("describes the ten-team roster in both languages", () => {
+    expect(en.app.metaDescription).toContain("ten-team");
+    expect(en.builder).toMatchObject({
+      teamCount: "10 teams",
+      teamsLabel: "Ten teams",
+    });
+    expect(zhCN.app.metaDescription).toContain("十队");
+    expect(zhCN.builder).toMatchObject({
+      lineupSet: "十队阵容",
+      teamCount: "10 支队伍",
+      teamsLabel: "十支队伍",
+    });
+  });
 });

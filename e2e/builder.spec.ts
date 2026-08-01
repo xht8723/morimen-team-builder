@@ -16,7 +16,7 @@ test.beforeEach(async ({ page }) => {
   await page.reload();
 });
 
-test("uses the game branding and transitions between teams", async ({ page }) => {
+test("uses the game branding and transitions between teams", async ({ page }, testInfo) => {
   await expect(page.getByRole("heading", { name: "Morimen Team Builder" })).toBeVisible();
   await expect(
     page.getByText("Build faster. Keep every key piece unique. Export game-ready codes.", {
@@ -57,7 +57,7 @@ test("uses the game branding and transitions between teams", async ({ page }) =>
   expect(headerMetrics.overflowX).toBeLessThanOrEqual(0);
 
   const teamCards = page.locator(".team-rail-card");
-  expect(await teamCards.count()).toBe(5);
+  expect(await teamCards.count()).toBe(10);
   const board = page.locator(".team-board");
 
   await teamCards.nth(1).click();
@@ -67,6 +67,38 @@ test("uses the game branding and transitions between teams", async ({ page }) =>
   expect(await board.evaluate((element) => getComputedStyle(element).transitionDuration)).not.toBe(
     "0s",
   );
+
+  await teamCards.nth(9).click();
+  await expect(page.getByRole("heading", { name: "Team 10" })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole("heading", { name: "Team 10" })).toBeVisible();
+  const railMetrics = await page.evaluate(() => {
+    const list = document.querySelector(".team-rail__list")!.getBoundingClientRect();
+    const active = document
+      .querySelector(".team-rail-card[data-active='true']")!
+      .getBoundingClientRect();
+    const listElement = document.querySelector(".team-rail__list")!;
+    return {
+      activeTop: active.top,
+      activeRight: active.right,
+      activeBottom: active.bottom,
+      listTop: list.top,
+      listRight: list.right,
+      listBottom: list.bottom,
+      scrollHeight: listElement.scrollHeight,
+      clientHeight: listElement.clientHeight,
+      scrollWidth: listElement.scrollWidth,
+      clientWidth: listElement.clientWidth,
+    };
+  });
+  expect(railMetrics.activeTop).toBeGreaterThanOrEqual(railMetrics.listTop - 1);
+  expect(railMetrics.activeRight).toBeLessThanOrEqual(railMetrics.listRight + 1);
+  expect(railMetrics.activeBottom).toBeLessThanOrEqual(railMetrics.listBottom + 1);
+  if (testInfo.project.name === "desktop") {
+    expect(railMetrics.scrollHeight).toBeGreaterThan(railMetrics.clientHeight);
+  } else {
+    expect(railMetrics.scrollWidth).toBeGreaterThan(railMetrics.clientWidth);
+  }
 
   await page.emulateMedia({ reducedMotion: "reduce" });
   await teamCards.nth(0).click();
@@ -80,7 +112,7 @@ test("switches to Simplified Chinese and preserves it across reloads", async ({ 
   await expect(page.getByRole("heading", { name: "忘却前夜队伍构筑器" })).toBeVisible();
   await expect(page.getByRole("button", { name: "切换到英文" })).toBeVisible();
   await expect(page.locator("html")).toHaveAttribute("lang", "zh-CN");
-  await expect(page.locator(".team-rail__heading")).toContainText("五队阵容");
+  await expect(page.locator(".team-rail__heading")).toContainText("十队阵容");
 
   await page.getByRole("button", { name: "为第 1 个位置选择唤醒体" }).click();
   await expect(page.getByLabel("主要筛选").getByRole("button", { name: "深海" })).toBeVisible();
@@ -193,7 +225,7 @@ test("keeps dense picker tiles contained at every responsive breakpoint", async 
 
   await importSampleTeam(page);
   const teamCards = page.locator(".team-rail-card");
-  expect(await teamCards.count()).toBe(5);
+  expect(await teamCards.count()).toBe(10);
   await teamCards.nth(1).click();
 
   const awakenerSlots = page.locator(".awakener-slot");
