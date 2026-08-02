@@ -1,6 +1,5 @@
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
-import { immer } from "zustand/middleware/immer";
+import { createJSONStorage, persist, type StateStorage } from "zustand/middleware";
 
 import { gameCatalog } from "@/data-access/catalog";
 import { decodeTeam } from "@/domain/share-code";
@@ -10,14 +9,19 @@ import {
   clearTarget,
   cloneTeams,
   createDefaultTeams,
-  createEmptySlot,
   getImportConflicts,
+  isTargetEmpty,
+  nextEmptyTarget,
   reconcileTeams,
+  targetsForTeam,
 } from "@/domain/team-rules";
-import type { ImportConflict, PickerTarget, Team } from "@/domain/types";
+import type { AssignmentFailureReason, ImportConflict, PickerTarget, Team } from "@/domain/types";
 import i18n from "@/i18n";
 
 import { formatCodecFailure } from "./codec-message";
+
+export const STORAGE_KEY = "morimens-team-builder";
+export const LEGACY_STORAGE_KEY = "morimens-five-team-builder";
 
 interface UndoSnapshot {
   teams: Team[];
@@ -40,7 +44,6 @@ interface BuilderState {
   toast: string | null;
   importPreview: ImportPreview | null;
   importError: string | null;
-  aboutOpen: boolean;
   selectTeam: (teamId: string) => void;
   renameTeam: (teamId: string, name: string) => void;
   openPicker: (target: PickerTarget) => void;
@@ -50,49 +53,50 @@ interface BuilderState {
   clearTeam: (teamId: string) => void;
   resetAll: () => void;
   undo: () => void;
+  notify: (message: string) => void;
   dismissToast: () => void;
   previewImport: (source: string) => void;
   cancelImport: () => void;
   confirmImport: () => void;
-  setAboutOpen: (open: boolean) => void;
 }
 
-function targetsForTeam(teamId: string): PickerTarget[] {
-  return [
-    ...[0, 1, 2, 3].flatMap((slotIndex): PickerTarget[] => [
-      { kind: "awakener", teamId, slotIndex },
-      { kind: "wheel", teamId, slotIndex, wheelIndex: 0 },
-      { kind: "wheel", teamId, slotIndex, wheelIndex: 1 },
-      { kind: "covenant", teamId, slotIndex },
-    ]),
-    { kind: "posse", teamId },
-  ];
+export function createMigratingStorage(storage: Storage): StateStorage {
+  return {
+    getItem: (name) => {
+      const canonical = storage.getItem(name);
+      if (canonical !== null || name !== STORAGE_KEY) return canonical;
+      const legacy = storage.getItem(LEGACY_STORAGE_KEY);
+      if (legacy === null) return null;
+      try {
+        storage.setItem(STORAGE_KEY, legacy);
+        try {
+          storage.removeItem(LEGACY_STORAGE_KEY);
+        } catch {
+          // The canonical copy is already durable; a stale legacy copy is harmless.
+        }
+      } catch {
+        // Hydrate from the readable legacy value without deleting it when copying fails.
+      }
+      return legacy;
+    },
+    setItem: (name, value) => storage.setItem(name, value),
+    removeItem: (name) => storage.removeItem(name),
+  };
 }
 
-function isTargetEmpty(teams: Team[], target: PickerTarget) {
-  const team = teams.find((item) => item.id === target.teamId);
-  if (!team) return false;
-  if (target.kind === "posse") return !team.posseId;
-  const slot = team.slots[target.slotIndex];
-  if (!slot) return false;
-  if (target.kind === "awakener") return !slot.awakenerId;
-  if (target.kind === "covenant") return !slot.covenantId;
-  return !slot.wheelIds[target.wheelIndex];
+function localizedTeamName(number: number): string {
+  return i18n.t("builder.defaultTeam", { number });
 }
 
-function nextEmptyTarget(teams: Team[], current: PickerTarget) {
-  const targets = targetsForTeam(current.teamId);
-  const currentIndex = targets.findIndex(
-    (target) => JSON.stringify(target) === JSON.stringify(current),
-  );
-  return targets.slice(currentIndex + 1).find((target) => isTargetEmpty(teams, target)) ?? null;
+function assignmentError(reason: AssignmentFailureReason | undefined): string {
+  return reason ? i18n.t(`errors.${reason}`) : i18n.t("toast.invalid");
 }
 
-const initialTeams = createDefaultTeams();
+const initialTeams = createDefaultTeams(localizedTeamName);
 
 export const useBuilderStore = create<BuilderState>()(
   persist(
-    immer((set, get) => ({
+    (set, get) => ({
       stateSchemaVersion: 1,
       dataBuildId: gameCatalog.source.buildId,
       teams: initialTeams,
@@ -102,7 +106,6 @@ export const useBuilderStore = create<BuilderState>()(
       toast: null,
       importPreview: null,
       importError: null,
-      aboutOpen: false,
       selectTeam: (teamId) =>
         set((state) => ({
           activeTeamId: state.teams.some((team) => team.id === teamId)
@@ -125,10 +128,13 @@ export const useBuilderStore = create<BuilderState>()(
         const wasEmpty = isTargetEmpty(state.teams, state.pickerTarget);
         const result = assignEntity(state.teams, state.pickerTarget, entityId);
         if (!result.ok) {
-          set({ toast: result.message ?? i18n.t("toast.invalid") });
+          set({ toast: assignmentError(result.reason) });
           return;
         }
-        if (result.teams === state.teams) return;
+        if (result.teams === state.teams) {
+          set({ pickerTarget: null });
+          return;
+        }
         set({
           teams: result.teams,
           undoSnapshot: {
@@ -141,9 +147,11 @@ export const useBuilderStore = create<BuilderState>()(
       },
       clearSelection: () => {
         const state = get();
-        if (!state.pickerTarget || isTargetEmpty(state.teams, state.pickerTarget)) return;
+        if (!state.pickerTarget) return;
+        const teams = clearTarget(state.teams, state.pickerTarget);
+        if (teams === state.teams) return;
         set({
-          teams: clearTarget(state.teams, state.pickerTarget),
+          teams,
           undoSnapshot: {
             teams: cloneTeams(state.teams),
             message: i18n.t("toast.clearedRestored"),
@@ -153,20 +161,17 @@ export const useBuilderStore = create<BuilderState>()(
       },
       clearTeam: (teamId) => {
         const state = get();
+        const targetTeam = state.teams.find((team) => team.id === teamId);
+        if (
+          !targetTeam ||
+          targetsForTeam(teamId).every((target) => isTargetEmpty(state.teams, target))
+        ) {
+          return;
+        }
+        const emptyTeam = createDefaultTeams(localizedTeamName).find((team) => team.id === teamId)!;
         set({
           teams: state.teams.map((team) =>
-            team.id === teamId
-              ? {
-                  ...team,
-                  posseId: null,
-                  slots: [
-                    createEmptySlot(),
-                    createEmptySlot(),
-                    createEmptySlot(),
-                    createEmptySlot(),
-                  ],
-                }
-              : team,
+            team.id === teamId ? { ...emptyTeam, name: targetTeam.name } : team,
           ),
           undoSnapshot: { teams: cloneTeams(state.teams), message: i18n.t("toast.teamRestored") },
           toast: i18n.t("toast.teamCleared"),
@@ -176,7 +181,7 @@ export const useBuilderStore = create<BuilderState>()(
       resetAll: () => {
         const state = get();
         set({
-          teams: createDefaultTeams(),
+          teams: createDefaultTeams(localizedTeamName),
           activeTeamId: "team-1",
           pickerTarget: null,
           undoSnapshot: { teams: cloneTeams(state.teams), message: i18n.t("toast.allRestored") },
@@ -188,6 +193,7 @@ export const useBuilderStore = create<BuilderState>()(
         if (!snapshot) return;
         set({ teams: cloneTeams(snapshot.teams), undoSnapshot: null, toast: snapshot.message });
       },
+      notify: (toast) => set({ toast }),
       dismissToast: () => set({ toast: null }),
       previewImport: (source) => {
         const decoded = decodeTeam(source);
@@ -225,10 +231,10 @@ export const useBuilderStore = create<BuilderState>()(
           toast: i18n.t("toast.imported"),
         });
       },
-      setAboutOpen: (aboutOpen) => set({ aboutOpen }),
-    })),
+    }),
     {
-      name: "morimens-five-team-builder",
+      name: STORAGE_KEY,
+      storage: createJSONStorage(() => createMigratingStorage(window.localStorage)),
       version: 1,
       partialize: (state) => ({
         stateSchemaVersion: state.stateSchemaVersion,
@@ -238,7 +244,10 @@ export const useBuilderStore = create<BuilderState>()(
       }),
       merge: (persisted, current) => {
         const saved = persisted as Partial<BuilderState>;
-        const reconciled = reconcileTeams(Array.isArray(saved.teams) ? saved.teams : current.teams);
+        const reconciled = reconcileTeams(
+          Array.isArray(saved.teams) ? saved.teams : current.teams,
+          localizedTeamName,
+        );
         const activeTeamId = reconciled.some((team) => team.id === saved.activeTeamId)
           ? (saved.activeTeamId ?? current.activeTeamId)
           : current.activeTeamId;

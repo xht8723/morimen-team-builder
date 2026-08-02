@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 import { EntityArtwork, RealmBadge } from "@/components/ui/EntityArtwork";
 import { awakenersById, covenantsById, wheelsById } from "@/data-access/catalog";
 import { resolveEntityText } from "@/data-access/entity-localization";
-import type { LoadoutSlot, PickerTarget } from "@/domain/types";
+import { WHEEL_INDICES, type LoadoutSlot, type PickerTarget, type SlotIndex } from "@/domain/types";
 
 interface GameLoadoutCardProps {
   teamId: string;
   slot: LoadoutSlot;
-  slotIndex: number;
+  slotIndex: SlotIndex;
   onOpenPicker: (target: PickerTarget) => void;
 }
 
@@ -24,13 +24,13 @@ export function GameLoadoutCard({ teamId, slot, slotIndex, onOpenPicker }: GameL
 
   return (
     <article
-      className="loadout-card formation-card"
+      className="loadout-card"
       data-realm={awakener?.realm.toLowerCase()}
       data-empty={!awakener}
     >
       <button
         type="button"
-        className="awakener-slot formation-card__awakener"
+        className="loadout-card__awakener"
         data-empty={!awakener}
         title={awakenerText?.name ?? t("builder.chooseAwakener")}
         aria-label={
@@ -45,16 +45,16 @@ export function GameLoadoutCard({ teamId, slot, slotIndex, onOpenPicker }: GameL
       >
         <EntityArtwork
           entity={awakener}
-          className="formation-card__portrait"
+          className="loadout-card__portrait"
           size="large"
           source="full"
         />
-        <span className="formation-card__art-lines" aria-hidden="true" />
-        <span className="formation-card__topline">
+        <span className="loadout-card__art-lines" aria-hidden="true" />
+        <span className="loadout-card__topline">
           <span className="slot-index">{String(slotNumber).padStart(2, "0")}</span>
           {awakener && <RealmBadge realm={awakener.realm} />}
         </span>
-        <span className="formation-card__name">
+        <span className="loadout-card__name">
           <small>{t("builder.awakener")}</small>
           <strong>{awakenerText?.name ?? t("builder.chooseAwakener")}</strong>
         </span>
@@ -62,7 +62,7 @@ export function GameLoadoutCard({ teamId, slot, slotIndex, onOpenPicker }: GameL
 
       <button
         type="button"
-        className="covenant-slot formation-card__covenant"
+        className="loadout-card__covenant"
         data-empty={!covenant}
         data-tooltip={covenantText?.name ?? t("builder.chooseCovenant")}
         aria-label={
@@ -76,19 +76,19 @@ export function GameLoadoutCard({ teamId, slot, slotIndex, onOpenPicker }: GameL
         onClick={() => onOpenPicker({ kind: "covenant", teamId, slotIndex })}
       >
         <EntityArtwork entity={covenant} size="large" />
-        {!covenant && <Plus className="formation-card__add-icon" size={18} aria-hidden="true" />}
+        {!covenant && <Plus className="loadout-card__add-icon" size={18} aria-hidden="true" />}
         <span className="sr-only">{covenantText?.name ?? t("builder.chooseCovenant")}</span>
       </button>
 
-      <div className="gear-row formation-card__wheels">
-        {([0, 1] as const).map((wheelIndex) => {
+      <div className="loadout-card__wheels">
+        {WHEEL_INDICES.map((wheelIndex) => {
           const wheelId = slot.wheelIds[wheelIndex];
           const wheel = wheelId ? wheelsById.get(wheelId) : undefined;
           const wheelText = wheel ? resolveEntityText(wheel, language) : undefined;
           return (
             <button
               type="button"
-              className="gear-slot formation-card__wheel"
+              className="loadout-card__wheel"
               data-empty={!wheel}
               key={`${teamId}-${String(slotIndex)}-wheel-${String(wheelIndex)}`}
               aria-label={
@@ -115,11 +115,11 @@ export function GameLoadoutCard({ teamId, slot, slotIndex, onOpenPicker }: GameL
             >
               <EntityArtwork
                 entity={wheel}
-                className="formation-card__wheel-art"
+                className="loadout-card__wheel-art"
                 size="large"
                 source="full"
               />
-              <span className="formation-card__wheel-name">
+              <span className="loadout-card__wheel-name">
                 <small>{t("builder.wheelNumber", { number: wheelIndex + 1 })}</small>
                 <strong>{wheelText?.name ?? t("builder.add")}</strong>
               </span>

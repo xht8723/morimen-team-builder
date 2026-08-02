@@ -14,6 +14,14 @@ async function writeJson(file: string, value: unknown) {
   await writeFile(file, JSON.stringify(value), "utf8");
 }
 
+async function manifestMetadata(file: string) {
+  const bytes = await readFile(file);
+  return {
+    bytes: bytes.byteLength,
+    sha256: createHash("sha256").update(bytes).digest("hex"),
+  };
+}
+
 async function createFixture() {
   const root = await mkdtemp(path.join(tmpdir(), "morimens-data-"));
   temporaryRoots.push(root);
@@ -73,9 +81,10 @@ async function createFixture() {
     options[scope] = [];
     for (const record of scopeRecords) {
       const recordFile = `records/${scope}/${record.id}.json`;
-      manifestFiles[recordFile] = {};
       options[scope].push(record.id);
-      await writeJson(path.join(data, recordFile), record);
+      const recordPath = path.join(data, recordFile);
+      await writeJson(recordPath, record);
+      manifestFiles[recordFile] = await manifestMetadata(recordPath);
 
       const iconId = `${record.id}-icon`;
       const iconPath = `src/assets/icons/${record.id}.webp`;
@@ -171,7 +180,9 @@ describe("data compiler", () => {
       type: "SUPPORT",
     };
     await writeJson(path.join(data, "records", "awakeners", "awakener-2.json"), added);
-    manifest.files["records/awakeners/awakener-2.json"] = {};
+    manifest.files["records/awakeners/awakener-2.json"] = await manifestMetadata(
+      path.join(data, "records", "awakeners", "awakener-2.json"),
+    );
     catalog.options.awakeners.push("awakener-2");
     assets.entities["awakener-2"] = { icon: "awakener-2-icon" };
     assets.assets["awakener-2-icon"] = {
@@ -236,7 +247,9 @@ describe("data compiler", () => {
       rarity: "SSR",
       mainstatKey: "ATTACK",
     });
-    manifest.files["records/wheels/wheel-2.json"] = {};
+    manifest.files["records/wheels/wheel-2.json"] = await manifestMetadata(
+      path.join(data, "records", "wheels", "wheel-2.json"),
+    );
     catalog.options.wheels.push("wheel-2");
     assets.entities["wheel-2"] = { icon: "wheel-2-icon" };
     assets.assets["wheel-2-icon"] = {
@@ -248,6 +261,86 @@ describe("data compiler", () => {
     await writeJson(catalogFile, catalog);
 
     expect(runCompiler(root).stderr).toContain("wheels tokens are not prefix-safe: W, WX");
+  });
+
+  it("rejects reserved-empty-token prefixes and manifest checksum drift", async () => {
+    const tokenRoot = await createFixture();
+    const tokenRecord = path.join(tokenRoot, "data", "records", "awakeners", "awakener-1.json");
+    const tokenManifestFile = path.join(tokenRoot, "data", "meta", "manifest.json");
+    const tokenManifest = JSON.parse(await readFile(tokenManifestFile, "utf8"));
+    const tokenValue = JSON.parse(await readFile(tokenRecord, "utf8"));
+    tokenValue.lineupToken = "aX";
+    await writeJson(tokenRecord, tokenValue);
+    tokenManifest.files["records/awakeners/awakener-1.json"] = await manifestMetadata(tokenRecord);
+    await writeJson(tokenManifestFile, tokenManifest);
+    expect(runCompiler(tokenRoot).stderr).toContain(
+      'awakeners token aX conflicts with reserved empty token "a"',
+    );
+
+    const checksumRoot = await createFixture();
+    const checksumRecord = path.join(
+      checksumRoot,
+      "data",
+      "records",
+      "awakeners",
+      "awakener-1.json",
+    );
+    const original = await readFile(checksumRecord, "utf8");
+    await writeFile(checksumRecord, original.replace("Awakener One", "Awakener Uno"));
+    expect(runCompiler(checksumRoot).stderr).toContain(
+      "records/awakeners/awakener-1.json SHA-256 does not match manifest",
+    );
+  });
+
+  it("emits schema v2 selectability and does not duplicate bundled fonts", async () => {
+    const root = await createFixture();
+    const data = path.join(root, "data");
+    const recordFile = path.join(data, "records", "posses", "posse-compat.json");
+    const manifestFile = path.join(data, "meta", "manifest.json");
+    const assetsFile = path.join(data, "meta", "assets.json");
+    const manifest = JSON.parse(await readFile(manifestFile, "utf8"));
+    const assets = JSON.parse(await readFile(assetsFile, "utf8"));
+    await writeJson(recordFile, {
+      schemaVersion: 3,
+      id: "posse-compat",
+      kind: "posse",
+      name: "Historical Posse",
+      lineupToken: null,
+      realm: "CHAOS",
+    });
+    manifest.files["records/posses/posse-compat.json"] = await manifestMetadata(recordFile);
+    assets.entities["posse-compat"] = {
+      icon: "posse-compat-icon",
+      crystal: "posse-compat-crystal",
+    };
+    assets.assets["posse-compat-icon"] = {
+      availability: { status: "available", path: "src/assets/icons/posse-compat.webp" },
+    };
+    assets.assets["posse-compat-crystal"] = {
+      availability: { status: "available", path: "src/assets/crystals/posse-compat.webp" },
+    };
+    await writeFile(path.join(data, "assets", "icons", "posse-compat.webp"), "fixture");
+    await writeFile(path.join(data, "assets", "crystals", "posse-compat.webp"), "fixture");
+    await writeJson(manifestFile, manifest);
+    await writeJson(assetsFile, assets);
+
+    const result = runCompiler(root);
+    expect(result.status, result.stderr).toBe(0);
+    const generated = JSON.parse(
+      await readFile(path.join(root, "src", "generated", "game-data.json"), "utf8"),
+    );
+    expect(generated.schemaVersion).toBe(2);
+    expect(generated.entities.posses).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ id: "posse-1", selectable: true }),
+        expect.objectContaining({ id: "posse-compat", selectable: false }),
+      ]),
+    );
+    await expect(
+      readFile(
+        path.join(root, "public", "generated-assets", "fonts", "droid-serif", "DroidSerif.woff2"),
+      ),
+    ).rejects.toMatchObject({ code: "ENOENT" });
   });
 
   it("compiles current entity translations and falls back for stale fields", async () => {

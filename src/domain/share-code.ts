@@ -7,7 +7,7 @@ import {
 } from "@/data-access/catalog";
 
 import { createEmptySlot, isTeamRealmValid } from "./team-rules";
-import type { BaseEntity, EntityRef, Team } from "./types";
+import { SLOT_INDICES, WHEEL_INDICES, type BaseEntity, type EntityRef, type Team } from "./types";
 
 const EMPTY_TOKEN = "a";
 
@@ -24,6 +24,7 @@ export type CodecFailureReason =
   | "unknownCovenantToken"
   | "unknownPosse"
   | "trailingData"
+  | "duplicateEntity"
   | "importRealm";
 
 export interface CodecFailure {
@@ -93,6 +94,13 @@ function makeTokenTrie(entities: BaseEntity[]): TokenTrieNode {
   return root;
 }
 
+const tokenTries = {
+  awakeners: makeTokenTrie(gameCatalog.entities.awakeners),
+  wheels: makeTokenTrie(gameCatalog.entities.wheels),
+  covenants: makeTokenTrie(gameCatalog.entities.covenants),
+  posses: makeTokenTrie(gameCatalog.entities.posses),
+};
+
 function readLongestToken(payload: string, offset: number, trie: TokenTrieNode) {
   let node = trie;
   let cursor = offset;
@@ -127,30 +135,42 @@ export function decodeTeam(input: string): DecodeResult {
   const payload = match[1];
   let cursor = 0;
 
-  const awakeners = readFields(payload, cursor, 4, makeTokenTrie(gameCatalog.entities.awakeners));
+  const awakeners = readFields(payload, cursor, SLOT_INDICES.length, tokenTries.awakeners);
   if (!awakeners.ok) return { ok: false, reason: "unknownAwakener" };
   cursor = awakeners.cursor;
 
-  const wheels = readFields(payload, cursor, 8, makeTokenTrie(gameCatalog.entities.wheels));
+  const wheels = readFields(
+    payload,
+    cursor,
+    SLOT_INDICES.length * WHEEL_INDICES.length,
+    tokenTries.wheels,
+  );
   if (!wheels.ok) return { ok: false, reason: "unknownWheel" };
   cursor = wheels.cursor;
 
-  const covenants = readFields(payload, cursor, 4, makeTokenTrie(gameCatalog.entities.covenants));
+  const covenants = readFields(payload, cursor, SLOT_INDICES.length, tokenTries.covenants);
   if (!covenants.ok) return { ok: false, reason: "unknownCovenantToken" };
   cursor = covenants.cursor;
 
-  const posses = readFields(payload, cursor, 1, makeTokenTrie(gameCatalog.entities.posses));
+  const posses = readFields(payload, cursor, 1, tokenTries.posses);
   if (!posses.ok) return { ok: false, reason: "unknownPosse" };
   cursor = posses.cursor;
   if (cursor !== payload.length) {
     return { ok: false, reason: "trailingData" };
   }
 
+  const uniqueEntityIds = [...awakeners.values, ...wheels.values].filter(
+    (id): id is string => id !== null,
+  );
+  if (new Set(uniqueEntityIds).size !== uniqueEntityIds.length) {
+    return { ok: false, reason: "duplicateEntity" };
+  }
+
   const team: Team = {
     id: "imported-team",
     name: "imported-team",
     posseId: posses.values[0],
-    slots: [0, 1, 2, 3].map((slotIndex) => ({
+    slots: SLOT_INDICES.map((slotIndex) => ({
       ...createEmptySlot(),
       awakenerId: awakeners.values[slotIndex],
       wheelIds: [wheels.values[slotIndex * 2], wheels.values[slotIndex * 2 + 1]],

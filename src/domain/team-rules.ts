@@ -5,31 +5,44 @@ import {
   possesById,
   wheelsById,
 } from "@/data-access/catalog";
-import i18n from "@/i18n";
 
-import type {
-  AssignmentResult,
-  EntityKind,
-  ImportConflict,
-  LoadoutSlot,
-  PickerTarget,
-  Team,
+import {
+  SLOT_INDICES,
+  WHEEL_INDICES,
+  type AssignmentResult,
+  type EntityKind,
+  type ImportConflict,
+  type LoadoutSlot,
+  type PickerTarget,
+  type SlotIndex,
+  type Team,
+  type WheelIndex,
 } from "./types";
 
 export const TEAM_COUNT = 10;
-export const SLOT_COUNT = 4;
+export const SLOT_COUNT = SLOT_INDICES.length;
 export const MAX_REALMS_PER_TEAM = 2;
+
+export function isSlotIndex(value: unknown): value is SlotIndex {
+  return typeof value === "number" && SLOT_INDICES.includes(value as SlotIndex);
+}
+
+export function isWheelIndex(value: unknown): value is WheelIndex {
+  return typeof value === "number" && WHEEL_INDICES.includes(value as WheelIndex);
+}
 
 export function createEmptySlot(): LoadoutSlot {
   return { awakenerId: null, wheelIds: [null, null], covenantId: null };
 }
 
-export function createDefaultTeams(): Team[] {
+export function createDefaultTeams(
+  nameForNumber: (number: number) => string = (number) => `Team ${String(number)}`,
+): Team[] {
   return Array.from({ length: TEAM_COUNT }, (_, index) => ({
     id: `team-${String(index + 1)}`,
-    name: i18n.t("builder.defaultTeam", { number: index + 1 }),
+    name: nameForNumber(index + 1),
     posseId: null,
-    slots: [createEmptySlot(), createEmptySlot(), createEmptySlot(), createEmptySlot()],
+    slots: SLOT_INDICES.map(() => createEmptySlot()) as Team["slots"],
   }));
 }
 
@@ -58,29 +71,56 @@ export function isTeamRealmValid(team: Team): boolean {
   return getTeamRealms(team).length <= MAX_REALMS_PER_TEAM;
 }
 
+export function targetKey(target: PickerTarget | null): string {
+  if (!target) return "empty";
+  if (target.kind === "posse") return `posse:${target.teamId}`;
+  const slotKey = `${target.kind}:${target.teamId}:${String(target.slotIndex)}`;
+  return target.kind === "wheel" ? `${slotKey}:${String(target.wheelIndex)}` : slotKey;
+}
+
+export function sameTarget(left: PickerTarget | null, right: PickerTarget | null): boolean {
+  return targetKey(left) === targetKey(right);
+}
+
+export function targetsForTeam(teamId: string): PickerTarget[] {
+  return [
+    ...SLOT_INDICES.flatMap((slotIndex): PickerTarget[] => [
+      { kind: "awakener", teamId, slotIndex },
+      ...WHEEL_INDICES.map(
+        (wheelIndex): PickerTarget => ({ kind: "wheel", teamId, slotIndex, wheelIndex }),
+      ),
+      { kind: "covenant", teamId, slotIndex },
+    ]),
+    { kind: "posse", teamId },
+  ];
+}
+
+export function isValidPickerTarget(teams: Team[], target: PickerTarget): boolean {
+  const team = teams.find((item) => item.id === target.teamId);
+  if (!team) return false;
+  if (target.kind === "posse") return true;
+  if (target.kind !== "awakener" && target.kind !== "wheel" && target.kind !== "covenant") {
+    return false;
+  }
+  if (!isSlotIndex(target.slotIndex) || !team.slots[target.slotIndex]) return false;
+  return target.kind !== "wheel" || isWheelIndex(target.wheelIndex);
+}
+
 function findTargetUsage(
   teams: Team[],
   kind: Exclude<EntityKind, "covenant">,
   entityId: string,
 ): PickerTarget | null {
   for (const team of teams) {
-    if (kind === "posse" && team.posseId === entityId) {
-      return { kind, teamId: team.id };
-    }
-    for (const [slotIndex, slot] of team.slots.entries()) {
+    if (kind === "posse" && team.posseId === entityId) return { kind, teamId: team.id };
+    for (const slotIndex of SLOT_INDICES) {
+      const slot = team.slots[slotIndex];
       if (kind === "awakener" && slot.awakenerId === entityId) {
         return { kind, teamId: team.id, slotIndex };
       }
       if (kind === "wheel") {
-        const wheelIndex = slot.wheelIds.findIndex((id) => id === entityId);
-        if (wheelIndex >= 0) {
-          return {
-            kind,
-            teamId: team.id,
-            slotIndex,
-            wheelIndex: wheelIndex as 0 | 1,
-          };
-        }
+        const wheelIndex = WHEEL_INDICES.find((index) => slot.wheelIds[index] === entityId);
+        if (wheelIndex !== undefined) return { kind, teamId: team.id, slotIndex, wheelIndex };
       }
     }
   }
@@ -95,50 +135,75 @@ export function isEntityAssigned(
   return findTargetUsage(teams, kind, entityId) !== null;
 }
 
-function getTargetValue(teams: Team[], target: PickerTarget): string | null {
-  const team = teams.find((item) => item.id === target.teamId);
-  if (!team) return null;
+export function getTargetValue(teams: Team[], target: PickerTarget): string | null {
+  if (!isValidPickerTarget(teams, target)) return null;
+  const team = teams.find((item) => item.id === target.teamId)!;
   if (target.kind === "posse") return team.posseId;
   const slot = team.slots[target.slotIndex];
-  if (!slot) return null;
   if (target.kind === "awakener") return slot.awakenerId;
   if (target.kind === "covenant") return slot.covenantId;
   return slot.wheelIds[target.wheelIndex];
 }
 
-function setTargetValue(teams: Team[], target: PickerTarget, value: string | null) {
-  const team = teams.find((item) => item.id === target.teamId);
-  if (!team) return;
+function setTargetValue(teams: Team[], target: PickerTarget, value: string | null): boolean {
+  if (!isValidPickerTarget(teams, target)) return false;
+  const team = teams.find((item) => item.id === target.teamId)!;
   if (target.kind === "posse") {
     team.posseId = value;
-    return;
+    return true;
   }
   const slot = team.slots[target.slotIndex];
-  if (!slot) return;
   if (target.kind === "awakener") slot.awakenerId = value;
   if (target.kind === "covenant") slot.covenantId = value;
   if (target.kind === "wheel") slot.wheelIds[target.wheelIndex] = value;
+  return true;
 }
 
-export function canAssignAwakener(teams: Team[], target: PickerTarget, awakenerId: string) {
-  if (target.kind !== "awakener") return true;
+export function isTargetEmpty(teams: Team[], target: PickerTarget): boolean {
+  return isValidPickerTarget(teams, target) && getTargetValue(teams, target) === null;
+}
+
+export function nextEmptyTarget(teams: Team[], current: PickerTarget): PickerTarget | null {
+  const targets = targetsForTeam(current.teamId);
+  const currentIndex = targets.findIndex((target) => sameTarget(target, current));
+  if (currentIndex < 0) return null;
+  return targets.slice(currentIndex + 1).find((target) => isTargetEmpty(teams, target)) ?? null;
+}
+
+function simulateAwakenerAssignment(
+  teams: Team[],
+  target: Extract<PickerTarget, { kind: "awakener" }>,
+  awakenerId: string,
+): { teams: Team[]; moved: boolean } | null {
+  if (!isValidPickerTarget(teams, target)) return null;
   const next = cloneTeams(teams);
   const source = findTargetUsage(next, "awakener", awakenerId);
-  const destinationTeam = next.find((team) => team.id === target.teamId);
-  if (!destinationTeam) return false;
+  if (source && sameTarget(source, target)) return { teams, moved: false };
 
-  if (source && source.kind === "awakener") {
+  const destinationTeam = next.find((team) => team.id === target.teamId)!;
+  if (source?.kind === "awakener") {
     const sourceTeam = next.find((team) => team.id === source.teamId);
-    if (!sourceTeam) return false;
+    if (!sourceTeam) return null;
     const sourceSlot = sourceTeam.slots[source.slotIndex];
-    const targetSlot = destinationTeam.slots[target.slotIndex];
-    sourceTeam.slots[source.slotIndex] = targetSlot;
+    const destinationSlot = destinationTeam.slots[target.slotIndex];
+    sourceTeam.slots[source.slotIndex] = destinationSlot;
     destinationTeam.slots[target.slotIndex] = sourceSlot;
-    return isTeamRealmValid(sourceTeam) && isTeamRealmValid(destinationTeam);
+    if (!isTeamRealmValid(sourceTeam) || !isTeamRealmValid(destinationTeam)) return null;
+    return { teams: next, moved: true };
   }
 
   destinationTeam.slots[target.slotIndex].awakenerId = awakenerId;
-  return isTeamRealmValid(destinationTeam);
+  return isTeamRealmValid(destinationTeam) ? { teams: next, moved: false } : null;
+}
+
+export function canAssignAwakener(
+  teams: Team[],
+  target: PickerTarget,
+  awakenerId: string,
+): boolean {
+  if (target.kind !== "awakener") return isValidPickerTarget(teams, target);
+  if (!awakenersById.get(awakenerId)?.selectable) return false;
+  return simulateAwakenerAssignment(teams, target, awakenerId) !== null;
 }
 
 export function assignEntity(
@@ -146,46 +211,34 @@ export function assignEntity(
   target: PickerTarget,
   entityId: string,
 ): AssignmentResult {
-  const next = cloneTeams(teams);
-  const destinationTeam = next.find((team) => team.id === target.teamId);
-  if (!destinationTeam) return { ok: false, teams, message: i18n.t("errors.targetMissing") };
+  if (!isValidPickerTarget(teams, target)) return { ok: false, teams, reason: "targetMissing" };
+
+  const entity = getEntity(target.kind, entityId);
+  if (!entity) {
+    return {
+      ok: false,
+      teams,
+      reason: target.kind === "covenant" ? "unknownCovenant" : "unknownEntity",
+    };
+  }
+  if (!entity.selectable) return { ok: false, teams, reason: "entityNotSelectable" };
 
   if (target.kind === "covenant") {
-    if (!covenantsById.has(entityId)) {
-      return { ok: false, teams, message: i18n.t("errors.unknownCovenant") };
-    }
+    if (getTargetValue(teams, target) === entityId) return { ok: true, teams };
+    const next = cloneTeams(teams);
     setTargetValue(next, target, entityId);
     return { ok: true, teams: next };
   }
 
-  const entityMap =
-    target.kind === "awakener" ? awakenersById : target.kind === "wheel" ? wheelsById : possesById;
-  if (!entityMap.has(entityId)) {
-    return { ok: false, teams, message: i18n.t("errors.unknownEntity") };
-  }
-
-  const source = findTargetUsage(next, target.kind, entityId);
-  if (source && JSON.stringify(source) === JSON.stringify(target)) {
-    return { ok: true, teams };
-  }
-
   if (target.kind === "awakener") {
-    if (!canAssignAwakener(teams, target, entityId)) {
-      return { ok: false, teams, message: i18n.t("errors.realmMove") };
-    }
-    if (source?.kind === "awakener") {
-      const sourceTeam = next.find((team) => team.id === source.teamId);
-      if (!sourceTeam) return { ok: false, teams };
-      const sourceSlot = sourceTeam.slots[source.slotIndex];
-      const targetSlot = destinationTeam.slots[target.slotIndex];
-      sourceTeam.slots[source.slotIndex] = targetSlot;
-      destinationTeam.slots[target.slotIndex] = sourceSlot;
-      return { ok: true, teams: next, moved: true };
-    }
-    destinationTeam.slots[target.slotIndex].awakenerId = entityId;
-    return { ok: true, teams: next };
+    const simulated = simulateAwakenerAssignment(teams, target, entityId);
+    if (!simulated) return { ok: false, teams, reason: "realmMove" };
+    return { ok: true, ...simulated };
   }
 
+  const source = findTargetUsage(teams, target.kind, entityId);
+  if (source && sameTarget(source, target)) return { ok: true, teams };
+  const next = cloneTeams(teams);
   const destinationValue = getTargetValue(next, target);
   if (source) setTargetValue(next, source, destinationValue);
   setTargetValue(next, target, entityId);
@@ -193,14 +246,20 @@ export function assignEntity(
 }
 
 export function clearTarget(teams: Team[], target: PickerTarget): Team[] {
-  const next = cloneTeams(teams);
-  const team = next.find((item) => item.id === target.teamId);
-  if (!team) return teams;
+  if (!isValidPickerTarget(teams, target)) return teams;
   if (target.kind === "awakener") {
-    team.slots[target.slotIndex] = createEmptySlot();
-  } else {
-    setTargetValue(next, target, null);
+    const team = teams.find((item) => item.id === target.teamId)!;
+    const slot = team.slots[target.slotIndex];
+    if (!slot.awakenerId && !slot.covenantId && slot.wheelIds.every((id) => id === null)) {
+      return teams;
+    }
+  } else if (isTargetEmpty(teams, target)) {
+    return teams;
   }
+  const next = cloneTeams(teams);
+  const team = next.find((item) => item.id === target.teamId)!;
+  if (target.kind === "awakener") team.slots[target.slotIndex] = createEmptySlot();
+  else setTargetValue(next, target, null);
   return next;
 }
 
@@ -211,32 +270,19 @@ export function getImportConflicts(teams: Team[], targetTeamId: string, incoming
   for (const slot of incoming.slots) {
     if (slot.awakenerId) {
       const usage = findTargetUsage(otherTeams, "awakener", slot.awakenerId);
-      if (usage) {
-        conflicts.push({
-          entity: { kind: "awakener", id: slot.awakenerId },
-          teamId: usage.teamId,
-        });
-      }
+      if (usage)
+        conflicts.push({ entity: { kind: "awakener", id: slot.awakenerId }, teamId: usage.teamId });
     }
     for (const wheelId of slot.wheelIds) {
       if (!wheelId) continue;
       const usage = findTargetUsage(otherTeams, "wheel", wheelId);
-      if (usage) {
-        conflicts.push({
-          entity: { kind: "wheel", id: wheelId },
-          teamId: usage.teamId,
-        });
-      }
+      if (usage) conflicts.push({ entity: { kind: "wheel", id: wheelId }, teamId: usage.teamId });
     }
   }
   if (incoming.posseId) {
     const usage = findTargetUsage(otherTeams, "posse", incoming.posseId);
-    if (usage) {
-      conflicts.push({
-        entity: { kind: "posse", id: incoming.posseId },
-        teamId: usage.teamId,
-      });
-    }
+    if (usage)
+      conflicts.push({ entity: { kind: "posse", id: incoming.posseId }, teamId: usage.teamId });
   }
   return conflicts;
 }
@@ -248,7 +294,8 @@ export function applyImportedTeam(teams: Team[], targetTeamId: string, incoming:
 
   for (const team of next) {
     if (team.id === targetTeamId) continue;
-    for (const [slotIndex, slot] of team.slots.entries()) {
+    for (const slotIndex of SLOT_INDICES) {
+      const slot = team.slots[slotIndex];
       if (slot.awakenerId && incomingAwakeners.has(slot.awakenerId)) {
         team.slots[slotIndex] = createEmptySlot();
         continue;
@@ -262,50 +309,79 @@ export function applyImportedTeam(teams: Team[], targetTeamId: string, incoming:
   }
 
   const targetIndex = next.findIndex((team) => team.id === targetTeamId);
-  if (targetIndex >= 0) {
+  if (targetIndex >= 0)
     next[targetIndex] = { ...incoming, id: targetTeamId, name: next[targetIndex].name };
-  }
   return next;
 }
 
-export function reconcileTeams(teams: Team[]): Team[] {
-  const defaults = createDefaultTeams();
-  return defaults.map((defaultTeam, index) => {
-    const saved = teams[index];
-    if (!saved) return defaultTeam;
-    const slots = defaultTeam.slots.map((empty, slotIndex) => {
-      const slot = saved.slots?.[slotIndex];
-      if (!slot) return empty;
+function validOptionalId(value: unknown, ids: ReadonlyMap<string, unknown>): string | null {
+  return typeof value === "string" && ids.has(value) ? value : null;
+}
+
+export function reconcileTeams(teams: Team[], nameForNumber?: (number: number) => string): Team[] {
+  const defaults = createDefaultTeams(nameForNumber);
+  const savedById = new Map(
+    teams
+      .filter((team): team is Team => Boolean(team && typeof team.id === "string"))
+      .map((team) => [team.id, team]),
+  );
+  const reconciled = defaults.map((defaultTeam, index) => {
+    const saved = savedById.get(defaultTeam.id) ?? teams[index];
+    if (!saved || typeof saved !== "object") return defaultTeam;
+    const savedSlots = Array.isArray(saved.slots) ? saved.slots : [];
+    const slots = SLOT_INDICES.map((slotIndex) => {
+      const slot = savedSlots[slotIndex];
+      if (!slot || typeof slot !== "object") return createEmptySlot();
+      const wheelIds = Array.isArray(slot.wheelIds) ? slot.wheelIds : [];
       return {
-        awakenerId: slot.awakenerId && awakenersById.has(slot.awakenerId) ? slot.awakenerId : null,
+        awakenerId: validOptionalId(slot.awakenerId, awakenersById),
         wheelIds: [
-          slot.wheelIds?.[0] && wheelsById.has(slot.wheelIds[0]) ? slot.wheelIds[0] : null,
-          slot.wheelIds?.[1] && wheelsById.has(slot.wheelIds[1]) ? slot.wheelIds[1] : null,
+          validOptionalId(wheelIds[0], wheelsById),
+          validOptionalId(wheelIds[1], wheelsById),
         ],
-        covenantId: slot.covenantId && covenantsById.has(slot.covenantId) ? slot.covenantId : null,
+        covenantId: validOptionalId(slot.covenantId, covenantsById),
       } satisfies LoadoutSlot;
     }) as Team["slots"];
     return {
       id: defaultTeam.id,
       name: typeof saved.name === "string" && saved.name.trim() ? saved.name : defaultTeam.name,
-      posseId: saved.posseId && possesById.has(saved.posseId) ? saved.posseId : null,
+      posseId: validOptionalId(saved.posseId, possesById),
       slots,
     };
   });
-}
 
-export function describeTarget(target: PickerTarget): string {
-  if (target.kind === "posse") return i18n.t("target.posse");
-  if (target.kind === "awakener") {
-    return i18n.t("target.awakener", { number: target.slotIndex + 1 });
+  const seenAwakeners = new Set<string>();
+  const seenWheels = new Set<string>();
+  const seenPosses = new Set<string>();
+  for (const team of reconciled) {
+    if (team.posseId) {
+      if (seenPosses.has(team.posseId)) team.posseId = null;
+      else seenPosses.add(team.posseId);
+    }
+    const realms = new Set<string>();
+    for (const slotIndex of SLOT_INDICES) {
+      const slot = team.slots[slotIndex];
+      if (slot.awakenerId) {
+        const awakener = awakenersById.get(slot.awakenerId)!;
+        if (
+          seenAwakeners.has(slot.awakenerId) ||
+          (!realms.has(awakener.realm) && realms.size >= MAX_REALMS_PER_TEAM)
+        ) {
+          slot.awakenerId = null;
+        } else {
+          seenAwakeners.add(slot.awakenerId);
+          realms.add(awakener.realm);
+        }
+      }
+      for (const wheelIndex of WHEEL_INDICES) {
+        const wheelId = slot.wheelIds[wheelIndex];
+        if (!wheelId) continue;
+        if (seenWheels.has(wheelId)) slot.wheelIds[wheelIndex] = null;
+        else seenWheels.add(wheelId);
+      }
+    }
   }
-  if (target.kind === "wheel") {
-    return i18n.t("target.wheel", {
-      slot: target.slotIndex + 1,
-      wheel: target.wheelIndex + 1,
-    });
-  }
-  return i18n.t("target.covenant", { slot: target.slotIndex + 1 });
+  return reconciled;
 }
 
 export function getTargetEntity(teams: Team[], target: PickerTarget) {

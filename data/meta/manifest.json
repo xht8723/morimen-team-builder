@@ -458,8 +458,8 @@
       "sha256": "c044438490c0b7cd6e07e86b8c2cfb809c6bebc3f5de7ad623614364f9e6493d"
     },
     "records/awakeners/awakener-0005.json": {
-      "bytes": 5596,
-      "sha256": "58c040057b49cdc03c9f69dab2ba130709940c3289bed646625e630fc63195ec"
+      "bytes": 5628,
+      "sha256": "a8b480e10ded1e85fc7db333e58e368d26aca765062eaeb3d614afa62b318063"
     },
     "records/awakeners/awakener-0006.json": {
       "bytes": 5800,
@@ -474,20 +474,20 @@
       "sha256": "c68ede0b448af320d2435b64f0007b061bf6efdbd3387c5839ecc43ac52bc24a"
     },
     "records/awakeners/awakener-0009.json": {
-      "bytes": 6512,
-      "sha256": "05ba43307143c63b27fba2ba159cd9ae8463f92e0cdfc449833a2066977b9b22"
+      "bytes": 6540,
+      "sha256": "23da7d7d53a40da7c3d43fecbab1f4099ea1cdd3c3c079e8882b33944e7ff4db"
     },
     "records/awakeners/awakener-0010.json": {
       "bytes": 7536,
       "sha256": "05370ff9e6d816f62fddd6924498ab21358cd131df0a60768bafb882c6c82136"
     },
     "records/awakeners/awakener-0011.json": {
-      "bytes": 8002,
-      "sha256": "1b240f06ba4e3cc7b192d59a02de45cd3607a9e59a5d8c3a4935ddd2464b5906"
+      "bytes": 8038,
+      "sha256": "aa0d22c6549ba52496c60c28921f936de7629c915503f592e126eba4f2fe9399"
     },
     "records/awakeners/awakener-0012.json": {
-      "bytes": 6025,
-      "sha256": "c116d33904aa24e7647e61acb1839e34f09289b3cd4ee32cb6bed032c1e82bff"
+      "bytes": 6065,
+      "sha256": "1e6c31a4d3cbcd319091ede8de018e75cd0bcaf61fbfda861f2e3c75902ad47e"
     },
     "records/awakeners/awakener-0013.json": {
       "bytes": 6839,
@@ -502,16 +502,16 @@
       "sha256": "0bdfca85bf9066abdb308103ac8a57a3aa0ffe257dfbb69247db5e3588af1a7c"
     },
     "records/awakeners/awakener-0016.json": {
-      "bytes": 5311,
-      "sha256": "7b78037396e4ebc74e239f3312b85cbef6b18c6c2f23f77a7f8b8d45b7c83b17"
+      "bytes": 5351,
+      "sha256": "82bf3aaaf1e49e595cdd9cd27c02ef5025cc8014194439d09ee9a6edc66760bf"
     },
     "records/awakeners/awakener-0017.json": {
-      "bytes": 5938,
-      "sha256": "11643e864fac07979d533e7a0bcdc3b96c6bb294b39f33282c2f206cafee2835"
+      "bytes": 5974,
+      "sha256": "1185224f5f85214cab2841b20daf81cad483ab39bd3c7a1da6989756b93d399c"
     },
     "records/awakeners/awakener-0018.json": {
-      "bytes": 7439,
-      "sha256": "f3bef2002d7f176a097c933485d9b33f75ae91373d494a28e1f5ef43fa743507"
+      "bytes": 7479,
+      "sha256": "78cd38d097968a84037a36a5fe0194b5314f625ad233174d4af8e4eacb477b6c"
     },
     "records/awakeners/awakener-0019.json": {
       "bytes": 8294,
@@ -526,16 +526,16 @@
       "sha256": "3bf82665bad1c50397edd3cf75bddc7a0689bef29e1ff320cfb602438ee86fe3"
     },
     "records/awakeners/awakener-0022.json": {
-      "bytes": 8412,
-      "sha256": "7c645c1bf7add5934c64188a61f6d9b665db59685c576bd9db544934a4774724"
+      "bytes": 8456,
+      "sha256": "ad1e885364c6834888fbf092698e2f6edb58f0a34c2c64bb2a7e0b1ef718f5cb"
     },
     "records/awakeners/awakener-0023.json": {
       "bytes": 6457,
       "sha256": "6966a90e4933bd7ac74b09ee53be9bae88acafb03adc5a6c0da0d7f97fed97cb"
     },
     "records/awakeners/awakener-0024.json": {
-      "bytes": 6736,
-      "sha256": "874ec05cec92f35f91bc83cc291a53227afb57f6384ce5371b2f55c5db8cd58a"
+      "bytes": 6768,
+      "sha256": "67e44dba35d027aa06b66a3c49060e474c2c08831d66198aa3f384be4f595ace"
     },
     "records/awakeners/awakener-0025.json": {
       "bytes": 6709,
@@ -574,12 +574,12 @@
       "sha256": "020adac5170ad1459dfb5e3e074ee96f68f84d0c085e5e9b7ab702c82d3d3504"
     },
     "records/awakeners/awakener-0034.json": {
-      "bytes": 6614,
-      "sha256": "8dc4ee2ca6795a3722292111084de565e74d473ed214b2a9ea26edb10eba9646"
+      "bytes": 6654,
+      "sha256": "456812b8c2827c32af4043cd46e3d38c94a9d525df79abc2f1f13743b9f53acc"
     },
     "records/awakeners/awakener-0035.json": {
-      "bytes": 8080,
-      "sha256": "beaf68cda5a36d332970f767350bc0612a87e2b8bde782e75ac542c41ee5a815"
+      "bytes": 8124,
+      "sha256": "6562562a16a6c65b3ee41ec85e5b0ab070eb914d115e32944c8989f6c87c37ae"
     },
     "records/awakeners/awakener-0036.json": {
       "bytes": 6380,
@@ -606,8 +606,8 @@
       "sha256": "26d1357417292b9fedd39f15fa78fa9d32348de4a93e96cad8b24f80470dde5f"
     },
     "records/awakeners/awakener-0042.json": {
-      "bytes": 5455,
-      "sha256": "c189878431e5934a3a3514f1e886df1aebee4fe478c6ddbf5a70a0d83e00d04d"
+      "bytes": 5491,
+      "sha256": "0a4ca8810ab525474906c195ad5d4e8de7fb6c7bc6575f7da272231d0695badd"
     },
     "records/awakeners/awakener-0043.json": {
       "bytes": 7468,
@@ -626,20 +626,20 @@
       "sha256": "afda3d58b86e962ac22bba117fdc2a299da3515ddcd4e1ee123be5a227f3670c"
     },
     "records/awakeners/awakener-0047.json": {
-      "bytes": 5301,
-      "sha256": "5dd2b5d04ed6db407306ce2f9cb85bbe948102b9773bc12abd209688a31bf8e6"
+      "bytes": 5341,
+      "sha256": "2353593a84bf0a4deef201ab07b815e5cdce13a0eb5e9b1a1e4e7d7fee8ae9eb"
     },
     "records/awakeners/awakener-0048.json": {
-      "bytes": 5713,
-      "sha256": "0c3bd82f4dcd70ae1bf6e1b0917010524fdeb2c0aa59afd6691b4657e722963a"
+      "bytes": 5749,
+      "sha256": "716fc9ecd271e34d1a07ff3080b24237cdff12f73e8703164dfa17779e11447e"
     },
     "records/awakeners/awakener-0049.json": {
       "bytes": 6437,
       "sha256": "1d5adb3a81eff35c06d1c976fd8dfe36f971c6e3fdb1fff8aedfa8a746c1f7c9"
     },
     "records/awakeners/awakener-0050.json": {
-      "bytes": 7263,
-      "sha256": "80cc2be010d44e115b6ef231ee415c27ddad7ac9891d6777d6e6ea242f9161fe"
+      "bytes": 7299,
+      "sha256": "500f268520f6505fcaafce74a661a15990f51bde5677781a338059a099c1a921"
     },
     "records/awakeners/awakener-0051.json": {
       "bytes": 5413,
@@ -662,8 +662,8 @@
       "sha256": "a55968314e949c299eed645a3395f3a4b04f9fbf921d963cc1fd192940b445cb"
     },
     "records/awakeners/awakener-0056.json": {
-      "bytes": 12372,
-      "sha256": "b3018283709b742a3d2a825210b2346f6bb0cc091cd60d4e4aecb458cea06347"
+      "bytes": 12420,
+      "sha256": "7e08c4a58fa41d86d84bf796e9bf2f84c605c8a0c0ee4f9f3093288425b97f80"
     },
     "records/awakeners/awakener-0057.json": {
       "bytes": 5672,

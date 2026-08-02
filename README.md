@@ -14,7 +14,7 @@ pnpm dev
 pnpm remains the lockfile and CI package manager. Once dependencies are installed, the project
 scripts do not require a global pnpm command, so `npm run dev` and `npm run verify` work as well.
 
-The data compiler runs automatically before development and production builds. It validates `data/meta`, loads only catalog-authoritative records, and copies only referenced artwork into generated build directories.
+The data compiler runs automatically before development and production builds. It validates `data/meta`, verifies consumed record byte counts and SHA-256 hashes, emits catalog schema v2 selectability metadata, and copies only referenced artwork into generated build directories.
 
 ## Refresh SKeyDB data
 

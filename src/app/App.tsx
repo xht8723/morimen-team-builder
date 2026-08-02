@@ -16,12 +16,12 @@ type TeamTransitionPhase = "idle" | "in";
 export function App() {
   const { t, i18n } = useTranslation();
   const [importOpen, setImportOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const teams = useBuilderStore((state) => state.teams);
   const activeTeamId = useBuilderStore((state) => state.activeTeamId);
   const pickerTarget = useBuilderStore((state) => state.pickerTarget);
   const toast = useBuilderStore((state) => state.toast);
   const undoSnapshot = useBuilderStore((state) => state.undoSnapshot);
-  const aboutOpen = useBuilderStore((state) => state.aboutOpen);
   const selectTeam = useBuilderStore((state) => state.selectTeam);
   const renameTeam = useBuilderStore((state) => state.renameTeam);
   const openPicker = useBuilderStore((state) => state.openPicker);
@@ -32,12 +32,11 @@ export function App() {
   const resetAll = useBuilderStore((state) => state.resetAll);
   const undo = useBuilderStore((state) => state.undo);
   const dismissToast = useBuilderStore((state) => state.dismissToast);
-  const setAboutOpen = useBuilderStore((state) => state.setAboutOpen);
+  const notify = useBuilderStore((state) => state.notify);
 
   const activeTeam = teams.find((team) => team.id === activeTeamId) ?? teams[0];
   const [teamTransitionPhase, setTeamTransitionPhase] = useState<TeamTransitionPhase>("idle");
   const activeTeamNumber = teams.findIndex((team) => team.id === activeTeam.id) + 1;
-  const notify = useCallback((message: string) => useBuilderStore.setState({ toast: message }), []);
   const currentLanguage = normalizeAppLanguage(i18n.resolvedLanguage ?? i18n.language) ?? "en";
   const nextLanguage = currentLanguage === "en" ? "zh-CN" : "en";
   const languageSwitchLabel =
@@ -100,7 +99,7 @@ export function App() {
         <div className="app-header__actions">
           <button
             type="button"
-            className="button button--ghost language-toggle"
+            className="button language-toggle"
             aria-label={languageSwitchLabel}
             title={languageSwitchLabel}
             onClick={() => void i18n.changeLanguage(nextLanguage)}
@@ -108,7 +107,7 @@ export function App() {
             <Languages size={14} />
             <span>{nextLanguage === "zh-CN" ? t("app.chineseShort") : t("app.englishShort")}</span>
           </button>
-          <button type="button" className="button button--ghost" onClick={() => setAboutOpen(true)}>
+          <button type="button" className="button" onClick={() => setAboutOpen(true)}>
             <Database size={14} />
             {t("app.about")}
           </button>

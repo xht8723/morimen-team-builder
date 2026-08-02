@@ -1,5 +1,11 @@
 export type EntityKind = "awakener" | "wheel" | "covenant" | "posse";
 
+export const SLOT_INDICES = [0, 1, 2, 3] as const;
+export const WHEEL_INDICES = [0, 1] as const;
+
+export type SlotIndex = (typeof SLOT_INDICES)[number];
+export type WheelIndex = (typeof WHEEL_INDICES)[number];
+
 export interface EntityAssets {
   thumb: string;
   full: string;
@@ -14,6 +20,7 @@ export interface BaseEntity {
   description: string;
   aliases: string[];
   searchTags: string[];
+  selectable: boolean;
 }
 
 export interface Awakener extends BaseEntity {
@@ -51,7 +58,7 @@ export interface EntityRef {
 }
 
 export interface GameCatalog {
-  schemaVersion: 1;
+  schemaVersion: 2;
   source: {
     schemaVersion: number;
     gameDataVersion: string;
@@ -86,15 +93,22 @@ export interface Team {
 }
 
 export type PickerTarget =
-  | { kind: "awakener"; teamId: string; slotIndex: number }
-  | { kind: "wheel"; teamId: string; slotIndex: number; wheelIndex: 0 | 1 }
-  | { kind: "covenant"; teamId: string; slotIndex: number }
+  | { kind: "awakener"; teamId: string; slotIndex: SlotIndex }
+  | { kind: "wheel"; teamId: string; slotIndex: SlotIndex; wheelIndex: WheelIndex }
+  | { kind: "covenant"; teamId: string; slotIndex: SlotIndex }
   | { kind: "posse"; teamId: string };
+
+export type AssignmentFailureReason =
+  | "targetMissing"
+  | "unknownCovenant"
+  | "unknownEntity"
+  | "entityNotSelectable"
+  | "realmMove";
 
 export interface AssignmentResult {
   ok: boolean;
   teams: Team[];
-  message?: string;
+  reason?: AssignmentFailureReason;
   moved?: boolean;
 }
 

@@ -36,6 +36,8 @@ describe("entity localization", () => {
     const [view] = localizeEntities([entity], "zh-CN");
 
     expect(view.text.name).toBe("阿格里帕");
+    expect(view.text.aliases).toEqual(entity.aliases);
+    expect(view.text.fallback.aliases).toBe(true);
     expect(view.searchTerms).toContain("阿格里帕");
     expect(view.searchTerms).toContain("Agrippa");
     for (const alias of entity.aliases) expect(view.searchTerms).toContain(alias);

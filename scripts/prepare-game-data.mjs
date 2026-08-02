@@ -30,8 +30,9 @@ async function exists(file) {
   try {
     await stat(file);
     return true;
-  } catch {
-    return false;
+  } catch (error) {
+    if (error && typeof error === "object" && error.code === "ENOENT") return false;
+    throw error;
   }
 }
 
@@ -181,27 +182,52 @@ async function compileEntityTranslations(entities) {
   return output;
 }
 
+function validateString(value, label, { nullable = false } = {}) {
+  if (nullable && value === null) return;
+  invariant(
+    typeof value === "string" && value.trim().length > 0,
+    `${label} must be a non-empty string`,
+  );
+}
+
+function validateStringArray(value, label) {
+  invariant(Array.isArray(value), `${label} must be an array`);
+  for (const [index, entry] of value.entries()) validateString(entry, `${label}[${String(index)}]`);
+  invariant(new Set(value).size === value.length, `${label} contains duplicates`);
+}
+
 function validateRecord(record, scope, file) {
-  invariant(record && typeof record === "object", `${file} is not a JSON object`);
+  invariant(
+    record && typeof record === "object" && !Array.isArray(record),
+    `${file} is not a JSON object`,
+  );
   invariant(record.schemaVersion === 3, `${file} has unsupported schema ${record.schemaVersion}`);
   invariant(record.kind === expectedKinds[scope], `${file} has unexpected kind ${record.kind}`);
-  invariant(typeof record.id === "string" && record.id.length > 0, `${file} has no record id`);
-  invariant(typeof record.name === "string" && record.name.length > 0, `${file} has no name`);
+  validateString(record.id, `${file} id`);
+  validateString(record.name, `${file} name`);
   if (record.lineupToken != null) {
-    invariant(typeof record.lineupToken === "string", `${file} has a non-string lineupToken`);
+    validateString(record.lineupToken, `${file} lineupToken`);
   }
+  validateStringArray(record.aliases ?? [], `${file} aliases`);
+  validateStringArray(record.searchTags ?? [], `${file} searchTags`);
   if (record.kind === "awakener") {
-    invariant(typeof record.realm === "string", `${file} has no awakener realm`);
-    invariant(typeof record.rarity === "string", `${file} has no awakener rarity`);
-    invariant(typeof record.type === "string", `${file} has no awakener type`);
+    validateString(record.realm, `${file} awakener realm`);
+    validateString(record.rarity, `${file} awakener rarity`);
+    validateString(record.type, `${file} awakener type`);
+    if (record.faction != null) validateString(record.faction, `${file} awakener faction`);
   }
   if (record.kind === "wheel") {
-    invariant(typeof record.realm === "string", `${file} has no wheel realm`);
-    invariant(typeof record.rarity === "string", `${file} has no wheel rarity`);
-    invariant(typeof record.mainstatKey === "string", `${file} has no wheel mainstatKey`);
+    validateString(record.realm, `${file} wheel realm`);
+    validateString(record.rarity, `${file} wheel rarity`);
+    validateString(record.mainstatKey, `${file} wheel mainstatKey`);
+    if (record.ownerAwakenerName != null)
+      validateString(record.ownerAwakenerName, `${file} wheel ownerAwakenerName`);
   }
   if (record.kind === "posse") {
-    invariant(typeof record.realm === "string", `${file} has no posse realm`);
+    validateString(record.realm, `${file} posse realm`);
+  }
+  if ((record.kind === "covenant" || record.kind === "posse") && record.acquisitionSource != null) {
+    validateString(record.acquisitionSource, `${file} acquisitionSource`);
   }
 }
 
@@ -318,7 +344,10 @@ function validateTokens(scope, records) {
   const tokens = records.flatMap((record) => (record.lineupToken ? [record.lineupToken] : []));
 
   for (const token of tokens) {
-    invariant(token !== "a", `${scope} uses reserved empty token "a"`);
+    invariant(
+      !token.startsWith("a"),
+      `${scope} token ${token} conflicts with reserved empty token "a"`,
+    );
     invariant(/^[A-Za-z0-9]{1,2}$/.test(token), `${scope} has invalid token ${token}`);
     invariant(!seen.has(token), `${scope} has duplicate case-sensitive token ${token}`);
     seen.set(token, true);
@@ -336,7 +365,7 @@ function validateTokens(scope, records) {
   }
 }
 
-function compactRecord(record, assets) {
+function compactRecord(record, assets, selectable) {
   const common = {
     id: record.id,
     kind: record.kind,
@@ -346,6 +375,7 @@ function compactRecord(record, assets) {
     description: getDescription(record),
     aliases: record.aliases ?? [],
     searchTags: record.searchTags ?? [],
+    selectable,
   };
 
   if (record.kind === "awakener") {
@@ -390,7 +420,28 @@ async function getAuthoritativeRecords(scope, builderCatalog, manifest) {
   const recordsById = new Map();
 
   for (const file of manifestFiles) {
-    const record = await readJson(path.join(dataRoot, ...file.split("/")));
+    const manifestEntry = manifest.files[file];
+    invariant(
+      manifestEntry && typeof manifestEntry === "object",
+      `${file} has no manifest metadata`,
+    );
+    invariant(
+      Number.isSafeInteger(manifestEntry.bytes) && manifestEntry.bytes >= 0,
+      `${file} has invalid manifest byte count`,
+    );
+    invariant(
+      typeof manifestEntry.sha256 === "string" && /^[a-f0-9]{64}$/.test(manifestEntry.sha256),
+      `${file} has invalid manifest SHA-256`,
+    );
+    const recordFile = path.join(dataRoot, ...file.split("/"));
+    const bytes = await readFile(recordFile);
+    invariant(
+      bytes.byteLength === manifestEntry.bytes,
+      `${file} byte count does not match manifest`,
+    );
+    const digest = createHash("sha256").update(bytes).digest("hex");
+    invariant(digest === manifestEntry.sha256, `${file} SHA-256 does not match manifest`);
+    const record = JSON.parse(bytes.toString("utf8"));
     validateRecord(record, scope, file);
     invariant(!recordsById.has(record.id), `${scope} contains duplicate record id ${record.id}`);
     recordsById.set(record.id, record);
@@ -400,10 +451,10 @@ async function getAuthoritativeRecords(scope, builderCatalog, manifest) {
     invariant(recordsById.has(id), `Builder catalog references missing ${scope} record ${id}`);
   }
 
-  const selected = [...builderIds].map((id) => recordsById.get(id));
+  const selected = [...builderIds].map((id) => ({ record: recordsById.get(id), selectable: true }));
   for (const record of recordsById.values()) {
     if (!builderIds.has(record.id) && !record.lineupToken) {
-      selected.push(record);
+      selected.push({ record, selectable: false });
     }
   }
 
@@ -422,8 +473,6 @@ async function copyGeneratedAssets() {
     ...["aequor", "caro", "chaos", "ultra"].map((realm) =>
       path.join(assetsRoot, "ui", `realm-icon-${realm}.png`),
     ),
-    path.join(assetsRoot, "fonts", "droid-serif", "DroidSerif.woff2"),
-    path.join(assetsRoot, "fonts", "droid-serif", "DroidSerif-Bold.woff2"),
     path.join(assetsRoot, "icons", "game_icon.jpg"),
   ];
   for (const source of alwaysCopy) {
@@ -450,6 +499,37 @@ async function main() {
   );
   invariant(assetsIndex.schemaVersion === 3, "Asset index schema does not match public-v3");
   invariant(builderCatalog.schemaVersion === 3, "Builder catalog schema does not match public-v3");
+  validateString(manifest.gameDataVersion, "Manifest gameDataVersion");
+  validateString(manifest.buildId, "Manifest buildId");
+  validateString(manifest.generatedAt, "Manifest generatedAt");
+  invariant(!Number.isNaN(Date.parse(manifest.generatedAt)), "Manifest generatedAt is not a date");
+  invariant(
+    manifest.files && typeof manifest.files === "object" && !Array.isArray(manifest.files),
+    "Manifest files must be an object",
+  );
+  invariant(
+    assetsIndex.entities &&
+      typeof assetsIndex.entities === "object" &&
+      !Array.isArray(assetsIndex.entities),
+    "Asset index entities must be an object",
+  );
+  invariant(
+    assetsIndex.assets &&
+      typeof assetsIndex.assets === "object" &&
+      !Array.isArray(assetsIndex.assets),
+    "Asset index assets must be an object",
+  );
+  invariant(
+    builderCatalog.options &&
+      typeof builderCatalog.options === "object" &&
+      !Array.isArray(builderCatalog.options),
+    "Builder catalog options must be an object",
+  );
+  for (const scope of scopes) {
+    const options = builderCatalog.options[scope];
+    validateStringArray(options, `Builder catalog ${scope}`);
+    invariant(options.length > 0, `Builder catalog has no ${scope} options`);
+  }
 
   await rm(generatedSourceRoot, { recursive: true, force: true });
   await rm(generatedAssetsRoot, { recursive: true, force: true });
@@ -458,19 +538,27 @@ async function main() {
 
   const entities = {};
   for (const scope of scopes) {
-    const records = await getAuthoritativeRecords(scope, builderCatalog, manifest);
-    validateTokens(scope, records);
+    const selectedRecords = await getAuthoritativeRecords(scope, builderCatalog, manifest);
+    validateTokens(
+      scope,
+      selectedRecords.map(({ record }) => record),
+    );
     entities[scope] = [];
-    for (const record of records) {
+    for (const { record, selectable } of selectedRecords) {
       const assets = await resolveEntityAssets(record, assetsIndex);
-      entities[scope].push(compactRecord(record, assets));
+      const compacted = compactRecord(record, assets, selectable);
+      invariant(
+        typeof compacted.description === "string",
+        `${scope}/${record.id} emitted description is not a string`,
+      );
+      entities[scope].push(compacted);
     }
   }
 
   await copyGeneratedAssets();
 
   const catalog = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     source: {
       schemaVersion: manifest.schemaVersion,
       gameDataVersion: manifest.gameDataVersion,

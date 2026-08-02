@@ -1,0 +1,218 @@
+@media (max-width: 1320px) {
+  .workspace {
+    grid-template-columns: 220px minmax(560px, 1fr) 350px;
+  }
+
+  .team-board {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .app-header {
+    position: relative;
+  }
+
+  .workspace {
+    display: block;
+  }
+
+  .team-rail {
+    height: auto;
+    min-height: auto;
+    display: block;
+    padding: 12px 16px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    position: static;
+  }
+
+  .team-rail__list {
+    min-height: auto;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scrollbar-gutter: auto;
+  }
+
+  .team-rail-card {
+    width: 220px;
+    min-width: 220px;
+    flex: 0 0 220px;
+  }
+
+  .entity-picker {
+    height: min(76vh, 720px);
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 60;
+    top: auto;
+    padding: 20px;
+    border: 1px solid var(--line-strong);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -30px 90px rgb(0 0 0 / 62%);
+    background: #11141c;
+    transform: translateY(0);
+  }
+
+  .entity-picker--empty {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .app-header {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    min-height: 46px;
+    gap: 8px;
+    padding: 5px 10px;
+  }
+
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .app-heading h1 {
+    font-size: 0.95rem;
+  }
+
+  .app-heading > span {
+    font-size: 0.45rem;
+  }
+
+  .app-header__actions {
+    grid-column: auto;
+    display: flex;
+    gap: 6px;
+  }
+
+  .app-header__actions .button {
+    width: auto;
+    min-height: 28px;
+    padding-inline: 8px;
+  }
+
+  .language-toggle {
+    min-width: 38px;
+    padding-inline: 6px !important;
+  }
+
+  .team-rail {
+    padding-inline: 10px;
+  }
+
+  .team-rail-card {
+    width: 205px;
+    min-width: 205px;
+    flex-basis: 205px;
+    padding: 8px;
+  }
+
+  .team-rail-card__header {
+    grid-template-columns: 19px minmax(0, 1fr) auto 24px auto;
+  }
+
+  .team-rail-card__posse,
+  .team-rail-card__posse .entity-artwork {
+    width: 24px;
+    height: 24px;
+  }
+
+  .team-rail-card__awakeners,
+  .team-rail-card__wheels {
+    gap: 5px;
+  }
+
+  .team-rail-card__awakener .entity-artwork {
+    max-width: 36px;
+  }
+
+  .team-rail-card__wheel .entity-artwork {
+    max-width: 18px;
+  }
+
+  .team-board {
+    padding: 20px 14px 90px;
+  }
+
+  .team-board__header {
+    display: grid;
+  }
+
+  .team-board__actions {
+    width: 100%;
+  }
+
+  .team-board__actions .button {
+    flex: 1;
+  }
+
+  .posse-slot {
+    grid-template-columns: auto auto minmax(0, 1fr);
+    padding: 13px;
+  }
+
+  .slot-label {
+    display: none;
+  }
+
+  .posse-slot__content > span {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .dialog-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .dialog-panel {
+    max-height: 88vh;
+    padding: 20px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .import-preview__lineup {
+    overflow-x: auto;
+  }
+
+  .app-footer {
+    display: grid;
+  }
+}
+
+@media (max-width: 360px) {
+  .picker-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .loadout-card__awakener:is(:hover, :focus-visible),
+  .loadout-card__wheel:is(:hover, :focus-visible),
+  .loadout-card__covenant:is(:hover, :focus-visible),
+  .posse-slot:is(:hover, :focus-visible),
+  .loadout-card__awakener[data-empty="true"]:is(:hover, :focus-visible) .entity-artwork--empty,
+  .loadout-card__wheel[data-empty="true"]:is(:hover, :focus-visible) .entity-artwork--empty,
+  .loadout-card__covenant[data-empty="true"]:is(:hover, :focus-visible) .entity-artwork--empty,
+  .posse-slot[data-empty="true"]:is(:hover, :focus-visible) .entity-artwork--empty {
+    transform: none;
+  }
+}

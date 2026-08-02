@@ -173,7 +173,7 @@ test("switches to Simplified Chinese and preserves it across reloads", async ({ 
 });
 
 test("builds a slot, auto-advances, and restores it after reload", async ({ page }) => {
-  await page.locator(".awakener-slot").first().click();
+  await page.locator(".loadout-card__awakener").first().click();
   const firstRealmFilter = page.getByLabel("Primary filters").getByRole("button", { name: "All" });
   await expect(firstRealmFilter).toBeVisible();
   const filterBox = await firstRealmFilter.boundingBox();
@@ -199,7 +199,7 @@ test("previews and imports a documented game share code", async ({ page }) => {
 test("supports a keyboard-first mobile picker flow", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "mobile", "Mobile-only smoke flow");
 
-  await page.locator(".awakener-slot").first().focus();
+  await page.locator(".loadout-card__awakener").first().focus();
   await page.keyboard.press("Enter");
   await expect(page.getByRole("heading", { name: "Awakener 1" })).toBeVisible();
   await expect(page.getByRole("textbox", { name: "Search records" })).toBeFocused();
@@ -214,12 +214,12 @@ test("adapts the formation from four columns to a single phone column", async ({
 
   await page.setViewportSize({ width: 2200, height: 1100 });
   const wideCards = await page
-    .locator(".formation-card")
+    .locator(".loadout-card")
     .evaluateAll((cards) => cards.map((card) => Math.round(card.getBoundingClientRect().top)));
   expect(new Set(wideCards).size).toBe(1);
-  const equipmentScale = await page.locator(".formation-card").evaluateAll((cards) => {
-    const covenant = cards[0].querySelector(".formation-card__covenant")!;
-    const wheel = cards[0].querySelector(".formation-card__wheel")!;
+  const equipmentScale = await page.locator(".loadout-card").evaluateAll((cards) => {
+    const covenant = cards[0].querySelector(".loadout-card__covenant")!;
+    const wheel = cards[0].querySelector(".loadout-card__wheel")!;
     return {
       covenant: covenant.getBoundingClientRect().width,
       wheel: wheel.getBoundingClientRect().width,
@@ -231,7 +231,7 @@ test("adapts the formation from four columns to a single phone column", async ({
   await page.setViewportSize({ width: 1366, height: 900 });
   await expect(page.locator(".team-rail__reset")).toBeVisible();
   const compactCards = await page
-    .locator(".formation-card")
+    .locator(".loadout-card")
     .evaluateAll((cards) => cards.map((card) => Math.round(card.getBoundingClientRect().top)));
   expect(compactCards[0]).toBe(compactCards[1]);
   expect(compactCards[2]).toBeGreaterThan(compactCards[0]);
@@ -240,16 +240,16 @@ test("adapts the formation from four columns to a single phone column", async ({
   await expect(page.locator(".team-rail__heading")).toBeVisible();
   await expect(page.locator(".team-rail__reset")).toBeVisible();
   const phoneCards = await page
-    .locator(".formation-card")
+    .locator(".loadout-card")
     .evaluateAll((cards) => cards.map((card) => Math.round(card.getBoundingClientRect().top)));
   expect(phoneCards[1]).toBeGreaterThan(phoneCards[0]);
   expect(phoneCards[2]).toBeGreaterThan(phoneCards[1]);
   expect(phoneCards[3]).toBeGreaterThan(phoneCards[2]);
 
-  const posseDock = page.locator(".posse-dock");
+  const posseDock = page.locator(".posse-slot");
   await expect(posseDock).toBeVisible();
   expect((await posseDock.boundingBox())!.y).toBeGreaterThan(
-    (await page.locator(".formation-card").last().boundingBox())!.y,
+    (await page.locator(".loadout-card").last().boundingBox())!.y,
   );
 });
 
@@ -263,7 +263,7 @@ test("keeps dense picker tiles contained at every responsive breakpoint", async 
   expect(await teamCards.count()).toBe(10);
   await teamCards.nth(1).click();
 
-  const awakenerSlots = page.locator(".awakener-slot");
+  const awakenerSlots = page.locator(".loadout-card__awakener");
   expect(await awakenerSlots.count()).toBe(4);
   await awakenerSlots.first().click();
   await expect(page.getByRole("heading", { name: "Awakener 1" })).toBeVisible();
@@ -410,9 +410,9 @@ test("animates empty and filled selection slots and respects reduced motion", as
   test.skip(testInfo.project.name !== "desktop", "Desktop project controls hover behavior");
 
   const emptySlots = [
-    page.locator(".awakener-slot[data-empty='true']").first(),
-    page.locator(".formation-card__wheel[data-empty='true']").first(),
-    page.locator(".formation-card__covenant[data-empty='true']").first(),
+    page.locator(".loadout-card__awakener[data-empty='true']").first(),
+    page.locator(".loadout-card__wheel[data-empty='true']").first(),
+    page.locator(".loadout-card__covenant[data-empty='true']").first(),
     page.locator(".posse-slot[data-empty='true']"),
   ];
 
@@ -433,9 +433,9 @@ test("animates empty and filled selection slots and respects reduced motion", as
 
   await importSampleTeam(page);
   const filledSlots = [
-    page.locator(".awakener-slot[data-empty='false']").first(),
-    page.locator(".formation-card__wheel[data-empty='false']").first(),
-    page.locator(".formation-card__covenant[data-empty='false']").first(),
+    page.locator(".loadout-card__awakener[data-empty='false']").first(),
+    page.locator(".loadout-card__wheel[data-empty='false']").first(),
+    page.locator(".loadout-card__covenant[data-empty='false']").first(),
     page.locator(".posse-slot[data-empty='false']"),
   ];
 
@@ -450,7 +450,7 @@ test("animates empty and filled selection slots and respects reduced motion", as
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.reload();
 
-  const reducedMotionSlot = page.locator(".awakener-slot[data-empty='true']").first();
+  const reducedMotionSlot = page.locator(".loadout-card__awakener[data-empty='true']").first();
   await reducedMotionSlot.hover();
   expect(await reducedMotionSlot.evaluate((element) => getComputedStyle(element).transform)).toBe(
     "none",

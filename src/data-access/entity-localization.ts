@@ -1,32 +1,27 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { z } from "zod";
 
 import rawTranslations from "@/generated/entity-translations.json";
 import { normalizeAppLanguage } from "@/i18n";
 import type { AppLanguage } from "@/i18n";
 import type { EntityKind, GameEntity } from "@/domain/types";
 
-const localizedFieldsSchema = z.object({
-  name: z.string().optional(),
-  description: z.string().optional(),
-  aliases: z.array(z.string()).optional(),
-});
+interface LocalizedFields {
+  name?: string;
+  description?: string;
+  aliases?: string[];
+}
 
-const scopeSchema = z.record(z.string(), localizedFieldsSchema);
-const translationsSchema = z.object({
-  schemaVersion: z.literal(1),
-  locales: z.object({
-    "zh-CN": z.object({
-      awakeners: scopeSchema,
-      wheels: scopeSchema,
-      covenants: scopeSchema,
-      posses: scopeSchema,
-    }),
-  }),
-});
+type LocalizedScope = Record<string, LocalizedFields>;
 
-const entityTranslations = translationsSchema.parse(rawTranslations);
+interface EntityTranslations {
+  schemaVersion: 1;
+  locales: {
+    "zh-CN": Record<"awakeners" | "wheels" | "covenants" | "posses", LocalizedScope>;
+  };
+}
+
+const entityTranslations = rawTranslations as EntityTranslations;
 
 const scopeByKind = {
   awakener: "awakeners",
@@ -74,7 +69,7 @@ export function resolveEntityText(
   return {
     name: localized?.name ?? entity.name,
     description: localized?.description ?? entity.description,
-    aliases: localized?.aliases ?? [],
+    aliases: localized?.aliases ?? entity.aliases,
     fallback: {
       name: !localized?.name,
       description: !localized?.description,
@@ -93,23 +88,16 @@ export function localizeEntities<T extends GameEntity>(
       entity,
       text,
       searchTerms: [
-        text.name,
-        ...text.aliases,
-        entity.name,
-        ...entity.aliases,
-        ...entity.searchTags,
-      ].filter((value, index, values) => value && values.indexOf(value) === index),
+        ...new Set([
+          text.name,
+          ...text.aliases,
+          entity.name,
+          ...entity.aliases,
+          ...entity.searchTags,
+        ]),
+      ],
     };
   });
-}
-
-export function useEntityText(entity: GameEntity | undefined): EntityText | undefined {
-  const { i18n } = useTranslation();
-  const language = i18n.resolvedLanguage ?? i18n.language;
-  return useMemo(
-    () => (entity ? resolveEntityText(entity, language) : undefined),
-    [entity, language],
-  );
 }
 
 export function useLocalizedEntities<T extends GameEntity>(

@@ -25,7 +25,6 @@ beforeEach(async () => {
     toast: null,
     importPreview: null,
     importError: null,
-    aboutOpen: false,
   });
 });
 
@@ -63,9 +62,7 @@ function namesByCategory<T extends { name: string }>(
 }
 
 function pickerVisiblePosses() {
-  return gameCatalog.entities.posses.filter(
-    (posse) => !/^primordial memory(?:·|\b)/i.test(posse.name),
-  );
+  return gameCatalog.entities.posses.filter((posse) => posse.selectable);
 }
 
 function sortedWheelNames(wheels = gameCatalog.entities.wheels) {
@@ -358,7 +355,7 @@ describe("builder interface", () => {
     expect(card).toHaveAttribute("title", awakener.description);
     expect(card.querySelector(".picker-card__description")).not.toBeInTheDocument();
     expect(card).not.toHaveTextContent(awakener.description);
-    expect(card.querySelector(".picker-card__visual .entity-artwork--thumb")).toBeInTheDocument();
+    expect(card.querySelector(".picker-card__visual .entity-artwork")).toBeInTheDocument();
     const realmBadge = card.querySelector(".realm-badge--icon-only");
     expect(realmBadge).toHaveAttribute("aria-label", i18n.t(`enums.${awakener.realm}`));
     expect(realmBadge?.querySelector("span")).not.toBeInTheDocument();
@@ -421,9 +418,7 @@ describe("builder interface", () => {
       namesByCategory(visiblePosses, (entity) => entity.realm, gameCatalog.filters.posseRealms),
     );
     expect(screen.getByText(`${String(visiblePosses.length)} records`)).toBeInTheDocument();
-    for (const posse of gameCatalog.entities.posses.filter((entity) =>
-      /^primordial memory(?:·|\b)/i.test(entity.name),
-    )) {
+    for (const posse of gameCatalog.entities.posses.filter((entity) => !entity.selectable)) {
       expect(screen.queryByText(posse.name)).not.toBeInTheDocument();
     }
   });
@@ -538,9 +533,9 @@ describe("builder interface", () => {
     expect(screen.getByText(/Moved from its previous team/)).toBeInTheDocument();
   });
 
-  it("removes covenant readiness copy and hides Primordial Memory posses", async () => {
+  it("removes covenant readiness copy and hides compatibility-only posses", async () => {
     const user = userEvent.setup();
-    const tokenlessPosse = gameCatalog.entities.posses.find((entity) => !entity.lineupToken);
+    const tokenlessPosse = gameCatalog.entities.posses.find((entity) => !entity.selectable);
     expect(tokenlessPosse).toBeDefined();
     render(<App />);
 
@@ -610,5 +605,18 @@ describe("builder interface", () => {
     expect(screen.getByText("Conflicts to clear")).toBeInTheDocument();
     expect(screen.getByText("No cross-team conflicts.")).toBeInTheDocument();
     expect(useBuilderStore.getState().teams[0].slots.every((slot) => !slot.awakenerId)).toBe(true);
+  });
+
+  it("closes only the top modal when Escape is pressed over an open picker", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole("button", { name: "Choose awakener for slot 1" }));
+    await user.click(within(screen.getByRole("main")).getByRole("button", { name: "Import" }));
+
+    expect(screen.getByRole("dialog", { name: "Import a team code" })).toBeInTheDocument();
+    await user.keyboard("{Escape}");
+
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+    expect(screen.getByLabelText("Awakener 1 picker")).toBeInTheDocument();
   });
 });

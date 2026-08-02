@@ -24,6 +24,7 @@ export function formatCodecFailure(
     unknownCovenantToken: "errors.unknownCovenantToken",
     unknownPosse: "errors.unknownPosse",
     trailingData: "errors.trailingData",
+    duplicateEntity: "errors.duplicateEntity",
     importRealm: "errors.importRealm",
   } as const;
   return translate(keys[failure.reason]);

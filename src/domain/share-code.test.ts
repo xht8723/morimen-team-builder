@@ -68,4 +68,16 @@ describe("share-code codec", () => {
       entities: [{ kind: "posse", id: tokenless.id }],
     });
   });
+
+  it("rejects imported codes that repeat a unique entity", () => {
+    const team = createDefaultTeams()[0];
+    const awakener = gameCatalog.entities.awakeners[0];
+    team.slots[0].awakenerId = awakener.id;
+    team.slots[1].awakenerId = awakener.id;
+    const encoded = encodeTeam(team);
+    expect(encoded.ok).toBe(true);
+    if (!encoded.ok) return;
+
+    expect(decodeTeam(encoded.code)).toEqual({ ok: false, reason: "duplicateEntity" });
+  });
 });

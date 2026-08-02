@@ -32,14 +32,7 @@ export function EntityArtwork({
   }
 
   return (
-    <span
-      className={clsx(
-        "entity-artwork",
-        `entity-artwork--${size}`,
-        `entity-artwork--${source}`,
-        className,
-      )}
-    >
+    <span className={clsx("entity-artwork", `entity-artwork--${size}`, className)}>
       <img
         src={entity.assets[source]}
         alt=""

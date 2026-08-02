@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 
 import { gameCatalog } from "@/data-access/catalog";
+import { SLOT_INDICES, type PickerTarget } from "./types";
 
 import {
+  SLOT_COUNT,
   TEAM_COUNT,
   applyImportedTeam,
   assignEntity,
@@ -21,6 +23,21 @@ describe("team rules", () => {
       Array.from({ length: TEAM_COUNT }, (_, index) => `team-${String(index + 1)}`),
     );
     expect(teams.every((team) => team.slots.length === 4)).toBe(true);
+    expect(SLOT_INDICES).toEqual([0, 1, 2, 3]);
+    expect(SLOT_COUNT).toBe(SLOT_INDICES.length);
+  });
+
+  it("rejects malformed targets without mutating teams", () => {
+    const teams = createDefaultTeams();
+    const invalid = {
+      kind: "awakener",
+      teamId: "team-1",
+      slotIndex: 9,
+    } as unknown as PickerTarget;
+    const assigned = assignEntity(teams, invalid, gameCatalog.entities.awakeners[0].id);
+
+    expect(assigned).toMatchObject({ ok: false, reason: "targetMissing", teams });
+    expect(clearTarget(teams, invalid)).toBe(teams);
   });
 
   it("expands legacy five-team saves without losing valid assignments", () => {
@@ -146,7 +163,7 @@ describe("team rules", () => {
     );
 
     expect(result.ok).toBe(false);
-    expect(result.message).toContain("two-realm");
+    expect(result.reason).toBe("realmMove");
     expect(getTeamRealms(result.teams[0])).toHaveLength(2);
   });
 
@@ -157,6 +174,18 @@ describe("team rules", () => {
       wheelIds: [gameCatalog.entities.wheels[0].id, gameCatalog.entities.wheels[1].id],
       covenantId: gameCatalog.entities.covenants[0].id,
     };
+
+    const next = clearTarget(teams, { kind: "awakener", teamId: "team-1", slotIndex: 0 });
+    expect(next[0].slots[0]).toEqual({
+      awakenerId: null,
+      wheelIds: [null, null],
+      covenantId: null,
+    });
+  });
+
+  it("clears orphaned equipment from an empty awakener target", () => {
+    const teams = createDefaultTeams();
+    teams[0].slots[0].wheelIds[0] = gameCatalog.entities.wheels[0].id;
 
     const next = clearTarget(teams, { kind: "awakener", teamId: "team-1", slotIndex: 0 });
     expect(next[0].slots[0]).toEqual({
@@ -186,5 +215,49 @@ describe("team rules", () => {
     expect(next[9].slots[0].awakenerId).toBeNull();
     expect(next[9].slots[1].wheelIds[0]).toBeNull();
     expect(next[9].posseId).toBeNull();
+  });
+
+  it("deterministically repairs duplicate unique entities and excess realms during hydration", () => {
+    const byRealm = new Map<string, (typeof gameCatalog.entities.awakeners)[number]>();
+    for (const awakener of gameCatalog.entities.awakeners) {
+      if (!byRealm.has(awakener.realm)) byRealm.set(awakener.realm, awakener);
+    }
+    const [first, second, third] = [...byRealm.values()];
+    const wheel = gameCatalog.entities.wheels[0];
+    const posse = gameCatalog.entities.posses.find((entity) => entity.selectable)!;
+    const teams = createDefaultTeams();
+    teams[0].slots[0].awakenerId = first.id;
+    teams[0].slots[0].wheelIds[0] = wheel.id;
+    teams[0].slots[1].awakenerId = second.id;
+    teams[0].slots[2].awakenerId = third.id;
+    teams[1].slots[0].awakenerId = first.id;
+    teams[1].slots[0].wheelIds[0] = wheel.id;
+    teams[0].posseId = posse.id;
+    teams[1].posseId = posse.id;
+
+    const reconciled = reconcileTeams(teams);
+
+    expect(reconciled[0].slots[0].awakenerId).toBe(first.id);
+    expect(reconciled[0].slots[1].awakenerId).toBe(second.id);
+    expect(reconciled[0].slots[2].awakenerId).toBeNull();
+    expect(reconciled[1].slots[0].awakenerId).toBeNull();
+    expect(reconciled[1].slots[0].wheelIds[0]).toBeNull();
+    expect(reconciled[0].posseId).toBe(posse.id);
+    expect(reconciled[1].posseId).toBeNull();
+  });
+
+  it("keeps compatibility-only entities renderable but rejects new assignment", () => {
+    const compatibilityPosse = gameCatalog.entities.posses.find((entity) => !entity.selectable)!;
+    const teams = createDefaultTeams();
+    teams[0].posseId = compatibilityPosse.id;
+
+    expect(reconcileTeams(teams)[0].posseId).toBe(compatibilityPosse.id);
+    expect(
+      assignEntity(
+        createDefaultTeams(),
+        { kind: "posse", teamId: "team-1" },
+        compatibilityPosse.id,
+      ),
+    ).toMatchObject({ ok: false, reason: "entityNotSelectable" });
   });
 });

@@ -1,19 +1,21 @@
 import clsx from "clsx";
-import Fuse from "fuse.js";
 import { Eraser, Search, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { EntityArtwork, RealmBadge } from "@/components/ui/EntityArtwork";
 import { formatEnumLabel, gameCatalog } from "@/data-access/catalog";
-import { useLocalizedEntities, type LocalizedEntityView } from "@/data-access/entity-localization";
+import { useLocalizedEntities } from "@/data-access/entity-localization";
+import { getTargetEntity, targetKey } from "@/domain/team-rules";
+import type { PickerTarget, Team } from "@/domain/types";
+
 import {
-  canAssignAwakener,
+  buildPickerViews,
   describeTarget,
-  getTargetEntity,
-  isEntityAssigned,
-} from "@/domain/team-rules";
-import type { GameEntity, PickerTarget, Team } from "@/domain/types";
+  entitiesForTarget,
+  filtersForTarget,
+  getEntityMeta,
+} from "./entity-picker-model";
 
 interface EntityPickerProps {
   target: PickerTarget | null;
@@ -23,98 +25,12 @@ interface EntityPickerProps {
   onClose: () => void;
 }
 
-const hiddenPosseNamePattern = /^primordial memory(?:·|\b)/i;
-
-function getPickerTargetKey(target: PickerTarget | null) {
-  if (!target) return "empty";
-  if (target.kind === "posse") return `posse:${target.teamId}`;
-  const slotKey = `${target.kind}:${target.teamId}:${String(target.slotIndex)}`;
-  return target.kind === "wheel" ? `${slotKey}:${String(target.wheelIndex)}` : slotKey;
-}
-
-function entitiesForTarget(target: PickerTarget): GameEntity[] {
-  if (target.kind === "awakener") return gameCatalog.entities.awakeners;
-  if (target.kind === "wheel") return gameCatalog.entities.wheels;
-  if (target.kind === "covenant") return gameCatalog.entities.covenants;
-  return gameCatalog.entities.posses.filter((posse) => !hiddenPosseNamePattern.test(posse.name));
-}
-
-function getEntityMeta(entity: GameEntity, translateEnum: (value: string) => string) {
-  if (entity.kind === "wheel") return `${entity.rarity} · ${translateEnum(entity.mainstatKey)}`;
-  return null;
-}
-
-const wheelRarityOrder = ["SSR", "SR", "R", "N"];
-const wheelRealmOrder = [...gameCatalog.filters.realms, "NEUTRAL"];
-
-interface PickerEntityView extends LocalizedEntityView {
-  used: boolean;
-  blocked: boolean;
-}
-
-function getAvailabilityRank({ used, blocked }: PickerEntityView) {
-  if (used) return 1;
-  return blocked ? 2 : 0;
-}
-
-function compareRankedValues(left: string, right: string, order: string[]) {
-  const leftIndex = order.indexOf(left);
-  const rightIndex = order.indexOf(right);
-  const leftRank = leftIndex === -1 ? order.length : leftIndex;
-  const rightRank = rightIndex === -1 ? order.length : rightIndex;
-
-  if (leftRank !== rightRank) return leftRank - rightRank;
-  if (leftRank === order.length) {
-    const categoryComparison = left.localeCompare(right);
-    if (categoryComparison !== 0) return categoryComparison;
-  }
-  return 0;
-}
-
-function comparePickerEntities(
-  left: PickerEntityView,
-  right: PickerEntityView,
-  collator: Intl.Collator,
-) {
-  const availabilityComparison = getAvailabilityRank(left) - getAvailabilityRank(right);
-  if (availabilityComparison !== 0) return availabilityComparison;
-
-  const leftEntity = left.entity;
-  const rightEntity = right.entity;
-  if (leftEntity.kind !== rightEntity.kind) return leftEntity.kind.localeCompare(rightEntity.kind);
-
-  let categoryComparison = 0;
-  if (leftEntity.kind === "wheel" && rightEntity.kind === "wheel") {
-    const rarityComparison = compareRankedValues(
-      leftEntity.rarity,
-      rightEntity.rarity,
-      wheelRarityOrder,
-    );
-    categoryComparison =
-      rarityComparison || compareRankedValues(leftEntity.realm, rightEntity.realm, wheelRealmOrder);
-  } else if (leftEntity.kind === "awakener" && rightEntity.kind === "awakener") {
-    categoryComparison = compareRankedValues(
-      leftEntity.realm,
-      rightEntity.realm,
-      gameCatalog.filters.realms,
-    );
-  } else if (leftEntity.kind === "posse" && rightEntity.kind === "posse") {
-    categoryComparison = compareRankedValues(
-      leftEntity.realm,
-      rightEntity.realm,
-      gameCatalog.filters.posseRealms,
-    );
-  }
-
-  return categoryComparison || collator.compare(left.text.name, right.text.name);
-}
-
 export function EntityPicker({ target, teams, onChoose, onClear, onClose }: EntityPickerProps) {
   const { t, i18n } = useTranslation();
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("ALL");
   const [rarity, setRarity] = useState("ALL");
-  const pickerTargetKey = getPickerTargetKey(target);
+  const pickerTargetKey = targetKey(target);
   const translateEnum = (value: string) =>
     t(`enums.${value}`, { defaultValue: formatEnumLabel(value) });
 
@@ -127,7 +43,13 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
   useEffect(() => {
     if (!target) return;
     const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
+      if (
+        event.key === "Escape" &&
+        !event.defaultPrevented &&
+        !document.querySelector('[aria-modal="true"]')
+      ) {
+        onClose();
+      }
     };
     window.addEventListener("keydown", handleEscape);
     return () => window.removeEventListener("keydown", handleEscape);
@@ -139,43 +61,21 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
     () => new Intl.Collator(i18n.resolvedLanguage ?? i18n.language),
     [i18n.language, i18n.resolvedLanguage],
   );
-  const fuse = useMemo(
+  const filtered = useMemo(
     () =>
-      new Fuse(allEntities, {
-        keys: ["searchTerms"],
-        threshold: 0.3,
-        ignoreLocation: true,
-      }),
-    [allEntities],
+      target
+        ? buildPickerViews({
+            entities: allEntities,
+            target,
+            teams,
+            query,
+            filter,
+            rarity,
+            collator,
+          })
+        : [],
+    [allEntities, collator, filter, query, rarity, target, teams],
   );
-
-  const filtered = useMemo(() => {
-    const searched = query.trim()
-      ? fuse.search(query.trim()).map((result) => result.item)
-      : allEntities;
-    return [...searched]
-      .filter(({ entity }) => {
-        if (filter === "ALL") return true;
-        if (entity.kind === "awakener" || entity.kind === "posse") return entity.realm === filter;
-        if (entity.kind === "wheel") return entity.mainstatKey === filter;
-        return true;
-      })
-      .filter(
-        ({ entity }) => entity.kind !== "wheel" || rarity === "ALL" || entity.rarity === rarity,
-      )
-      .map((view) => ({
-        ...view,
-        used:
-          target !== null &&
-          view.entity.kind !== "covenant" &&
-          isEntityAssigned(teams, view.entity.kind, view.entity.id),
-        blocked:
-          target !== null &&
-          view.entity.kind === "awakener" &&
-          !canAssignAwakener(teams, target, view.entity.id),
-      }))
-      .sort((left, right) => comparePickerEntities(left, right, collator));
-  }, [allEntities, collator, filter, fuse, query, rarity, target, teams]);
 
   if (!target) {
     return (
@@ -193,26 +93,20 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
   }
 
   const currentEntity = getTargetEntity(teams, target);
-  const filters =
-    target.kind === "awakener"
-      ? gameCatalog.filters.realms
-      : target.kind === "wheel"
-        ? gameCatalog.filters.wheelMainstats
-        : target.kind === "posse"
-          ? gameCatalog.filters.posseRealms
-          : [];
+  const filters = filtersForTarget(target);
+  const targetDescription = describeTarget(target, t);
 
   return (
     <aside
       key={pickerTargetKey}
       className="entity-picker"
       data-picker-target={pickerTargetKey}
-      aria-label={t("picker.label", { target: describeTarget(target) })}
+      aria-label={t("picker.label", { target: targetDescription })}
     >
       <header className="entity-picker__header">
         <div>
           <span className="picker-kicker">{t("picker.nowEditing")}</span>
-          <h2>{describeTarget(target)}</h2>
+          <h2>{targetDescription}</h2>
         </div>
         <button
           type="button"
@@ -285,16 +179,12 @@ export function EntityPicker({ target, teams, onChoose, onClear, onClose }: Enti
 
       <div className="picker-grid">
         {filtered.map(({ entity, text, used, blocked }) => {
-          const meta = getEntityMeta(entity, translateEnum);
+          const meta = getEntityMeta(entity, t);
           const hasStatus = blocked || !entity.lineupToken;
           return (
             <button
               type="button"
-              className={clsx(
-                "picker-card",
-                used && "picker-card--used",
-                hasStatus && "picker-card--status",
-              )}
+              className={clsx("picker-card", used && "picker-card--used")}
               key={entity.id}
               disabled={blocked}
               onClick={() => onChoose(entity.id)}

@@ -40,7 +40,7 @@ describe("application languages", () => {
   it("uses the established Chinese entity terminology", () => {
     expect(zhCN.builder).toMatchObject({
       awakener: "唤醒体",
-      covenant: "密契",
+      chooseCovenant: "选择密契",
       wheelNumber: "命轮 {{number}}",
     });
     expect(zhCN.about.counts).toBe(

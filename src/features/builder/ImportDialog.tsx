@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { EntityArtwork } from "@/components/ui/EntityArtwork";
+import { Modal } from "@/components/ui/Modal";
 import { awakenersById, getEntity, possesById } from "@/data-access/catalog";
 import { resolveEntityText } from "@/data-access/entity-localization";
 
@@ -31,143 +32,119 @@ export function ImportDialog({ open, onClose }: ImportDialogProps) {
     }
   }, [cancelImport, open]);
 
-  useEffect(() => {
-    if (!open) return;
-    const previouslyFocused = document.activeElement as HTMLElement | null;
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", handleEscape);
-    return () => {
-      window.removeEventListener("keydown", handleEscape);
-      previouslyFocused?.focus();
-    };
-  }, [onClose, open]);
-
-  if (!open) return null;
-
   return (
-    <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
-      <section
-        className="dialog-panel import-dialog"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="import-title"
-        onMouseDown={(event) => event.stopPropagation()}
-      >
-        <header className="dialog-header">
-          <div>
-            <span className="picker-kicker">{t("import.format")}</span>
-            <h2 id="import-title">{t("import.title")}</h2>
-            <p>{t("import.description")}</p>
-          </div>
-          <button
-            type="button"
-            className="icon-button"
-            onClick={onClose}
-            aria-label={t("import.close")}
-          >
-            <X size={18} />
-          </button>
-        </header>
+    <Modal open={open} onClose={onClose} labelledBy="import-title">
+      <header className="dialog-header">
+        <div>
+          <span className="picker-kicker">{t("import.format")}</span>
+          <h2 id="import-title">{t("import.title")}</h2>
+          <p>{t("import.description")}</p>
+        </div>
+        <button
+          type="button"
+          className="icon-button"
+          onClick={onClose}
+          aria-label={t("import.close")}
+        >
+          <X size={18} />
+        </button>
+      </header>
 
-        <textarea
-          className="code-input"
-          value={source}
-          onChange={(event) => setSource(event.target.value)}
-          placeholder={t("import.placeholder")}
-          aria-label={t("import.inputLabel")}
-          autoFocus
-        />
+      <textarea
+        className="code-input"
+        value={source}
+        onChange={(event) => setSource(event.target.value)}
+        placeholder={t("import.placeholder")}
+        aria-label={t("import.inputLabel")}
+        autoFocus
+      />
 
-        {error && (
-          <div className="inline-alert">
-            <CircleAlert size={16} />
-            {error}
-          </div>
-        )}
+      {error && (
+        <div className="inline-alert">
+          <CircleAlert size={16} />
+          {error}
+        </div>
+      )}
 
-        {preview && (
-          <div className="import-preview">
-            <div className="import-preview__lineup">
-              {preview.team.slots.map((slot, index) => (
-                <div key={String(index)}>
-                  <EntityArtwork
-                    entity={slot.awakenerId ? awakenersById.get(slot.awakenerId) : undefined}
-                  />
-                  <span>
-                    {slot.awakenerId
-                      ? resolveEntityText(awakenersById.get(slot.awakenerId)!, language).name
-                      : t("import.empty")}
-                  </span>
-                </div>
-              ))}
-              <ArrowRight size={18} />
-              <div>
+      {preview && (
+        <div className="import-preview">
+          <div className="import-preview__lineup">
+            {preview.team.slots.map((slot, index) => (
+              <div key={String(index)}>
                 <EntityArtwork
-                  entity={preview.team.posseId ? possesById.get(preview.team.posseId) : undefined}
+                  entity={slot.awakenerId ? awakenersById.get(slot.awakenerId) : undefined}
                 />
                 <span>
-                  {preview.team.posseId
-                    ? resolveEntityText(possesById.get(preview.team.posseId)!, language).name
-                    : t("import.noPosse")}
+                  {slot.awakenerId
+                    ? resolveEntityText(awakenersById.get(slot.awakenerId)!, language).name
+                    : t("import.empty")}
                 </span>
               </div>
-            </div>
-            <div className="import-conflicts">
-              <strong>{t("import.conflicts")}</strong>
-              {preview.conflicts.length === 0 ? (
-                <p>{t("import.noConflicts")}</p>
-              ) : (
-                <ul>
-                  {preview.conflicts.map((conflict) => (
-                    <li key={`${conflict.entity.kind}-${conflict.entity.id}`}>
-                      {t("import.conflictItem", {
-                        entity: (() => {
-                          const entity = getEntity(conflict.entity.kind, conflict.entity.id);
-                          return entity
-                            ? resolveEntityText(entity, language).name
-                            : conflict.entity.id;
-                        })(),
-                        team:
-                          teams.find((team) => team.id === conflict.teamId)?.name ??
-                          conflict.teamId,
-                      })}
-                    </li>
-                  ))}
-                </ul>
-              )}
+            ))}
+            <ArrowRight size={18} />
+            <div>
+              <EntityArtwork
+                entity={preview.team.posseId ? possesById.get(preview.team.posseId) : undefined}
+              />
+              <span>
+                {preview.team.posseId
+                  ? resolveEntityText(possesById.get(preview.team.posseId)!, language).name
+                  : t("import.noPosse")}
+              </span>
             </div>
           </div>
-        )}
+          <div className="import-conflicts">
+            <strong>{t("import.conflicts")}</strong>
+            {preview.conflicts.length === 0 ? (
+              <p>{t("import.noConflicts")}</p>
+            ) : (
+              <ul>
+                {preview.conflicts.map((conflict) => (
+                  <li key={`${conflict.entity.kind}-${conflict.entity.id}`}>
+                    {t("import.conflictItem", {
+                      entity: (() => {
+                        const entity = getEntity(conflict.entity.kind, conflict.entity.id);
+                        return entity
+                          ? resolveEntityText(entity, language).name
+                          : conflict.entity.id;
+                      })(),
+                      team:
+                        teams.find((team) => team.id === conflict.teamId)?.name ?? conflict.teamId,
+                    })}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+      )}
 
-        <footer className="dialog-actions">
-          <button type="button" className="button button--ghost" onClick={onClose}>
-            {t("import.cancel")}
+      <footer className="dialog-actions">
+        <button type="button" className="button" onClick={onClose}>
+          {t("import.cancel")}
+        </button>
+        {preview ? (
+          <button
+            type="button"
+            className="button button--primary"
+            onClick={() => {
+              confirmImport();
+              onClose();
+            }}
+          >
+            {t("import.confirm")}
           </button>
-          {preview ? (
-            <button
-              type="button"
-              className="button button--primary"
-              onClick={() => {
-                confirmImport();
-                onClose();
-              }}
-            >
-              {t("import.confirm")}
-            </button>
-          ) : (
-            <button
-              type="button"
-              className="button button--primary"
-              disabled={!source.trim()}
-              onClick={() => previewImport(source)}
-            >
-              {t("import.preview")}
-            </button>
-          )}
-        </footer>
-      </section>
-    </div>
+        ) : (
+          <button
+            type="button"
+            className="button button--primary"
+            disabled={!source.trim()}
+            onClick={() => previewImport(source)}
+          >
+            {t("import.preview")}
+          </button>
+        )}
+      </footer>
+    </Modal>
   );
 }
