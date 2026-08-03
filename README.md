@@ -16,6 +16,31 @@ scripts do not require a global pnpm command, so `npm run dev` and `npm run veri
 
 The data compiler runs automatically before development and production builds. It validates `data/meta`, verifies consumed record byte counts and SHA-256 hashes, emits catalog schema v2 selectability metadata, and copies only referenced artwork into generated build directories.
 
+## Update recommended teams
+
+Edit [`data/recommended-teams.json`](data/recommended-teams.json) and rebuild the site. Each entry
+keeps its bilingual name and summary alongside one game-compatible `@@...@@` team code. The data
+compiler validates the metadata and preserves the trimmed code without resolving catalog entities.
+
+Summaries support safe GitHub Flavored Markdown. A locale may use a normal string or an array of
+lines; line arrays are joined with newlines during the build and make paragraphs and lists easier to
+edit in JSON. For example:
+
+```json
+"summary": {
+  "en": "A short **formatted** summary.",
+  "zh-CN": ["### 核心思路", "", "- 第一项", "- 第二项"]
+}
+```
+
+Headings, emphasis, lists, blockquotes, links, tables, task lists, strikethrough, and code are
+supported. Raw HTML and Markdown images are ignored.
+
+When the app loads, it decodes every code against the current catalog and displays every valid team;
+there is no fixed recommendation limit. Invalid or outdated codes are skipped silently, so editors
+should test copied codes after catalog updates. Recommendations are copy-only and never replace a
+Team Builder formation.
+
 ## Refresh SKeyDB data
 
 Run from any working directory:

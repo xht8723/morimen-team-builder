@@ -11,6 +11,11 @@
     "footer": "非商业同人项目 · 与 Qookka Games 无关联",
     "attribution": "SKeyDB 署名与素材声明"
   },
+  "navigation": {
+    "label": "主导航",
+    "builder": "队伍构筑",
+    "recommended": "推荐队伍"
+  },
   "builder": {
     "activeFormation": "当前编队 · {{number}}",
     "teamName": "队伍名称",
@@ -53,6 +58,17 @@
     "railAwakeners": "唤醒体：{{names}}。",
     "railWheels": "命轮：{{names}}。",
     "railPosse": "编队技能：{{name}}。"
+  },
+  "recommended": {
+    "title": "推荐队伍",
+    "slotLabel": "推荐配置位置 {{number}}",
+    "copy": "复制代码",
+    "copied": "已复制",
+    "copyFailed": "无法访问剪贴板。",
+    "covenant": "密契",
+    "posse": "编队技能",
+    "emptyTitle": "暂无推荐队伍",
+    "emptyDescription": "请在 data/recommended-teams.json 中添加队伍并重新构建网站。"
   },
   "picker": {
     "emptyTitle": "选择一个位置开始。",

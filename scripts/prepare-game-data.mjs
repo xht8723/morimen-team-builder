@@ -11,6 +11,7 @@ const assetsRoot = path.join(dataRoot, "assets");
 const generatedSourceRoot = path.join(root, "src", "generated");
 const generatedAssetsRoot = path.join(root, "public", "generated-assets");
 const translationsRoot = path.join(root, "translations", "entities");
+const recommendedTeamsFile = path.join(dataRoot, "recommended-teams.json");
 
 const scopes = ["awakeners", "wheels", "covenants", "posses"];
 const expectedKinds = {
@@ -194,6 +195,91 @@ function validateStringArray(value, label) {
   invariant(Array.isArray(value), `${label} must be an array`);
   for (const [index, entry] of value.entries()) validateString(entry, `${label}[${String(index)}]`);
   invariant(new Set(value).size === value.length, `${label} contains duplicates`);
+}
+
+function validateRecommendationText(value, label) {
+  invariant(
+    value && typeof value === "object" && !Array.isArray(value),
+    `${label} must be an object`,
+  );
+  validateLocalizedString(value.en, `${label}.en`);
+  validateLocalizedString(value["zh-CN"], `${label}.zh-CN`);
+  return { en: value.en, "zh-CN": value["zh-CN"] };
+}
+
+function normalizeRecommendationMarkdown(value, label) {
+  if (typeof value === "string") {
+    const normalized = value.replace(/\r\n?/gu, "\n");
+    validateLocalizedString(normalized, label);
+    return normalized;
+  }
+
+  invariant(Array.isArray(value), `${label} must be a string or an array of lines`);
+  invariant(value.length > 0, `${label} line array must not be empty`);
+  for (const [index, line] of value.entries()) {
+    invariant(typeof line === "string", `${label}[${String(index)}] must be a string`);
+    invariant(!/[\r\n]/u.test(line), `${label}[${String(index)}] must be a single line`);
+    const hasUnsupportedControlCharacter = [...line].some((character) => {
+      const codePoint = character.codePointAt(0) ?? 0;
+      return (codePoint < 32 && codePoint !== 9) || codePoint === 127;
+    });
+    invariant(
+      !hasUnsupportedControlCharacter,
+      `${label}[${String(index)}] contains control characters`,
+    );
+    invariant(
+      line === line.normalize("NFC"),
+      `${label}[${String(index)}] must use NFC Unicode normalization`,
+    );
+  }
+
+  const normalized = value.join("\n");
+  invariant(normalized.trim().length > 0, `${label} line array must contain Markdown text`);
+  return normalized;
+}
+
+function validateRecommendationSummary(value, label) {
+  invariant(
+    value && typeof value === "object" && !Array.isArray(value),
+    `${label} must be an object`,
+  );
+  return {
+    en: normalizeRecommendationMarkdown(value.en, `${label}.en`),
+    "zh-CN": normalizeRecommendationMarkdown(value["zh-CN"], `${label}.zh-CN`),
+  };
+}
+
+async function compileRecommendedTeams() {
+  const source = await readJson(recommendedTeamsFile);
+  invariant(
+    source && typeof source === "object" && !Array.isArray(source),
+    "recommended-teams.json is not a JSON object",
+  );
+  invariant(
+    source.schemaVersion === 1,
+    `recommended-teams.json has unsupported schema ${String(source.schemaVersion)}`,
+  );
+  invariant(Array.isArray(source.teams), "recommended-teams.json teams must be an array");
+
+  const seenTeamIds = new Set();
+  const compiledTeams = source.teams.map((team, teamIndex) => {
+    const label = `recommended-teams.json teams[${String(teamIndex)}]`;
+    invariant(
+      team && typeof team === "object" && !Array.isArray(team),
+      `${label} is not an object`,
+    );
+    validateLocalizedString(team.id, `${label}.id`);
+    invariant(!seenTeamIds.has(team.id), `${label}.id duplicates ${team.id}`);
+    seenTeamIds.add(team.id);
+    const name = validateRecommendationText(team.name, `${label}.name`);
+    const summary = validateRecommendationSummary(team.summary, `${label}.summary`);
+    validateString(team.code, `${label}.code`);
+    invariant(!/[\r\n]/u.test(team.code), `${label}.code must be a single-line string`);
+
+    return { id: team.id, name, summary, code: team.code.trim() };
+  });
+
+  return { schemaVersion: 1, teams: compiledTeams };
 }
 
 function validateRecord(record, scope, file) {
@@ -582,16 +668,24 @@ async function main() {
     entities,
   };
 
+  const translations = await compileEntityTranslations(entities);
+  const recommendedTeams = await compileRecommendedTeams();
+
   await writeFile(
     path.join(generatedSourceRoot, "game-data.json"),
     `${JSON.stringify(catalog, null, 2)}\n`,
     "utf8",
   );
 
-  const translations = await compileEntityTranslations(entities);
   await writeFile(
     path.join(generatedSourceRoot, "entity-translations.json"),
     `${JSON.stringify(translations, null, 2)}\n`,
+    "utf8",
+  );
+
+  await writeFile(
+    path.join(generatedSourceRoot, "recommended-teams.json"),
+    `${JSON.stringify(recommendedTeams, null, 2)}\n`,
     "utf8",
   );
 

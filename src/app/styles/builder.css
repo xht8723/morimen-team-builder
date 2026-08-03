@@ -605,6 +605,11 @@
   background: transparent;
 }
 
+.loadout-card__covenant[data-empty="false"] .entity-artwork img {
+  transform: scale(1.45);
+  transform-origin: center;
+}
+
 .loadout-card__covenant[data-empty="true"] .entity-artwork {
   color: transparent;
   border: 1px dashed color-mix(in srgb, var(--realm-color) 38%, var(--faint));

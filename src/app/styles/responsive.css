@@ -63,10 +63,17 @@
 
 @media (max-width: 700px) {
   .app-header {
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand actions"
+      "tabs tabs";
     min-height: 46px;
     gap: 8px;
     padding: 5px 10px;
+  }
+
+  .app-header__brand {
+    grid-area: brand;
   }
 
   .brand-mark {
@@ -83,9 +90,18 @@
   }
 
   .app-header__actions {
-    grid-column: auto;
+    grid-area: actions;
     display: flex;
     gap: 6px;
+  }
+
+  .app-tabs {
+    width: 100%;
+    grid-area: tabs;
+  }
+
+  .app-tab {
+    flex: 1;
   }
 
   .app-header__actions .button {

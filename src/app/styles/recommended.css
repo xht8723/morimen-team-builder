@@ -1,0 +1,407 @@
+.recommended-page {
+  width: 100%;
+  min-width: 0;
+  flex: 1;
+  padding: clamp(22px, 3vw, 42px);
+  background:
+    radial-gradient(circle at 82% 8%, rgb(130 174 246 / 8%), transparent 30%),
+    radial-gradient(circle at 15% 35%, rgb(233 201 132 / 6%), transparent 32%), #090c12;
+}
+
+.recommended-page__header {
+  max-width: 1440px;
+  margin: 0 auto 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.recommended-page__header h2 {
+  margin: 0;
+  font-family: "Droid Serif", serif;
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+}
+
+.recommended-empty p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.recommended-markdown {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.recommended-markdown > :first-child,
+.recommended-markdown > :first-child > :first-child {
+  margin-top: 0;
+}
+
+.recommended-markdown > :last-child,
+.recommended-markdown > :last-child > :last-child {
+  margin-bottom: 0;
+}
+
+.recommended-markdown p,
+.recommended-markdown ul,
+.recommended-markdown ol,
+.recommended-markdown blockquote,
+.recommended-markdown pre,
+.recommended-markdown__table {
+  margin: 0 0 0.65rem;
+}
+
+.recommended-markdown h4 {
+  margin: 0.8rem 0 0.3rem;
+  color: var(--text);
+  font-family: "Droid Serif", serif;
+  font-size: 0.8rem;
+}
+
+.recommended-markdown ul,
+.recommended-markdown ol {
+  padding-left: 1.25rem;
+}
+
+.recommended-markdown li + li {
+  margin-top: 0.2rem;
+}
+
+.recommended-markdown blockquote {
+  padding: 0.15rem 0 0.15rem 0.75rem;
+  border-left: 2px solid var(--accent);
+  color: color-mix(in srgb, var(--text) 78%, var(--muted));
+}
+
+.recommended-markdown a {
+  color: var(--accent-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  word-break: break-word;
+}
+
+.recommended-markdown code {
+  padding: 0.08rem 0.25rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: rgb(0 0 0 / 25%);
+  color: #e7dbbf;
+  font-size: 0.7rem;
+}
+
+.recommended-markdown pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: rgb(0 0 0 / 30%);
+}
+
+.recommended-markdown pre code {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  white-space: pre;
+}
+
+.recommended-markdown__table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.recommended-markdown table {
+  min-width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.recommended-markdown th,
+.recommended-markdown td {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+.recommended-markdown th {
+  color: var(--text);
+  background: rgb(255 255 255 / 4%);
+}
+
+.recommended-markdown .contains-task-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.recommended-markdown .task-list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.recommended-markdown input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+
+.recommended-list {
+  max-width: 1440px;
+  display: grid;
+  gap: 18px;
+  margin: 0 auto;
+}
+
+.recommended-card {
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 3%), transparent 35%),
+    linear-gradient(180deg, #11151d, #0b0e14);
+  box-shadow: 0 20px 55px rgb(0 0 0 / 24%);
+}
+
+.recommended-card__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.recommended-card__heading {
+  min-width: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.recommended-card__heading h3 {
+  margin: 0;
+  font-family: "Droid Serif", serif;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.recommended-card__realms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.recommended-card__copy-area {
+  min-width: 132px;
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
+
+.recommended-card__copy {
+  min-width: 112px;
+}
+
+.recommended-card__copy-status {
+  min-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 0.62rem;
+}
+
+.recommended-card__copy-status[data-error="true"] {
+  color: #f2ba91;
+}
+
+.recommended-card__loadouts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  padding: 14px;
+}
+
+.recommended-loadout {
+  --realm-color: var(--accent);
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--realm-color) 35%, var(--line));
+  border-radius: 6px;
+  background: #0d1118;
+  box-shadow: inset 0 0 26px color-mix(in srgb, var(--realm-color) 8%, transparent);
+}
+
+.recommended-loadout[data-realm="aequor"] {
+  --realm-color: var(--aequor);
+}
+
+.recommended-loadout[data-realm="caro"] {
+  --realm-color: var(--caro);
+}
+
+.recommended-loadout[data-realm="chaos"] {
+  --realm-color: var(--chaos);
+}
+
+.recommended-loadout[data-realm="ultra"] {
+  --realm-color: var(--ultra);
+}
+
+.recommended-loadout__awakener {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr);
+  align-items: center;
+  gap: 9px;
+  padding: 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--realm-color) 32%, var(--line));
+  background: linear-gradient(
+    110deg,
+    color-mix(in srgb, var(--realm-color) 12%, transparent),
+    transparent 62%
+  );
+}
+
+.recommended-loadout__awakener .entity-artwork {
+  border-color: color-mix(in srgb, var(--realm-color) 42%, var(--line-strong));
+}
+
+.recommended-loadout__slot {
+  color: var(--accent);
+  font-family: "Droid Serif", serif;
+  font-size: 0.65rem;
+}
+
+.recommended-loadout__awakener > div {
+  min-width: 0;
+  display: grid;
+  justify-items: start;
+  gap: 5px;
+}
+
+.recommended-loadout__awakener strong,
+.recommended-equipment strong,
+.recommended-card__posse strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recommended-loadout__awakener strong {
+  max-width: 100%;
+  font-family: "Droid Serif", serif;
+  font-size: 0.82rem;
+}
+
+.recommended-loadout__equipment {
+  display: grid;
+  gap: 1px;
+  padding: 7px;
+}
+
+.recommended-equipment {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border-bottom: 1px solid rgb(255 255 255 / 4%);
+}
+
+.recommended-equipment:last-child {
+  border-bottom: 0;
+}
+
+.recommended-equipment > span,
+.recommended-card__posse > span {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.recommended-equipment small,
+.recommended-card__posse small {
+  color: var(--faint);
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.recommended-equipment strong {
+  font-size: 0.66rem;
+}
+
+.recommended-equipment--covenant {
+  color: #e7dbbf;
+}
+
+.recommended-card__posse {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0 14px 14px;
+  padding: 10px 13px;
+  border: 1px solid rgb(233 201 132 / 20%);
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgb(233 201 132 / 9%), transparent 65%);
+}
+
+.recommended-card__posse strong {
+  font-family: "Droid Serif", serif;
+  font-size: 0.8rem;
+}
+
+.recommended-empty {
+  max-width: 720px;
+  display: grid;
+  gap: 8px;
+  margin: 80px auto;
+  padding: 36px;
+  text-align: center;
+  border: 1px dashed var(--line-strong);
+  border-radius: 10px;
+}
+
+.recommended-empty h3 {
+  margin: 0;
+  font-family: "Droid Serif", serif;
+}
+
+@media (max-width: 980px) {
+  .recommended-card__loadouts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .recommended-page {
+    padding: 18px 10px 80px;
+  }
+
+  .recommended-card__header {
+    align-items: stretch;
+    display: grid;
+  }
+
+  .recommended-card__copy-area {
+    justify-self: start;
+  }
+
+  .recommended-card__copy-area {
+    min-width: 0;
+    justify-items: start;
+  }
+
+  .recommended-card__loadouts {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .recommended-card__posse {
+    margin: 0 10px 10px;
+  }
+}

@@ -50,7 +50,9 @@ test("uses the game branding and transitions between teams", async ({ page }, te
       overflowX: document.documentElement.scrollWidth - window.innerWidth,
     };
   });
-  expect(headerMetrics.headerHeight).toBeLessThanOrEqual(50);
+  expect(headerMetrics.headerHeight).toBeLessThanOrEqual(
+    testInfo.project.name === "mobile" ? 90 : 50,
+  );
   expect(headerMetrics.brandWidth).toBeLessThanOrEqual(32);
   expect(headerMetrics.brandHeight).toBe(headerMetrics.brandWidth);
   expect(headerMetrics.dataButtonHeight).toBeLessThanOrEqual(30);
@@ -133,7 +135,66 @@ test("uses the game branding and transitions between teams", async ({ page }, te
   await expect(board).toHaveAttribute("data-team-transition", "idle");
 });
 
-test("switches to Simplified Chinese and preserves it across reloads", async ({ page }) => {
+test("browses and copies recommended teams without changing the builder", async ({
+  page,
+  context,
+}, testInfo) => {
+  await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+  await page.locator(".team-rail-card").nth(1).click();
+  await expect(page.getByRole("heading", { name: "Team 2" })).toBeVisible();
+
+  await page.getByRole("tab", { name: "Recommended Teams" }).click();
+  await expect(page.getByRole("heading", { name: "Recommended teams" })).toBeVisible();
+  await expect(page.locator(".recommended-card")).toHaveCount(6);
+  const firstCard = page.getByRole("article", { name: "1T GLotan", exact: true });
+  await firstCard.getByRole("button", { name: "Copy code" }).click();
+  await expect(firstCard.getByRole("button", { name: "Copied" })).toBeVisible();
+  expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
+    "@@xtW4mzeXxJy7yi7aabkka7@@",
+  );
+
+  await page.getByRole("button", { name: "Switch to Simplified Chinese" }).click();
+  const chineseCard = page.getByRole("article", { name: "1T神鲸", exact: true });
+  await expect(chineseCard.getByRole("heading", { name: "核心思路", level: 4 })).toBeVisible();
+  await expect(chineseCard.getByText("伤害极高，1T2T轻松删除道中")).toBeVisible();
+  const markdownOverflow = await chineseCard
+    .locator(".recommended-markdown")
+    .evaluate((element) => ({
+      clientWidth: element.clientWidth,
+      scrollWidth: element.scrollWidth,
+    }));
+  expect(markdownOverflow.scrollWidth).toBeLessThanOrEqual(markdownOverflow.clientWidth + 1);
+  await page.getByRole("button", { name: "切换到英文" }).click();
+
+  const tabMetrics = await page.evaluate(() => {
+    const header = document.querySelector(".app-header")!.getBoundingClientRect();
+    const brand = document.querySelector(".app-header__brand")!.getBoundingClientRect();
+    const tabs = document.querySelector(".app-tabs")!.getBoundingClientRect();
+    return {
+      headerCenter: header.left + header.width / 2,
+      tabsCenter: tabs.left + tabs.width / 2,
+      tabsTop: tabs.top,
+      tabsWidth: tabs.width,
+      brandBottom: brand.bottom,
+      headerWidth: header.width,
+      overflowX: document.documentElement.scrollWidth - window.innerWidth,
+    };
+  });
+  if (testInfo.project.name === "desktop") {
+    expect(Math.abs(tabMetrics.tabsCenter - tabMetrics.headerCenter)).toBeLessThanOrEqual(2);
+  } else {
+    expect(tabMetrics.tabsTop).toBeGreaterThanOrEqual(tabMetrics.brandBottom - 1);
+    expect(tabMetrics.tabsWidth).toBeGreaterThanOrEqual(tabMetrics.headerWidth - 24);
+  }
+  expect(tabMetrics.overflowX).toBeLessThanOrEqual(0);
+
+  await page.getByRole("tab", { name: "Team Builder" }).click();
+  await expect(page.getByRole("heading", { name: "Team 2" })).toBeVisible();
+});
+
+test("switches to Simplified Chinese and preserves it across reloads", async ({
+  page,
+}, testInfo) => {
   await page.getByRole("button", { name: "Switch to Simplified Chinese" }).click();
 
   await expect(page.getByRole("heading", { name: "忘却前夜队伍构筑器" })).toBeVisible();
@@ -163,7 +224,9 @@ test("switches to Simplified Chinese and preserves it across reloads", async ({ 
       overflowX: document.documentElement.scrollWidth - window.innerWidth,
     };
   });
-  expect(chineseLayout.headerHeight).toBeLessThanOrEqual(50);
+  expect(chineseLayout.headerHeight).toBeLessThanOrEqual(
+    testInfo.project.name === "mobile" ? 90 : 50,
+  );
   expect(chineseLayout.actionsRight).toBeLessThanOrEqual(chineseLayout.headerRight);
   expect(chineseLayout.overflowX).toBeLessThanOrEqual(0);
 
@@ -205,6 +268,34 @@ test("supports a keyboard-first mobile picker flow", async ({ page }, testInfo) 
   await expect(page.getByRole("textbox", { name: "Search records" })).toBeFocused();
   await page.keyboard.press("Escape");
   await expect(page.getByRole("heading", { name: "Awakener 1" })).toBeHidden();
+});
+
+test("wraps picker filters within narrow screens", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "desktop", "Desktop project controls viewport widths");
+
+  await page.setViewportSize({ width: 320, height: 700 });
+  await page.locator(".loadout-card__wheel").first().click();
+
+  const primaryFilters = page.getByLabel("Primary filters");
+  await expect(primaryFilters).toBeVisible();
+  const filterLayout = await primaryFilters.evaluate((strip) => {
+    const stripRect = strip.getBoundingClientRect();
+    const buttons = [...strip.querySelectorAll("button")].map((button) =>
+      button.getBoundingClientRect(),
+    );
+
+    return {
+      rowCount: new Set(buttons.map((button) => Math.round(button.top))).size,
+      buttonsFit: buttons.every(
+        (button) => button.left >= stripRect.left - 1 && button.right <= stripRect.right + 1,
+      ),
+      documentOverflowX: document.documentElement.scrollWidth - window.innerWidth,
+    };
+  });
+
+  expect(filterLayout.rowCount).toBeGreaterThan(1);
+  expect(filterLayout.buttonsFit).toBe(true);
+  expect(filterLayout.documentOverflowX).toBeLessThanOrEqual(0);
 });
 
 test("adapts the formation from four columns to a single phone column", async ({

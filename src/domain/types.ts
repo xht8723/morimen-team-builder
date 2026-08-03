@@ -92,6 +92,27 @@ export interface Team {
   slots: [LoadoutSlot, LoadoutSlot, LoadoutSlot, LoadoutSlot];
 }
 
+export interface LocalizedText {
+  en: string;
+  "zh-CN": string;
+}
+
+export interface RecommendedTeamDefinition {
+  id: string;
+  name: LocalizedText;
+  summary: LocalizedText;
+  code: string;
+}
+
+export interface ResolvedRecommendedTeam extends RecommendedTeamDefinition {
+  team: Team;
+}
+
+export interface RecommendedTeamsCatalog {
+  schemaVersion: 1;
+  teams: RecommendedTeamDefinition[];
+}
+
 export type PickerTarget =
   | { kind: "awakener"; teamId: string; slotIndex: SlotIndex }
   | { kind: "wheel"; teamId: string; slotIndex: SlotIndex; wheelIndex: WheelIndex }

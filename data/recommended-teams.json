@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "teams": [
+    {
+      "id": "1",
+      "name": {
+        "en": "1T GLotan",
+        "zh-CN": "1T神鲸"
+      },
+      "summary": {
+        "en": [
+          "# Strengths",
+          "- Extremely high damage; easily deletes normal encounters on turns 1–2",
+          "- Rich in Sigils",
+          "- Does not require keyflare regen",
+          "# Weaknesses",
+          "- Low on Arith",
+          "- kill or die",
+          "- Weakness and Vulnerability depend on Ryker's dice, so there is some randomness",
+          "# Core Strategy",
+          "Deus Ex Machina provides extra Arith on turn 1. Combined with Arachne's large command-card damage bonus, awaken Glotan on turn 1, then let the automatic Posse make Ryker's dice apply Vulnerability. Play Lotan's 4-cost Longsword directly to reliably clear every normal encounter on turn 1. If you are short on Arith, use Karen's ultimate.",
+          "Against a boss, you can awaken Ryker to obtain high-tier Artifacts, or awaken Arachne and retrieve Longswords from the space for extremely high damage.",
+          "# Substitutions",
+          "- Lotan can use her SR signature Wheel",
+          "- Any sigil wheel for Ryker",
+          "- Any realm mastery wheels for Arachne",
+          "- Karen mainly provides extra Arith so you can play more Longswords. Her equipment is flexible, and she can also be replaced by any support character"
+        ],
+        "zh-CN": [
+          "# 优势",
+          "- 伤害极高，1T2T轻松删除道中",
+          "- 黑印很多",
+          "- 不需要银钥充能",
+          "# 劣势",
+          "- 缺算力",
+          "- 打不死，你就死。",
+          "- 虚弱易伤依靠莱克骰子，有一定随机性",
+          "# 核心思路",
+          "机械降神提供额外1T算力，配合阿拉克涅提供的超额指令卡增伤，第一回合觉醒神鲸，然后自动的钥令让莱克骰子提供虚弱与易伤，直接丢萝坦4费长剑，1T稳定击杀所有道中。没算力就开女仆大。",
+          "boss可以觉醒莱克拿高级藏品，或者觉醒阿拉克涅，从空间取长剑，伤害极高。",
+          "# 可替换",
+          "- 萝坦可以用SR专武",
+          "- 莱克带黑印就行",
+          "- 阿拉克涅带精通就行",
+          "- 女仆主要提供额外算力，方便打多张长剑，随便带什么都行。也可以换成别任意辅助角色"
+        ]
+      },
+      "code": "@@xtW4mzeXxJy7yi7aabkka7@@"
+    },
+    {
+      "id": "2",
+      "name": {
+        "en": "Cthulhu is my son",
+        "zh-CN": "神国"
+      },
+      "summary": {
+        "en": [
+          "# Strengths",
+          "- Very high Sacrifice damage that can skip a boss's second health bar",
+          "- Plenty of card draw, Arith, and keyflare",
+          "# Weaknesses",
+          "- Weakness and Vulnerability rely entirely on Miryam's awakening and are available in limited amounts",
+          "- Be careful not to sacrifice yourself to death",
+          "- Requires OE Murphy Fauxborn",
+          "# Core Strategy",
+          "Whenever Fauxborn's 3-cost card appears, play it. After playing a few copies during normal encounters, Tulu's 4-cost card can clear the screen. Remember to awaken Miryam to provide Weakness and Vulnerability.",
+          "Against bosses and elite enemies, awaken Miryam first for Weakness and Vulnerability. Awaken Fauxborn second, build up OE and tentacles, switch to Red tentacle, and play every 3-cost card. Almost everything should die.",
+          "# Substitutions",
+          "- Murphy can be replaced by Goliath. A pure Divine Realm setup deals more damage but loses some survivability",
+          "- Equip more Mastery to improve Red tentacle damage"
+        ],
+        "zh-CN": [
+          "# 优势",
+          "- 高额献祭，能跳过boss第二条血",
+          "- 过牌，算力，银钥充能都很充足",
+          "# 劣势",
+          "- 虚弱易伤单纯依靠米利亚姆觉醒，数量有限",
+          "- 小心把自己献祭死",
+          "- 刚需超限诞墨",
+          "# 核心思路",
+          "有诞墨3费就打，道中打个几张诞墨3费，图鲁4费就清屏了。记得觉醒米利亚姆来提供虚弱易伤。",
+          "boss和精英怪，1觉米利亚姆，提供虚弱易伤。2觉诞墨，攒出超限，切换红触，打出所有3费，基本都死了。",
+          "# 可替换",
+          "- 小墨菲可以换成鲨鱼，纯粹神国伤害更高，但会缺一点生存。",
+          "- 多带精通，提高红触伤害"
+        ]
+      },
+      "code": "@@HrAeZ1ypx5xKax7aonDDc@@"
+    },
+    {
+      "id": "3",
+      "name": {
+        "en": "Toxic girls",
+        "zh-CN": "毒系女子"
+      },
+      "summary": {
+        "en": [
+          "# Strengths",
+          "- Extremely strong survivability with high healing, high maximum health, and heavy Strength reduction",
+          "- Xu's stacks can skip a boss's second phase entirely",
+          "# Weaknesses",
+          "- Relatively slow",
+          "- Expensive; Xu and Doll: Inferno should have their Enlighten upgrades completed whenever possible, doll OE is a massive bonus",
+          "# Core Strategy",
+          "Awaken Xu first and Doll: Inferno second. Trigger Resonance as often as possible, stack Intoxication and Poison, then let Xu detonate everything.",
+          "# Substitutions",
+          "- If Xu cannot dual-wield, use her SR signature Wheel, though this reduces healing",
+          "- Lily can be replaced by Nymphaea for smoother normal encounters and more Poison, at the cost of some survivability",
+          "- Tawil is only filling the keyflare slot, so any keyflare character works. She is used because she can overspend and play cards with keyflares, triggering Resonance from Xu's awakening and reducing Xu's cards to 0 cost"
+        ],
+        "zh-CN": [
+          "# 优势",
+          "- 极强的生存能力，高额回血，高额血量，高额降力",
+          "- 满层痴醉能直接跳过boss第二阶段",
+          "# 劣势",
+          "- 速度较慢",
+          "- 贵，融朵和徐尽量启灵齐全。",
+          "# 核心思路",
+          "1觉徐，2觉融朵，多多触发共振，叠叠痴醉，叠叠毒，徐爆一下死光光。",
+          "# 可替换",
+          "- 徐没双持，就带SR专，会少一点回血。",
+          "- 莉莉可换宁菲，道中更舒服，毒更多，但会掉一些生存。",
+          "- 塔薇单纯是银钥位，随便哪个银钥位都行。带她单纯是因为可以欠费，用银钥打牌，触发徐觉醒的共振，让徐的牌变成0费。"
+        ]
+      },
+      "code": "@@xjUwXyVxhxWxfvRrxVvoBn2@@"
+    },
+    {
+      "id": "4",
+      "name": {
+        "en": "Baka, Boom",
+        "zh-CN": "小笨蛋，大伤害"
+      },
+      "summary": {
+        "en": [
+          "# Strengths",
+          "- Simple, direct, and high-damage",
+          "- Clearing the screen with one cannon shot feels great",
+          "# Weaknesses",
+          "- Slightly short on Silver Keys",
+          "- Weakness and Vulnerability come entirely from the Corposant and are fairly limited",
+          "# Core Strategy",
+          "Just mindlessly play every Moss card. Moss's follow-up cannon can trigger Saya's Corrosion, and the follow-up shots alone can kill most enemies—even a boss's first health bar. Fanxue's ultimate damage bonus also fits Moss's ultimate perfectly, giving her a massive dmg boost. Before using it, switch to Red tentacle, feed Vortice an Embryo to trigger the damage bonus, then use the Corposant's ultimate to apply Vulnerability.",
+          "# Substitutions",
+          "- Without dual-wielding Birth of a Soul, the team is relatively fragile. Dual-wielding is strongly recommended",
+          "- Celeste can be replaced by any support character"
+        ],
+        "zh-CN": [
+          "# 优势",
+          "- 简单粗暴，伤害高",
+          "- 一炮清屏，爽。",
+          "# 劣势",
+          "- 稍微有点缺银钥",
+          "- 虚弱易伤完全靠船长，比较少",
+          "# 核心思路",
+          "无脑打光莫斯的牌，莫斯的追击炮可以触发沙耶的侵蚀，光靠追击打炮就能杀掉大部分的怪，甚至boss的第一条血。繁血的大招加伤也完美适配莫斯大招，攒出莫斯大招就开大。记得给开大前切红触，给莫斯喂一个胚胎触发繁血加伤，然后开船长大招给易伤。",
+          "# 可替换",
+          "- 如果没有双持灵魂诞生，会比较缺生存。还是推荐尽量双持。",
+          "- 希莱斯特可以换成别的银钥位辅助位。"
+        ]
+      },
+      "code": "@@xmxk6hy2OyYyImuaaCona5@@"
+    },
+    {
+      "id": "5",
+      "name": {
+        "en": "FIRES!",
+        "zh-CN": "防瓜"
+      },
+      "summary": {
+        "en": [
+          "# Strengths",
+          "- Cheap",
+          "- Fairly well-balanced",
+          "# Weaknesses",
+          "- Lacks Arith and card draw",
+          "- Damage is difficult to predict",
+          "- randomness in crit",
+          "- require high level Kath",
+          "# Core Strategy",
+          "Awaken Kath and play defend to pass the flames. When you have neither cards nor flame, use the ultimate, build up an X-cost card, and spend it immediately. Repeat this for several rounds until the Ultra turn, build another X-cost card, then finish with everyone's ultimates.",
+          "# Substitutions",
+          "- Everyone can be replaced. Kath can carry three teammates as long as they provide her with Weakness and Vulnerability"
+        ],
+        "zh-CN": [
+          "# 优势",
+          "- 便宜",
+          "- 比较均衡",
+          "# 劣势",
+          "- 缺算缺过牌",
+          "- 难以计算伤害",
+          "- 随缘暴击",
+          "- 需求高等级地瓜",
+          "# 核心思路",
+          "觉醒地瓜，打防传火，没牌没火就开大，攒出X费，直接打掉。就这样打几轮进超维回合攒出X费，所有人开大收尾。",
+          "# 可替换",
+          "- 都可以换，地瓜一拖三，给她提供虚弱易伤就行。"
+        ]
+      },
+      "code": "@@1B9pkMxTxRyfyQybaADnDR@@"
+    },
+    {
+      "id": "6",
+      "name": {
+        "en": "Win trading Mouchette",
+        "zh-CN": "yyds茉夏"
+      },
+      "summary": {
+        "en": [
+          "# Strengths",
+          "- Easy",
+          "- Relatively cheap",
+          "# Weaknesses",
+          "- short on Arith",
+          "# Core Strategy",
+          "Awaken Mouchette and just play her cards. Against a boss, you can intentionally burst several death resistance to increase Mouchette's damage, then throw every Mouchette card at the enemy. Helot's ult provide extra strike damage, Thais copies Mouchette cards, Faint provides extra DR",
+          "# Substitutions",
+          "- Everyone can be replaced as long as they provide Mommy Mouchette with Weakness and Vulnerability. Equip as many death resistance as you like, so Mouchette can keep bursting it"
+        ],
+        "zh-CN": [
+          "# 优势",
+          "- 无脑",
+          "- 较为便宜",
+          "# 劣势",
+          "- 缺算",
+          "# 核心思路",
+          "觉醒茉夏，无脑出牌。打boss的时候可以故意爆几管死扛，提高茉夏伤害，然后总之一股脑把茉夏的牌砸过去。",
+          "# 可替换",
+          "- 都可以换，给茉夏妈咪提供虚弱易伤就行，全带死扛给茉夏妈妈爆爆。"
+        ]
+      },
+      "code": "@@xgFOscyMaaxbx6aahDnDZ@@"
+    }
+  ]
+}

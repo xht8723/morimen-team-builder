@@ -11,6 +11,11 @@
     "footer": "Noncommercial fan project · Not affiliated with Qookka Games",
     "attribution": "SKeyDB attribution & asset notice"
   },
+  "navigation": {
+    "label": "Primary navigation",
+    "builder": "Team Builder",
+    "recommended": "Recommended Teams"
+  },
   "builder": {
     "activeFormation": "Active formation · {{number}}",
     "teamName": "Team name",
@@ -53,6 +58,17 @@
     "railAwakeners": "Awakeners: {{names}}.",
     "railWheels": "Wheels: {{names}}.",
     "railPosse": "Posse: {{name}}."
+  },
+  "recommended": {
+    "title": "Recommended teams",
+    "slotLabel": "Recommended loadout slot {{number}}",
+    "copy": "Copy code",
+    "copied": "Copied",
+    "copyFailed": "Clipboard access failed.",
+    "covenant": "Covenant",
+    "posse": "Posse",
+    "emptyTitle": "No recommended teams yet",
+    "emptyDescription": "Add a team to data/recommended-teams.json and rebuild the site."
   },
   "picker": {
     "emptyTitle": "Select a slot to begin.",

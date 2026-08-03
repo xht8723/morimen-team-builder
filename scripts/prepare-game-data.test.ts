@@ -138,6 +138,10 @@ async function createFixture() {
     schemaVersion: 3,
     options,
   });
+  await writeJson(path.join(data, "recommended-teams.json"), {
+    schemaVersion: 1,
+    teams: [],
+  });
   return root;
 }
 
@@ -150,6 +154,15 @@ function runCompiler(root: string) {
 
 function sourceHash(value: unknown) {
   return `sha256:${createHash("sha256").update(JSON.stringify(value)).digest("hex")}`;
+}
+
+function validRecommendation() {
+  return {
+    id: "code-recommendation",
+    name: { en: "Code recommendation", "zh-CN": "代码推荐" },
+    summary: { en: "Compiler fixture.", "zh-CN": "编译器测试。" },
+    code: "  @@not-validated-at-build-time@@  ",
+  };
 }
 
 afterEach(async () => {
@@ -412,5 +425,107 @@ describe("data compiler", () => {
     const result = runCompiler(root);
     expect(result.status).not.toBe(0);
     expect(result.stderr).toContain("has unexpected kind wheel");
+  });
+
+  it("preserves recommendation metadata, trims codes, and accepts any team count", async () => {
+    const root = await createFixture();
+    const teams = Array.from({ length: 10 }, (_, index) => ({
+      ...validRecommendation(),
+      id: `recommendation-${String(index + 1)}`,
+      code: `  @@code${String(index + 1)}@@  `,
+    }));
+    await writeJson(path.join(root, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams,
+    });
+
+    const result = runCompiler(root);
+    expect(result.status, result.stderr).toBe(0);
+    const generated = JSON.parse(
+      await readFile(path.join(root, "src", "generated", "recommended-teams.json"), "utf8"),
+    );
+    expect(generated.teams).toHaveLength(10);
+    expect(generated.teams[0]).toEqual({
+      id: "recommendation-1",
+      name: { en: "Code recommendation", "zh-CN": "代码推荐" },
+      summary: { en: "Compiler fixture.", "zh-CN": "编译器测试。" },
+      code: "@@code1@@",
+    });
+  });
+
+  it("normalizes recommendation Markdown strings and line arrays", async () => {
+    const root = await createFixture();
+    await writeJson(path.join(root, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams: [
+        {
+          ...validRecommendation(),
+          summary: {
+            en: "First line.\r\n\r\nSecond line.",
+            "zh-CN": ["### 核心思路", "", "- 第一项", "  - 子项"],
+          },
+        },
+      ],
+    });
+
+    const result = runCompiler(root);
+    expect(result.status, result.stderr).toBe(0);
+    const generated = JSON.parse(
+      await readFile(path.join(root, "src", "generated", "recommended-teams.json"), "utf8"),
+    );
+    expect(generated.teams[0].summary).toEqual({
+      en: "First line.\n\nSecond line.",
+      "zh-CN": "### 核心思路\n\n- 第一项\n  - 子项",
+    });
+  });
+
+  it("rejects malformed recommendation structure and duplicate IDs", async () => {
+    const malformedRoot = await createFixture();
+    await writeJson(path.join(malformedRoot, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams: [{ ...validRecommendation(), code: "first line\nsecond line" }],
+    });
+    expect(runCompiler(malformedRoot).stderr).toContain("code must be a single-line string");
+
+    const metadataRoot = await createFixture();
+    const missingLocale = validRecommendation();
+    delete (missingLocale.name as { "zh-CN"?: string })["zh-CN"];
+    await writeJson(path.join(metadataRoot, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams: [missingLocale],
+    });
+    expect(runCompiler(metadataRoot).stderr).toContain("name.zh-CN is empty");
+
+    const duplicateRoot = await createFixture();
+    await writeJson(path.join(duplicateRoot, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams: [validRecommendation(), validRecommendation()],
+    });
+    expect(runCompiler(duplicateRoot).stderr).toContain("id duplicates code-recommendation");
+  });
+
+  it("rejects invalid recommendation Markdown line arrays", async () => {
+    const emptyRoot = await createFixture();
+    await writeJson(path.join(emptyRoot, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams: [{ ...validRecommendation(), summary: { en: [], "zh-CN": "有效内容" } }],
+    });
+    expect(runCompiler(emptyRoot).stderr).toContain("summary.en line array must not be empty");
+
+    const whitespaceRoot = await createFixture();
+    await writeJson(path.join(whitespaceRoot, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams: [{ ...validRecommendation(), summary: { en: ["", "  "], "zh-CN": "有效内容" } }],
+    });
+    expect(runCompiler(whitespaceRoot).stderr).toContain(
+      "summary.en line array must contain Markdown text",
+    );
+
+    const nonStringRoot = await createFixture();
+    await writeJson(path.join(nonStringRoot, "data", "recommended-teams.json"), {
+      schemaVersion: 1,
+      teams: [{ ...validRecommendation(), summary: { en: ["valid", 42], "zh-CN": "有效内容" } }],
+    });
+    expect(runCompiler(nonStringRoot).stderr).toContain("summary.en[1] must be a string");
   });
 });
